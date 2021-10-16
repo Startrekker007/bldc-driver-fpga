@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Oct 16 23:51:17 2021
+# Process ID: 10836
+# Current directory: C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/foc_driver
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19256 C:\GIT\bldc-driver-fpga\hardware_design\vivado_project\foc_driver\foc_driver.xpr
+# Log file: C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/vivado.log
+# Journal file: C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/foc_driver\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.xpr

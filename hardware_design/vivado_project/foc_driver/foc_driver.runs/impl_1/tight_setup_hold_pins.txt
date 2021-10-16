@@ -1,0 +1,11 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|               clk_fpga_0 |clk_out1_design_1_clk_wiz_0_0 |                                                  design_1_i/phase_u_pwm/U0/FSM_onehot_next_state_reg[5]/D|
+|               clk_fpga_0 |clk_out1_design_1_clk_wiz_0_0 |                                                  design_1_i/phase_u_pwm/U0/FSM_onehot_next_state_reg[4]/D|
+|               clk_fpga_0 |clk_out1_design_1_clk_wiz_0_0 |                                                  design_1_i/phase_u_pwm/U0/FSM_onehot_next_state_reg[3]/D|
+|               clk_fpga_0 |clk_out1_design_1_clk_wiz_0_0 |                                                                   design_1_i/phase_u_pwm/U0/ctr_rst_reg/D|
+|               clk_fpga_0 |clk_out1_design_1_clk_wiz_0_0 |                                                  design_1_i/phase_v_pwm/U0/FSM_onehot_next_state_reg[3]/D|
+|               clk_fpga_0 |clk_out1_design_1_clk_wiz_0_0 |                                                                   design_1_i/phase_v_pwm/U0/ctr_rst_reg/D|
+|               clk_fpga_0 |clk_out1_design_1_clk_wiz_0_0 |                                                  design_1_i/phase_v_pwm/U0/FSM_onehot_next_state_reg[2]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

@@ -1,0 +1,115 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 10836
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Sat Oct 16 23:51:38 NZDT 2021
+Time zone: 	New Zealand Standard Time (Pacific/Auckland)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	X:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	X:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Keshav
+User home directory: C:/Users/Keshav
+User working directory: C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/foc_driver
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: X:/Xilinx/Vivado
+HDI_APPROOT: X:/Xilinx/Vivado/2020.2
+RDI_DATADIR: X:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: X:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/Keshav/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/Keshav/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/Keshav/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	X:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/vivado.log
+Vivado journal file location: 	C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/vivado.jou
+Engine tmp dir: 	C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/.Xil/Vivado-10836-TheRig
+
+Xilinx Environment Variables
+----------------------------
+XILINX: X:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINXD_LICENSE_FILE: C:\489Repo\high-resolution-event-timer\Vivado
+XILINX_DSP: X:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: X:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: X:/Xilinx/Vivado/2020.2
+XILINX_VIVADO: X:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: X:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,024 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\GIT\bldc-driver-fpga\hardware_design\vivado_project\foc_driver\foc_driver.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,024 MB. GUI used memory: 53 MB. Current time: 10/16/21, 11:51:39 PM NZDT
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,124 MB. GUI used memory: 51 MB. Current time: 10/16/21, 11:52:09 PM NZDT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 104 MB (+107098kb) [00:00:48]
+// [Engine Memory]: 1,187 MB (+1092852kb) [00:00:48]
+// WARNING: HEventQueue.dispatchEvent() is taking  3124 ms.
+// Tcl Message: open_project C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'X:/VivadoHighSpeed/foc_driver' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'X:/Xilinx/Vivado/2020.2/data/ip'. 
