@@ -1,0 +1,1 @@
+c_ctr_16_bit.vhd,vhdl,xil_defaultlib,../../../../foc_driver.gen/sources_1/ip/c_ctr_16_bit/sim/c_ctr_16_bit.vhd,

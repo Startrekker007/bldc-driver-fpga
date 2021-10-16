@@ -1,0 +1,10 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ip/design_1_pwm_generator_0_0/sim/design_1_pwm_generator_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_phase_u_pwm_0/sim/design_1_phase_u_pwm_0.vhd" \
+"../../../bd/design_1/ip/design_1_phase_u_pwm_1/sim/design_1_phase_u_pwm_1.vhd" \
+"../../../bd/design_1/ip/design_1_rst_ps7_0_100M_0/sim/design_1_rst_ps7_0_100M_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_0_0/sim/design_1_axi_gpio_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_0_1/sim/design_1_axi_gpio_0_1.vhd" \
+"../../../bd/design_1/sim/design_1.vhd" \
+
+nosort

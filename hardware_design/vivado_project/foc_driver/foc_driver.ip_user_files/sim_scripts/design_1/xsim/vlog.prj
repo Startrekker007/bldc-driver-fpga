@@ -1,0 +1,14 @@
+verilog xil_defaultlib --include "X:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" --include "../../../../foc_driver.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../foc_driver.gen/sources_1/bd/design_1/ipshared/34f8/hdl" --include "../../../../foc_driver.gen/sources_1/bd/design_1/ipshared/d0f7" \
+"../../../bd/design_1/ip/design_1_processing_system7_0_0/sim/design_1_processing_system7_0_0.v" \
+"../../../bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v" \
+"../../../bd/design_1/ip/design_1_xlslice_0_0/sim/design_1_xlslice_0_0.v" \
+"../../../bd/design_1/ip/design_1_xlslice_0_3/sim/design_1_xlslice_0_3.v" \
+"../../../bd/design_1/ip/design_1_xlslice_2_0/sim/design_1_xlslice_2_0.v" \
+"../../../bd/design_1/ip/design_1_xlslice_2_1/sim/design_1_xlslice_2_1.v" \
+"../../../bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" \
+"../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

@@ -1,0 +1,12 @@
+
+{ 
+    crc :  17674155793009798876  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 599c0ca2ea8c48f0b0bd221e2deb5f1b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L c_gate_bit_v12_0_6 -L xbip_counter_v3_0_6 -L c_counter_binary_v12_0_14 -L secureip -L xpm --snapshot tb_pwm_generator_behav xil_defaultlib.tb_pwm_generator" , 
+    buildDate : "Nov 18 2020" , 
+    buildTime : "09:47:47" , 
+    linkCmd : "X:\\Xilinx\\Vivado\\2020.2\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/tb_pwm_generator_behav/xsimk.exe\"   \"xsim.dir/tb_pwm_generator_behav/obj/xsim_0.win64.obj\" \"xsim.dir/tb_pwm_generator_behav/obj/xsim_1.win64.obj\" -L\"X:\\Xilinx\\Vivado\\2020.2\\lib\\win64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 
