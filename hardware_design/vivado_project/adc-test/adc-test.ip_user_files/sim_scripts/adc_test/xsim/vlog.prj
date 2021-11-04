@@ -1,0 +1,32 @@
+verilog xil_defaultlib --include "X:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" --include "../../../../adc-test.gen/sources_1/bd/adc_test/ipshared/ec67/hdl" --include "../../../../adc-test.gen/sources_1/bd/adc_test/ipshared/34f8/hdl" --include "../../../../adc-test.gen/sources_1/bd/adc_test/ipshared/8713/hdl" --include "../../../../adc-test.gen/sources_1/bd/adc_test/ipshared/25b7/hdl/verilog" --include "../../../../adc-test.gen/sources_1/bd/adc_test/ipshared/896c/hdl/verilog" \
+"../../../bd/adc_test/ip/adc_test_processing_system7_0_0/sim/adc_test_processing_system7_0_0.v" \
+"../../../bd/adc_test/ip/adc_test_axis_subset_converter_0_0/hdl/tdata_adc_test_axis_subset_converter_0_0.v" \
+"../../../bd/adc_test/ip/adc_test_axis_subset_converter_0_0/hdl/tuser_adc_test_axis_subset_converter_0_0.v" \
+"../../../bd/adc_test/ip/adc_test_axis_subset_converter_0_0/hdl/tstrb_adc_test_axis_subset_converter_0_0.v" \
+"../../../bd/adc_test/ip/adc_test_axis_subset_converter_0_0/hdl/tkeep_adc_test_axis_subset_converter_0_0.v" \
+"../../../bd/adc_test/ip/adc_test_axis_subset_converter_0_0/hdl/tid_adc_test_axis_subset_converter_0_0.v" \
+"../../../bd/adc_test/ip/adc_test_axis_subset_converter_0_0/hdl/tdest_adc_test_axis_subset_converter_0_0.v" \
+"../../../bd/adc_test/ip/adc_test_axis_subset_converter_0_0/hdl/tlast_adc_test_axis_subset_converter_0_0.v" \
+"../../../bd/adc_test/ip/adc_test_axis_subset_converter_0_0/hdl/top_adc_test_axis_subset_converter_0_0.v" \
+"../../../bd/adc_test/ip/adc_test_axis_subset_converter_0_0/sim/adc_test_axis_subset_converter_0_0.v" \
+"../../../bd/adc_test/ip/adc_test_smartconnect_0_0/bd_0/sim/bd_67f1.v" \
+"../../../bd/adc_test/ip/adc_test_smartconnect_0_0/bd_0/ip/ip_0/sim/bd_67f1_one_0.v" \
+
+sv xil_defaultlib --include "X:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" --include "../../../../adc-test.gen/sources_1/bd/adc_test/ipshared/ec67/hdl" --include "../../../../adc-test.gen/sources_1/bd/adc_test/ipshared/34f8/hdl" --include "../../../../adc-test.gen/sources_1/bd/adc_test/ipshared/8713/hdl" --include "../../../../adc-test.gen/sources_1/bd/adc_test/ipshared/25b7/hdl/verilog" --include "../../../../adc-test.gen/sources_1/bd/adc_test/ipshared/896c/hdl/verilog" \
+"../../../bd/adc_test/ip/adc_test_smartconnect_0_0/bd_0/ip/ip_2/sim/bd_67f1_s00mmu_0.sv" \
+"../../../bd/adc_test/ip/adc_test_smartconnect_0_0/bd_0/ip/ip_3/sim/bd_67f1_s00tr_0.sv" \
+"../../../bd/adc_test/ip/adc_test_smartconnect_0_0/bd_0/ip/ip_4/sim/bd_67f1_s00sic_0.sv" \
+"../../../bd/adc_test/ip/adc_test_smartconnect_0_0/bd_0/ip/ip_5/sim/bd_67f1_s00a2s_0.sv" \
+"../../../bd/adc_test/ip/adc_test_smartconnect_0_0/bd_0/ip/ip_6/sim/bd_67f1_sawn_0.sv" \
+"../../../bd/adc_test/ip/adc_test_smartconnect_0_0/bd_0/ip/ip_7/sim/bd_67f1_swn_0.sv" \
+"../../../bd/adc_test/ip/adc_test_smartconnect_0_0/bd_0/ip/ip_8/sim/bd_67f1_sbn_0.sv" \
+"../../../bd/adc_test/ip/adc_test_smartconnect_0_0/bd_0/ip/ip_9/sim/bd_67f1_m00s2a_0.sv" \
+"../../../bd/adc_test/ip/adc_test_smartconnect_0_0/bd_0/ip/ip_10/sim/bd_67f1_m00e_0.sv" \
+
+verilog xil_defaultlib --include "X:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" --include "../../../../adc-test.gen/sources_1/bd/adc_test/ipshared/ec67/hdl" --include "../../../../adc-test.gen/sources_1/bd/adc_test/ipshared/34f8/hdl" --include "../../../../adc-test.gen/sources_1/bd/adc_test/ipshared/8713/hdl" --include "../../../../adc-test.gen/sources_1/bd/adc_test/ipshared/25b7/hdl/verilog" --include "../../../../adc-test.gen/sources_1/bd/adc_test/ipshared/896c/hdl/verilog" \
+"../../../bd/adc_test/ip/adc_test_smartconnect_0_0/sim/adc_test_smartconnect_0_0.v" \
+"../../../bd/adc_test/ip/adc_test_auto_pc_0/sim/adc_test_auto_pc_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

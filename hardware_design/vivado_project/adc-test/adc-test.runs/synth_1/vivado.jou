@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Nov  4 21:36:44 2021
+# Process ID: 7372
+# Current directory: C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/adc-test/adc-test.runs/synth_1
+# Command line: vivado.exe -log adc_test_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source adc_test_wrapper.tcl
+# Log file: C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/adc-test/adc-test.runs/synth_1/adc_test_wrapper.vds
+# Journal file: C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/adc-test/adc-test.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source adc_test_wrapper.tcl -notrace

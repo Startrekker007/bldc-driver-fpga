@@ -11,3 +11,24 @@
 #-----------------------------------------------------------
 start_gui
 open_project C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.xpr
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+set_property package_pin "" [get_ports [list  U_H]]
+place_ports U_H N17
+place_ports U_L P18
+place_ports V_H R17
+place_ports V_L F16
+place_ports W_H V18
+place_ports W_L V17
+save_constraints
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_bd_design {C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.srcs/sources_1/bd/design_1/design_1.bd}
+write_bd_tcl
+write_bd_tcl C:\GIT\bldc-driver-fpga\hardware_design\vivado_project\design_1.tcl
+write_bd_tcl C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/design_1.tcl
+write_hw_platform -fixed -include_bit -force -file C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/design_1_wrapper.xsa

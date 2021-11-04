@@ -113,3 +113,958 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // Tcl Message: INFO: [Project 1-313] Project file moved from 'X:/VivadoHighSpeed/foc_driver' since last save. 
 // Tcl Message: Scanning sources... Finished scanning sources 
 // Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'X:/Xilinx/Vivado/2020.2/data/ip'. 
+// [Engine Memory]: 1,253 MB (+7172kb) [00:00:51]
+// Tcl Message: open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:40 . Memory (MB): peak = 1267.574 ; gain = 249.426 
+// Project name: foc_driver; location: C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/foc_driver; part: xc7z020clg400-1
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// [GUI Memory]: 115 MB (+5146kb) [00:00:59]
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 3441ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3445 ms.
+// [GUI Memory]: 126 MB (+5697kb) [00:01:03]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 127 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// ce (cr): Synthesis is Out-of-date: addNotify
+selectButton(PAResourceQtoS.StaleRunDialog_RUN_SYNTHESIS, "Run Synthesis"); // a
+selectButton(PAResourceQtoS.StaleRunDialog_OPEN_DESIGN, "Open Design"); // a
+// bz (cr):  Open Synthesized Design : addNotify
+dismissDialog("Synthesis is Out-of-date"); // ce
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z020clg400-1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,448 MB. GUI used memory: 76 MB. Current time: 10/16/21, 11:54:34 PM NZDT
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// [Engine Memory]: 1,859 MB (+569551kb) [00:03:22]
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,171 MB. GUI used memory: 76 MB. Current time: 10/16/21, 11:54:58 PM NZDT
+// [Engine Memory]: 2,171 MB (+229535kb) [00:03:34]
+// Xgd.load filename: X:/Xilinx/Vivado/2020.2/data/parts/xilinx/zynq/devint/zynq/xc7z020/xc7z020.xgd; ZipEntry: xc7z020_detail.xgd elapsed time: 0.6s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 0.7s
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 2,302 MB (+23941kb) [00:03:36]
+// [GUI Memory]: 151 MB (+19262kb) [00:03:36]
+// Package: addNotify
+// Device: addNotify
+// DeviceView Instantiated
+// [GUI Memory]: 160 MB (+2396kb) [00:03:38]
+// WARNING: HEventQueue.dispatchEvent() is taking  3244 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z020clg400-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.119 . Memory (MB): peak = 1603.770 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 97 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2020.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/GIT/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57] INFO: [Timing 38-2] Deriving generated clocks [c:/GIT/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2295.312 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Elapsed time: 33 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// ExpRunCommands.openSynthResults elapsed time: 33.8s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:41 ; elapsed = 00:00:33 . Memory (MB): peak = 2339.184 ; gain = 1038.500 
+// [GUI Memory]: 168 MB (+35kb) [00:03:40]
+// 'dV' command handler elapsed time: 40 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  1068 ms.
+dismissDialog("Open Synthesized Design"); // bz
+// Elapsed time: 400 seconds
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (6) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 3); // A
+// PAPropertyPanels.initPanels (U_H) elapsed time: 0.2s
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "U_H ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ;  ; NONE ; FP_VTT_50 ; ", 4, (String) null, 5, false); // A
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "U_H ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ;  ; NONE ; FP_VTT_50 ; ", 4, (String) null, 2, false); // A
+// Tcl Message: set_property package_pin "" [get_ports [list  U_H]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "U_H ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ;  ; NONE ; FP_VTT_50 ; ", 4, (String) null, 5, false); // A
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports U_H N17 
+// Elapsed time: 21 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "U_L ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ;  ; NONE ; FP_VTT_50 ; ", 5, (String) null, 2, false); // A
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "U_L ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ;  ; NONE ; FP_VTT_50 ; ", 5, (String) null, 5, false); // A
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports U_L P18 
+// Elapsed time: 10 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "V_H ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ;  ; NONE ; FP_VTT_50 ; ", 6, (String) null, 5, false); // A
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports V_H R17 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "V_L ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ;  ; NONE ; FP_VTT_50 ; ", 7, (String) null, 5, false); // A
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports V_L F16 
+// Elapsed time: 11 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "W_H ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ;  ; NONE ; FP_VTT_50 ; ", 8, (String) null, 5, false); // A
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports W_H V18 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "W_L ; OUT ;  ;  ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ;  ; NONE ; FP_VTT_50 ; ", 9, (String) null, 5, false); // A
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports W_L V17 
+// Run Command: PAResourceCommand.PACommandNames_SAVE_DESIGN
+// A (cr): Out of Date Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Out of Date Design"); // A
+// TclEventType: DESIGN_SAVE
+// Tcl Message: save_constraints 
+dismissDialog("Save Constraints"); // bz
+selectButton(PAResourceQtoS.StaleMoreAction_OUT_OF_DATE_DETAILS, "details"); // h
+selectButton(PAResourceQtoS.StaleMoreAction_FORCE_UP_TO_DATE, "Force up-to-date"); // h
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: set_property needs_refresh false [get_runs synth_1] 
+// Tcl Message: set_property needs_refresh false [get_runs impl_1] 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 29, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: INFO: [Timing 38-480] Writing timing data to binary archive. 
+// Tcl Message: Writing placer database... Writing XDEF routing. Writing XDEF routing logical nets. Writing XDEF routing special nets. 
+// Tcl Message: Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.112 . Memory (MB): peak = 2388.051 ; gain = 25.461 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Oct 17 00:03:08 2021] Launched impl_1... Run output will be captured here: C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Implementation Completed: addNotify
+// Elapsed time: 162 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// cD (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cD
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sun Oct 17 00:05:55 2021] Launched impl_1... Run output will be captured here: C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 652 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bz (cr):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: open_bd_design {C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.srcs/sources_1/bd/design_1/design_1.bd} 
+// Tcl Message: Reading block design file <C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.srcs/sources_1/bd/design_1/design_1.bd>... 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_OPEN_DIAGRAM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,394 MB. GUI used memory: 113 MB. Current time: 10/17/21, 12:16:59 AM NZDT
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 2,424 MB (+6776kb) [00:25:35]
+// WARNING: HEventQueue.dispatchEvent() is taking  2268 ms.
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 2489.062 ; gain = 101.012 
+// 'bF' command handler elapsed time: 11 seconds
+// Elapsed time: 12 seconds
+dismissDialog("Open Block Design"); // bz
+// Elapsed time: 16 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ac
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ac
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // ac
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ac
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ac
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 2,520 MB. GUI used memory: 125 MB. Current time: 10/17/21, 12:17:24 AM NZDT
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+// Tcl Command: 'rdi::info_commands {write*}'
+// Tcl Command: 'rdi::info_commands {write_*}'
+// Tcl Command: 'rdi::info_commands {write_bd*}'
+// Tcl Command: 'rdi::info_commands {write_bd_*}'
+// Tcl Command: 'rdi::info_commands {write_bd_t*}'
+// Tcl Command: 'rdi::info_commands {write_bd_tc*}'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "write_bd_tc", true); // l
+applyEnter(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "write_bd_tcl"); // l
+// Tcl Command: 'write_bd_tcl'
+// Tcl Command: 'write_bd_tcl'
+// Tcl Message: write_bd_tcl 
+// Tcl Message: ERROR: [Common 17-163] Missing value for option 'tcl_filename', please type 'write_bd_tcl -help' for usage info. 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "write_bd_tcl"); // l
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {write_bd_tcl} {C:\GIT\bldc-driver-fpga\hardware_design\\} {vivado_project}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {write_bd_tcl} {C:\GIT\bldc-driver-fpga\hardware_design\vivado_project\\} {}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {write_bd_tcl} {C:\GIT\bldc-driver-fpga\hardware_design\vivado_project\\} {d}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// [GUI Memory]: 183 MB (+6102kb) [00:26:40]
+// Tcl Command: 'bd::match_path {write_bd_tcl} {C:\GIT\bldc-driver-fpga\hardware_design\vivado_project\\} {design}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {write_bd_tcl} {C:\GIT\bldc-driver-fpga\hardware_design\vivado_project\\} {design_1}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {write_bd_tcl} {C:\GIT\bldc-driver-fpga\hardware_design\vivado_project\\} {design_1_}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {write_bd_tcl} {C:\GIT\bldc-driver-fpga\hardware_design\vivado_project\\} {design_1}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {write_bd_tcl} {C:\GIT\bldc-driver-fpga\hardware_design\vivado_project\\} {design_1.tcl}'
+// Elapsed time: 24 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "write_bd_tcl C:\GIT\bldc-driver-fpga\hardware_design\vivado_project\design_1.tcl", true); // l
+// Tcl Command: 'write_bd_tcl C:\GIT\bldc-driver-fpga\hardware_design\vivado_project\design_1.tcl'
+// Tcl Command: 'write_bd_tcl C:\GIT\bldc-driver-fpga\hardware_design\vivado_project\design_1.tcl'
+// Tcl Message: write_bd_tcl C:\GIT\bldc-driver-fpga\hardware_design\vivado_project\design_1.tcl 
+// Tcl Message: ERROR: [Common 17-36] Cannot write file [C:GITldc-driver-fpgahardware_designivado_projectdesign_1.tcl]: Invalid argument 
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {write_bd_tcl} {C:\GIT\bldc-driver-fpga\hardware_design\\} {vivado_project}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {write_bd_tcl} {C:\GIT\bldc-driver-fpga\hardware_design\vivado_project/} {}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {write_bd_tcl} {C:\GIT\bldc-driver-fpga\\} {hardware_design}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {write_bd_tcl} {C:\GIT\bldc-driver-fpga\hardware_design/} {}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {write_bd_tcl} {C:\GIT\\} {bldc-driver-fpga}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {write_bd_tcl} {C:\GIT\bldc-driver-fpga/} {}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {write_bd_tcl} {C:\\} {GIT}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {write_bd_tcl} {C:\GIT/} {}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'bd::match_path {write_bd_tcl} {C:/} {}'
+// WARNING: HEventQueue.dispatchEvent() is taking  1015 ms.
+// Elapsed time: 16 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "write_bd_tcl C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/design_1.tcl", true); // l
+// Tcl Command: 'write_bd_tcl C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/design_1.tcl'
+// Tcl Command: 'write_bd_tcl C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/design_1.tcl'
+// Tcl Message: write_bd_tcl C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/design_1.tcl 
+// Tcl Message: INFO: [BD 5-148] Tcl file written out <C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/design_1.tcl>.  
+// Elapsed time: 24 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.srcs/sources_1/bd/design_1/design_1.bd}]'
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.srcs/sources_1/bd/design_1/design_1.bd}]'
+// g (cr): Export Hardware Platform: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectRadioButton(PAResourceEtoH.ExportPlatformWizard_FIXED_POST_IMPL, "Include bitstream. This platform includes the complete hardware implementation and bitstream, in addition to the hardware specification for software tools."); // b
+selectButton("NEXT", "Next >"); // JButton
+// Elapsed time: 10 seconds
+setFolderChooser("C:/GIT/bldc-driver-fpga/hardware_design/vivado_project");
+selectButton("NEXT", "Next >"); // JButton
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.srcs/sources_1/bd/design_1/design_1.bd}]'
+selectButton("FINISH", "Finish"); // JButton
+// 'n' command handler elapsed time: 16 seconds
+// [Engine Memory]: 2,553 MB (+8380kb) [00:27:44]
+dismissDialog("Export Hardware Platform"); // g
+// HMemoryUtils.trashcanNow. Engine heap size: 2,591 MB. GUI used memory: 130 MB. Current time: 10/17/21, 12:19:09 AM NZDT
+// bz (cr):  Export Hardware Platform : addNotify
+// Tcl Message: write_hw_platform -fixed -include_bit -force -file C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/design_1_wrapper.xsa 
+// Tcl Message: INFO: [Vivado 12-4895] Creating Hardware Platform: C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/design_1_wrapper.xsa ... 
+// Tcl Message: INFO: [Hsi 55-2053] elapsed time for repository (X:/Xilinx/Vivado/2020.2/data\embeddedsw) loading 1 seconds 
+// Tcl Message: INFO: [Vivado 12-12467] The Hardware Platform can be used for Hardware INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/GIT/bldc-driver-fpga/hardware_design/vivado_project/design_1_wrapper.xsa 
+// Tcl Message: write_hw_platform: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2790.977 ; gain = 169.801 
+// [Engine Memory]: 2,701 MB (+21169kb) [00:27:51]
+dismissDialog("Export Hardware Platform"); // bz
+// Elapsed time: 64 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Utilization]", 24, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION
+// a (cr): Report Utilization: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1318 ms.
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Report Utilization"); // a
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// WARNING: HEventQueue.dispatchEvent() is taking  1084 ms.
+// Elapsed time: 34 seconds
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_SYNTHESIS, "Post-Synthesis", 0); // b
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_IMPLEMENTATION, "Post-Implementation", 1); // b
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED, PAResourceOtoP.ProjectSummaryUtilizationPanel_TABLE, "Table", 1); // f
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED, PAResourceOtoP.ProjectSummaryUtilizationPanel_GRAPH, "Graph", 0); // f
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 124 MB. Current time: 10/17/21, 12:49:09 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/17/21, 1:19:10 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/17/21, 1:49:10 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/17/21, 2:19:11 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 118 MB. Current time: 10/17/21, 2:49:11 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/17/21, 3:19:11 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/17/21, 3:49:12 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/17/21, 4:19:12 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/17/21, 4:49:13 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/17/21, 5:19:13 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/17/21, 5:49:14 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/17/21, 6:19:14 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/17/21, 6:49:15 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/17/21, 7:19:15 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/17/21, 7:49:16 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 118 MB. Current time: 10/17/21, 8:19:16 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 118 MB. Current time: 10/17/21, 8:49:17 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 118 MB. Current time: 10/17/21, 9:19:17 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 118 MB. Current time: 10/17/21, 9:49:18 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/17/21, 10:19:18 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/17/21, 10:49:18 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/17/21, 11:19:19 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 118 MB. Current time: 10/17/21, 11:49:19 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/17/21, 12:19:20 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/17/21, 12:49:20 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/17/21, 1:19:21 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/17/21, 1:49:21 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/17/21, 2:19:22 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/17/21, 2:49:22 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/17/21, 3:19:23 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/17/21, 3:49:23 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/17/21, 4:19:24 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/17/21, 4:49:24 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 118 MB. Current time: 10/17/21, 5:19:25 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/17/21, 5:49:25 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/17/21, 6:19:25 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 118 MB. Current time: 10/17/21, 6:49:26 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 118 MB. Current time: 10/17/21, 7:19:26 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 118 MB. Current time: 10/17/21, 7:49:26 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 118 MB. Current time: 10/17/21, 8:19:26 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 118 MB. Current time: 10/17/21, 8:49:26 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/17/21, 9:19:26 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/17/21, 9:49:27 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 118 MB. Current time: 10/17/21, 10:19:27 PM NZDT
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1198 ms. Increasing delay to 3594 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 118 MB. Current time: 10/17/21, 10:49:27 PM NZDT
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2040 ms. Increasing delay to 6120 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1716 ms. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/17/21, 11:19:28 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/17/21, 11:49:28 PM NZDT
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2756 ms. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 12:19:29 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 12:49:29 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 1:19:29 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 118 MB. Current time: 10/18/21, 1:49:30 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 2:19:31 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 2:49:31 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 118 MB. Current time: 10/18/21, 3:19:31 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 3:49:32 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 4:19:32 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 4:49:33 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 5:19:33 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 5:49:34 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 6:19:34 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 6:49:34 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 7:19:35 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 118 MB. Current time: 10/18/21, 7:49:35 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 8:19:36 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 8:49:36 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 9:19:37 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 118 MB. Current time: 10/18/21, 9:49:37 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 10:19:38 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 118 MB. Current time: 10/18/21, 10:49:38 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 11:19:39 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 11:49:39 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 12:19:40 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 12:49:40 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 1:19:41 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 1:49:41 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 2:19:42 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 2:49:42 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 3:19:43 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 3:49:43 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 4:19:43 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 4:49:44 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 5:19:44 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 5:49:45 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 6:19:46 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 6:49:46 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 7:19:47 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 7:49:47 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 8:19:47 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 8:49:48 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 9:19:48 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 9:49:48 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 10:19:49 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 10:49:49 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 11:19:49 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/18/21, 11:49:50 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 12:19:50 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 12:49:50 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 1:19:51 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 1:49:51 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 2:19:52 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 2:49:52 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 3:19:53 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 3:49:53 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 4:19:54 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 4:49:54 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 5:19:55 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 5:49:55 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 6:19:56 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 6:49:56 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 7:19:57 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 7:49:57 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 8:19:58 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 8:49:58 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 9:19:59 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 9:49:59 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 10:20:00 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 10:50:00 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 11:20:01 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 11:50:01 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 12:20:02 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 12:50:02 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 1:20:03 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 1:50:03 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 2:20:04 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 2:50:04 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 3:20:05 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 3:50:05 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 4:20:06 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 4:50:06 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 5:20:06 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 5:50:07 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 6:20:07 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 6:50:08 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 7:20:08 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 7:50:09 PM NZDT
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4132 ms. Increasing delay to 5000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 8:20:09 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 8:50:10 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 9:20:10 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 9:50:10 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 10:20:11 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 10:50:11 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 11:20:12 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/19/21, 11:50:12 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 12:20:13 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 12:50:13 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 1:20:14 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 1:50:14 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 2:20:14 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 2:50:15 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 3:20:15 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 3:50:16 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 4:20:16 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 4:50:17 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 5:20:17 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 5:50:18 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 6:20:18 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 6:50:19 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 7:20:19 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 7:50:20 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 118 MB. Current time: 10/20/21, 8:20:20 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 8:50:21 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 9:20:21 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 9:50:22 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 10:20:22 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 10:50:23 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 11:20:23 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 11:50:23 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 12:20:24 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 12:50:24 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 1:20:25 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 1:50:25 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 2:20:25 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 2:50:26 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 3:20:26 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 3:50:27 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 4:20:27 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 4:50:28 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 5:20:28 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 5:50:29 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 6:20:29 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 6:50:30 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 7:20:30 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 7:50:31 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 8:20:31 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 8:50:31 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 9:20:32 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 9:50:32 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 10:20:32 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 10:50:33 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 11:20:33 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/20/21, 11:50:34 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 12:20:34 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 12:50:35 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 1:20:35 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 1:50:36 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 2:20:36 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 2:50:37 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 3:20:37 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 3:50:38 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 4:20:38 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 4:50:39 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 5:20:39 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 5:50:40 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 6:20:40 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 6:50:40 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 7:20:41 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 7:50:41 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 8:20:42 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 8:50:42 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 9:20:43 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 9:50:43 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 10:20:44 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 10:50:44 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 11:20:45 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 11:50:45 AM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 12:20:46 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 12:50:46 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 1:20:47 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 1:50:47 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 2:20:48 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 2:50:48 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 3:20:48 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 3:50:49 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 4:20:49 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 4:50:50 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 5:20:50 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 5:50:51 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 6:20:51 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 118 MB. Current time: 10/21/21, 6:50:52 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 7:20:52 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 7:50:52 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 8:20:53 PM NZDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 117 MB. Current time: 10/21/21, 8:50:53 PM NZDT
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 27537 ms. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 22976 ms. Increasing delay to 68928 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 165 ms. Decreasing delay to 2165 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,701 MB. GUI used memory: 118 MB. Current time: 10/21/21, 9:20:53 PM NZDT
