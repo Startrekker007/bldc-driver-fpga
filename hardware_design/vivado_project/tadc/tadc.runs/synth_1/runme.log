@@ -1,0 +1,1201 @@
+
+*** Running vivado
+    with args -log tadc_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source tadc_wrapper.tcl
+
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+Sourcing tcl script 'C:/Users/Keshav/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
+source tadc_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'axis_resetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'axis_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'axis_resetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'axis_clk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'axis_clk': Added interface parameter 'ASSOCIATED_RESET' with value 'axis_resetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Command: read_checkpoint -auto_incremental -incremental C:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.srcs/utils_1/imports/synth_1/tadc_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.srcs/utils_1/imports/synth_1/tadc_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top tadc_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17024
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1252.520 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'tadc_wrapper' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/hdl/tadc_wrapper.vhd:46]
+INFO: [Synth 8-3491] module 'tadc' declared at 'c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/synth/tadc.vhd:1306' bound to instance 'tadc_i' of component 'tadc' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/hdl/tadc_wrapper.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'tadc' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/synth/tadc.vhd:1342]
+INFO: [Synth 8-3491] module 'tadc_axis_split_0_0' declared at 'c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_axis_split_0_0/synth/tadc_axis_split_0_0.vhd:56' bound to instance 'axis_split_0' of component 'tadc_axis_split_0_0' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/synth/tadc.vhd:1717]
+INFO: [Synth 8-638] synthesizing module 'tadc_axis_split_0_0' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_axis_split_0_0/synth/tadc_axis_split_0_0.vhd:70]
+INFO: [Synth 8-3491] module 'axis_split' declared at 'C:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.srcs/sources_1/new/axis_split.vhd:34' bound to instance 'U0' of component 'axis_split' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_axis_split_0_0/synth/tadc_axis_split_0_0.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'axis_split' [C:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.srcs/sources_1/new/axis_split.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'axis_split' (1#1) [C:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.srcs/sources_1/new/axis_split.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'tadc_axis_split_0_0' (2#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_axis_split_0_0/synth/tadc_axis_split_0_0.vhd:70]
+INFO: [Synth 8-3491] module 'tadc_axi_gpio_0_0' declared at 'c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_axi_gpio_0_0/synth/tadc_axi_gpio_0_0.vhd:59' bound to instance 'gpio_ctrl' of component 'tadc_axi_gpio_0_0' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/synth/tadc.vhd:1729]
+INFO: [Synth 8-638] synthesizing module 'tadc_axi_gpio_0_0' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_axi_gpio_0_0/synth/tadc_axi_gpio_0_0.vhd:85]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 1 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 1 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS bound to: 1 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 1 - type: integer 
+	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT bound to: 32'b11111111111111111111111111111111 
+	Parameter C_IS_DUAL bound to: 1 - type: integer 
+	Parameter C_DOUT_DEFAULT_2 bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT_2 bound to: 32'b11111111111111111111111111111111 
+INFO: [Synth 8-3491] module 'axi_gpio' declared at 'c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:1265' bound to instance 'U0' of component 'axi_gpio' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_axi_gpio_0_0/synth/tadc_axi_gpio_0_0.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (3#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (3#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (3#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (3#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (4#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (5#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (6#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+INFO: [Synth 8-226] default block is never used [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:835]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (7#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT0_ND_G1.READ_REG_GEN[0].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:690]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLOUT1_ND_G2.READ_REG2_GEN[0].GPIO2_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:787]
+WARNING: [Synth 8-6014] Unused sequential element Dual.gpio_Data_In_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:882]
+WARNING: [Synth 8-6014] Unused sequential element Dual.gpio2_Data_In_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:920]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (8#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (9#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
+INFO: [Synth 8-256] done synthesizing module 'tadc_axi_gpio_0_0' (10#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_axi_gpio_0_0/synth/tadc_axi_gpio_0_0.vhd:85]
+INFO: [Synth 8-3491] module 'tadc_axi_gpio_1_0' declared at 'c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_axi_gpio_1_0/synth/tadc_axi_gpio_1_0.vhd:59' bound to instance 'gpio_data0' of component 'tadc_axi_gpio_1_0' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/synth/tadc.vhd:1753]
+INFO: [Synth 8-638] synthesizing module 'tadc_axi_gpio_1_0' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_axi_gpio_1_0/synth/tadc_axi_gpio_1_0.vhd:85]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 16 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 16 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 1 - type: integer 
+	Parameter C_ALL_INPUTS_2 bound to: 1 - type: integer 
+	Parameter C_ALL_OUTPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 0 - type: integer 
+	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT bound to: 32'b11111111111111111111111111111111 
+	Parameter C_IS_DUAL bound to: 1 - type: integer 
+	Parameter C_DOUT_DEFAULT_2 bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT_2 bound to: 32'b11111111111111111111111111111111 
+INFO: [Synth 8-3491] module 'axi_gpio' declared at 'c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:1265' bound to instance 'U0' of component 'axi_gpio' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_axi_gpio_1_0/synth/tadc_axi_gpio_1_0.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio__parameterized1' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core__parameterized0' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+INFO: [Synth 8-226] default block is never used [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:835]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized0' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Common 17-14] Message 'Synth 8-113' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized0' (10#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G0.READ_REG_GEN[0].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:658]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G0.READ_REG_GEN[1].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:658]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G0.READ_REG_GEN[2].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:658]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G0.READ_REG_GEN[3].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:658]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G0.READ_REG_GEN[4].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:658]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G0.READ_REG_GEN[5].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:658]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G0.READ_REG_GEN[6].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:658]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G0.READ_REG_GEN[7].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:658]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G0.READ_REG_GEN[8].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:658]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G0.READ_REG_GEN[9].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:658]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G0.READ_REG_GEN[10].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:658]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G0.READ_REG_GEN[11].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:658]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G0.READ_REG_GEN[12].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:658]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G0.READ_REG_GEN[13].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:658]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G0.READ_REG_GEN[14].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:658]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G0.READ_REG_GEN[15].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:658]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[0].GPIO2_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[1].GPIO2_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[2].GPIO2_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[3].GPIO2_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[4].GPIO2_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[5].GPIO2_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[6].GPIO2_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[7].GPIO2_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[8].GPIO2_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[9].GPIO2_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[10].GPIO2_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[11].GPIO2_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[12].GPIO2_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[13].GPIO2_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[14].GPIO2_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
+WARNING: [Synth 8-6014] Unused sequential element Dual.ALLIN0_ND_G2.READ_REG2_GEN[15].GPIO2_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:719]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core__parameterized0' (10#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio__parameterized1' (10#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
+INFO: [Synth 8-256] done synthesizing module 'tadc_axi_gpio_1_0' (11#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_axi_gpio_1_0/synth/tadc_axi_gpio_1_0.vhd:85]
+INFO: [Synth 8-3491] module 'tadc_gpio_data0_0' declared at 'c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_gpio_data0_0/synth/tadc_gpio_data0_0.vhd:59' bound to instance 'gpio_data1' of component 'tadc_gpio_data0_0' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/synth/tadc.vhd:1777]
+INFO: [Synth 8-638] synthesizing module 'tadc_gpio_data0_0' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_gpio_data0_0/synth/tadc_gpio_data0_0.vhd:84]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 16 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 16 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 1 - type: integer 
+	Parameter C_ALL_INPUTS_2 bound to: 1 - type: integer 
+	Parameter C_ALL_OUTPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 0 - type: integer 
+	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT bound to: 32'b11111111111111111111111111111111 
+	Parameter C_IS_DUAL bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT_2 bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT_2 bound to: 32'b11111111111111111111111111111111 
+INFO: [Synth 8-3491] module 'axi_gpio' declared at 'c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:1265' bound to instance 'U0' of component 'axi_gpio' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_gpio_data0_0/synth/tadc_gpio_data0_0.vhd:168]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio__parameterized3' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core__parameterized1' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+INFO: [Synth 8-226] default block is never used [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:443]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[0].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:351]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[1].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:351]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[2].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:351]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[3].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:351]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[4].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:351]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[5].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:351]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[6].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:351]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[7].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:351]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[8].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:351]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[9].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:351]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[10].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:351]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[11].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:351]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[12].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:351]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[13].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:351]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[14].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:351]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLIN1_ND.READ_REG_GEN[15].GPIO_DBus_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:351]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core__parameterized1' (11#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio__parameterized3' (11#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/a5bb/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
+INFO: [Synth 8-256] done synthesizing module 'tadc_gpio_data0_0' (12#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_gpio_data0_0/synth/tadc_gpio_data0_0.vhd:84]
+INFO: [Synth 8-3491] module 'tadc_processing_system7_0_0' declared at 'c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_processing_system7_0_0/synth/tadc_processing_system7_0_0.v:60' bound to instance 'processing_system7_0' of component 'tadc_processing_system7_0_0' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/synth/tadc.vhd:1800]
+INFO: [Synth 8-6157] synthesizing module 'tadc_processing_system7_0_0' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_processing_system7_0_0/synth/tadc_processing_system7_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (13#1) [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6157] synthesizing module 'BIBUF' [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:730]
+INFO: [Synth 8-6155] done synthesizing module 'BIBUF' (14#1) [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:730]
+INFO: [Synth 8-6157] synthesizing module 'PS7' [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:89905]
+INFO: [Synth 8-6155] done synthesizing module 'PS7' (15#1) [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:89905]
+INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (16#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_processing_system7_0_0/synth/tadc_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_processing_system7_0_0/synth/tadc_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_processing_system7_0_0/synth/tadc_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_processing_system7_0_0/synth/tadc_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_processing_system7_0_0/synth/tadc_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_processing_system7_0_0/synth/tadc_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_processing_system7_0_0/synth/tadc_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_processing_system7_0_0/synth/tadc_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_processing_system7_0_0/synth/tadc_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_processing_system7_0_0/synth/tadc_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_processing_system7_0_0/synth/tadc_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_processing_system7_0_0/synth/tadc_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_processing_system7_0_0/synth/tadc_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_processing_system7_0_0/synth/tadc_processing_system7_0_0.v:323]
+INFO: [Synth 8-6155] done synthesizing module 'tadc_processing_system7_0_0' (17#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_processing_system7_0_0/synth/tadc_processing_system7_0_0.v:60]
+INFO: [Synth 8-638] synthesizing module 'tadc_ps7_0_axi_periph_0' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/synth/tadc.vhd:737]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1B492WS' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/synth/tadc.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1B492WS' (18#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/synth/tadc.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_EO42VE' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/synth/tadc.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_EO42VE' (19#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/synth/tadc.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_K6O7KH' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/synth/tadc.vhd:259]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_K6O7KH' (20#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/synth/tadc.vhd:259]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_UXB3D5' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/synth/tadc.vhd:383]
+INFO: [Synth 8-3491] module 'tadc_auto_pc_0' declared at 'c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_auto_pc_0/synth/tadc_auto_pc_0.v:58' bound to instance 'auto_pc' of component 'tadc_auto_pc_0' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/synth/tadc.vhd:566]
+INFO: [Synth 8-6157] synthesizing module 'tadc_auto_pc_0' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_auto_pc_0/synth/tadc_auto_pc_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_25_axi_protocol_converter' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4808]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_25_b2s' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4226]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_25_b2s_aw_channel' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3971]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_25_b2s_cmd_translator' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3464]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_25_b2s_incr_cmd' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3092]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_25_b2s_incr_cmd' (21#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3092]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_25_b2s_wrap_cmd' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2902]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_25_b2s_wrap_cmd' (22#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2902]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_25_b2s_cmd_translator' (23#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3464]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_25_b2s_wr_cmd_fsm' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3224]
+INFO: [Synth 8-226] default block is never used [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3277]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_25_b2s_wr_cmd_fsm' (24#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3224]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_25_b2s_aw_channel' (25#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3971]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_25_b2s_b_channel' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3606]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_25_b2s_simple_fifo' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_25_b2s_simple_fifo' (26#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_25_b2s_simple_fifo__parameterized0' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_25_b2s_simple_fifo__parameterized0' (26#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_25_b2s_b_channel' (27#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3606]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_25_b2s_ar_channel' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4082]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_25_b2s_rd_cmd_fsm' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3334]
+INFO: [Synth 8-226] default block is never used [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3395]
+WARNING: [Synth 8-6014] Unused sequential element state_r1_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3383]
+WARNING: [Synth 8-6014] Unused sequential element s_arlen_r_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3384]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_25_b2s_rd_cmd_fsm' (28#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3334]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_25_b2s_ar_channel' (29#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4082]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_25_b2s_r_channel' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3811]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_25_b2s_simple_fifo__parameterized1' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_25_b2s_simple_fifo__parameterized1' (29#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_25_b2s_simple_fifo__parameterized2' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_25_b2s_simple_fifo__parameterized2' (29#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2816]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_25_b2s_r_channel' (30#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3811]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_axi_register_slice' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:3726]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (31#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (32#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice' (33#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice__parameterized0' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice__parameterized0' (33#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice__parameterized1' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice__parameterized1' (33#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice__parameterized2' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice__parameterized2' (33#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_axi_register_slice' (34#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:3726]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_25_axi_register_slice' is unconnected for instance 'SI_REG' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4392]
+WARNING: [Synth 8-7023] instance 'SI_REG' of module 'axi_register_slice_v2_1_25_axi_register_slice' has 93 connections declared, but only 92 given [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4392]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_axi_register_slice__parameterized0' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:3726]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (34#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (34#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice__parameterized3' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice__parameterized3' (34#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice__parameterized4' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice__parameterized4' (34#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice__parameterized5' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice__parameterized5' (34#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice__parameterized6' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice__parameterized6' (34#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_axi_register_slice__parameterized0' (34#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:3726]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_25_axi_register_slice' is unconnected for instance 'MI_REG' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4647]
+WARNING: [Synth 8-7023] instance 'MI_REG' of module 'axi_register_slice_v2_1_25_axi_register_slice' has 93 connections declared, but only 92 given [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4647]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_25_b2s' (35#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4226]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_25_axi_protocol_converter' (36#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4808]
+INFO: [Synth 8-6155] done synthesizing module 'tadc_auto_pc_0' (37#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_auto_pc_0/synth/tadc_auto_pc_0.v:58]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_UXB3D5' (38#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/synth/tadc.vhd:383]
+INFO: [Synth 8-3491] module 'tadc_xbar_0' declared at 'c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_xbar_0/synth/tadc_xbar_0.v:59' bound to instance 'xbar' of component 'tadc_xbar_0' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/synth/tadc.vhd:1224]
+INFO: [Synth 8-6157] synthesizing module 'tadc_xbar_0' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_xbar_0/synth/tadc_xbar_0.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_axi_crossbar' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_crossbar_sasd' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_addr_decoder' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (39#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (40#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (40#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' (40#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_addr_decoder' (41#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_decerr_slave' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_decerr_slave' (42#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_addr_arbiter_sasd' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_addr_arbiter_sasd' (43#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_splitter' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_splitter' (44#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_26_splitter__parameterized0' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_splitter__parameterized0' (44#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (45#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (45#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (45#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice__parameterized7' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_25_axic_register_slice__parameterized7' (45#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (45#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_aw_trans_seq_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:2056]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_ar_trans_seq_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:2067]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_w_beat_cnt_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:2078]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_r_beat_cnt_i_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:2091]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_crossbar_sasd' (46#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_26_axi_crossbar' (47#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ac57/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+INFO: [Synth 8-6155] done synthesizing module 'tadc_xbar_0' (48#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_xbar_0/synth/tadc_xbar_0.v:59]
+INFO: [Synth 8-256] done synthesizing module 'tadc_ps7_0_axi_periph_0' (49#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/synth/tadc.vhd:737]
+INFO: [Synth 8-3491] module 'tadc_rst_ps7_0_100M_0' declared at 'c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_rst_ps7_0_100M_0/synth/tadc_rst_ps7_0_100M_0.vhd:59' bound to instance 'rst_ps7_0_100M' of component 'tadc_rst_ps7_0_100M_0' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/synth/tadc.vhd:1970]
+INFO: [Synth 8-638] synthesizing module 'tadc_rst_ps7_0_100M_0' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_rst_ps7_0_100M_0/synth/tadc_rst_ps7_0_100M_0.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_rst_ps7_0_100M_0/synth/tadc_rst_ps7_0_100M_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+	Parameter INIT bound to: 1'b1 
+	Parameter INIT bound to: 1'b1 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b1 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-638] synthesizing module 'lpf' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:105983' bound to instance 'POR_SRL_I' of component 'SRL16' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:105983]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (50#1) [C:/Xilinx/Vivado/2021.2/scripts/rt/data/unisim_comp.v:105983]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized1' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized1' (50#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (51#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (52#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (53#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (54#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'tadc_rst_ps7_0_100M_0' (55#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_rst_ps7_0_100M_0/synth/tadc_rst_ps7_0_100M_0.vhd:74]
+INFO: [Synth 8-3491] module 'tadc_xadc_wiz_0_0' declared at 'c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_xadc_wiz_0_0/tadc_xadc_wiz_0_0.vhd:56' bound to instance 'xadc_wiz_0' of component 'tadc_xadc_wiz_0_0' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/synth/tadc.vhd:1983]
+INFO: [Synth 8-638] synthesizing module 'tadc_xadc_wiz_0_0' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_xadc_wiz_0_0/tadc_xadc_wiz_0_0.vhd:85]
+INFO: [Synth 8-3491] module 'tadc_xadc_wiz_0_0_axi_xadc' declared at 'c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_xadc_wiz_0_0/tadc_xadc_wiz_0_0_axi_xadc.vhd:94' bound to instance 'U0' of component 'tadc_xadc_wiz_0_0_axi_xadc' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_xadc_wiz_0_0/tadc_xadc_wiz_0_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'tadc_xadc_wiz_0_0_axi_xadc' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_xadc_wiz_0_0/tadc_xadc_wiz_0_0_axi_xadc.vhd:130]
+INFO: [Synth 8-3491] module 'tadc_xadc_wiz_0_0_xadc_core_drp' declared at 'c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_xadc_wiz_0_0/tadc_xadc_wiz_0_0_xadc_core_drp.vhd:115' bound to instance 'AXI_XADC_CORE_I' of component 'tadc_xadc_wiz_0_0_xadc_core_drp' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_xadc_wiz_0_0/tadc_xadc_wiz_0_0_axi_xadc.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'tadc_xadc_wiz_0_0_xadc_core_drp' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_xadc_wiz_0_0/tadc_xadc_wiz_0_0_xadc_core_drp.vhd:148]
+INFO: [Synth 8-3491] module 'drp_to_axi4stream' declared at 'c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_xadc_wiz_0_0/tadc_xadc_wiz_0_0_drp_to_axi_stream.vhd:57' bound to instance 'drp_to_axi4stream_inst' of component 'drp_to_axi4stream' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_xadc_wiz_0_0/tadc_xadc_wiz_0_0_xadc_core_drp.vhd:277]
+INFO: [Synth 8-638] synthesizing module 'drp_to_axi4stream' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_xadc_wiz_0_0/tadc_xadc_wiz_0_0_drp_to_axi_stream.vhd:84]
+	Parameter ALMOST_EMPTY_OFFSET bound to: 16'b0000000000000110 
+	Parameter ALMOST_FULL_OFFSET bound to: 16'b0000001111111001 
+	Parameter DATA_WIDTH bound to: 18 - type: integer 
+	Parameter DO_REG bound to: 1 - type: integer 
+	Parameter EN_SYN bound to: 0 - type: bool 
+	Parameter FIFO_MODE bound to: FIFO18 - type: string 
+	Parameter FIRST_WORD_FALL_THROUGH bound to: 1 - type: bool 
+	Parameter INIT bound to: 36'b000000000000000000000000000000000000 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+	Parameter SRVAL bound to: 36'b000000000000000000000000000000000000 
+	Parameter ALMOST_EMPTY_OFFSET bound to: 16'b0000000000000110 
+	Parameter ALMOST_FULL_OFFSET bound to: 16'b0000001111111001 
+	Parameter DATA_WIDTH bound to: 18 - type: integer 
+	Parameter DO_REG bound to: 1 - type: integer 
+	Parameter EN_SYN bound to: 0 - type: bool 
+	Parameter FIFO_MODE bound to: FIFO18 - type: string 
+	Parameter FIRST_WORD_FALL_THROUGH bound to: 1 - type: bool 
+	Parameter INIT bound to: 36'b000000000000000000000000000000000000 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+	Parameter SRVAL bound to: 36'b000000000000000000000000000000000000 
+WARNING: [Synth 8-6014] Unused sequential element drp_rdwr_status_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_xadc_wiz_0_0/tadc_xadc_wiz_0_0_drp_to_axi_stream.vhd:135]
+INFO: [Synth 8-256] done synthesizing module 'drp_to_axi4stream' (56#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_xadc_wiz_0_0/tadc_xadc_wiz_0_0_drp_to_axi_stream.vhd:84]
+	Parameter INIT_40 bound to: 16'b1000001000000000 
+	Parameter INIT_41 bound to: 16'b0010000110101111 
+	Parameter INIT_42 bound to: 16'b0000101000000000 
+	Parameter INIT_48 bound to: 16'b0000000000000000 
+	Parameter INIT_49 bound to: 16'b0000001001000010 
+	Parameter INIT_4A bound to: 16'b0000000000000000 
+	Parameter INIT_4B bound to: 16'b0000000000000000 
+	Parameter INIT_4C bound to: 16'b0000000000000000 
+	Parameter INIT_4D bound to: 16'b0000000000000000 
+	Parameter INIT_4E bound to: 16'b0000000000000000 
+	Parameter INIT_4F bound to: 16'b0000000000000000 
+	Parameter INIT_50 bound to: 16'b1011010111101101 
+	Parameter INIT_51 bound to: 16'b0101011111100100 
+	Parameter INIT_52 bound to: 16'b1010000101000111 
+	Parameter INIT_53 bound to: 16'b1100101000110011 
+	Parameter INIT_54 bound to: 16'b1010100100111010 
+	Parameter INIT_55 bound to: 16'b0101001011000110 
+	Parameter INIT_56 bound to: 16'b1001010101010101 
+	Parameter INIT_57 bound to: 16'b1010111001001110 
+	Parameter INIT_58 bound to: 16'b0101100110011001 
+	Parameter INIT_59 bound to: 16'b0101010101010101 
+	Parameter INIT_5A bound to: 16'b1001100110011001 
+	Parameter INIT_5B bound to: 16'b0110101010101010 
+	Parameter INIT_5C bound to: 16'b0101000100010001 
+	Parameter INIT_5D bound to: 16'b0101000100010001 
+	Parameter INIT_5E bound to: 16'b1001000111101011 
+	Parameter INIT_5F bound to: 16'b0110011001100110 
+	Parameter SIM_DEVICE bound to: ZYNQ - type: string 
+	Parameter SIM_MONITOR_FILE bound to: design.txt - type: string 
+INFO: [Synth 8-256] done synthesizing module 'tadc_xadc_wiz_0_0_xadc_core_drp' (57#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_xadc_wiz_0_0/tadc_xadc_wiz_0_0_xadc_core_drp.vhd:148]
+INFO: [Synth 8-256] done synthesizing module 'tadc_xadc_wiz_0_0_axi_xadc' (58#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_xadc_wiz_0_0/tadc_xadc_wiz_0_0_axi_xadc.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'tadc_xadc_wiz_0_0' (59#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_xadc_wiz_0_0/tadc_xadc_wiz_0_0.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'tadc' (60#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/synth/tadc.vhd:1342]
+INFO: [Synth 8-256] done synthesizing module 'tadc_wrapper' (61#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/hdl/tadc_wrapper.vhd:46]
+WARNING: [Synth 8-7129] Port eos_in in module drp_to_axi4stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_aclk in module cdc_sync__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_resetn in module cdc_sync__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[1] in module cdc_sync__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[0] in module cdc_sync__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scndry_resetn in module cdc_sync__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S[0] in module generic_baseblocks_v2_1_0_mux_enc__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWID[0] in module axi_crossbar_v2_1_26_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WLAST in module axi_crossbar_v2_1_26_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARID[0] in module axi_crossbar_v2_1_26_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[7] in module axi_crossbar_v2_1_26_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[6] in module axi_crossbar_v2_1_26_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[5] in module axi_crossbar_v2_1_26_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[4] in module axi_crossbar_v2_1_26_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[3] in module axi_crossbar_v2_1_26_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[2] in module axi_crossbar_v2_1_26_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[1] in module axi_crossbar_v2_1_26_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[0] in module axi_crossbar_v2_1_26_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[1] in module axi_crossbar_v2_1_26_addr_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[0] in module axi_crossbar_v2_1_26_addr_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWID[0] in module axi_crossbar_v2_1_26_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARID[0] in module axi_crossbar_v2_1_26_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_BID[2] in module axi_crossbar_v2_1_26_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_BID[1] in module axi_crossbar_v2_1_26_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_BID[0] in module axi_crossbar_v2_1_26_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RID[2] in module axi_crossbar_v2_1_26_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RID[1] in module axi_crossbar_v2_1_26_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RID[0] in module axi_crossbar_v2_1_26_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awid[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[7] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[6] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[5] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[4] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[3] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[2] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[2] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlock[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[3] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[2] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[3] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[2] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awuser[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wlast[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wuser[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arid[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[7] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[6] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[5] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[4] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[3] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[2] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[2] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arburst[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arburst[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlock[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[3] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[2] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[3] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[2] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_aruser[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bid[2] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bid[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bid[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[2] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[2] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rlast[2] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rlast[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rlast[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_ruser[2] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_ruser[1] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_ruser[0] in module axi_crossbar_v2_1_26_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_25_axic_register_slice__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_25_axic_register_slice__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_25_axic_register_slice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_25_axic_register_slice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_25_axic_register_slice__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_25_axic_register_slice__parameterized5 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1318.023 ; gain = 65.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1318.023 ; gain = 65.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1318.023 ; gain = 65.504
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.145 . Memory (MB): peak = 1318.023 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 316 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_processing_system7_0_0/tadc_processing_system7_0_0.xdc] for cell 'tadc_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_processing_system7_0_0/tadc_processing_system7_0_0.xdc] for cell 'tadc_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_processing_system7_0_0/tadc_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/tadc_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/tadc_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_xadc_wiz_0_0/tadc_xadc_wiz_0_0.xdc] for cell 'tadc_i/xadc_wiz_0/U0'
+Finished Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_xadc_wiz_0_0/tadc_xadc_wiz_0_0.xdc] for cell 'tadc_i/xadc_wiz_0/U0'
+Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_axi_gpio_0_0/tadc_axi_gpio_0_0_board.xdc] for cell 'tadc_i/gpio_ctrl/U0'
+Finished Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_axi_gpio_0_0/tadc_axi_gpio_0_0_board.xdc] for cell 'tadc_i/gpio_ctrl/U0'
+Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_axi_gpio_0_0/tadc_axi_gpio_0_0.xdc] for cell 'tadc_i/gpio_ctrl/U0'
+Finished Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_axi_gpio_0_0/tadc_axi_gpio_0_0.xdc] for cell 'tadc_i/gpio_ctrl/U0'
+Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_axi_gpio_1_0/tadc_axi_gpio_1_0_board.xdc] for cell 'tadc_i/gpio_data0/U0'
+Finished Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_axi_gpio_1_0/tadc_axi_gpio_1_0_board.xdc] for cell 'tadc_i/gpio_data0/U0'
+Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_axi_gpio_1_0/tadc_axi_gpio_1_0.xdc] for cell 'tadc_i/gpio_data0/U0'
+Finished Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_axi_gpio_1_0/tadc_axi_gpio_1_0.xdc] for cell 'tadc_i/gpio_data0/U0'
+Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_gpio_data0_0/tadc_gpio_data0_0_board.xdc] for cell 'tadc_i/gpio_data1/U0'
+Finished Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_gpio_data0_0/tadc_gpio_data0_0_board.xdc] for cell 'tadc_i/gpio_data1/U0'
+Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_gpio_data0_0/tadc_gpio_data0_0.xdc] for cell 'tadc_i/gpio_data1/U0'
+Finished Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_gpio_data0_0/tadc_gpio_data0_0.xdc] for cell 'tadc_i/gpio_data1/U0'
+Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_rst_ps7_0_100M_0/tadc_rst_ps7_0_100M_0_board.xdc] for cell 'tadc_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_rst_ps7_0_100M_0/tadc_rst_ps7_0_100M_0_board.xdc] for cell 'tadc_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_rst_ps7_0_100M_0/tadc_rst_ps7_0_100M_0.xdc] for cell 'tadc_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ip/tadc_rst_ps7_0_100M_0/tadc_rst_ps7_0_100M_0.xdc] for cell 'tadc_i/rst_ps7_0_100M/U0'
+Parsing XDC File [C:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.srcs/constrs_1/new/pynq_z1.xdc]
+Finished Parsing XDC File [C:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.srcs/constrs_1/new/pynq_z1.xdc]
+Parsing XDC File [C:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/tadc_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/tadc_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1318.023 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 313 instances were transformed.
+  FDR => FDRE: 312 instances
+  SRL16 => SRL16E: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1318.023 ; gain = 0.000
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1318.023 ; gain = 65.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1318.023 ; gain = 65.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for tadc_i/processing_system7_0/inst. (constraint file  C:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.runs/synth_1/dont_touch.xdc, line 40).
+Applied set_property KEEP_HIERARCHY = SOFT for tadc_i/xadc_wiz_0/U0. (constraint file  C:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.runs/synth_1/dont_touch.xdc, line 45).
+Applied set_property KEEP_HIERARCHY = SOFT for tadc_i/gpio_ctrl/U0. (constraint file  C:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.runs/synth_1/dont_touch.xdc, line 48).
+Applied set_property KEEP_HIERARCHY = SOFT for tadc_i/gpio_data0/U0. (constraint file  C:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.runs/synth_1/dont_touch.xdc, line 56).
+Applied set_property KEEP_HIERARCHY = SOFT for tadc_i/gpio_data1/U0. (constraint file  C:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.runs/synth_1/dont_touch.xdc, line 64).
+Applied set_property KEEP_HIERARCHY = SOFT for tadc_i/rst_ps7_0_100M/U0. (constraint file  C:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.runs/synth_1/dont_touch.xdc, line 72).
+Applied set_property KEEP_HIERARCHY = SOFT for tadc_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for tadc_i/processing_system7_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for tadc_i/xadc_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for tadc_i/gpio_ctrl. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for tadc_i/gpio_data0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for tadc_i/gpio_data1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for tadc_i/ps7_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for tadc_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for tadc_i/ps7_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for tadc_i/rst_ps7_0_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for tadc_i/axis_split_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1318.023 ; gain = 65.504
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_protocol_converter_v2_1_25_b2s_wr_cmd_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_protocol_converter_v2_1_25_b2s_rd_cmd_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'drp_to_axi4stream'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 SM_IDLE |                               01 |                               00
+               SM_CMD_EN |                               11 |                               01
+         SM_CMD_ACCEPTED |                               10 |                               10
+            SM_DONE_WAIT |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_25_b2s_wr_cmd_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 SM_IDLE |                               01 |                               00
+               SM_CMD_EN |                               11 |                               01
+         SM_CMD_ACCEPTED |                               10 |                               10
+                 SM_DONE |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_25_b2s_rd_cmd_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+        wait_mode_change |                             0000 |                             0100
+       rd_en_ctrl_reg_41 |                             0001 |                             0000
+          rd_ctrl_reg_41 |                             0010 |                             0001
+           wait_sim_samp |                             0011 |                             0101
+                rd_a_reg |                             0100 |                             0110
+            rd_b_reg_cmd |                             0101 |                             0111
+                rd_b_reg |                             0110 |                             1000
+            wait_ind_adc |                             0111 |                             0011
+           wait_seq_s_ch |                             1000 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'drp_to_axi4stream'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1318.023 ; gain = 65.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   12 Bit       Adders := 8     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 5     
+	   2 Input    4 Bit       Adders := 7     
+	   2 Input    2 Bit       Adders := 2     
++---Registers : 
+	               66 Bit    Registers := 4     
+	               64 Bit    Registers := 1     
+	               47 Bit    Registers := 2     
+	               36 Bit    Registers := 2     
+	               32 Bit    Registers := 8     
+	               16 Bit    Registers := 12    
+	               14 Bit    Registers := 2     
+	               12 Bit    Registers := 9     
+	                9 Bit    Registers := 5     
+	                8 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 10    
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 19    
+	                1 Bit    Registers := 114   
++---Muxes : 
+	   2 Input   66 Bit        Muxes := 4     
+	   2 Input   64 Bit        Muxes := 1     
+	   2 Input   47 Bit        Muxes := 2     
+	   2 Input   36 Bit        Muxes := 2     
+	   5 Input   32 Bit        Muxes := 3     
+	   2 Input   32 Bit        Muxes := 8     
+	   2 Input   16 Bit        Muxes := 7     
+	   2 Input   14 Bit        Muxes := 2     
+	   2 Input   12 Bit        Muxes := 6     
+	   2 Input    9 Bit        Muxes := 7     
+	   9 Input    8 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 4     
+	   4 Input    4 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 38    
+	   9 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 26    
+	   3 Input    2 Bit        Muxes := 3     
+	   4 Input    2 Bit        Muxes := 11    
+	   2 Input    1 Bit        Muxes := 99    
+	   4 Input    1 Bit        Muxes := 12    
+	   9 Input    1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1731]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1731]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [c:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.gen/sources_1/bd/tadc/ipshared/e1e6/hdl/axi_register_slice_v2_1_vl_rfs.v:1731]
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[0].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[0].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d2[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d3[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d4[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[6].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[7].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[8].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[9].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[10].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[11].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[12].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[13].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[14].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[15].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[6].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[7].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[8].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[9].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[10].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[11].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[12].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[13].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[14].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[15].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[6].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[7].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[8].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[9].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[10].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[11].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[12].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[13].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[14].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[15].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[6].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[7].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[8].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[9].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[10].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[11].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[12].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[13].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[14].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Dual.INPUT_DOUBLE_REGS5/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[15].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized1.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized3.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized3.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized3.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized3.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized3.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized3.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[6].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized3.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[7].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized3.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[8].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized3.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[9].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized3.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[10].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized3.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[11].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized3.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[12].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized3.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[13].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized3.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[14].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized3.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[15].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio__parameterized3.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized3.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized3.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized3.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized3.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[4].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized3.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[5].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized3.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[6].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized3.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[7].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio__parameterized3.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1318.023 ; gain = 65.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1405.992 ; gain = 153.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1466.336 ; gain = 213.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1484.441 ; gain = 231.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1484.441 ; gain = 231.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1484.441 ; gain = 231.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1484.441 ; gain = 231.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1484.441 ; gain = 231.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1484.441 ; gain = 231.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1484.441 ; gain = 231.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | memory_reg[3]  | 20     | 20         | 20     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | memory_reg[3]  | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
+|dsrl__2     | memory_reg[31] | 34     | 34         | 0      | 34      | 0      | 0      | 0      | 
+|dsrl__3     | memory_reg[31] | 13     | 13         | 0      | 13      | 0      | 0      | 0      | 
+|dsrl__4     | memory_reg[3]  | 20     | 20         | 20     | 0       | 0      | 0      | 0      | 
+|dsrl__5     | memory_reg[3]  | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BIBUF    |   130|
+|2     |BUFG     |     1|
+|3     |CARRY4   |    18|
+|4     |FIFO18E1 |     2|
+|5     |LUT1     |    43|
+|6     |LUT2     |    71|
+|7     |LUT3     |   276|
+|8     |LUT4     |   103|
+|9     |LUT5     |   197|
+|10    |LUT6     |   177|
+|11    |PS7      |     1|
+|12    |SRL16    |     1|
+|13    |SRL16E   |    18|
+|14    |SRLC32E  |    47|
+|15    |XADC     |     1|
+|16    |FDCE     |    12|
+|17    |FDR      |   196|
+|18    |FDRE     |   930|
+|19    |FDSE     |    70|
+|20    |IBUF     |     6|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1484.441 ; gain = 231.922
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 225 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:32 . Memory (MB): peak = 1484.441 ; gain = 231.922
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1484.441 ; gain = 231.922
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 1484.441 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 218 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1492.957 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 197 instances were transformed.
+  FDR => FDRE: 196 instances
+  SRL16 => SRL16E: 1 instance 
+
+Synth Design complete, checksum: fea92139
+INFO: [Common 17-83] Releasing license: Synthesis
+452 Infos, 180 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1492.957 ; gain = 240.438
+INFO: [Common 17-1381] The checkpoint 'C:/git/bldc-driver-fpga/hardware_design/vivado_project/tadc/tadc.runs/synth_1/tadc_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file tadc_wrapper_utilization_synth.rpt -pb tadc_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jan  6 15:53:43 2022...

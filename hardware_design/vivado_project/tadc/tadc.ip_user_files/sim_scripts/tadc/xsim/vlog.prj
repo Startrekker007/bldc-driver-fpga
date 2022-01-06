@@ -1,0 +1,8 @@
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2021.2/data/xilinx_vip/include" --include "../../../../tadc.gen/sources_1/bd/tadc/ipshared/ec67/hdl" --include "../../../../tadc.gen/sources_1/bd/tadc/ipshared/3007/hdl" \
+"../../../../tadc.gen/sources_1/bd/tadc/ip/tadc_processing_system7_0_0/sim/tadc_processing_system7_0_0.v" \
+"../../../../tadc.gen/sources_1/bd/tadc/ip/tadc_xbar_0/sim/tadc_xbar_0.v" \
+"../../../../tadc.gen/sources_1/bd/tadc/ip/tadc_auto_pc_0/sim/tadc_auto_pc_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
