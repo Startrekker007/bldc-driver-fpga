@@ -1,0 +1,103 @@
+
+
+================================================================
+== Synthesis Summary Report of 'decoder'
+================================================================
++ General Information: 
+    * Date:           Sun Feb 13 19:25:51 2022
+    * Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
+    * Project:        adc_output_decode
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-----------+------+------+---------+--------+----------+---------+------+----------+------+----+---------+----------+-----+
+    |  Modules  | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |         |          |     |
+    |  & Loops  | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|    FF   |    LUT   | URAM|
+    +-----------+------+------+---------+--------+----------+---------+------+----------+------+----+---------+----------+-----+
+    |+ decoder  |     -|  6.00|        1|  10.000|         -|        2|     -|        no|     -|   -|  7 (~0%)|  58 (~0%)|    -|
+    +-----------+------+------+---------+--------+----------+---------+------+----------+------+----+---------+----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AXIS
++---------------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| Interface     | Register Mode | TDATA | TDEST | TID | TKEEP | TLAST | TREADY | TSTRB | TUSER | TVALID |
++---------------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| adc_data_axis | both          | 16    | 1     | 5   | 2     | 1     | 1      | 2     | 1     | 1      |
+| phase_A       | both          | 16    |       |     |       |       | 1      |       |       | 1      |
+| phase_B       | both          | 16    |       |     |       |       | 1      |       |       | 1      |
+| vbus          | both          | 16    |       |     |       |       | 1      |       |       | 1      |
++---------------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst_n  | reset      | ap_rst_n                          |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++---------------+-----------+---------------------------------------------+
+| Argument      | Direction | Datatype                                    |
++---------------+-----------+---------------------------------------------+
+| adc_data_axis | in        | stream<hls::axis<ap_uint<16>, 1, 5, 1>, 0>& |
+| phase_B       | out       | stream<unsigned short, 0>&                  |
+| phase_A       | out       | stream<unsigned short, 0>&                  |
+| vbus          | out       | stream<unsigned short, 0>&                  |
++---------------+-----------+---------------------------------------------+
+
+* SW-to-HW Mapping
++---------------+---------------+-----------+
+| Argument      | HW Interface  | HW Type   |
++---------------+---------------+-----------+
+| adc_data_axis | adc_data_axis | interface |
+| phase_B       | phase_B       | interface |
+| phase_A       | phase_A       | interface |
+| vbus          | vbus          | interface |
++---------------+---------------+-----------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+  No burst in design
+
+================================================================
+== Bind Op Report
+================================================================
+  No bind op info in design
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== User Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+------------------------------+------------------------------------------+
+| Type      | Options                      | Location                                 |
++-----------+------------------------------+------------------------------------------+
+| interface | mode=axis port=adc_data_axis | decoder.cpp:10 in decoder, adc_data_axis |
+| interface | mode=axis port=phase_B       | decoder.cpp:11 in decoder, phase_B       |
+| interface | mode=axis port=phase_A       | decoder.cpp:12 in decoder, phase_A       |
+| interface | mode=axis port=vbus          | decoder.cpp:13 in decoder, vbus          |
++-----------+------------------------------+------------------------------------------+
+
+

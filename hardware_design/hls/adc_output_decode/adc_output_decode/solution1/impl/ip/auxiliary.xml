@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="decoder" xd:componentRef="decoder" xd:initiationInterval="2" xd:clockPeriod="10" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="adc_data_axis" xd:originalName="adc_data_axis" xd:direction="in" xd:interfaceRef="adc_data_axis" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:arg xd:name="phase_B" xd:originalName="phase_B" xd:direction="out" xd:interfaceRef="phase_B" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:arg xd:name="phase_A" xd:originalName="phase_A" xd:direction="out" xd:interfaceRef="phase_A" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:arg xd:name="vbus" xd:originalName="vbus" xd:direction="out" xd:interfaceRef="vbus" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:latencyEstimates xd:best-case="1" xd:worst-case="1" xd:average-case="1"/>
+  <xd:resourceEstimates xd:LUT="58" xd:FF="7" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

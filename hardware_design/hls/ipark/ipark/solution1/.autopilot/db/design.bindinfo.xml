@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln18_fu_133_p2" SOURCE="ipark.cpp:18" VARIABLE="icmp_ln18" MODULE="ipark" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op select" ID="" IMPL="auto_sel" LATENCY="0" OPTYPE="select" PRAGMA="" RTLNAME="theta_clamped_fu_139_p3" SOURCE="ipark.cpp:18" VARIABLE="theta_clamped" MODULE="ipark" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mul" ID="" IMPL="dsp" LATENCY="4" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_63_5_1_U1" SOURCE="ipark.cpp:23" VARIABLE="id_cos" MODULE="ipark" LOOP="" BUNDLEDNAME="" DSP="3" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mul" ID="" IMPL="dsp" LATENCY="4" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_63_5_1_U2" SOURCE="ipark.cpp:24" VARIABLE="iq_cos" MODULE="ipark" LOOP="" BUNDLEDNAME="" DSP="3" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mul" ID="" IMPL="dsp" LATENCY="4" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_63_5_1_U3" SOURCE="ipark.cpp:25" VARIABLE="id_sin" MODULE="ipark" LOOP="" BUNDLEDNAME="" DSP="3" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mul" ID="" IMPL="dsp" LATENCY="4" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_63_5_1_U4" SOURCE="ipark.cpp:26" VARIABLE="iq_sin" MODULE="ipark" LOOP="" BUNDLEDNAME="" DSP="3" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op sub" ID="" IMPL="fabric" LATENCY="0" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln28_fu_188_p2" SOURCE="ipark.cpp:28" VARIABLE="sub_ln28" MODULE="ipark" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln29_fu_202_p2" SOURCE="ipark.cpp:29" VARIABLE="add_ln29" MODULE="ipark" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op or" ID="" IMPL="auto" LATENCY="0" OPTYPE="or" PRAGMA="" RTLNAME="vectors_TDATA_int_regslice" SOURCE="ipark.cpp:31" VARIABLE="data_out" MODULE="ipark" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="storage" DISPLAY="bind_storage rom_1p" ID="" IMPL="auto" LATENCY="1" OPTYPE="rom_1p" PRAGMA="" RTLNAME="cos_lut_U" SOURCE="" VARIABLE="cos_lut" MODULE="ipark" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="2" URAM="0"/>
+	<BindNode BINDTYPE="storage" DISPLAY="bind_storage rom_1p" ID="" IMPL="auto" LATENCY="1" OPTYPE="rom_1p" PRAGMA="" RTLNAME="sin_lut_U" SOURCE="" VARIABLE="sin_lut" MODULE="ipark" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="2" URAM="0"/>
+</BindInfo>

@@ -1,0 +1,640 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.012 seconds; current allocated memory: 846.207 MB.
+INFO: [HLS 200-10] Analyzing design file 'decoder.cpp' ... 
+ERROR: [HLS 207-3771] use of undeclared identifier 'adc_packet' (./decoder.h:6:26)
+ERROR: [HLS 207-3796] unknown type name 'uint16_t' (./decoder.h:6:54)
+ERROR: [HLS 207-3796] unknown type name 'uint16_t' (./decoder.h:6:72)
+ERROR: [HLS 207-3796] unknown type name 'uint16_t' (./decoder.h:6:90)
+ERROR: [HLS 207-3796] unknown type name 'uint16_t' (decoder.cpp:8:54)
+ERROR: [HLS 207-3796] unknown type name 'uint16_t' (decoder.cpp:8:72)
+ERROR: [HLS 207-3796] unknown type name 'uint16_t' (decoder.cpp:8:90)
+ERROR: [HLS 207-3796] unknown type name 'uint16_t' (decoder.cpp:15:2)
+ERROR: [HLS 207-3797] unknown type name 'uint8_t'; did you mean 'wint_t'? (decoder.cpp:16:2)
+INFO: [HLS 207-4431] 'wint_t' declared here (C:/Xilinx/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt\x86_64-w64-mingw32\include\crtdefs.h:106:24)
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.323 seconds; current allocated memory: 260.672 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 2.287 seconds; peak allocated memory: 1.070 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.011 seconds; current allocated memory: 773.652 MB.
+INFO: [HLS 200-10] Analyzing design file 'decoder.cpp' ... 
+ERROR: [HLS 207-3771] use of undeclared identifier 'adc_packet' (./decoder.h:7:26)
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.072 seconds; current allocated memory: 332.969 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 1.92 seconds; peak allocated memory: 1.070 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.008 seconds; current allocated memory: 785.492 MB.
+INFO: [HLS 200-10] Analyzing design file 'decoder.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 3.972 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, unsigned short, unsigned short, unsigned short)' (decoder.cpp:13:37)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<5, false>::operator unsigned long long() const' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, unsigned short, unsigned short, unsigned short)' (decoder.cpp:16:19)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.22 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.001 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.089 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-77] The top function 'decoder' (decoder.cpp:8) has no outputs. Possible cause(s) are: (1) Output parameters are passed by value; (2) intended outputs (parameters or global variables) are never written; (3) there are infinite loops.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.074 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.131 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.045 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'decoder' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decoder' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.139 seconds; current allocated memory: 1.070 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decoder' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/phase_B' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/phase_A' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/vbus' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'decoder' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Port 'decoder/phase_B' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'decoder/phase_A' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'decoder/vbus' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decoder'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.096 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.223 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.254 seconds; current allocated memory: 1.070 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for decoder.
+INFO: [VLOG 209-307] Generating Verilog RTL for decoder.
+INFO: [HLS 200-789] **** Estimated Fmax: 0.00 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 8.316 seconds; current allocated memory: 318.445 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 9.165 seconds; peak allocated memory: 1.070 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/decoder
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.0
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -output C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/decoder -version 1.0 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/decoder 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+ERROR: [IMPL 213-28] Failed to generate IP.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 6.24 seconds; current allocated memory: 330.695 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 7.09 seconds; peak allocated memory: 1.078 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/decoder
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.0.0
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/decoder -rtl verilog -version 1.0.0 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/decoder 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/decoder/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 6.321 seconds; current allocated memory: 314.609 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 7.199 seconds; peak allocated memory: 1.077 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/decoder
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.0.0
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/decoder -rtl verilog -version 1.0.0 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.011 seconds; current allocated memory: 784.758 MB.
+INFO: [HLS 200-10] Analyzing design file 'decoder.cpp' ... 
+WARNING: [HLS 207-5540] invalid variable expr  (decoder.cpp:8:118)
+WARNING: [HLS 207-5540] invalid variable expr  (decoder.cpp:8:149)
+WARNING: [HLS 207-5540] invalid variable expr  (decoder.cpp:8:180)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 3.877 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>)' (decoder.cpp:15:37)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<5, false>::operator unsigned long long() const' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>)' (decoder.cpp:18:19)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::operator unsigned long long() const' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>)' (decoder.cpp:17:21)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<16>s.i16' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:293:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<1>s.i1' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:293:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<5>s.i5' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:293:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<2>s.i2' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:293:5)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.178 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.001 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.046 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-77] The top function 'decoder' (decoder.cpp:8) has no outputs. Possible cause(s) are: (1) Output parameters are passed by value; (2) intended outputs (parameters or global variables) are never written; (3) there are infinite loops.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.074 seconds; current allocated memory: 1.070 GB.
+WARNING: [XFORM 203-731] Internal stream variable 'phase_B.assign' (decoder.cpp:8) is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'phase_A.assign' (decoder.cpp:8) is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'vbus.assign' (decoder.cpp:8) is invalid: it has no data consumer.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.147 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.058 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'decoder' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decoder' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.102 seconds; current allocated memory: 1.070 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.028 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decoder' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/phase_B' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/phase_A' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/vbus' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'decoder' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decoder'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.088 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.192 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.251 seconds; current allocated memory: 1.070 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for decoder.
+INFO: [VLOG 209-307] Generating Verilog RTL for decoder.
+INFO: [HLS 200-789] **** Estimated Fmax: 768.05 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 8.088 seconds; current allocated memory: 317.977 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 8.967 seconds; peak allocated memory: 1.070 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/decoder
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.1.0
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/decoder -rtl verilog -version 1.1.0 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/decoder 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/decoder/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 6.301 seconds; current allocated memory: 331.559 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 7.178 seconds; peak allocated memory: 1.078 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/decoder
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.1.0
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/decoder -rtl verilog -version 1.1.0 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.009 seconds; current allocated memory: 784.516 MB.
+INFO: [HLS 200-10] Analyzing design file 'decoder.cpp' ... 
+WARNING: [HLS 207-5540] invalid variable expr  (decoder.cpp:8:118)
+WARNING: [HLS 207-5540] invalid variable expr  (decoder.cpp:8:149)
+WARNING: [HLS 207-5540] invalid variable expr  (decoder.cpp:8:180)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 4.009 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>)' (decoder.cpp:15:37)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<5, false>::operator unsigned long long() const' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>)' (decoder.cpp:18:19)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::operator unsigned long long() const' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>)' (decoder.cpp:17:21)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<16>s.i16' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:293:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<1>s.i1' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:293:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<5>s.i5' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:293:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<2>s.i2' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:293:5)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.212 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.041 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-77] The top function 'decoder' (decoder.cpp:8) has no outputs. Possible cause(s) are: (1) Output parameters are passed by value; (2) intended outputs (parameters or global variables) are never written; (3) there are infinite loops.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.079 seconds; current allocated memory: 1.070 GB.
+WARNING: [XFORM 203-731] Internal stream variable 'phase_B.assign' (decoder.cpp:8) is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'phase_A.assign' (decoder.cpp:8) is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'vbus.assign' (decoder.cpp:8) is invalid: it has no data consumer.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.155 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.046 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'decoder' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decoder' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.092 seconds; current allocated memory: 1.070 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.029 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decoder' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/phase_B' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/phase_A' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/vbus' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'decoder' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decoder'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.082 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.193 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.249 seconds; current allocated memory: 1.070 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for decoder.
+INFO: [VLOG 209-307] Generating Verilog RTL for decoder.
+INFO: [HLS 200-789] **** Estimated Fmax: 768.05 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 8.234 seconds; current allocated memory: 319.582 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 9.15 seconds; peak allocated memory: 1.070 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/decoder
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.1.0
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/decoder -rtl verilog -version 1.1.0 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.008 seconds; current allocated memory: 801.914 MB.
+INFO: [HLS 200-10] Analyzing design file 'decoder.cpp' ... 
+WARNING: [HLS 207-5540] invalid variable expr  (decoder.cpp:8:118)
+WARNING: [HLS 207-5540] invalid variable expr  (decoder.cpp:8:149)
+WARNING: [HLS 207-5540] invalid variable expr  (decoder.cpp:8:180)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 3.923 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>)' (decoder.cpp:15:37)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<5, false>::operator unsigned long long() const' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>)' (decoder.cpp:18:19)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::operator unsigned long long() const' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>)' (decoder.cpp:17:21)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<16>s.i16' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:293:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<1>s.i1' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:293:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<5>s.i5' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:293:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<2>s.i2' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>, hls::stream<unsigned short, 0>)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:293:5)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.155 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.042 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-77] The top function 'decoder' (decoder.cpp:8) has no outputs. Possible cause(s) are: (1) Output parameters are passed by value; (2) intended outputs (parameters or global variables) are never written; (3) there are infinite loops.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 1.071 GB.
+WARNING: [XFORM 203-731] Internal stream variable 'phase_B.assign' (decoder.cpp:8) is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'phase_A.assign' (decoder.cpp:8) is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'vbus.assign' (decoder.cpp:8) is invalid: it has no data consumer.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.164 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.061 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'decoder' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decoder' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.094 seconds; current allocated memory: 1.071 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decoder' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/phase_B' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/phase_A' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/vbus' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'decoder' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decoder'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.083 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.191 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.253 seconds; current allocated memory: 1.071 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for decoder.
+INFO: [VLOG 209-307] Generating Verilog RTL for decoder.
+INFO: [HLS 200-789] **** Estimated Fmax: 768.05 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 8.113 seconds; current allocated memory: 302.613 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 9.03 seconds; peak allocated memory: 1.071 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/decoder
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.1.1
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/decoder -rtl verilog -version 1.1.1 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/decoder 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/decoder/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 6.378 seconds; current allocated memory: 316.898 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 7.257 seconds; peak allocated memory: 1.078 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/decoder
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.1.1
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/decoder -rtl verilog -version 1.1.1 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.008 seconds; current allocated memory: 804.066 MB.
+INFO: [HLS 200-10] Analyzing design file 'decoder.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 4.051 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>&, hls::stream<unsigned short, 0>&, hls::stream<unsigned short, 0>&)' (decoder.cpp:15:37)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<5, false>::operator unsigned long long() const' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>&, hls::stream<unsigned short, 0>&, hls::stream<unsigned short, 0>&)' (decoder.cpp:18:19)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::operator unsigned long long() const' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>&, hls::stream<unsigned short, 0>&, hls::stream<unsigned short, 0>&)' (decoder.cpp:17:21)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<16>s.i16' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>&, hls::stream<unsigned short, 0>&, hls::stream<unsigned short, 0>&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:293:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<1>s.i1' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>&, hls::stream<unsigned short, 0>&, hls::stream<unsigned short, 0>&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:293:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<5>s.i5' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>&, hls::stream<unsigned short, 0>&, hls::stream<unsigned short, 0>&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:293:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<2>s.i2' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>&, hls::stream<unsigned short, 0>&, hls::stream<unsigned short, 0>&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:293:5)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.103 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.039 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.063 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.119 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.041 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'decoder' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decoder' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.107 seconds; current allocated memory: 1.070 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.027 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decoder' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/phase_B' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/phase_A' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/vbus' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'decoder' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decoder'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.082 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.225 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.257 seconds; current allocated memory: 1.070 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for decoder.
+INFO: [VLOG 209-307] Generating Verilog RTL for decoder.
+INFO: [HLS 200-789] **** Estimated Fmax: 768.05 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 8.158 seconds; current allocated memory: 299.945 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 9.077 seconds; peak allocated memory: 1.070 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/decoder
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.1.1
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/decoder -rtl verilog -version 1.1.1 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.009 seconds; current allocated memory: 775.117 MB.
+INFO: [HLS 200-10] Analyzing design file 'decoder.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 3.82 seconds; current allocated memory: 1.069 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>::read()' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>&, hls::stream<unsigned short, 0>&, hls::stream<unsigned short, 0>&)' (decoder.cpp:15:37)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<5, false>::operator unsigned long long() const' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>&, hls::stream<unsigned short, 0>&, hls::stream<unsigned short, 0>&)' (decoder.cpp:18:19)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::operator unsigned long long() const' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>&, hls::stream<unsigned short, 0>&, hls::stream<unsigned short, 0>&)' (decoder.cpp:17:21)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<16>s.i16' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>&, hls::stream<unsigned short, 0>&, hls::stream<unsigned short, 0>&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:293:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<1>s.i1' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>&, hls::stream<unsigned short, 0>&, hls::stream<unsigned short, 0>&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:293:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<5>s.i5' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>&, hls::stream<unsigned short, 0>&, hls::stream<unsigned short, 0>&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:293:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint<2>s.i2' into 'decoder(hls::stream<hls::axis<ap_uint<16>, 1ul, 5ul, 1ul>, 0>&, hls::stream<unsigned short, 0>&, hls::stream<unsigned short, 0>&, hls::stream<unsigned short, 0>&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:293:5)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.072 seconds; current allocated memory: 1.069 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 1.069 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.039 seconds; current allocated memory: 1.069 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.067 seconds; current allocated memory: 1.069 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.122 seconds; current allocated memory: 1.069 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.044 seconds; current allocated memory: 1.069 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'decoder' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decoder' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.103 seconds; current allocated memory: 1.069 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.028 seconds; current allocated memory: 1.069 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decoder' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/adc_data_axis_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/phase_B' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/phase_A' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'decoder/vbus' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'decoder' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decoder'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 1.069 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.223 seconds; current allocated memory: 1.069 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.257 seconds; current allocated memory: 1.069 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for decoder.
+INFO: [VLOG 209-307] Generating Verilog RTL for decoder.
+INFO: [HLS 200-789] **** Estimated Fmax: 768.05 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 7.897 seconds; current allocated memory: 328.184 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 8.741 seconds; peak allocated memory: 1.069 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/decoder
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.1.2
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/decoder -rtl verilog -version 1.1.2 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/decoder 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/decoder/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 6.468 seconds; current allocated memory: 325.543 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 7.321 seconds; peak allocated memory: 1.078 GB.

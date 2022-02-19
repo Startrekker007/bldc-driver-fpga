@@ -1,0 +1,9 @@
+vhdl xil_defaultlib  \
+"../../../ipstatic/hdl/vhdl/inverse_clarke_cos_lut_ROM_AUTO_1R.vhd" \
+"../../../ipstatic/hdl/vhdl/inverse_clarke_mul_32s_32s_63_5_1.vhd" \
+"../../../ipstatic/hdl/vhdl/inverse_clarke_regslice_both.vhd" \
+"../../../ipstatic/hdl/vhdl/inverse_clarke_sin_lut_ROM_AUTO_1R.vhd" \
+"../../../ipstatic/hdl/vhdl/inverse_clarke.vhd" \
+"../../../../clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/sim/inverse_clarke_0.vhd" \
+
+nosort

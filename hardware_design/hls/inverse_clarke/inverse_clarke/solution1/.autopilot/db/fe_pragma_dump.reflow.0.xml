@@ -1,0 +1,10 @@
+<pragmas>
+<pragma file="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" line="153" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" line="143" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" line="143" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="inverse_clarke.cpp" line="10" pragmaType="interface" parentfunction="inverse_clarke" mode="axis" port="idq" register="0" register_mode="both" name="" depth="-1"/>
+<pragma file="inverse_clarke.cpp" line="11" pragmaType="interface" parentfunction="inverse_clarke" mode="axis" port="theta" register="0" register_mode="both" name="" depth="-1"/>
+<pragma file="inverse_clarke.cpp" line="12" pragmaType="interface" parentfunction="inverse_clarke" mode="axis" port="vectors" register="0" register_mode="both" name="" depth="-1"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" line="153" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" line="172" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+</pragmas>

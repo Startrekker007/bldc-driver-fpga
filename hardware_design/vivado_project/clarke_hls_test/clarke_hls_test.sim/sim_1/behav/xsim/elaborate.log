@@ -1,0 +1,26 @@
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_inverse_clarke_0_behav xil_defaultlib.tb_inverse_clarke_0 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling module xil_defaultlib.glbl
+Compiling architecture rtl of entity xil_defaultlib.inverse_clarke_cos_lut_ROM_AUTO_1R [inverse_clarke_cos_lut_rom_auto_...]
+Compiling architecture rtl of entity xil_defaultlib.inverse_clarke_sin_lut_ROM_AUTO_1R [inverse_clarke_sin_lut_rom_auto_...]
+Compiling architecture behav of entity xil_defaultlib.inverse_clarke_mul_32s_32s_63_5_1 [\inverse_clarke_mul_32s_32s_63_5...]
+Compiling architecture behav of entity xil_defaultlib.inverse_clarke_regslice_both [\inverse_clarke_regslice_both(da...]
+Compiling architecture behav of entity xil_defaultlib.inverse_clarke_regslice_both [\inverse_clarke_regslice_both(da...]
+Compiling architecture behav of entity xil_defaultlib.inverse_clarke [inverse_clarke_default]
+Compiling architecture inverse_clarke_0_arch of entity xil_defaultlib.inverse_clarke_0 [inverse_clarke_0_default]
+Compiling architecture tb of entity xil_defaultlib.tb_inverse_clarke_0
+Built simulation snapshot tb_inverse_clarke_0_behav

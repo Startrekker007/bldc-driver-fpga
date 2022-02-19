@@ -1,0 +1,12 @@
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2021.2/data/xilinx_vip/include" --include "../../../../clarke_hls_test.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../clarke_hls_test.gen/sources_1/bd/design_1/ipshared/3007/hdl" \
+"../../../bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.v" \
+"../../../bd/design_1/ip/design_1_processing_system7_0_0/sim/design_1_processing_system7_0_0.v" \
+"../../../bd/design_1/ip/design_1_xlconcat_0_0/sim/design_1_xlconcat_0_0.v" \
+"../../../bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" \
+"../../../bd/design_1/ip/design_1_xlslice_0_0/sim/design_1_xlslice_0_0.v" \
+"../../../bd/design_1/ip/design_1_xlslice_0_1/sim/design_1_xlslice_0_1.v" \
+"../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

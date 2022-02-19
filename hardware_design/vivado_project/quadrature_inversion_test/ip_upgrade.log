@@ -1,0 +1,187 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Tue Feb  1 00:05:07 2022
+| Host         : DESKTOP-J766HPL running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'quad_inversion_iclarke_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of quad_inversion_iclarke_0_1 (xilinx.com:hls:iclarke:1.8) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Mon Jan 31 23:59:51 2022
+| Host         : DESKTOP-J766HPL running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'quad_inversion_iclarke_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of quad_inversion_iclarke_0_1 (xilinx.com:hls:iclarke:1.8) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Mon Jan 31 23:54:42 2022
+| Host         : DESKTOP-J766HPL running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'quad_inversion_iclarke_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of quad_inversion_iclarke_0_1 (xilinx.com:hls:iclarke:1.8) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Mon Jan 31 23:50:57 2022
+| Host         : DESKTOP-J766HPL running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'quad_inversion_iclarke_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of quad_inversion_iclarke_0_1 (xilinx.com:hls:iclarke:1.8) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Mon Jan 31 23:47:16 2022
+| Host         : DESKTOP-J766HPL running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'quad_inversion_iclarke_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of quad_inversion_iclarke_0_1 (xilinx.com:hls:iclarke:1.8) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Sun Jan 31 23:37:51 2021
+| Host         : DESKTOP-J766HPL running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'quad_inversion_iclarke_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of quad_inversion_iclarke_0_1 (xilinx.com:hls:iclarke:1.8) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Sun Jan 31 23:26:49 2021
+| Host         : DESKTOP-J766HPL running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'quad_inversion_iclarke_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of quad_inversion_iclarke_0_1 from xilinx.com:hls:iclarke:1.7 (Rev. 2101312315) to xilinx.com:hls:iclarke:1.8 (Rev. 1)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'quad_inversion_iclarke_0_1'.
+
+
+-Upgrade has added interface 'axis_debug' (xilinx.com:interface:axis:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'quad_inversion_iclarke_0_1'. These changes may impact your design.
+
+
+-Upgrade has added port 'axis_debug_TDATA'
+
+-Upgrade has added port 'axis_debug_TREADY'
+
+-Upgrade has added port 'axis_debug_TVALID'
+
+
+
+
+
+
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Sun Jan 31 23:16:44 2021
+| Host         : DESKTOP-J766HPL running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'quad_inversion_iclarke_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of quad_inversion_iclarke_0_1 from xilinx.com:hls:iclarke:1.6 (Rev. 2101312309) to xilinx.com:hls:iclarke:1.7 (Rev. 2101312315)
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="ERROR: [IMPL 213-28] Failed to generate IP." projectName="inverse_clarke" solutionName="solution1" date="2022-01-28T22:30:12.931+1300"/>
+        <logs message="ERROR: '2201282230' is an invalid argument. Please specify an integer value.&#xD;&#xD;&#xA;    while executing&#xD;&#xD;&#xA;&quot;rdi::set_property core_revision 2201282230 {component component_1}&quot;&#xD;&#xD;&#xA;    invoked from within&#xD;&#xD;&#xA;&quot;set_property core_revision $Revision $core&quot;&#xD;&#xD;&#xA;    (file &quot;run_ippack.tcl&quot; line 840)&#xD;" projectName="inverse_clarke" solutionName="solution1" date="2022-01-28T22:30:12.921+1300"/>
+        <logs message="ERROR: [IMPL 213-28] Failed to generate IP." projectName="inverse_clarke" solutionName="solution1" date="2022-01-28T22:28:59.754+1300"/>
+        <logs message="ERROR: '2201282228' is an invalid argument. Please specify an integer value.&#xD;&#xD;&#xA;    while executing&#xD;&#xD;&#xA;&quot;rdi::set_property core_revision 2201282228 {component component_1}&quot;&#xD;&#xD;&#xA;    invoked from within&#xD;&#xD;&#xA;&quot;set_property core_revision $Revision $core&quot;&#xD;&#xD;&#xA;    (file &quot;run_ippack.tcl&quot; line 840)&#xD;" projectName="inverse_clarke" solutionName="solution1" date="2022-01-28T22:28:59.746+1300"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="inverse_clarke" solutionName="solution1" date="2022-01-28T22:28:23.076+1300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-1016] The critical path in module 'inverse_clarke' consists of the following:&#x9;'mul' operation ('id_cos', inverse_clarke.cpp:23) [29]  (3.87 ns)&#xD;&#xA;&#xD;&#xA;Resolution: For help on HLS 200-1016 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-1016.html" projectName="inverse_clarke" solutionName="solution1" date="2022-01-28T22:28:22.943+1300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-871] Estimated clock period (3.871ns) exceeds the target (target clock period: 5ns, clock uncertainty: 1.35ns, effective delay budget: 3.65ns).&#xD;&#xA;Resolution: For help on HLS 200-871 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-871.html" projectName="inverse_clarke" solutionName="solution1" date="2022-01-28T22:28:22.937+1300" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

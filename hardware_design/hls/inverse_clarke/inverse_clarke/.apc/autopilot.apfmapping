@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="trig_lookup.h" path="C:\git\bldc-driver-fpga\hardware_design\hls\inverse_clarke\trig_lookup.h"/>
+    <originFiles name="inverse_clarke.h" path="C:\git\bldc-driver-fpga\hardware_design\hls\inverse_clarke\inverse_clarke.h"/>
+    <originFiles name="inverse_clarke.cpp" path="C:\git\bldc-driver-fpga\hardware_design\hls\inverse_clarke\inverse_clarke.cpp"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

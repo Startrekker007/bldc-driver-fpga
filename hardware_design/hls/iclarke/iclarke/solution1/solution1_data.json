@@ -1,0 +1,342 @@
+{
+  "Top": "iclarke",
+  "RtlTop": "iclarke",
+  "RtlPrefix": "",
+  "RtlSubPrefix": "iclarke_",
+  "SourceLanguage": "cpp",
+  "HostMachineBits": "64",
+  "FunctionProtocol": "ap_ctrl_hs",
+  "ResetStyle": "control",
+  "Target": {
+    "Family": "zynq",
+    "Device": "xc7z020",
+    "Package": "-clg400",
+    "Speed": "-1",
+    "Triple": "fpga64-xilinx-none"
+  },
+  "Args": {
+    "data_in": {
+      "index": "0",
+      "direction": "in",
+      "srcType": "stream<unsigned long long, 0>&",
+      "srcSize": "64",
+      "hwRefs": [{
+          "type": "interface",
+          "interface": "data_in",
+          "name": "",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "current_out": {
+      "index": "1",
+      "direction": "out",
+      "srcType": "stream<unsigned long long, 0>&",
+      "srcSize": "64",
+      "hwRefs": [{
+          "type": "interface",
+          "interface": "current_out",
+          "name": "",
+          "usage": "data",
+          "direction": "out"
+        }]
+    },
+    "axis_debug": {
+      "index": "2",
+      "direction": "out",
+      "srcType": "stream<int, 0>&",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "interface",
+          "interface": "axis_debug",
+          "name": "",
+          "usage": "data",
+          "direction": "out"
+        }]
+    }
+  },
+  "HlsSolution": {
+    "FlowTarget": "vivado",
+    "ConfigTcl": [
+      "config_export -description {Inverse Clarke transform}",
+      "config_export -display_name=iclarke",
+      "config_export -format=ip_catalog",
+      "config_export -output=C:\/git\/bldc-driver-fpga\/hardware_design\/hls\/generated_ip\/iclarke",
+      "config_export -rtl=vhdl",
+      "config_export -version=1.8.7",
+      "config_export -vivado_clock=5"
+    ],
+    "ProfileOption": "0",
+    "ProfileType": "none",
+    "KernelName": "iclarke"
+  },
+  "ClockInfo": {
+    "ClockName": "ap_clk",
+    "ClockPeriod": "10",
+    "Uncertainty": "2.7",
+    "IsCombinational": "0",
+    "II": "5",
+    "Latency": "4"
+  },
+  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
+  "Ipx": {
+    "Vendor": "xilinx.com",
+    "Library": "hls",
+    "Name": "iclarke",
+    "Version": "1.8",
+    "DisplayName": "iclarke",
+    "Revision": "7",
+    "Description": "Inverse Clarke transform",
+    "Taxonomy": "\/VITIS_HLS_IP",
+    "AutoFamilySupport": "",
+    "ZipFile": "xilinx_com_hls_iclarke_1_8.zip"
+  },
+  "Files": {
+    "CSource": ["..\/..\/iclarke.cpp"],
+    "Vhdl": [
+      "impl\/vhdl\/iclarke_mul_32s_12ns_44_2_1.vhd",
+      "impl\/vhdl\/iclarke_mul_32s_12ns_44_5_1.vhd",
+      "impl\/vhdl\/iclarke_mul_32s_33ns_63_2_1.vhd",
+      "impl\/vhdl\/iclarke_regslice_both.vhd",
+      "impl\/vhdl\/implsyn.bat",
+      "impl\/vhdl\/iclarke.vhd"
+    ],
+    "Verilog": [
+      "impl\/verilog\/iclarke_hls_deadlock_idx0_monitor.v",
+      "impl\/verilog\/iclarke_hls_deadlock_kernel_monitor_top.vh",
+      "impl\/verilog\/iclarke_mul_32s_12ns_44_2_1.v",
+      "impl\/verilog\/iclarke_mul_32s_12ns_44_5_1.v",
+      "impl\/verilog\/iclarke_mul_32s_33ns_63_2_1.v",
+      "impl\/verilog\/iclarke_regslice_both.v",
+      "impl\/verilog\/iclarke.v"
+    ],
+    "IpMisc": ["impl\/misc\/logo.png"],
+    "CsynthXml": "syn\/report\/csynth.xml",
+    "DebugDir": ".debug",
+    "KernelXml": ".autopilot\/db\/kernel.internal.xml",
+    "Xo": "",
+    "XoHlsDir": "",
+    "ProtoInst": [".debug\/iclarke.protoinst"]
+  },
+  "SubcoreInfo": {
+    "HasXpmMemory": false,
+    "HasClockedDsp": false,
+    "Ip": []
+  },
+  "Interfaces": {
+    "ap_clk": {
+      "type": "clock",
+      "busTypeName": "clock",
+      "mode": "slave",
+      "busParams": {
+        "ASSOCIATED_BUSIF": "data_in:current_out:axis_debug",
+        "ASSOCIATED_RESET": "ap_rst_n"
+      },
+      "portMap": {"ap_clk": "CLK"},
+      "ports": ["ap_clk"]
+    },
+    "ap_rst_n": {
+      "type": "reset",
+      "busTypeName": "reset",
+      "mode": "slave",
+      "busParams": {"POLARITY": "ACTIVE_LOW"},
+      "portMap": {"ap_rst_n": "RST"},
+      "ports": ["ap_rst_n"]
+    },
+    "ap_ctrl": {
+      "type": "ap_ctrl",
+      "busTypeName": "acc_handshake",
+      "mode": "slave",
+      "portMap": {
+        "ap_start": "start",
+        "ap_done": "done",
+        "ap_idle": "idle",
+        "ap_ready": "ready"
+      },
+      "ports": [
+        "ap_done",
+        "ap_idle",
+        "ap_ready",
+        "ap_start"
+      ]
+    },
+    "data_in": {
+      "type": "axi4stream",
+      "busTypeName": "axis",
+      "mode": "slave",
+      "dataWidth": "64",
+      "portPrefix": "data_in_",
+      "ports": [
+        "data_in_TDATA",
+        "data_in_TREADY",
+        "data_in_TVALID"
+      ],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "axis",
+          "register_option": "0",
+          "register_mode": "both",
+          "argName": "data_in"
+        }]
+    },
+    "current_out": {
+      "type": "axi4stream",
+      "busTypeName": "axis",
+      "mode": "master",
+      "dataWidth": "64",
+      "portPrefix": "current_out_",
+      "ports": [
+        "current_out_TDATA",
+        "current_out_TREADY",
+        "current_out_TVALID"
+      ],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "axis",
+          "register_option": "0",
+          "register_mode": "both",
+          "argName": "current_out"
+        }]
+    },
+    "axis_debug": {
+      "type": "axi4stream",
+      "busTypeName": "axis",
+      "mode": "master",
+      "dataWidth": "32",
+      "portPrefix": "axis_debug_",
+      "ports": [
+        "axis_debug_TDATA",
+        "axis_debug_TREADY",
+        "axis_debug_TVALID"
+      ],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "axis",
+          "register_option": "0",
+          "register_mode": "both",
+          "argName": "axis_debug"
+        }]
+    }
+  },
+  "RtlPorts": {
+    "ap_local_block": {
+      "dir": "out",
+      "width": "1",
+      "isVector": "true"
+    },
+    "ap_local_deadlock": {
+      "dir": "out",
+      "width": "1",
+      "isVector": "true"
+    },
+    "ap_clk": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_rst_n": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_start": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_done": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_idle": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_ready": {
+      "dir": "out",
+      "width": "1"
+    },
+    "data_in_TDATA": {
+      "dir": "in",
+      "width": "64"
+    },
+    "data_in_TVALID": {
+      "dir": "in",
+      "width": "1"
+    },
+    "data_in_TREADY": {
+      "dir": "out",
+      "width": "1"
+    },
+    "current_out_TDATA": {
+      "dir": "out",
+      "width": "64"
+    },
+    "current_out_TVALID": {
+      "dir": "out",
+      "width": "1"
+    },
+    "current_out_TREADY": {
+      "dir": "in",
+      "width": "1"
+    },
+    "axis_debug_TDATA": {
+      "dir": "out",
+      "width": "32"
+    },
+    "axis_debug_TVALID": {
+      "dir": "out",
+      "width": "1"
+    },
+    "axis_debug_TREADY": {
+      "dir": "in",
+      "width": "1"
+    }
+  },
+  "ModuleInfo": {
+    "Hierarchy": {"ModuleName": "iclarke"},
+    "Info": {"iclarke": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      }},
+    "Metrics": {"iclarke": {
+        "Latency": {
+          "LatencyBest": "4",
+          "LatencyAvg": "4",
+          "LatencyWorst": "4",
+          "PipelineII": "5",
+          "PipelineDepth": "",
+          "PipelineType": "no"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "2.70",
+          "Estimate": "6.912"
+        },
+        "Area": {
+          "DSP": "3",
+          "AVAIL_DSP": "220",
+          "UTIL_DSP": "1",
+          "FF": "337",
+          "AVAIL_FF": "106400",
+          "UTIL_FF": "~0",
+          "LUT": "345",
+          "AVAIL_LUT": "53200",
+          "UTIL_LUT": "~0",
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "280",
+          "UTIL_BRAM": "0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      }}
+  },
+  "GenerateBdFiles": "0",
+  "GenData": {
+    "DataVersion": "0.2",
+    "Time": "2022-02-01 00:04:25 +1300",
+    "ToolName": "vitis_hls",
+    "ToolVersion": "2021.2"
+  }
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="iclarke.cpp" path="C:\git\bldc-driver-fpga\hardware_design\hls\iclarke\iclarke.cpp"/>
+    <originFiles name="iclarke.h" path="C:\git\bldc-driver-fpga\hardware_design\hls\iclarke\iclarke.h"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

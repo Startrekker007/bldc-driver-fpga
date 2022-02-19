@@ -1,0 +1,9 @@
+<pragmas>
+<pragma file="iclarke.cpp" line="12" pragmaType="interface" parentfunction="iclarke" mode="axis" port="data_in" register="0" register_mode="both" name="" depth="-1"/>
+<pragma file="iclarke.cpp" line="13" pragmaType="interface" parentfunction="iclarke" mode="axis" port="current_out" register="0" register_mode="both" name="" depth="-1"/>
+<pragma file="iclarke.cpp" line="14" pragmaType="interface" parentfunction="iclarke" mode="axis" port="axis_debug" register="0" register_mode="both" name="" depth="-1"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" line="143" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" line="153" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" line="172" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" line="172" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+</pragmas>

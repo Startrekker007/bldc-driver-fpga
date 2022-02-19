@@ -1,0 +1,15 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="" msg_id="207-5162" msg_severity="WARNING" msg_loc="inverse_park.cpp:53:106" msg_body="shift count &gt;= width of type">
+        <args ClangWarningOption="shift-count-overflow"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="inverse_park.cpp:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="inverse_park" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=inverse_park" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="inverse_park.cpp:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="inverse_park" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis port=data_in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="inverse_park.cpp:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="inverse_park" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis port=current_out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

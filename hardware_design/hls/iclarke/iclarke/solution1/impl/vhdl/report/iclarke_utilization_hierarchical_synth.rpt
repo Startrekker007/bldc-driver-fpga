@@ -1,0 +1,35 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Sun Jan 31 22:52:54 2021
+| Host         : DESKTOP-J766HPL running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 4 -file ./report/iclarke_utilization_hierarchical_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+----------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-------------------------------------+-----------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+|               Instance              |                  Module                 | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++-------------------------------------+-----------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+| bd_0_wrapper                        |                                   (top) |         80 |         80 |       0 |    0 | 266 |      0 |      0 |          0 |
+|   bd_0_i                            |                                    bd_0 |         80 |         80 |       0 |    0 | 266 |      0 |      0 |          0 |
+|     hls_inst                        |                         bd_0_hls_inst_0 |         80 |         80 |       0 |    0 | 266 |      0 |      0 |          0 |
+|       (hls_inst)                    |                         bd_0_hls_inst_0 |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          0 |
+|       U0                            |                 bd_0_hls_inst_0_iclarke |         80 |         80 |       0 |    0 | 266 |      0 |      0 |          0 |
+|         (U0)                        |                 bd_0_hls_inst_0_iclarke |          1 |          1 |       0 |    0 |   2 |      0 |      0 |          0 |
+|         regslice_both_current_out_U |   bd_0_hls_inst_0_iclarke_regslice_both |         40 |         40 |       0 |    0 | 132 |      0 |      0 |          0 |
+|         regslice_both_data_in_U     | bd_0_hls_inst_0_iclarke_regslice_both_0 |         39 |         39 |       0 |    0 | 132 |      0 |      0 |          0 |
++-------------------------------------+-----------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+
+

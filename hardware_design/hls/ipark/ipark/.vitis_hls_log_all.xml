@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="ipark" solutionName="solution1" date="2022-01-31T20:25:55.891+1300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-1016] The critical path in module 'ipark' consists of the following:&#x9;'mul' operation ('id_cos', ipark.cpp:23) [29]  (3.87 ns)&#xD;&#xA;&#xD;&#xA;Resolution: For help on HLS 200-1016 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-1016.html" projectName="ipark" solutionName="solution1" date="2022-01-31T20:25:55.745+1300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-871] Estimated clock period (3.871ns) exceeds the target (target clock period: 5ns, clock uncertainty: 1.35ns, effective delay budget: 3.65ns).&#xD;&#xA;Resolution: For help on HLS 200-871 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-871.html" projectName="ipark" solutionName="solution1" date="2022-01-31T20:25:55.735+1300" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -1,0 +1,1 @@
+--incr --debug typical --relax --mt auto -L xil_defaultlib -L xlconstant_v1_1_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot quad_inversion xil_defaultlib.quad_inversion xil_defaultlib.glbl -log elaborate.log

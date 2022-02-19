@@ -1,0 +1,451 @@
+
+*** Running vivado
+    with args -log inverse_clarke_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source inverse_clarke_0.tcl
+
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+Sourcing tcl script 'C:/Users/Keshav/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
+source inverse_clarke_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/git/bldc-driver-fpga/hardware_design/hls/generated_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.cache/ip 
+Command: synth_design -top inverse_clarke_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3180
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1250.133 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'inverse_clarke_0' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/synth/inverse_clarke_0.vhd:78]
+INFO: [Synth 8-3491] module 'inverse_clarke' declared at 'c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke.vhd:12' bound to instance 'U0' of component 'inverse_clarke' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/synth/inverse_clarke_0.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'inverse_clarke' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke.vhd:34]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 1023 - type: integer 
+	Parameter AddressWidth bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'inverse_clarke_cos_lut_ROM_AUTO_1R' declared at 'c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke_cos_lut_ROM_AUTO_1R.vhd:9' bound to instance 'cos_lut_U' of component 'inverse_clarke_cos_lut_ROM_AUTO_1R' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke.vhd:228]
+INFO: [Synth 8-638] synthesizing module 'inverse_clarke_cos_lut_ROM_AUTO_1R' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke_cos_lut_ROM_AUTO_1R.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'inverse_clarke_cos_lut_ROM_AUTO_1R' (1#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke_cos_lut_ROM_AUTO_1R.vhd:25]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 1023 - type: integer 
+	Parameter AddressWidth bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'inverse_clarke_sin_lut_ROM_AUTO_1R' declared at 'c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke_sin_lut_ROM_AUTO_1R.vhd:9' bound to instance 'sin_lut_U' of component 'inverse_clarke_sin_lut_ROM_AUTO_1R' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke.vhd:240]
+INFO: [Synth 8-638] synthesizing module 'inverse_clarke_sin_lut_ROM_AUTO_1R' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke_sin_lut_ROM_AUTO_1R.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'inverse_clarke_sin_lut_ROM_AUTO_1R' (2#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke_sin_lut_ROM_AUTO_1R.vhd:25]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 63 - type: integer 
+INFO: [Synth 8-3491] module 'inverse_clarke_mul_32s_32s_63_5_1' declared at 'c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke_mul_32s_32s_63_5_1.vhd:10' bound to instance 'mul_32s_32s_63_5_1_U1' of component 'inverse_clarke_mul_32s_32s_63_5_1' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke.vhd:252]
+INFO: [Synth 8-638] synthesizing module 'inverse_clarke_mul_32s_32s_63_5_1' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke_mul_32s_32s_63_5_1.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'inverse_clarke_mul_32s_32s_63_5_1' (3#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke_mul_32s_32s_63_5_1.vhd:30]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 63 - type: integer 
+INFO: [Synth 8-3491] module 'inverse_clarke_mul_32s_32s_63_5_1' declared at 'c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke_mul_32s_32s_63_5_1.vhd:10' bound to instance 'mul_32s_32s_63_5_1_U2' of component 'inverse_clarke_mul_32s_32s_63_5_1' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke.vhd:267]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 63 - type: integer 
+INFO: [Synth 8-3491] module 'inverse_clarke_mul_32s_32s_63_5_1' declared at 'c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke_mul_32s_32s_63_5_1.vhd:10' bound to instance 'mul_32s_32s_63_5_1_U3' of component 'inverse_clarke_mul_32s_32s_63_5_1' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke.vhd:282]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 63 - type: integer 
+INFO: [Synth 8-3491] module 'inverse_clarke_mul_32s_32s_63_5_1' declared at 'c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke_mul_32s_32s_63_5_1.vhd:10' bound to instance 'mul_32s_32s_63_5_1_U4' of component 'inverse_clarke_mul_32s_32s_63_5_1' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke.vhd:297]
+	Parameter DataWidth bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'inverse_clarke_regslice_both' declared at 'c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke_regslice_both.vhd:10' bound to instance 'regslice_both_idq_U' of component 'inverse_clarke_regslice_both' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke.vhd:312]
+INFO: [Synth 8-638] synthesizing module 'inverse_clarke_regslice_both' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke_regslice_both.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'inverse_clarke_regslice_both' (4#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke_regslice_both.vhd:25]
+	Parameter DataWidth bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'inverse_clarke_regslice_both' declared at 'c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke_regslice_both.vhd:10' bound to instance 'regslice_both_theta_U' of component 'inverse_clarke_regslice_both' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke.vhd:326]
+INFO: [Synth 8-638] synthesizing module 'inverse_clarke_regslice_both__parameterized1' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke_regslice_both.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'inverse_clarke_regslice_both__parameterized1' (4#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke_regslice_both.vhd:25]
+	Parameter DataWidth bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'inverse_clarke_regslice_both' declared at 'c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke_regslice_both.vhd:10' bound to instance 'regslice_both_vectors_U' of component 'inverse_clarke_regslice_both' [c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke.vhd:340]
+INFO: [Synth 8-256] done synthesizing module 'inverse_clarke' (5#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'inverse_clarke_0' (6#1) [c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/synth/inverse_clarke_0.vhd:78]
+WARNING: [Synth 8-7129] Port reset in module inverse_clarke_mul_32s_32s_63_5_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module inverse_clarke_sin_lut_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module inverse_clarke_cos_lut_ROM_AUTO_1R is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1250.133 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1250.133 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1250.133 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1250.133 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/constraints/inverse_clarke_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/constraints/inverse_clarke_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.runs/inverse_clarke_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.runs/inverse_clarke_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1253.117 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1260.133 ; gain = 7.016
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1260.133 ; gain = 10.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1260.133 ; gain = 10.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.runs/inverse_clarke_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1260.133 ; gain = 10.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1260.133 ; gain = 10.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   63 Bit       Adders := 1     
+	   2 Input   63 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 4     
+	               63 Bit    Registers := 16    
+	               32 Bit    Registers := 16    
+	               16 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 6     
++---Multipliers : 
+	              32x32  Multipliers := 4     
++---ROMs : 
+	                    ROMs := 2     
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 2     
+	  12 Input   11 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	   4 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-6014] Unused sequential element buff0_reg was removed.  [c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke_mul_32s_32s_63_5_1.vhd:55]
+DSP Report: Generating DSP buff0_reg, operation Mode is: (A2*B2)'.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP buff1_reg, operation Mode is: (PCIN>>17)+(A2*B)'.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: Generating DSP tmp_product, operation Mode is: PCIN+(A''*B2)'.
+DSP Report: register buff0_reg is absorbed into DSP tmp_product.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: register buff0_reg is absorbed into DSP tmp_product.
+DSP Report: register buff1_reg is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff2_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register buff0_reg is absorbed into DSP buff2_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff2_reg.
+DSP Report: register buff2_reg is absorbed into DSP buff2_reg.
+DSP Report: register buff1_reg is absorbed into DSP buff2_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff2_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff2_reg.
+WARNING: [Synth 8-3936] Found unconnected internal register 'buff2_reg' and it is trimmed from '48' to '29' bits. [c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke_mul_32s_32s_63_5_1.vhd:46]
+WARNING: [Synth 8-3936] Found unconnected internal register 'buff2_reg' and it is trimmed from '48' to '17' bits. [c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke_mul_32s_32s_63_5_1.vhd:46]
+WARNING: [Synth 8-3936] Found unconnected internal register 'buff2_reg' and it is trimmed from '48' to '17' bits. [c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke_mul_32s_32s_63_5_1.vhd:46]
+WARNING: [Synth 8-3936] Found unconnected internal register 'buff1_reg' and it is trimmed from '48' to '17' bits. [c:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/hdl/vhdl/inverse_clarke_mul_32s_32s_63_5_1.vhd:56]
+DSP Report: Generating DSP buff0_reg, operation Mode is: (A2*B2)'.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP buff1_reg, operation Mode is: (PCIN>>17)+(A2*B)'.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: Generating DSP tmp_product, operation Mode is: PCIN+(A''*B2)'.
+DSP Report: register buff0_reg is absorbed into DSP tmp_product.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: register buff1_reg is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff2_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register buff0_reg is absorbed into DSP buff2_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff2_reg.
+DSP Report: register buff2_reg is absorbed into DSP buff2_reg.
+DSP Report: register buff1_reg is absorbed into DSP buff2_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff2_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff2_reg.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (A2*B2)'.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP buff1_reg, operation Mode is: (PCIN>>17)+(A2*B)'.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: Generating DSP tmp_product, operation Mode is: PCIN+(A''*B2)'.
+DSP Report: register buff0_reg is absorbed into DSP tmp_product.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: register buff1_reg is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff2_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register buff0_reg is absorbed into DSP buff2_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff2_reg.
+DSP Report: register buff2_reg is absorbed into DSP buff2_reg.
+DSP Report: register buff1_reg is absorbed into DSP buff2_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff2_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff2_reg.
+DSP Report: Generating DSP buff0_reg, operation Mode is: (A2*B2)'.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff0_reg.
+DSP Report: Generating DSP buff1_reg, operation Mode is: (PCIN>>17)+(A2*B)'.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff1_reg is absorbed into DSP buff1_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff1_reg.
+DSP Report: Generating DSP tmp_product, operation Mode is: PCIN+(A''*B2)'.
+DSP Report: register buff0_reg is absorbed into DSP tmp_product.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: register tmp_product is absorbed into DSP tmp_product.
+DSP Report: register buff1_reg is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: operator tmp_product is absorbed into DSP tmp_product.
+DSP Report: Generating DSP buff2_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
+DSP Report: register buff0_reg is absorbed into DSP buff2_reg.
+DSP Report: register buff0_reg is absorbed into DSP buff2_reg.
+DSP Report: register buff2_reg is absorbed into DSP buff2_reg.
+DSP Report: register buff1_reg is absorbed into DSP buff2_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff2_reg.
+DSP Report: operator tmp_product is absorbed into DSP buff2_reg.
+WARNING: [Synth 8-7129] Port reset in module inverse_clarke_mul_32s_32s_63_5_1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1260.133 ; gain = 10.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++---------------+------------------+---------------+----------------+
+|Module Name    | RTL Object       | Depth x Width | Implemented As | 
++---------------+------------------+---------------+----------------+
+|inverse_clarke | sin_lut_U/q0_reg | 1024x32       | Block RAM      | 
+|inverse_clarke | cos_lut_U/q0_reg | 1024x32       | Block RAM      | 
++---------------+------------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++----------------------------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                       | DSP Mapping         | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------------------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|inverse_clarke_mul_32s_32s_63_5_1 | (A2*B2)'            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|inverse_clarke_mul_32s_32s_63_5_1 | (PCIN>>17)+(A2*B)'  | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|inverse_clarke_mul_32s_32s_63_5_1 | PCIN+(A''*B2)'      | 18     | 15     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 1    | 0    | 
+|inverse_clarke_mul_32s_32s_63_5_1 | (PCIN>>17)+(A2*B2)' | 15     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|inverse_clarke_mul_32s_32s_63_5_1 | (A2*B2)'            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|inverse_clarke_mul_32s_32s_63_5_1 | (PCIN>>17)+(A2*B)'  | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|inverse_clarke_mul_32s_32s_63_5_1 | PCIN+(A''*B2)'      | 18     | 15     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 1    | 0    | 
+|inverse_clarke_mul_32s_32s_63_5_1 | (PCIN>>17)+(A2*B2)' | 15     | 15     | -      | -      | 29     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|inverse_clarke_mul_32s_32s_63_5_1 | (A2*B2)'            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|inverse_clarke_mul_32s_32s_63_5_1 | (PCIN>>17)+(A2*B)'  | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|inverse_clarke_mul_32s_32s_63_5_1 | PCIN+(A''*B2)'      | 18     | 15     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 1    | 0    | 
+|inverse_clarke_mul_32s_32s_63_5_1 | (PCIN>>17)+(A2*B2)' | 15     | 15     | -      | -      | 29     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|inverse_clarke_mul_32s_32s_63_5_1 | (A2*B2)'            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|inverse_clarke_mul_32s_32s_63_5_1 | (PCIN>>17)+(A2*B)'  | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|inverse_clarke_mul_32s_32s_63_5_1 | PCIN+(A''*B2)'      | 18     | 15     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 1    | 0    | 
+|inverse_clarke_mul_32s_32s_63_5_1 | (PCIN>>17)+(A2*B2)' | 15     | 15     | -      | -      | 29     | 1    | 1    | -    | -    | -     | 1    | 1    | 
++----------------------------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1275.430 ; gain = 25.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1279.973 ; gain = 29.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance U0/sin_lut_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/cos_lut_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1308.594 ; gain = 58.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 1319.273 ; gain = 69.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 1319.273 ; gain = 69.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1319.273 ; gain = 69.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1319.273 ; gain = 69.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1319.273 ; gain = 69.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1319.273 ; gain = 69.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    32|
+|2     |DSP48E1  |    16|
+|5     |LUT1     |     1|
+|6     |LUT2     |   127|
+|7     |LUT3     |   139|
+|8     |LUT4     |     5|
+|9     |LUT5     |     9|
+|10    |LUT6     |    15|
+|11    |RAMB36E1 |     2|
+|13    |FDRE     |   860|
+|14    |FDSE     |    75|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1319.273 ; gain = 69.141
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 1319.273 ; gain = 59.141
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1319.273 ; gain = 69.141
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1331.328 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 50 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1337.977 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 9d0b0495
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1337.977 ; gain = 87.844
+INFO: [Common 17-1381] The checkpoint 'C:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.runs/inverse_clarke_0_synth_1/inverse_clarke_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP inverse_clarke_0, cache-ID = 140243296705bdd1
+INFO: [Coretcl 2-1174] Renamed 10 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/git/bldc-driver-fpga/hardware_design/vivado_project/clarke_hls_test/clarke_hls_test.runs/inverse_clarke_0_synth_1/inverse_clarke_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file inverse_clarke_0_utilization_synth.rpt -pb inverse_clarke_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 30 19:57:31 2022...

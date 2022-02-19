@@ -1,0 +1,82 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.011 seconds; current allocated memory: 774.191 MB.
+INFO: [HLS 200-10] Analyzing design file 'ipark.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.206 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.795 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.022 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.015 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.069 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.021 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'ipark' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'ipark' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-871] Estimated clock period (3.871ns) exceeds the target (target clock period: 5ns, clock uncertainty: 1.35ns, effective delay budget: 3.65ns).
+WARNING: [HLS 200-1016] The critical path in module 'ipark' consists of the following:	'mul' operation ('id_cos', ipark.cpp:23) [29]  (3.87 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.132 seconds; current allocated memory: 1.071 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.078 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'ipark' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'ipark/idq' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'ipark/theta' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'ipark/vectors' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'ipark' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_63_5_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'ipark'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.108 seconds; current allocated memory: 1.071 GB.
+INFO: [RTMG 210-279] Implementing memory 'ipark_cos_lut_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'ipark_sin_lut_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.51 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.224 seconds; current allocated memory: 1.071 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for ipark.
+INFO: [VLOG 209-307] Generating Verilog RTL for ipark.
+INFO: [HLS 200-789] **** Estimated Fmax: 258.33 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 5.224 seconds; current allocated memory: 333.367 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 6.061 seconds; peak allocated memory: 1.071 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -description {Inverse Park Transform}
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=ipark
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/ipark
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.0
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1510] Running: config_export -description Inverse Park Transform -display_name ipark -output C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/ipark -version 1.0 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/ipark 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/ipark/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 6.341 seconds; current allocated memory: 312.410 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 7.195 seconds; peak allocated memory: 1.078 GB.

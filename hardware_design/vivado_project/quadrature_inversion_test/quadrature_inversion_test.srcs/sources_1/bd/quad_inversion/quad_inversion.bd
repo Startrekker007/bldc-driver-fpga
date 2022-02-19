@@ -1,0 +1,376 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x1AE0418C5BF68809",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../quadrature_inversion_test.gen/sources_1/bd/quad_inversion",
+      "name": "quad_inversion",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "None",
+      "tool_version": "2021.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "ipark_0": "",
+      "xlconstant_0": "",
+      "iclarke_0": ""
+    },
+    "interface_ports": {
+      "idq_0": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+        "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "quad_inversion_ap_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "HAS_TKEEP": {
+            "value": "0"
+          },
+          "HAS_TLAST": {
+            "value": "0"
+          },
+          "HAS_TREADY": {
+            "value": "1"
+          },
+          "HAS_TSTRB": {
+            "value": "0"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "LAYERED_METADATA": {
+            "value": "undef"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          },
+          "TDATA_NUM_BYTES": {
+            "value": "8"
+          },
+          "TDEST_WIDTH": {
+            "value": "0"
+          },
+          "TID_WIDTH": {
+            "value": "0"
+          },
+          "TUSER_WIDTH": {
+            "value": "0"
+          }
+        }
+      },
+      "theta_0": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+        "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "quad_inversion_ap_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "HAS_TKEEP": {
+            "value": "0"
+          },
+          "HAS_TLAST": {
+            "value": "0"
+          },
+          "HAS_TREADY": {
+            "value": "1"
+          },
+          "HAS_TSTRB": {
+            "value": "0"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "LAYERED_METADATA": {
+            "value": "undef"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          },
+          "TDATA_NUM_BYTES": {
+            "value": "2"
+          },
+          "TDEST_WIDTH": {
+            "value": "0"
+          },
+          "TID_WIDTH": {
+            "value": "0"
+          },
+          "TUSER_WIDTH": {
+            "value": "0"
+          }
+        }
+      },
+      "current_out_0": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+        "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "quad_inversion_ap_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "HAS_TKEEP": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "HAS_TLAST": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "HAS_TREADY": {
+            "value": "1",
+            "value_src": "const_prop"
+          },
+          "HAS_TSTRB": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          },
+          "TDATA_NUM_BYTES": {
+            "value": "8",
+            "value_src": "const_prop"
+          },
+          "TDEST_WIDTH": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "TID_WIDTH": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "TUSER_WIDTH": {
+            "value": "0",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "axis_debug_0": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+        "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "quad_inversion_ap_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "HAS_TKEEP": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "HAS_TLAST": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "HAS_TREADY": {
+            "value": "1",
+            "value_src": "const_prop"
+          },
+          "HAS_TSTRB": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          },
+          "TDATA_NUM_BYTES": {
+            "value": "4",
+            "value_src": "const_prop"
+          },
+          "TDEST_WIDTH": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "TID_WIDTH": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "TUSER_WIDTH": {
+            "value": "0",
+            "value_src": "const_prop"
+          }
+        }
+      }
+    },
+    "ports": {
+      "ap_clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_BUSIF": {
+            "value": "idq_0:theta_0:current_out_0:axis_debug_0",
+            "value_src": "default"
+          },
+          "ASSOCIATED_RESET": {
+            "value": "ap_rst_n",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "quad_inversion_ap_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "ap_rst_n": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "ipark_0": {
+        "vlnv": "xilinx.com:hls:ipark:1.0",
+        "xci_name": "quad_inversion_ipark_0_0",
+        "xci_path": "ip\\quad_inversion_ipark_0_0\\quad_inversion_ipark_0_0.xci",
+        "inst_hier_path": "ipark_0"
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "quad_inversion_xlconstant_0_0",
+        "xci_path": "ip\\quad_inversion_xlconstant_0_0\\quad_inversion_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "1"
+          }
+        }
+      },
+      "iclarke_0": {
+        "vlnv": "xilinx.com:hls:iclarke:1.8",
+        "xci_name": "quad_inversion_iclarke_0_1",
+        "xci_path": "ip\\quad_inversion_iclarke_0_1\\quad_inversion_iclarke_0_1.xci",
+        "inst_hier_path": "iclarke_0"
+      }
+    },
+    "interface_nets": {
+      "iclarke_0_axis_debug": {
+        "interface_ports": [
+          "axis_debug_0",
+          "iclarke_0/axis_debug"
+        ]
+      },
+      "iclarke_0_current_out": {
+        "interface_ports": [
+          "current_out_0",
+          "iclarke_0/current_out"
+        ]
+      },
+      "idq_0_1": {
+        "interface_ports": [
+          "idq_0",
+          "ipark_0/idq"
+        ]
+      },
+      "ipark_0_vectors": {
+        "interface_ports": [
+          "iclarke_0/data_in",
+          "ipark_0/vectors"
+        ]
+      },
+      "theta_0_1": {
+        "interface_ports": [
+          "theta_0",
+          "ipark_0/theta"
+        ]
+      }
+    },
+    "nets": {
+      "Net": {
+        "ports": [
+          "ap_rst_n",
+          "ipark_0/ap_rst_n",
+          "iclarke_0/ap_rst_n"
+        ]
+      },
+      "Net1": {
+        "ports": [
+          "ap_clk",
+          "ipark_0/ap_clk",
+          "iclarke_0/ap_clk"
+        ]
+      },
+      "ipark_0_vectors_TDATA": {
+        "ports": [
+          "ipark_0/vectors_TDATA",
+          "iclarke_0/data_in_TDATA"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "ipark_0/ap_start",
+          "ipark_0/vectors_TREADY",
+          "iclarke_0/ap_start",
+          "iclarke_0/data_in_TVALID"
+        ]
+      }
+    }
+  }
+}

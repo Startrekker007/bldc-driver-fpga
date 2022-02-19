@@ -1,0 +1,179 @@
+
+
+================================================================
+== Vitis HLS Report for 'iclarke'
+================================================================
+* Date:           Tue Feb  1 00:04:12 2022
+
+* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
+* Project:        iclarke
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.912 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        4|        4|  40.000 ns|  40.000 ns|    5|    5|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 6.91>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%tmp_2 = read i64 @_ssdm_op_Read.axis.volatile.i64P128A, i64 %data_in" [C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h:144]   --->   Operation 6 'read' 'tmp_2' <Predicate = true> <Delay = 0.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%ia = trunc i64 %tmp_2" [iclarke.cpp:19]   --->   Operation 7 'trunc' 'ia' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%ib = partselect i32 @_ssdm_op_PartSelect.i32.i64.i32.i32, i64 %tmp_2, i32 32, i32 63" [iclarke.cpp:20]   --->   Operation 8 'partselect' 'ib' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%sext_ln24 = sext i32 %ib" [iclarke.cpp:24]   --->   Operation 9 'sext' 'sext_ln24' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [2/2] (6.91ns)   --->   "%sqrt3Xib = mul i63 %sext_ln24, i63 3719550707" [iclarke.cpp:24]   --->   Operation 10 'mul' 'sqrt3Xib' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%trunc_ln27 = trunc i64 %tmp_2" [iclarke.cpp:27]   --->   Operation 11 'trunc' 'trunc_ln27' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%pha_clamped = trunc i64 %tmp_2" [iclarke.cpp:28]   --->   Operation 12 'trunc' 'pha_clamped' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 6.91>
+ST_2 : Operation 13 [1/2] (6.91ns)   --->   "%sqrt3Xib = mul i63 %sext_ln24, i63 3719550707" [iclarke.cpp:24]   --->   Operation 13 'mul' 'sqrt3Xib' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%sqt = partselect i32 @_ssdm_op_PartSelect.i32.i63.i32.i32, i63 %sqrt3Xib, i32 31, i32 62" [iclarke.cpp:25]   --->   Operation 14 'partselect' 'sqt' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%trunc_ln27_4 = partselect i17 @_ssdm_op_PartSelect.i17.i63.i32.i32, i63 %sqrt3Xib, i32 31, i32 47" [iclarke.cpp:27]   --->   Operation 15 'partselect' 'trunc_ln27_4' <Predicate = true> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 5.17>
+ST_3 : Operation 16 [1/1] (2.55ns)   --->   "%sub_ln26 = sub i32 %sqt, i32 %ia" [iclarke.cpp:26]   --->   Operation 16 'sub' 'sub_ln26' <Predicate = true> <Delay = 2.55> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%trunc_ln26 = trunc i32 %sub_ln26" [iclarke.cpp:26]   --->   Operation 17 'trunc' 'trunc_ln26' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 18 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %sub_ln26, i32 31" [iclarke.cpp:26]   --->   Operation 18 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 19 [1/1] (2.10ns)   --->   "%sub_ln26_1 = sub i17 0, i17 %trunc_ln26" [iclarke.cpp:26]   --->   Operation 19 'sub' 'sub_ln26_1' <Predicate = true> <Delay = 2.10> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 20 [1/1] (0.00ns)   --->   "%trunc_ln26_1 = partselect i16 @_ssdm_op_PartSelect.i16.i17.i32.i32, i17 %sub_ln26_1, i32 1, i32 16" [iclarke.cpp:26]   --->   Operation 20 'partselect' 'trunc_ln26_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%trunc_ln26_2 = partselect i16 @_ssdm_op_PartSelect.i16.i32.i32.i32, i32 %sub_ln26, i32 1, i32 16" [iclarke.cpp:26]   --->   Operation 21 'partselect' 'trunc_ln26_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 22 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln27 = add i32 %sqt, i32 %ia" [iclarke.cpp:27]   --->   Operation 22 'add' 'add_ln27' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 23 [1/1] (2.10ns)   --->   "%add_ln27_1 = add i17 %trunc_ln27_4, i17 %trunc_ln27" [iclarke.cpp:27]   --->   Operation 23 'add' 'add_ln27_1' <Predicate = true> <Delay = 2.10> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 24 [1/1] (4.37ns) (root node of TernaryAdder)   --->   "%sub_ln27 = sub i32 0, i32 %add_ln27" [iclarke.cpp:27]   --->   Operation 24 'sub' 'sub_ln27' <Predicate = true> <Delay = 4.37> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%tmp_1 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %sub_ln27, i32 31" [iclarke.cpp:27]   --->   Operation 25 'bitselect' 'tmp_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%trunc_ln27_1 = partselect i16 @_ssdm_op_PartSelect.i16.i17.i32.i32, i17 %add_ln27_1, i32 1, i32 16" [iclarke.cpp:27]   --->   Operation 26 'partselect' 'trunc_ln27_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 27 [1/1] (2.07ns)   --->   "%sub_ln27_1 = sub i16 0, i16 %trunc_ln27_1" [iclarke.cpp:27]   --->   Operation 27 'sub' 'sub_ln27_1' <Predicate = true> <Delay = 2.07> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%trunc_ln27_2 = partselect i16 @_ssdm_op_PartSelect.i16.i32.i32.i32, i32 %sub_ln27, i32 1, i32 16" [iclarke.cpp:27]   --->   Operation 28 'partselect' 'trunc_ln27_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 29 [1/1] (0.80ns)   --->   "%phc_clamped = select i1 %tmp_1, i16 %sub_ln27_1, i16 %trunc_ln27_2" [iclarke.cpp:27]   --->   Operation 29 'select' 'phc_clamped' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 2.88>
+ST_4 : Operation 30 [1/1] (2.07ns)   --->   "%sub_ln26_2 = sub i16 0, i16 %trunc_ln26_1" [iclarke.cpp:26]   --->   Operation 30 'sub' 'sub_ln26_2' <Predicate = (tmp)> <Delay = 2.07> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 31 [1/1] (0.80ns)   --->   "%phb_clamped = select i1 %tmp, i16 %sub_ln26_2, i16 %trunc_ln26_2" [iclarke.cpp:26]   --->   Operation 31 'select' 'phb_clamped' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 32 [1/1] (0.00ns)   --->   "%data_o = bitconcatenate i48 @_ssdm_op_BitConcatenate.i48.i16.i16.i16, i16 %phc_clamped, i16 %phb_clamped, i16 %pha_clamped" [iclarke.cpp:33]   --->   Operation 32 'bitconcatenate' 'data_o' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 33 [1/1] (0.00ns)   --->   "%zext_ln33 = zext i48 %data_o" [iclarke.cpp:33]   --->   Operation 33 'zext' 'zext_ln33' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 34 [2/2] (0.00ns)   --->   "%write_ln173 = write void @_ssdm_op_Write.axis.volatile.i64P128A, i64 %current_out, i64 %zext_ln33" [C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h:173]   --->   Operation 34 'write' 'write_ln173' <Predicate = true> <Delay = 0.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_4 : Operation 35 [2/2] (0.00ns)   --->   "%write_ln173 = write void @_ssdm_op_Write.axis.volatile.i32P128A, i32 %axis_debug, i32 %sqt" [C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h:173]   --->   Operation 35 'write' 'write_ln173' <Predicate = true> <Delay = 0.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 36 [1/1] (0.00ns)   --->   "%spectopmodule_ln0 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_2"   --->   Operation 36 'spectopmodule' 'spectopmodule_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 37 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %data_in, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1"   --->   Operation 37 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 38 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %data_in"   --->   Operation 38 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 39 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %current_out, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1"   --->   Operation 39 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 40 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %current_out"   --->   Operation 40 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 41 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %axis_debug, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1"   --->   Operation 41 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 42 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %axis_debug"   --->   Operation 42 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 43 [1/2] (0.00ns)   --->   "%write_ln173 = write void @_ssdm_op_Write.axis.volatile.i64P128A, i64 %current_out, i64 %zext_ln33" [C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h:173]   --->   Operation 43 'write' 'write_ln173' <Predicate = true> <Delay = 0.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_5 : Operation 44 [1/2] (0.00ns)   --->   "%write_ln173 = write void @_ssdm_op_Write.axis.volatile.i32P128A, i32 %axis_debug, i32 %sqt" [C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h:173]   --->   Operation 44 'write' 'write_ln173' <Predicate = true> <Delay = 0.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_5 : Operation 45 [1/1] (0.00ns)   --->   "%ret_ln37 = ret" [iclarke.cpp:37]   --->   Operation 45 'ret' 'ret_ln37' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 6.91ns
+The critical path consists of the following:
+	axis read operation ('tmp', C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h:144) on port 'data_in' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h:144) [11]  (0 ns)
+	'mul' operation ('sqrt3Xib', iclarke.cpp:24) [15]  (6.91 ns)
+
+ <State 2>: 6.91ns
+The critical path consists of the following:
+	'mul' operation ('sqrt3Xib', iclarke.cpp:24) [15]  (6.91 ns)
+
+ <State 3>: 5.18ns
+The critical path consists of the following:
+	'add' operation ('add_ln27', iclarke.cpp:27) [27]  (0 ns)
+	'sub' operation ('sub_ln27', iclarke.cpp:27) [29]  (4.37 ns)
+	'select' operation ('phc_clamped', iclarke.cpp:27) [34]  (0.805 ns)
+
+ <State 4>: 2.88ns
+The critical path consists of the following:
+	'sub' operation ('sub_ln26_2', iclarke.cpp:26) [22]  (2.08 ns)
+	'select' operation ('phb_clamped', iclarke.cpp:26) [24]  (0.805 ns)
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

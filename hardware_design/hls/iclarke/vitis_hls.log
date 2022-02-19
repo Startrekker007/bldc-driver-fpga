@@ -1,0 +1,45 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Keshav' on host 'desktop-j766hpl' (Windows NT_amd64 version 6.2) on Tue Feb 01 00:04:24 +1300 2022
+INFO: [HLS 200-10] In directory 'C:/git/bldc-driver-fpga/hardware_design/hls/iclarke'
+Sourcing Tcl script 'C:/git/bldc-driver-fpga/hardware_design/hls/iclarke/iclarke/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: open_project iclarke 
+INFO: [HLS 200-10] Opening project 'C:/git/bldc-driver-fpga/hardware_design/hls/iclarke/iclarke'.
+INFO: [HLS 200-1510] Running: set_top iclarke 
+INFO: [HLS 200-1510] Running: add_files iclarke.cpp 
+INFO: [HLS 200-10] Adding design file 'iclarke.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files iclarke.h 
+INFO: [HLS 200-10] Adding design file 'iclarke.h' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'C:/git/bldc-driver-fpga/hardware_design/hls/iclarke/iclarke/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -description {Inverse Clarke transform}
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=iclarke
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/iclarke
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.8.7
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=5
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -description Inverse Clarke transform -display_name iclarke -format ip_catalog -output C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/iclarke -rtl vhdl -version 1.8.7 -vivado_clock 5 
+INFO: [HLS 200-1510] Running: export_design -rtl vhdl -format ip_catalog -output C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/iclarke 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+Sourcing tcl script 'C:/Users/Keshav/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Tue Feb  1 00:04:31 2022...
+INFO: [HLS 200-802] Generated output file C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/iclarke/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 6.382 seconds; current allocated memory: 318.367 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 7.206 seconds; peak allocated memory: 1.079 GB.

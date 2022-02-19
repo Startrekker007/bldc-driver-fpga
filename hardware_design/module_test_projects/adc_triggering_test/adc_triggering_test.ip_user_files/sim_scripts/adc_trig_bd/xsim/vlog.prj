@@ -1,0 +1,12 @@
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2021.2/data/xilinx_vip/include" --include "../../../../adc_triggering_test.gen/sources_1/bd/adc_trig_bd/ipshared/ec67/hdl" --include "../../../../adc_triggering_test.gen/sources_1/bd/adc_trig_bd/ipshared/3007/hdl" --include "../../../../adc_triggering_test.gen/sources_1/bd/adc_trig_bd/ipshared/1b7e/hdl/verilog" --include "../../../../adc_triggering_test.gen/sources_1/bd/adc_trig_bd/ipshared/122e/hdl/verilog" --include "../../../../adc_triggering_test.gen/sources_1/bd/adc_trig_bd/ipshared/b205/hdl/verilog" --include "../../../../adc_triggering_test.gen/sources_1/bd/adc_trig_bd/ipshared/fd26/hdl/verilog" \
+"../../../bd/adc_trig_bd/ip/adc_trig_bd_processing_system7_0_0/sim/adc_trig_bd_processing_system7_0_0.v" \
+"../../../bd/adc_trig_bd/ip/adc_trig_bd_xbar_0/sim/adc_trig_bd_xbar_0.v" \
+"../../../bd/adc_trig_bd/ip/adc_trig_bd_xlslice_0_0/sim/adc_trig_bd_xlslice_0_0.v" \
+"../../../bd/adc_trig_bd/ip/adc_trig_bd_xlconstant_0_0/sim/adc_trig_bd_xlconstant_0_0.v" \
+"../../../bd/adc_trig_bd/ip/adc_trig_bd_xlconcat_0_0/sim/adc_trig_bd_xlconcat_0_0.v" \
+"../../../bd/adc_trig_bd/ip/adc_trig_bd_xlslice_0_1/sim/adc_trig_bd_xlslice_0_1.v" \
+"../../../bd/adc_trig_bd/ip/adc_trig_bd_auto_pc_0/sim/adc_trig_bd_auto_pc_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../bd/quad_inversion/ip/quad_inversion_xlconstant_0_0/sim/quad_inversion_xlconstant_0_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

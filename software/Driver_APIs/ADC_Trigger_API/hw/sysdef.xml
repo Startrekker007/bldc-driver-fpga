@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Project Version="1" Minor="7" DIGEST="">
+	<TOOL_VERSION Version="2021.2"/>
+	<MODE Name="Post-Synthesis"/>
+	<SYSTEMINFO BOARD="www.digilentinc.com:pynq-z1:1.0" PART="xc7z020clg400-1" ARCH="zynq" PACKAGE="clg400" DEVICE="7z020" SPEED="-1"/>
+	<HIERARCHY Name="adc_trig_bd_wrapper"/>
+	<File Type="HW_HANDOFF" Name="adc_trig_bd.hwh" src_db="adc_trig_bd.hwdef" DESIGN_HIERARCHY="adc_trig_bd_i" BD_TYPE="DEFAULT_BD">
+	</File>
+	<File Type="BDA" Name="adc_trig_bd.bda" src_db="adc_trig_bd.hwdef">
+	</File>
+	<File Type="PS_FSBL_INIT" Name="ps7_init.c" src_db="adc_trig_bd_processing_system7_0_0.hwdef">
+	</File>
+	<File Type="PS_FSBL_INIT" Name="ps7_init.h" src_db="adc_trig_bd_processing_system7_0_0.hwdef">
+	</File>
+	<File Type="PS_FSBL_INIT_GPL" Name="ps7_init_gpl.c" src_db="adc_trig_bd_processing_system7_0_0.hwdef">
+	</File>
+	<File Type="PS_FSBL_INIT_GPL" Name="ps7_init_gpl.h" src_db="adc_trig_bd_processing_system7_0_0.hwdef">
+	</File>
+	<File Type="PS_INIT_HELP" Name="ps7_init.html" src_db="adc_trig_bd_processing_system7_0_0.hwdef">
+	</File>
+	<File Type="PS_XMD_INIT" Name="ps7_init.tcl" src_db="adc_trig_bd_processing_system7_0_0.hwdef">
+	</File>
+	<File Type="HW_HANDOFF" Name="adc_trig_bd_system_ila_0_0.hwh" src_db="adc_trig_bd_system_ila_0_0.hwdef" DESIGN_HIERARCHY="adc_trig_bd_system_ila_0_0" BD_TYPE="SCOPED_BD">
+	</File>
+	<File Type="BIT" Name="adc_trig_bd_wrapper.bit" src_db="temp.hdf">
+	</File>
+	<USEDRESOURCES/>
+</Project>
+

@@ -1,0 +1,1 @@
+ctr_32b.vhd,vhdl,xil_defaultlib,../../../../adc_trigger.gen/sources_1/ip/ctr_32b/sim/ctr_32b.vhd,

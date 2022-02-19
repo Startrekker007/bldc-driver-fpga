@@ -1,0 +1,15 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="iclarke.cpp:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="iclarke" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=iclarke" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="iclarke.cpp:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="iclarke" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis port=data_in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="iclarke.cpp:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="iclarke" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis port=current_out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="iclarke.cpp:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="iclarke" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis port=axis_debug" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

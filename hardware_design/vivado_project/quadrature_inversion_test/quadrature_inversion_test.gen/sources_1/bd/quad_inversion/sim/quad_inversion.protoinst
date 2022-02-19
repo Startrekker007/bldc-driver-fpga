@@ -1,0 +1,69 @@
+{
+	"version": "1.0",
+	"modules": {
+		"quad_inversion": {
+			"proto_instances": {
+				"/iclarke_0/axis_debug": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "axis_debug_TDATA"},
+						"TREADY": { "actual": "axis_debug_TREADY"},
+						"TVALID": { "actual": "axis_debug_TVALID"}
+					}
+				},
+				"/iclarke_0/current_out": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "current_out_TDATA"},
+						"TREADY": { "actual": "current_out_TREADY"},
+						"TVALID": { "actual": "current_out_TVALID"}
+					}
+				},
+				"/iclarke_0/data_in": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "data_in_TDATA"},
+						"TREADY": { "actual": "data_in_TREADY"},
+						"TVALID": { "actual": "data_in_TVALID"}
+					}
+				},
+				"/ipark_0/idq": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "idq_TDATA"},
+						"TREADY": { "actual": "idq_TREADY"},
+						"TVALID": { "actual": "idq_TVALID"}
+					}
+				},
+				"/ipark_0/theta": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "theta_TDATA"},
+						"TREADY": { "actual": "theta_TREADY"},
+						"TVALID": { "actual": "theta_TVALID"}
+					}
+				},
+				"/ipark_0/vectors": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "vectors_TDATA"},
+						"TREADY": { "actual": "vectors_TREADY"},
+						"TVALID": { "actual": "vectors_TVALID"}
+					}
+				}
+			}
+		}
+	}
+}

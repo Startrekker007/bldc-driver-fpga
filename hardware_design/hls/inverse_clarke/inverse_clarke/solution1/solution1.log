@@ -1,0 +1,414 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=5
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl vhdl -vivado_clock 5 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.007 seconds; current allocated memory: 847.262 MB.
+INFO: [HLS 200-10] Analyzing design file 'inverse_clarke.cpp' ... 
+ERROR: [HLS 207-3796] unknown type name 'int32_t' (./trig_lookup.h:3:1)
+ERROR: [HLS 207-3796] unknown type name 'int32_t' (./trig_lookup.h:4:1)
+ERROR: [HLS 207-3771] use of undeclared identifier 'uint64_t' (./inverse_clarke.h:5:33)
+ERROR: [HLS 207-3771] use of undeclared identifier 'uint16_t' (./inverse_clarke.h:5:61)
+ERROR: [HLS 207-3771] use of undeclared identifier 'uint64_t' (./inverse_clarke.h:5:91)
+ERROR: [HLS 207-3771] use of undeclared identifier 'uint64_t' (inverse_clarke.cpp:8:33)
+ERROR: [HLS 207-3771] use of undeclared identifier 'uint16_t' (inverse_clarke.cpp:8:61)
+ERROR: [HLS 207-3771] use of undeclared identifier 'uint64_t' (inverse_clarke.cpp:8:91)
+WARNING: [HLS 207-5540] invalid variable expr  (inverse_clarke.cpp:10:38)
+WARNING: [HLS 207-5540] invalid variable expr  (inverse_clarke.cpp:11:38)
+WARNING: [HLS 207-5540] invalid variable expr  (inverse_clarke.cpp:12:38)
+ERROR: [HLS 207-3796] unknown type name 'uint64_t' (inverse_clarke.cpp:13:2)
+ERROR: [HLS 207-3796] unknown type name 'int32_t' (inverse_clarke.cpp:14:2)
+ERROR: [HLS 207-3796] unknown type name 'int32_t' (inverse_clarke.cpp:15:2)
+ERROR: [HLS 207-3796] unknown type name 'uint16_t' (inverse_clarke.cpp:16:2)
+ERROR: [HLS 207-3796] unknown type name 'int64_t' (inverse_clarke.cpp:18:2)
+ERROR: [HLS 207-3771] use of undeclared identifier 'int64_t' (inverse_clarke.cpp:18:23)
+ERROR: [HLS 207-3796] unknown type name 'int64_t' (inverse_clarke.cpp:19:2)
+ERROR: [HLS 207-3771] use of undeclared identifier 'int64_t' (inverse_clarke.cpp:19:23)
+ERROR: [HLS 207-3796] unknown type name 'int64_t' (inverse_clarke.cpp:21:2)
+ERROR: [HLS 207-59] too many errors emitted, stopping now
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.904 seconds; current allocated memory: 256.797 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 1.829 seconds; peak allocated memory: 1.070 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=5
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl vhdl -vivado_clock 5 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.007 seconds; current allocated memory: 783.316 MB.
+INFO: [HLS 200-10] Analyzing design file 'inverse_clarke.cpp' ... 
+ERROR: [HLS 207-3796] unknown type name 'int32_t' (./trig_lookup.h:3:1)
+ERROR: [HLS 207-3796] unknown type name 'int32_t' (./trig_lookup.h:4:1)
+ERROR: [HLS 207-3771] use of undeclared identifier 'uint64_t' (./inverse_clarke.h:5:33)
+ERROR: [HLS 207-3771] use of undeclared identifier 'uint16_t' (./inverse_clarke.h:5:61)
+ERROR: [HLS 207-3771] use of undeclared identifier 'uint64_t' (./inverse_clarke.h:5:91)
+ERROR: [HLS 207-3689] incompatible operand types ('int' and 'hls::stream<uint16_t>' (aka 'stream<unsigned short>')) (inverse_clarke.cpp:19:50)
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.681 seconds; current allocated memory: 320.879 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 1.51 seconds; peak allocated memory: 1.070 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=5
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl vhdl -vivado_clock 5 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.008 seconds; current allocated memory: 790.672 MB.
+INFO: [HLS 200-10] Analyzing design file 'inverse_clarke.cpp' ... 
+ERROR: [HLS 207-3949] type 'double' cannot be narrowed to 'int32_t' (aka 'int') in initializer list (./trig_lookup.h:4:26)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:26)
+ERROR: [HLS 207-3949] type 'double' cannot be narrowed to 'int32_t' (aka 'int') in initializer list (./trig_lookup.h:4:30)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:30)
+ERROR: [HLS 207-3949] type 'double' cannot be narrowed to 'int32_t' (aka 'int') in initializer list (./trig_lookup.h:4:49)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:49)
+ERROR: [HLS 207-3949] type 'double' cannot be narrowed to 'int32_t' (aka 'int') in initializer list (./trig_lookup.h:4:67)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:67)
+ERROR: [HLS 207-3949] type 'double' cannot be narrowed to 'int32_t' (aka 'int') in initializer list (./trig_lookup.h:4:85)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:85)
+ERROR: [HLS 207-3949] type 'double' cannot be narrowed to 'int32_t' (aka 'int') in initializer list (./trig_lookup.h:4:104)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:104)
+ERROR: [HLS 207-3949] type 'double' cannot be narrowed to 'int32_t' (aka 'int') in initializer list (./trig_lookup.h:4:123)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:123)
+ERROR: [HLS 207-3949] type 'double' cannot be narrowed to 'int32_t' (aka 'int') in initializer list (./trig_lookup.h:4:142)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:142)
+ERROR: [HLS 207-3949] type 'double' cannot be narrowed to 'int32_t' (aka 'int') in initializer list (./trig_lookup.h:4:161)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:161)
+ERROR: [HLS 207-3949] type 'double' cannot be narrowed to 'int32_t' (aka 'int') in initializer list (./trig_lookup.h:4:180)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:180)
+ERROR: [HLS 207-3949] type 'double' cannot be narrowed to 'int32_t' (aka 'int') in initializer list (./trig_lookup.h:4:199)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:199)
+ERROR: [HLS 207-3949] type 'double' cannot be narrowed to 'int32_t' (aka 'int') in initializer list (./trig_lookup.h:4:218)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:218)
+ERROR: [HLS 207-3949] type 'double' cannot be narrowed to 'int32_t' (aka 'int') in initializer list (./trig_lookup.h:4:237)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:237)
+ERROR: [HLS 207-3949] type 'double' cannot be narrowed to 'int32_t' (aka 'int') in initializer list (./trig_lookup.h:4:255)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:255)
+ERROR: [HLS 207-3949] type 'double' cannot be narrowed to 'int32_t' (aka 'int') in initializer list (./trig_lookup.h:4:274)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:274)
+ERROR: [HLS 207-3949] type 'double' cannot be narrowed to 'int32_t' (aka 'int') in initializer list (./trig_lookup.h:4:292)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:292)
+ERROR: [HLS 207-3949] type 'double' cannot be narrowed to 'int32_t' (aka 'int') in initializer list (./trig_lookup.h:4:310)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:310)
+ERROR: [HLS 207-3949] type 'double' cannot be narrowed to 'int32_t' (aka 'int') in initializer list (./trig_lookup.h:4:328)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:328)
+ERROR: [HLS 207-3949] type 'double' cannot be narrowed to 'int32_t' (aka 'int') in initializer list (./trig_lookup.h:4:347)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:347)
+ERROR: [HLS 207-59] too many errors emitted, stopping now
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.89 seconds; current allocated memory: 313.500 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 1.711 seconds; peak allocated memory: 1.070 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=5
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl vhdl -vivado_clock 5 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.008 seconds; current allocated memory: 775.539 MB.
+INFO: [HLS 200-10] Analyzing design file 'inverse_clarke.cpp' ... 
+ERROR: [HLS 207-3948] constant expression evaluates to 2164594693 which cannot be narrowed to type 'int32_t' (aka 'int') (./trig_lookup.h:4:922)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:922)
+ERROR: [HLS 207-3948] constant expression evaluates to 2187337910 which cannot be narrowed to type 'int32_t' (aka 'int') (./trig_lookup.h:4:933)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:933)
+ERROR: [HLS 207-3948] constant expression evaluates to 2209998614 which cannot be narrowed to type 'int32_t' (aka 'int') (./trig_lookup.h:4:944)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:944)
+ERROR: [HLS 207-3948] constant expression evaluates to 2232575950 which cannot be narrowed to type 'int32_t' (aka 'int') (./trig_lookup.h:4:955)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:955)
+ERROR: [HLS 207-3948] constant expression evaluates to 2255069066 which cannot be narrowed to type 'int32_t' (aka 'int') (./trig_lookup.h:4:966)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:966)
+ERROR: [HLS 207-3948] constant expression evaluates to 2277477115 which cannot be narrowed to type 'int32_t' (aka 'int') (./trig_lookup.h:4:977)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:977)
+ERROR: [HLS 207-3948] constant expression evaluates to 2299799250 which cannot be narrowed to type 'int32_t' (aka 'int') (./trig_lookup.h:4:988)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:988)
+ERROR: [HLS 207-3948] constant expression evaluates to 2322034629 which cannot be narrowed to type 'int32_t' (aka 'int') (./trig_lookup.h:4:999)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:999)
+ERROR: [HLS 207-3948] constant expression evaluates to 2344182414 which cannot be narrowed to type 'int32_t' (aka 'int') (./trig_lookup.h:4:1010)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:1010)
+ERROR: [HLS 207-3948] constant expression evaluates to 2366241769 which cannot be narrowed to type 'int32_t' (aka 'int') (./trig_lookup.h:4:1021)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:1021)
+ERROR: [HLS 207-3948] constant expression evaluates to 2388211862 which cannot be narrowed to type 'int32_t' (aka 'int') (./trig_lookup.h:4:1032)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:1032)
+ERROR: [HLS 207-3948] constant expression evaluates to 2410091865 which cannot be narrowed to type 'int32_t' (aka 'int') (./trig_lookup.h:4:1043)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:1043)
+ERROR: [HLS 207-3948] constant expression evaluates to 2431880952 which cannot be narrowed to type 'int32_t' (aka 'int') (./trig_lookup.h:4:1054)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:1054)
+ERROR: [HLS 207-3948] constant expression evaluates to 2453578300 which cannot be narrowed to type 'int32_t' (aka 'int') (./trig_lookup.h:4:1065)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:1065)
+ERROR: [HLS 207-3948] constant expression evaluates to 2475183092 which cannot be narrowed to type 'int32_t' (aka 'int') (./trig_lookup.h:4:1076)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:1076)
+ERROR: [HLS 207-3948] constant expression evaluates to 2496694512 which cannot be narrowed to type 'int32_t' (aka 'int') (./trig_lookup.h:4:1087)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:1087)
+ERROR: [HLS 207-3948] constant expression evaluates to 2518111750 which cannot be narrowed to type 'int32_t' (aka 'int') (./trig_lookup.h:4:1098)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:1098)
+ERROR: [HLS 207-3948] constant expression evaluates to 2539433996 which cannot be narrowed to type 'int32_t' (aka 'int') (./trig_lookup.h:4:1109)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:1109)
+ERROR: [HLS 207-3948] constant expression evaluates to 2560660448 which cannot be narrowed to type 'int32_t' (aka 'int') (./trig_lookup.h:4:1120)
+INFO: [HLS 207-4260] insert an explicit cast to silence this issue (./trig_lookup.h:4:1120)
+ERROR: [HLS 207-59] too many errors emitted, stopping now
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.868 seconds; current allocated memory: 328.039 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 1.667 seconds; peak allocated memory: 1.070 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=5
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl vhdl -vivado_clock 5 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.008 seconds; current allocated memory: 774.133 MB.
+INFO: [HLS 200-10] Analyzing design file 'inverse_clarke.cpp' ... 
+ERROR: [HLS 207-3689] incompatible operand types ('int' and 'hls::stream<uint16_t>' (aka 'stream<unsigned short>')) (inverse_clarke.cpp:17:62)
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.638 seconds; current allocated memory: 329.863 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 1.43 seconds; peak allocated memory: 1.070 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=5
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl vhdl -vivado_clock 5 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.007 seconds; current allocated memory: 788.812 MB.
+INFO: [HLS 200-10] Analyzing design file 'inverse_clarke.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.326 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.971 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.001 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.073 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.021 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.079 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.024 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'inverse_clarke' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'inverse_clarke' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-871] Estimated clock period (3.871ns) exceeds the target (target clock period: 5ns, clock uncertainty: 1.35ns, effective delay budget: 3.65ns).
+WARNING: [HLS 200-1016] The critical path in module 'inverse_clarke' consists of the following:	'mul' operation ('id_cos', inverse_clarke.cpp:23) [29]  (3.87 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.169 seconds; current allocated memory: 1.071 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.072 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'inverse_clarke' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inverse_clarke/idq' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'inverse_clarke/theta' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'inverse_clarke/vectors' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'inverse_clarke' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_63_5_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'inverse_clarke'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.109 seconds; current allocated memory: 1.071 GB.
+INFO: [RTMG 210-279] Implementing memory 'inverse_clarke_cos_lut_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'inverse_clarke_sin_lut_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.522 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.229 seconds; current allocated memory: 1.071 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for inverse_clarke.
+INFO: [VLOG 209-307] Generating Verilog RTL for inverse_clarke.
+INFO: [HLS 200-789] **** Estimated Fmax: 258.33 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 5.632 seconds; current allocated memory: 315.598 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 6.436 seconds; peak allocated memory: 1.071 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=inverse_clarke
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/inverse_clarke
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1464] Running solution command: config_export -version=0.1
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=5
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1510] Running: config_export -display_name inverse_clarke -format ip_catalog -output C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/inverse_clarke -rtl vhdl -version 0.1 -vivado_clock 5 
+INFO: [HLS 200-1510] Running: export_design -rtl vhdl -format ip_catalog -output C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/inverse_clarke 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+ERROR: [IMPL 213-28] Failed to generate IP.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 8.521 seconds; current allocated memory: 317.691 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 9.358 seconds; peak allocated memory: 1.078 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=inverse_clarke
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/inverse_clarke
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1464] Running solution command: config_export -version=0.1
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=5
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [HLS 200-1510] Running: config_export -display_name inverse_clarke -format ip_catalog -output C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/inverse_clarke -rtl vhdl -version 0.1 -vivado_clock 5 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.008 seconds; current allocated memory: 801.035 MB.
+INFO: [HLS 200-10] Analyzing design file 'inverse_clarke.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.112 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.781 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.001 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.021 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.014 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.069 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.018 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'inverse_clarke' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'inverse_clarke' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-871] Estimated clock period (3.871ns) exceeds the target (target clock period: 5ns, clock uncertainty: 1.35ns, effective delay budget: 3.65ns).
+WARNING: [HLS 200-1016] The critical path in module 'inverse_clarke' consists of the following:	'mul' operation ('id_cos', inverse_clarke.cpp:23) [29]  (3.87 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.126 seconds; current allocated memory: 1.071 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.064 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'inverse_clarke' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inverse_clarke/idq' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'inverse_clarke/theta' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'inverse_clarke/vectors' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'inverse_clarke' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_63_5_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'inverse_clarke'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.095 seconds; current allocated memory: 1.071 GB.
+INFO: [RTMG 210-279] Implementing memory 'inverse_clarke_cos_lut_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'inverse_clarke_sin_lut_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.482 seconds; current allocated memory: 1.071 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.206 seconds; current allocated memory: 1.071 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for inverse_clarke.
+INFO: [VLOG 209-307] Generating Verilog RTL for inverse_clarke.
+INFO: [HLS 200-789] **** Estimated Fmax: 258.33 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 5.025 seconds; current allocated memory: 303.590 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 5.846 seconds; peak allocated memory: 1.071 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=inverse_clarke
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/inverse_clarke
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1464] Running solution command: config_export -version=0.1
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=5
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1510] Running: config_export -display_name inverse_clarke -format ip_catalog -output C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/inverse_clarke -rtl vhdl -version 0.1 -vivado_clock 5 
+INFO: [HLS 200-1510] Running: export_design -flow syn -rtl vhdl -format ip_catalog -output C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/inverse_clarke 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+ERROR: [IMPL 213-28] Failed to generate IP.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 6.116 seconds; current allocated memory: 329.273 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 6.94 seconds; peak allocated memory: 1.078 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/inverse_clarke
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=5
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/inverse_clarke -rtl vhdl -vivado_clock 5 
+INFO: [HLS 200-1510] Running: export_design -rtl vhdl -format ip_catalog -output C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/inverse_clarke 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+ERROR: [IMPL 213-28] Failed to generate IP.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.989 seconds; current allocated memory: 325.098 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 6.804 seconds; peak allocated memory: 1.078 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/inverse_clarke
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=5
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/inverse_clarke -rtl vhdl -vivado_clock 5 
+INFO: [HLS 200-1510] Running: export_design -rtl vhdl -format ip_catalog -output C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/inverse_clarke 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/inverse_clarke/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 6.472 seconds; current allocated memory: 331.391 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 7.259 seconds; peak allocated memory: 1.078 GB.

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1644733551526">
+  <ports id="1" name="adc_data_axis_V_data_V" type="PortType" originalName="adc_data_axis" coreId="0" bitwidth="16">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="adc_data_axis_V_keep_V" type="PortType" originalName="adc_data_axis" coreId="0" bitwidth="2">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="adc_data_axis_V_strb_V" type="PortType" originalName="adc_data_axis" coreId="1702129263" bitwidth="2">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="adc_data_axis_V_user_V" type="PortType" originalName="adc_data_axis" coreId="1736132064" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="5" name="adc_data_axis_V_last_V" type="PortType" originalName="adc_data_axis" coreId="1702129263" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="6" name="adc_data_axis_V_id_V" type="PortType" originalName="adc_data_axis" coreId="0" bitwidth="5">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="7" name="adc_data_axis_V_dest_V" type="PortType" originalName="adc_data_axis" coreId="3866733" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="8" name="phase_B" type="PortType" originalName="phase_B" coreId="1881174629" bitwidth="16" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="9" name="phase_A" type="PortType" originalName="phase_A" coreId="7209065" bitwidth="16" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="10" name="vbus" type="PortType" originalName="vbus" coreId="7209065" bitwidth="16" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="44" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="45" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="46" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="47" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="48" source_obj="//@ports.4" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="49" source_obj="//@ports.5" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="50" source_obj="//@ports.6" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="51" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="52" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="53" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="54" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="57" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="60" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="63" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="66" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@ports.7"/>
+  <edges id="67" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="68" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="70" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@ports.8"/>
+  <edges id="71" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="72" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="74" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@ports.9"/>
+  <edges id="75" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="76" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="182" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.4"/>
+  <edges id="183" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.3"/>
+  <edges id="184" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.2"/>
+  <edges id="185" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="186" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.4"/>
+  <edges id="187" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.4"/>
+  <edges id="188" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4"/>
+  <blocks id="30" name="block_30" type="BlockType">
+    <controlOutputObjs>._crit_edge</controlOutputObjs>
+    <controlOutputObjs>block_39</controlOutputObjs>
+    <controlOutputObjs>block_36</controlOutputObjs>
+    <controlOutputObjs>block_33</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="empty" lineNumber="293" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="no" opType="adapter" coreId="115" contextFuncName="read" bitwidth="28" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h" linenumber="293" fileDirectory="C:\git\bldc-driver-fpga\hardware_design\hls\adc_output_decode" functionName="read"/>
+      <dataInputObjs>adc_data_axis_V_data_V</dataInputObjs>
+      <dataInputObjs>adc_data_axis_V_keep_V</dataInputObjs>
+      <dataInputObjs>adc_data_axis_V_strb_V</dataInputObjs>
+      <dataInputObjs>adc_data_axis_V_user_V</dataInputObjs>
+      <dataInputObjs>adc_data_axis_V_last_V</dataInputObjs>
+      <dataInputObjs>adc_data_axis_V_id_V</dataInputObjs>
+      <dataInputObjs>adc_data_axis_V_dest_V</dataInputObjs>
+      <dataOutputObjs>extractvalue</dataOutputObjs>
+      <dataOutputObjs>extractvalue</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="tmp_data_V" lineNumber="293" originalName="tmp.data.V" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h" fileDirectory=".." coreId="1157296904" contextFuncName="read" bitwidth="16" opcode="extractvalue" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h" linenumber="293" fileDirectory="C:\git\bldc-driver-fpga\hardware_design\hls\adc_output_decode" functionName="read"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="tmp_id_V" lineNumber="293" originalName="tmp.id.V" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h" fileDirectory=".." coreId="4294967295" contextFuncName="read" bitwidth="5" opcode="extractvalue" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h" linenumber="293" fileDirectory="C:\git\bldc-driver-fpga\hardware_design\hls\adc_output_decode" functionName="read"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>switch</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="_ln20" lineNumber="20" fileName="decoder.cpp" fileDirectory=".." coreId="1153393656" contextFuncName="decoder" opcode="switch" m_display="0" m_delay="1.3" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="decoder.cpp" linenumber="20" fileDirectory="C:\git\bldc-driver-fpga\hardware_design\hls\adc_output_decode" functionName="decoder"/>
+      <dataInputObjs>extractvalue</dataInputObjs>
+      <controlInputObjs>._crit_edge</controlInputObjs>
+      <controlInputObjs>block_39</controlInputObjs>
+      <controlInputObjs>block_36</controlInputObjs>
+      <controlInputObjs>block_33</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <fileValidLineNumbers fileName="decoder.cpp">
+      <validLinenumbers>20</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h">
+      <validLinenumbers>293</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="33" name="block_33" type="BlockType">
+    <controlInputObjs>block_30</controlInputObjs>
+    <controlOutputObjs>switch</controlOutputObjs>
+    <controlOutputObjs>._crit_edge</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="vbus_write_ln173" lineNumber="173" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="no" opType="adapter" coreId="115" contextFuncName="write" opcode="write" nodeLatency="1" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" linenumber="173" fileDirectory="C:\git\bldc-driver-fpga\hardware_design\hls\adc_output_decode" functionName="write"/>
+      <dataInputObjs>extractvalue</dataInputObjs>
+      <dataOutputObjs>vbus</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="br_ln31" lineNumber="31" fileName="decoder.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="decoder" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="decoder.cpp" linenumber="31" fileDirectory="C:\git\bldc-driver-fpga\hardware_design\hls\adc_output_decode" functionName="decoder"/>
+      <controlInputObjs>._crit_edge</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h">
+      <validLinenumbers>173</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="decoder.cpp">
+      <validLinenumbers>31</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="36" name="block_36" type="BlockType">
+    <controlInputObjs>block_30</controlInputObjs>
+    <controlOutputObjs>switch</controlOutputObjs>
+    <controlOutputObjs>._crit_edge</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="phase_A_write_ln173" lineNumber="173" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="no" opType="adapter" coreId="115" contextFuncName="write" opcode="write" nodeLatency="1" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" linenumber="173" fileDirectory="C:\git\bldc-driver-fpga\hardware_design\hls\adc_output_decode" functionName="write"/>
+      <dataInputObjs>extractvalue</dataInputObjs>
+      <dataOutputObjs>phase_A</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="br_ln27" lineNumber="27" fileName="decoder.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="decoder" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="decoder.cpp" linenumber="27" fileDirectory="C:\git\bldc-driver-fpga\hardware_design\hls\adc_output_decode" functionName="decoder"/>
+      <controlInputObjs>._crit_edge</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h">
+      <validLinenumbers>173</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="decoder.cpp">
+      <validLinenumbers>27</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="39" name="block_39" type="BlockType">
+    <controlInputObjs>block_30</controlInputObjs>
+    <controlOutputObjs>switch</controlOutputObjs>
+    <controlOutputObjs>._crit_edge</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="phase_B_write_ln173" lineNumber="173" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="no" opType="adapter" coreId="115" contextFuncName="write" opcode="write" nodeLatency="1" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h" linenumber="173" fileDirectory="C:\git\bldc-driver-fpga\hardware_design\hls\adc_output_decode" functionName="write"/>
+      <dataInputObjs>extractvalue</dataInputObjs>
+      <dataOutputObjs>phase_B</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="br_ln23" lineNumber="23" fileName="decoder.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="decoder" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="decoder.cpp" linenumber="23" fileDirectory="C:\git\bldc-driver-fpga\hardware_design\hls\adc_output_decode" functionName="decoder"/>
+      <controlInputObjs>._crit_edge</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/hls_stream_39.h">
+      <validLinenumbers>173</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="decoder.cpp">
+      <validLinenumbers>23</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="41" name="._crit_edge" type="BlockType">
+    <controlInputObjs>block_30</controlInputObjs>
+    <controlInputObjs>block_33</controlInputObjs>
+    <controlInputObjs>block_36</controlInputObjs>
+    <controlInputObjs>block_39</controlInputObjs>
+    <controlOutputObjs>switch</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="_ln39" lineNumber="39" fileName="decoder.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="decoder" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="decoder.cpp" linenumber="39" fileDirectory="C:\git\bldc-driver-fpga\hardware_design\hls\adc_output_decode" functionName="decoder"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="decoder.cpp">
+      <validLinenumbers>39</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <regnodes realName="tmp_id_V_reg_105">
+    <nodeIds>28</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_data_V_reg_98">
+    <nodeIds>27</nodeIds>
+  </regnodes>
+  <expressionNodes realName="tmp_id_V_fu_94">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_data_V_fu_87">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="grp_write_fu_80">
+    <nodeIds>37</nodeIds>
+  </ioNodes>
+  <ioNodes realName="empty_read_fu_48">
+    <nodeIds>26</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_66">
+    <nodeIds>31</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_73">
+    <nodeIds>34</nodeIds>
+  </ioNodes>
+  <ioPorts name="adc_data_axis_V_data_V">
+    <contents name="read">
+      <nodeIds>26</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="adc_data_axis_V_dest_V">
+    <contents name="read">
+      <nodeIds>26</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="adc_data_axis_V_id_V">
+    <contents name="read">
+      <nodeIds>26</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="adc_data_axis_V_keep_V">
+    <contents name="read">
+      <nodeIds>26</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="adc_data_axis_V_last_V">
+    <contents name="read">
+      <nodeIds>26</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="adc_data_axis_V_strb_V">
+    <contents name="read">
+      <nodeIds>26</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="adc_data_axis_V_user_V">
+    <contents name="read">
+      <nodeIds>26</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="phase_A">
+    <contents name="write">
+      <nodeIds>34</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="phase_B">
+    <contents name="write">
+      <nodeIds>37</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="vbus">
+    <contents name="write">
+      <nodeIds>31</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="31" stage="2" latency="2"/>
+      <operations id="34" stage="2" latency="2"/>
+      <operations id="37" stage="2" latency="2"/>
+    </states>
+    <states id="2">
+      <operations id="31" stage="1" latency="2"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="2"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="2"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="decoder" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="1">
+      <basicBlocks>30</basicBlocks>
+      <basicBlocks>33</basicBlocks>
+      <basicBlocks>36</basicBlocks>
+      <basicBlocks>39</basicBlocks>
+      <basicBlocks>41</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

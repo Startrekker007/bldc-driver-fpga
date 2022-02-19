@@ -1,0 +1,30 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-348,-9",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port idq_0 -pg 1 -lvl 0 -x -230 -y 180 -defaultsOSRD
+preplace port theta_0 -pg 1 -lvl 0 -x -230 -y 200 -defaultsOSRD
+preplace port current_out_0 -pg 1 -lvl 3 -x 710 -y 160 -defaultsOSRD
+preplace port axis_debug_0 -pg 1 -lvl 3 -x 710 -y 290 -defaultsOSRD
+preplace port port-id_ap_clk -pg 1 -lvl 0 -x -230 -y 20 -defaultsOSRD
+preplace port port-id_ap_rst_n -pg 1 -lvl 0 -x -230 -y 110 -defaultsOSRD
+preplace inst ipark_0 -pg 1 -lvl 1 -x 20 -y 190 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x 20 -y 400 -defaultsOSRD
+preplace inst iclarke_0 -pg 1 -lvl 2 -x 490 -y 300 -defaultsOSRD
+preplace netloc Net 1 0 2 -210 330 200
+preplace netloc Net1 1 0 2 -200 340 N
+preplace netloc ipark_0_vectors_TDATA 1 1 1 220 190n
+preplace netloc xlconstant_0_dout 1 0 2 -190 300 210
+preplace netloc iclarke_0_current_out 1 2 1 690 160n
+preplace netloc idq_0_1 1 0 1 N 180
+preplace netloc ipark_0_vectors 1 1 1 230 150n
+preplace netloc theta_0_1 1 0 1 N 200
+preplace netloc iclarke_0_axis_debug 1 2 1 N 290
+levelinfo -pg 1 -230 20 490 710
+pagesize -pg 1 -db -bbox -sgen -340 -230 850 530
+"
+}
+0

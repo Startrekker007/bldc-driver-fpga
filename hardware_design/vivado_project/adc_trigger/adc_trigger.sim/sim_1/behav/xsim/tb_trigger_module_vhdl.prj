@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../adc_trigger.gen/sources_1/ip/ctr_32b/sim/ctr_32b.vhd" \
+"../../../../adc_trigger.srcs/sources_1/new/trigger_module.vhd" \
+"../../../../adc_trigger.srcs/sim_1/new/trigger_module_tb.vhd" \
+
+# Do not sort compile order
+nosort

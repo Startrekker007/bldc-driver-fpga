@@ -1,0 +1,2 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/git/bldc-driver-fpga/hardware_design/module_test_projects/adc_triggering_test/adc_triggering_test.srcs/sim_1/new/adc_demux_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_adc_demux'

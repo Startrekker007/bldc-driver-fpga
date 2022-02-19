@@ -1,0 +1,229 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.011 seconds; current allocated memory: 1009.695 MB.
+INFO: [HLS 200-10] Analyzing design file 'inverse_park.cpp' ... 
+ERROR: [HLS 207-3771] use of undeclared identifier 'uint64_t' (./inverse_park.h:5:31)
+ERROR: [HLS 207-3771] use of undeclared identifier 'uint64_t' (./inverse_park.h:5:62)
+ERROR: [HLS 207-3796] unknown type name 'int32_t' (inverse_park.cpp:9:7)
+ERROR: [HLS 207-3796] unknown type name 'int32_t' (inverse_park.cpp:10:7)
+ERROR: [HLS 207-3771] use of undeclared identifier 'uint64_t' (inverse_park.cpp:13:31)
+ERROR: [HLS 207-3771] use of undeclared identifier 'uint64_t' (inverse_park.cpp:13:62)
+WARNING: [HLS 207-5540] invalid variable expr  (inverse_park.cpp:14:38)
+WARNING: [HLS 207-5566] unknown HLS pragma ignored (inverse_park.cpp:15:9)
+ERROR: [HLS 207-3796] unknown type name 'uint64_t' (inverse_park.cpp:16:2)
+ERROR: [HLS 207-3796] unknown type name 'int32_t' (inverse_park.cpp:17:2)
+ERROR: [HLS 207-3771] use of undeclared identifier 'int32_t' (inverse_park.cpp:17:16)
+ERROR: [HLS 207-3796] unknown type name 'int32_t' (inverse_park.cpp:18:2)
+ERROR: [HLS 207-3771] use of undeclared identifier 'int32_t' (inverse_park.cpp:18:16)
+ERROR: [HLS 207-3796] unknown type name 'int32_t' (inverse_park.cpp:20:2)
+ERROR: [HLS 207-3796] unknown type name 'int32_t' (inverse_park.cpp:22:2)
+ERROR: [HLS 207-3771] use of undeclared identifier 'int32_t' (inverse_park.cpp:22:22)
+ERROR: [HLS 207-3771] use of undeclared identifier 'int64_t' (inverse_park.cpp:22:34)
+ERROR: [HLS 207-3771] use of undeclared identifier 'int64_t' (inverse_park.cpp:22:51)
+ERROR: [HLS 207-3796] unknown type name 'int32_t' (inverse_park.cpp:23:2)
+ERROR: [HLS 207-59] too many errors emitted, stopping now
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.915 seconds; current allocated memory: 101.293 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 2.665 seconds; peak allocated memory: 1.075 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.011 seconds; current allocated memory: 778.848 MB.
+INFO: [HLS 200-10] Analyzing design file 'inverse_park.cpp' ... 
+WARNING: [HLS 207-5566] unknown HLS pragma ignored (inverse_park.cpp:15:9)
+WARNING: [HLS 207-5162] shift count >= width of type (inverse_park.cpp:53:106)
+WARNING: [HLS 207-5540] invalid variable expr  (inverse_park.cpp:13:88)
+WARNING: [HLS 207-5540] invalid variable expr  (inverse_park.cpp:13:119)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.345 seconds; current allocated memory: 1.069 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.991 seconds; current allocated memory: 1.069 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 1.069 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.062 seconds; current allocated memory: 1.069 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-77] The top function 'inverse_park' (inverse_park.cpp:13) has no outputs. Possible cause(s) are: (1) Output parameters are passed by value; (2) intended outputs (parameters or global variables) are never written; (3) there are infinite loops.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.022 seconds; current allocated memory: 1.069 GB.
+WARNING: [XFORM 203-731] Internal stream variable 'data_in.assign' (inverse_park.cpp:13) is invalid: it has no data producer
+WARNING: [XFORM 203-731] Internal stream variable 'current_out.assign' (inverse_park.cpp:13) is invalid: it has no data consumer.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.075 seconds; current allocated memory: 1.069 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.019 seconds; current allocated memory: 1.069 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'inverse_park' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'inverse_park' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.127 seconds; current allocated memory: 1.069 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.029 seconds; current allocated memory: 1.069 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'inverse_park' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'inverse_park/data_in' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inverse_park/current_out' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'inverse_park' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'inverse_park'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.037 seconds; current allocated memory: 1.069 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 1.069 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.174 seconds; current allocated memory: 1.069 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for inverse_park.
+INFO: [VLOG 209-307] Generating Verilog RTL for inverse_park.
+INFO: [HLS 200-789] **** Estimated Fmax: 0.00 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 5.091 seconds; current allocated memory: 327.590 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 5.912 seconds; peak allocated memory: 1.069 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.008 seconds; current allocated memory: 776.551 MB.
+INFO: [HLS 200-10] Analyzing design file 'inverse_park.cpp' ... 
+WARNING: [HLS 207-5162] shift count >= width of type (inverse_park.cpp:53:106)
+WARNING: [HLS 207-5540] invalid variable expr  (inverse_park.cpp:13:88)
+WARNING: [HLS 207-5540] invalid variable expr  (inverse_park.cpp:13:119)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.12 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.813 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.001 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.012 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-77] The top function 'inverse_park' (inverse_park.cpp:13) has no outputs. Possible cause(s) are: (1) Output parameters are passed by value; (2) intended outputs (parameters or global variables) are never written; (3) there are infinite loops.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.014 seconds; current allocated memory: 1.070 GB.
+WARNING: [XFORM 203-731] Internal stream variable 'data_in.assign' (inverse_park.cpp:13) is invalid: it has no data producer
+WARNING: [XFORM 203-731] Internal stream variable 'current_out.assign' (inverse_park.cpp:13) is invalid: it has no data consumer.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.067 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.013 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'inverse_park' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'inverse_park' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.065 seconds; current allocated memory: 1.070 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.025 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'inverse_park' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'inverse_park/data_in' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inverse_park/current_out' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'inverse_park' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'inverse_park'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.033 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.17 seconds; current allocated memory: 1.070 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for inverse_park.
+INFO: [VLOG 209-307] Generating Verilog RTL for inverse_park.
+INFO: [HLS 200-789] **** Estimated Fmax: 0.00 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 4.507 seconds; current allocated memory: 327.613 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 5.335 seconds; peak allocated memory: 1.070 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.008 seconds; current allocated memory: 768.848 MB.
+INFO: [HLS 200-10] Analyzing design file 'inverse_park.cpp' ... 
+WARNING: [HLS 207-5162] shift count >= width of type (inverse_park.cpp:53:106)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.097 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.806 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.001 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.012 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.012 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.057 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'inverse_park' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'inverse_park' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 1.070 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.024 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'inverse_park' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inverse_park/data_in' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'inverse_park/current_out' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'inverse_park' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'inverse_park'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.038 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.164 seconds; current allocated memory: 1.070 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.191 seconds; current allocated memory: 1.070 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for inverse_park.
+INFO: [VLOG 209-307] Generating Verilog RTL for inverse_park.
+INFO: [HLS 200-789] **** Estimated Fmax: 0.00 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 4.548 seconds; current allocated memory: 335.309 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 5.343 seconds; peak allocated memory: 1.070 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=inverse_park
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/inverse_park
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1510] Running: config_export -display_name inverse_park -output C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/inverse_park 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/inverse_park 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file C:/git/bldc-driver-fpga/hardware_design/hls/generated_ip/inverse_park/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 9.438 seconds; current allocated memory: 317.457 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 10.274 seconds; peak allocated memory: 1.078 GB.

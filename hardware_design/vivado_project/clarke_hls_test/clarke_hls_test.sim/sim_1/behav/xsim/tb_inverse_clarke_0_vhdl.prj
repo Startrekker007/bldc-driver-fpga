@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../clarke_hls_test.ip_user_files/ipstatic/hdl/vhdl/inverse_clarke_cos_lut_ROM_AUTO_1R.vhd" \
+"../../../../clarke_hls_test.ip_user_files/ipstatic/hdl/vhdl/inverse_clarke_mul_32s_32s_63_5_1.vhd" \
+"../../../../clarke_hls_test.ip_user_files/ipstatic/hdl/vhdl/inverse_clarke_regslice_both.vhd" \
+"../../../../clarke_hls_test.ip_user_files/ipstatic/hdl/vhdl/inverse_clarke_sin_lut_ROM_AUTO_1R.vhd" \
+"../../../../clarke_hls_test.ip_user_files/ipstatic/hdl/vhdl/inverse_clarke.vhd" \
+"../../../../clarke_hls_test.gen/sources_1/ip/inverse_clarke_0/sim/inverse_clarke_0.vhd" \
+"../../../../clarke_hls_test.srcs/sim_1/new/tb_inverse_clarke.vhd" \
+
+# Do not sort compile order
+nosort

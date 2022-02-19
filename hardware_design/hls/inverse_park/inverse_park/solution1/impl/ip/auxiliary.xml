@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="inverse_park" xd:componentRef="inverse_park" xd:initiationInterval="2" xd:clockPeriod="5" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="data_in" xd:originalName="data_in" xd:direction="in" xd:interfaceRef="data_in" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="current_out" xd:originalName="current_out" xd:direction="out" xd:interfaceRef="current_out" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:latencyEstimates xd:best-case="1" xd:worst-case="1" xd:average-case="1"/>
+  <xd:resourceEstimates xd:LUT="36" xd:FF="2" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

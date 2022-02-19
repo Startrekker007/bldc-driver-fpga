@@ -1,0 +1,7 @@
+inverse_clarke_mul_32s_32s_63_5_1
+inverse_clarke_cos_lut_ROM_AUTO_1R
+inverse_clarke_sin_lut_ROM_AUTO_1R
+inverse_clarke_regslice_both
+inverse_clarke_regslice_both
+inverse_clarke_regslice_both
+inverse_clarke

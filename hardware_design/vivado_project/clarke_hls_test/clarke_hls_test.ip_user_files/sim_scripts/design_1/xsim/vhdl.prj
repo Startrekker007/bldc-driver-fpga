@@ -1,0 +1,14 @@
+vhdl xil_defaultlib  \
+"../../../../clarke_hls_test.gen/sources_1/bd/design_1/ipshared/0807/hdl/vhdl/inverse_clarke_cos_lut_ROM_AUTO_1R.vhd" \
+"../../../../clarke_hls_test.gen/sources_1/bd/design_1/ipshared/0807/hdl/vhdl/inverse_clarke_mul_32s_32s_63_5_1.vhd" \
+"../../../../clarke_hls_test.gen/sources_1/bd/design_1/ipshared/0807/hdl/vhdl/inverse_clarke_regslice_both.vhd" \
+"../../../../clarke_hls_test.gen/sources_1/bd/design_1/ipshared/0807/hdl/vhdl/inverse_clarke_sin_lut_ROM_AUTO_1R.vhd" \
+"../../../../clarke_hls_test.gen/sources_1/bd/design_1/ipshared/0807/hdl/vhdl/inverse_clarke.vhd" \
+"../../../bd/design_1/ip/design_1_inverse_clarke_0_0/sim/design_1_inverse_clarke_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_0_0/sim/design_1_axi_gpio_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_rst_ps7_0_100M_0/sim/design_1_rst_ps7_0_100M_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_0_1/sim/design_1_axi_gpio_0_1.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_0_2/sim/design_1_axi_gpio_0_2.vhd" \
+"../../../bd/design_1/sim/design_1.vhd" \
+
+nosort

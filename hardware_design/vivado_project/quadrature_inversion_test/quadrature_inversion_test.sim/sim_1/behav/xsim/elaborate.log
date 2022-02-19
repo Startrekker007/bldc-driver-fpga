@@ -1,0 +1,37 @@
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlconstant_v1_1_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_quad_inversion_wrapper_behav xil_defaultlib.tb_quad_inversion_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behav of entity xil_defaultlib.iclarke_mul_32s_33ns_63_2_1 [\iclarke_mul_32s_33ns_63_2_1(num...]
+Compiling architecture behav of entity xil_defaultlib.iclarke_regslice_both [\iclarke_regslice_both(datawidth...]
+Compiling architecture behav of entity xil_defaultlib.iclarke_regslice_both [iclarke_regslice_both_default]
+Compiling architecture behav of entity xil_defaultlib.iclarke [iclarke_default]
+Compiling architecture quad_inversion_iclarke_0_1_arch of entity xil_defaultlib.quad_inversion_iclarke_0_1 [quad_inversion_iclarke_0_1_defau...]
+Compiling architecture rtl of entity xil_defaultlib.ipark_cos_lut_ROM_AUTO_1R [ipark_cos_lut_rom_auto_1r_defaul...]
+Compiling architecture rtl of entity xil_defaultlib.ipark_sin_lut_ROM_AUTO_1R [ipark_sin_lut_rom_auto_1r_defaul...]
+Compiling architecture behav of entity xil_defaultlib.ipark_mul_32s_32s_63_5_1 [\ipark_mul_32s_32s_63_5_1(num_st...]
+Compiling architecture behav of entity xil_defaultlib.ipark_regslice_both [\ipark_regslice_both(datawidth=6...]
+Compiling architecture behav of entity xil_defaultlib.ipark_regslice_both [\ipark_regslice_both(datawidth=1...]
+Compiling architecture behav of entity xil_defaultlib.ipark [ipark_default]
+Compiling architecture quad_inversion_ipark_0_0_arch of entity xil_defaultlib.quad_inversion_ipark_0_0 [quad_inversion_ipark_0_0_default]
+Compiling module xlconstant_v1_1_7.xlconstant_v1_1_7_xlconstant(CON...
+Compiling module xil_defaultlib.quad_inversion_xlconstant_0_0
+Compiling architecture structure of entity xil_defaultlib.quad_inversion [quad_inversion_default]
+Compiling architecture structure of entity xil_defaultlib.quad_inversion_wrapper [quad_inversion_wrapper_default]
+Compiling architecture tb of entity xil_defaultlib.tb_quad_inversion_wrapper
+Built simulation snapshot tb_quad_inversion_wrapper_behav

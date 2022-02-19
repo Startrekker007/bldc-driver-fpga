@@ -1,0 +1,15 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="inverse_clarke.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="inverse_clarke" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=inverse_clarke" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="inverse_clarke.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="inverse_clarke" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis port=idq" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="inverse_clarke.cpp:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="inverse_clarke" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis port=theta" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="inverse_clarke.cpp:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="inverse_clarke" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis port=vectors" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

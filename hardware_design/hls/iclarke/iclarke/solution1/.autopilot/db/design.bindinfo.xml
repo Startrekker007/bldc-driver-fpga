@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mul" ID="" IMPL="auto" LATENCY="1" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_33ns_63_2_1_U1" SOURCE="iclarke.cpp:24" VARIABLE="sqrt3Xib" MODULE="iclarke" LOOP="" BUNDLEDNAME="" DSP="3" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op sub" ID="" IMPL="fabric" LATENCY="0" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln26_fu_134_p2" SOURCE="iclarke.cpp:26" VARIABLE="sub_ln26" MODULE="iclarke" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op sub" ID="" IMPL="fabric" LATENCY="0" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln26_1_fu_150_p2" SOURCE="iclarke.cpp:26" VARIABLE="sub_ln26_1" MODULE="iclarke" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op sub" ID="" IMPL="fabric" LATENCY="0" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln26_2_fu_232_p2" SOURCE="iclarke.cpp:26" VARIABLE="sub_ln26_2" MODULE="iclarke" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op select" ID="" IMPL="auto_sel" LATENCY="0" OPTYPE="select" PRAGMA="" RTLNAME="phb_clamped_fu_237_p3" SOURCE="iclarke.cpp:26" VARIABLE="phb_clamped" MODULE="iclarke" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op sub" ID="" IMPL="tadder" LATENCY="0" OPTYPE="sub" PRAGMA="" RTLNAME="add_ln27_fu_176_p2" SOURCE="iclarke.cpp:27" VARIABLE="add_ln27" MODULE="iclarke" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln27_1_fu_180_p2" SOURCE="iclarke.cpp:27" VARIABLE="add_ln27_1" MODULE="iclarke" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op sub" ID="" IMPL="tadder" LATENCY="0" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln27_fu_184_p2" SOURCE="iclarke.cpp:27" VARIABLE="sub_ln27" MODULE="iclarke" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op sub" ID="" IMPL="fabric" LATENCY="0" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln27_1_fu_208_p2" SOURCE="iclarke.cpp:27" VARIABLE="sub_ln27_1" MODULE="iclarke" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op select" ID="" IMPL="auto_sel" LATENCY="0" OPTYPE="select" PRAGMA="" RTLNAME="phc_clamped_fu_224_p3" SOURCE="iclarke.cpp:27" VARIABLE="phc_clamped" MODULE="iclarke" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>

@@ -1,0 +1,342 @@
+{
+  "Top": "ipark",
+  "RtlTop": "ipark",
+  "RtlPrefix": "",
+  "RtlSubPrefix": "ipark_",
+  "SourceLanguage": "cpp",
+  "HostMachineBits": "64",
+  "FunctionProtocol": "ap_ctrl_hs",
+  "ResetStyle": "control",
+  "Target": {
+    "Family": "zynq",
+    "Device": "xc7z020",
+    "Package": "-clg400",
+    "Speed": "-1",
+    "Triple": "fpga64-xilinx-none"
+  },
+  "Args": {
+    "idq": {
+      "index": "0",
+      "direction": "in",
+      "srcType": "stream<unsigned long long, 0>&",
+      "srcSize": "64",
+      "hwRefs": [{
+          "type": "interface",
+          "interface": "idq",
+          "name": "",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "theta": {
+      "index": "1",
+      "direction": "in",
+      "srcType": "stream<unsigned short, 0>&",
+      "srcSize": "16",
+      "hwRefs": [{
+          "type": "interface",
+          "interface": "theta",
+          "name": "",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "vectors": {
+      "index": "2",
+      "direction": "out",
+      "srcType": "stream<unsigned long long, 0>&",
+      "srcSize": "64",
+      "hwRefs": [{
+          "type": "interface",
+          "interface": "vectors",
+          "name": "",
+          "usage": "data",
+          "direction": "out"
+        }]
+    }
+  },
+  "HlsSolution": {
+    "FlowTarget": "vivado",
+    "ConfigTcl": [
+      "config_export -description {Inverse Park Transform}",
+      "config_export -display_name=ipark",
+      "config_export -output=C:\/git\/bldc-driver-fpga\/hardware_design\/hls\/generated_ip\/ipark",
+      "config_export -version=1.0",
+      "config_export -format=ip_catalog",
+      "config_export -rtl=verilog"
+    ],
+    "ProfileOption": "0",
+    "ProfileType": "none",
+    "KernelName": "ipark"
+  },
+  "ClockInfo": {
+    "ClockName": "ap_clk",
+    "ClockPeriod": "5",
+    "Uncertainty": "1.35",
+    "IsCombinational": "0",
+    "II": "11",
+    "Latency": "10"
+  },
+  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 5.000 [get_ports ap_clk]"]},
+  "Ipx": {
+    "Vendor": "xilinx.com",
+    "Library": "hls",
+    "Name": "ipark",
+    "Version": "1.0",
+    "DisplayName": "ipark",
+    "Revision": "",
+    "Description": "Inverse Park Transform",
+    "Taxonomy": "\/VITIS_HLS_IP",
+    "AutoFamilySupport": "",
+    "ZipFile": "xilinx_com_hls_ipark_1_0.zip"
+  },
+  "Files": {
+    "CSource": ["..\/..\/ipark.cpp"],
+    "Vhdl": [
+      "impl\/vhdl\/ipark_cos_lut_ROM_AUTO_1R.vhd",
+      "impl\/vhdl\/ipark_mul_32s_32s_63_5_1.vhd",
+      "impl\/vhdl\/ipark_regslice_both.vhd",
+      "impl\/vhdl\/ipark_sin_lut_ROM_AUTO_1R.vhd",
+      "impl\/vhdl\/ipark.vhd"
+    ],
+    "Verilog": [
+      "impl\/verilog\/ipark_cos_lut_ROM_AUTO_1R.dat",
+      "impl\/verilog\/ipark_cos_lut_ROM_AUTO_1R.v",
+      "impl\/verilog\/ipark_hls_deadlock_idx0_monitor.v",
+      "impl\/verilog\/ipark_hls_deadlock_kernel_monitor_top.vh",
+      "impl\/verilog\/ipark_mul_32s_32s_63_5_1.v",
+      "impl\/verilog\/ipark_regslice_both.v",
+      "impl\/verilog\/ipark_sin_lut_ROM_AUTO_1R.dat",
+      "impl\/verilog\/ipark_sin_lut_ROM_AUTO_1R.v",
+      "impl\/verilog\/ipark.v"
+    ],
+    "IpMisc": ["impl\/misc\/logo.png"],
+    "CsynthXml": "syn\/report\/csynth.xml",
+    "DebugDir": ".debug",
+    "KernelXml": ".autopilot\/db\/kernel.internal.xml",
+    "Xo": "",
+    "XoHlsDir": "",
+    "ProtoInst": [".debug\/ipark.protoinst"]
+  },
+  "SubcoreInfo": {
+    "HasXpmMemory": false,
+    "HasClockedDsp": false,
+    "Ip": []
+  },
+  "Interfaces": {
+    "ap_clk": {
+      "type": "clock",
+      "busTypeName": "clock",
+      "mode": "slave",
+      "busParams": {
+        "ASSOCIATED_BUSIF": "idq:theta:vectors",
+        "ASSOCIATED_RESET": "ap_rst_n"
+      },
+      "portMap": {"ap_clk": "CLK"},
+      "ports": ["ap_clk"]
+    },
+    "ap_rst_n": {
+      "type": "reset",
+      "busTypeName": "reset",
+      "mode": "slave",
+      "busParams": {"POLARITY": "ACTIVE_LOW"},
+      "portMap": {"ap_rst_n": "RST"},
+      "ports": ["ap_rst_n"]
+    },
+    "ap_ctrl": {
+      "type": "ap_ctrl",
+      "busTypeName": "acc_handshake",
+      "mode": "slave",
+      "portMap": {
+        "ap_start": "start",
+        "ap_done": "done",
+        "ap_idle": "idle",
+        "ap_ready": "ready"
+      },
+      "ports": [
+        "ap_done",
+        "ap_idle",
+        "ap_ready",
+        "ap_start"
+      ]
+    },
+    "idq": {
+      "type": "axi4stream",
+      "busTypeName": "axis",
+      "mode": "slave",
+      "dataWidth": "64",
+      "portPrefix": "idq_",
+      "ports": [
+        "idq_TDATA",
+        "idq_TREADY",
+        "idq_TVALID"
+      ],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "axis",
+          "register_option": "0",
+          "register_mode": "both",
+          "argName": "idq"
+        }]
+    },
+    "theta": {
+      "type": "axi4stream",
+      "busTypeName": "axis",
+      "mode": "slave",
+      "dataWidth": "16",
+      "portPrefix": "theta_",
+      "ports": [
+        "theta_TDATA",
+        "theta_TREADY",
+        "theta_TVALID"
+      ],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "axis",
+          "register_option": "0",
+          "register_mode": "both",
+          "argName": "theta"
+        }]
+    },
+    "vectors": {
+      "type": "axi4stream",
+      "busTypeName": "axis",
+      "mode": "master",
+      "dataWidth": "64",
+      "portPrefix": "vectors_",
+      "ports": [
+        "vectors_TDATA",
+        "vectors_TREADY",
+        "vectors_TVALID"
+      ],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "axis",
+          "register_option": "0",
+          "register_mode": "both",
+          "argName": "vectors"
+        }]
+    }
+  },
+  "RtlPorts": {
+    "ap_local_block": {
+      "dir": "out",
+      "width": "1",
+      "isVector": "true"
+    },
+    "ap_local_deadlock": {
+      "dir": "out",
+      "width": "1",
+      "isVector": "true"
+    },
+    "ap_clk": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_rst_n": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_start": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_done": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_idle": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_ready": {
+      "dir": "out",
+      "width": "1"
+    },
+    "idq_TDATA": {
+      "dir": "in",
+      "width": "64"
+    },
+    "idq_TVALID": {
+      "dir": "in",
+      "width": "1"
+    },
+    "idq_TREADY": {
+      "dir": "out",
+      "width": "1"
+    },
+    "theta_TDATA": {
+      "dir": "in",
+      "width": "16"
+    },
+    "theta_TVALID": {
+      "dir": "in",
+      "width": "1"
+    },
+    "theta_TREADY": {
+      "dir": "out",
+      "width": "1"
+    },
+    "vectors_TDATA": {
+      "dir": "out",
+      "width": "64"
+    },
+    "vectors_TVALID": {
+      "dir": "out",
+      "width": "1"
+    },
+    "vectors_TREADY": {
+      "dir": "in",
+      "width": "1"
+    }
+  },
+  "ModuleInfo": {
+    "Hierarchy": {"ModuleName": "ipark"},
+    "Info": {"ipark": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      }},
+    "Metrics": {"ipark": {
+        "Latency": {
+          "LatencyBest": "10",
+          "LatencyAvg": "10",
+          "LatencyWorst": "10",
+          "PipelineII": "11",
+          "PipelineDepth": "",
+          "PipelineType": "no"
+        },
+        "Timing": {
+          "Target": "5.00",
+          "Uncertainty": "1.35",
+          "Estimate": "3.871"
+        },
+        "Area": {
+          "BRAM_18K": "4",
+          "AVAIL_BRAM": "280",
+          "UTIL_BRAM": "1",
+          "DSP": "12",
+          "AVAIL_DSP": "220",
+          "UTIL_DSP": "5",
+          "FF": "669",
+          "AVAIL_FF": "106400",
+          "UTIL_FF": "~0",
+          "LUT": "320",
+          "AVAIL_LUT": "53200",
+          "UTIL_LUT": "~0",
+          "URAM": "0",
+          "AVAIL_URAM": "0",
+          "UTIL_URAM": "0"
+        }
+      }}
+  },
+  "GenerateBdFiles": "0",
+  "GenData": {
+    "DataVersion": "0.2",
+    "Time": "2021-01-31 20:44:23 +1300",
+    "ToolName": "vitis_hls",
+    "ToolVersion": "2021.2"
+  }
+}
