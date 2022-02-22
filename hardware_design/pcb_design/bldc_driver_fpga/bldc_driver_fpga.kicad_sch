@@ -1768,6 +1768,10 @@
     (uuid fef37e8b-0ff0-4da2-8a57-acaf19551d1a)
   )
 
+  (text "N17\nP18\nR17\nT16\nV18\nV17" (at 63.5 104.14 0)
+    (effects (font (size 1.5 1.5)) (justify left bottom))
+    (uuid 677eb441-07e4-425e-8392-d8213b082473)
+  )
   (text "CH6" (at 63.5 143.51 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 85d0ef65-4ceb-49b9-8cb6-cb86012f9497)

@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../bd/ADC_BLOCK/ip/ADC_BLOCK_xlconcat_0_0/sim/ADC_BLOCK_xlconcat_0_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

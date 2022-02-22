@@ -1,0 +1,694 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x9F67B9C92C743818",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../adc_block.gen/sources_1/bd/ADC_BLOCK",
+      "name": "ADC_BLOCK",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "None",
+      "tool_version": "2021.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "xadc_wiz_0": "",
+      "trigger_module_0": "",
+      "adc_demux_0": "",
+      "xlconcat_0": "",
+      "adc_rst_cfg_gpio": "",
+      "adc_tim_cfg_gpio": ""
+    },
+    "interface_ports": {
+      "phasev_analog": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:diff_analog_io:1.0",
+        "vlnv": "xilinx.com:interface:diff_analog_io_rtl:1.0"
+      },
+      "vbus_analog": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:diff_analog_io:1.0",
+        "vlnv": "xilinx.com:interface:diff_analog_io_rtl:1.0"
+      },
+      "phaseu_analog": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:diff_analog_io:1.0",
+        "vlnv": "xilinx.com:interface:diff_analog_io_rtl:1.0"
+      },
+      "s_axi_adc_cfg_gpio": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+        "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+        "parameters": {
+          "ADDR_WIDTH": {
+            "value": "9"
+          },
+          "ARUSER_WIDTH": {
+            "value": "0"
+          },
+          "AWUSER_WIDTH": {
+            "value": "0"
+          },
+          "BUSER_WIDTH": {
+            "value": "0"
+          },
+          "CLK_DOMAIN": {
+            "value": "ADC_BLOCK_axi_aclk",
+            "value_src": "default"
+          },
+          "DATA_WIDTH": {
+            "value": "32"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "HAS_BRESP": {
+            "value": "1"
+          },
+          "HAS_BURST": {
+            "value": "0"
+          },
+          "HAS_CACHE": {
+            "value": "0"
+          },
+          "HAS_LOCK": {
+            "value": "0"
+          },
+          "HAS_PROT": {
+            "value": "0"
+          },
+          "HAS_QOS": {
+            "value": "0"
+          },
+          "HAS_REGION": {
+            "value": "0"
+          },
+          "HAS_RRESP": {
+            "value": "1"
+          },
+          "HAS_WSTRB": {
+            "value": "1"
+          },
+          "ID_WIDTH": {
+            "value": "0"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "MAX_BURST_LENGTH": {
+            "value": "1"
+          },
+          "NUM_READ_OUTSTANDING": {
+            "value": "1"
+          },
+          "NUM_READ_THREADS": {
+            "value": "1"
+          },
+          "NUM_WRITE_OUTSTANDING": {
+            "value": "1"
+          },
+          "NUM_WRITE_THREADS": {
+            "value": "1"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          },
+          "PROTOCOL": {
+            "value": "AXI4LITE"
+          },
+          "READ_WRITE_MODE": {
+            "value": "READ_WRITE"
+          },
+          "RUSER_BITS_PER_BYTE": {
+            "value": "0"
+          },
+          "RUSER_WIDTH": {
+            "value": "0"
+          },
+          "SUPPORTS_NARROW_BURST": {
+            "value": "0"
+          },
+          "WUSER_BITS_PER_BYTE": {
+            "value": "0"
+          },
+          "WUSER_WIDTH": {
+            "value": "0"
+          }
+        },
+        "address_space_ref": "s_axi_adc_cfg_gpio",
+        "base_address": {
+          "minimum": "0x00000000",
+          "maximum": "0x000001FF",
+          "width": "9"
+        }
+      },
+      "s_axi_adc_rst_cfg_gpio": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+        "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+        "parameters": {
+          "ADDR_WIDTH": {
+            "value": "9"
+          },
+          "ARUSER_WIDTH": {
+            "value": "0"
+          },
+          "AWUSER_WIDTH": {
+            "value": "0"
+          },
+          "BUSER_WIDTH": {
+            "value": "0"
+          },
+          "CLK_DOMAIN": {
+            "value": "ADC_BLOCK_axi_aclk",
+            "value_src": "default"
+          },
+          "DATA_WIDTH": {
+            "value": "32"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "HAS_BRESP": {
+            "value": "1"
+          },
+          "HAS_BURST": {
+            "value": "0"
+          },
+          "HAS_CACHE": {
+            "value": "0"
+          },
+          "HAS_LOCK": {
+            "value": "0"
+          },
+          "HAS_PROT": {
+            "value": "0"
+          },
+          "HAS_QOS": {
+            "value": "0"
+          },
+          "HAS_REGION": {
+            "value": "0"
+          },
+          "HAS_RRESP": {
+            "value": "1"
+          },
+          "HAS_WSTRB": {
+            "value": "1"
+          },
+          "ID_WIDTH": {
+            "value": "0"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "MAX_BURST_LENGTH": {
+            "value": "1"
+          },
+          "NUM_READ_OUTSTANDING": {
+            "value": "1"
+          },
+          "NUM_READ_THREADS": {
+            "value": "1"
+          },
+          "NUM_WRITE_OUTSTANDING": {
+            "value": "1"
+          },
+          "NUM_WRITE_THREADS": {
+            "value": "1"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          },
+          "PROTOCOL": {
+            "value": "AXI4LITE"
+          },
+          "READ_WRITE_MODE": {
+            "value": "READ_WRITE"
+          },
+          "RUSER_BITS_PER_BYTE": {
+            "value": "0"
+          },
+          "RUSER_WIDTH": {
+            "value": "0"
+          },
+          "SUPPORTS_NARROW_BURST": {
+            "value": "0"
+          },
+          "WUSER_BITS_PER_BYTE": {
+            "value": "0"
+          },
+          "WUSER_WIDTH": {
+            "value": "0"
+          }
+        },
+        "address_space_ref": "s_axi_adc_rst_cfg_gpio",
+        "base_address": {
+          "minimum": "0x00000000",
+          "maximum": "0x000001FF",
+          "width": "9"
+        }
+      }
+    },
+    "ports": {
+      "U_LOWSIDE": {
+        "direction": "I"
+      },
+      "V_LOWSIDE": {
+        "direction": "I"
+      },
+      "axi_aclk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_BUSIF": {
+            "value": "s_axi_adc_rst_cfg_gpio:s_axi_adc_cfg_gpio"
+          },
+          "ASSOCIATED_RESET": {
+            "value": "axi_resetn",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "ADC_BLOCK_axi_aclk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "axi_resetn": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "isns_phase_u": {
+        "type": "data",
+        "direction": "O",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "isns_phase_v": {
+        "type": "data",
+        "direction": "O",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "vsns_bus": {
+        "type": "data",
+        "direction": "O",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "xadc_wiz_0": {
+        "vlnv": "xilinx.com:ip:xadc_wiz:3.3",
+        "xci_name": "ADC_BLOCK_xadc_wiz_0_0",
+        "xci_path": "ip\\ADC_BLOCK_xadc_wiz_0_0\\ADC_BLOCK_xadc_wiz_0_0.xci",
+        "inst_hier_path": "xadc_wiz_0",
+        "parameters": {
+          "CHANNEL_ENABLE_VAUXP1_VAUXN1": {
+            "value": "true"
+          },
+          "CHANNEL_ENABLE_VAUXP6_VAUXN6": {
+            "value": "true"
+          },
+          "CHANNEL_ENABLE_VAUXP9_VAUXN9": {
+            "value": "true"
+          },
+          "CHANNEL_ENABLE_VP_VN": {
+            "value": "false"
+          },
+          "ENABLE_AXI4STREAM": {
+            "value": "true"
+          },
+          "ENABLE_RESET": {
+            "value": "true"
+          },
+          "ENABLE_VBRAM_ALARM": {
+            "value": "false"
+          },
+          "ENABLE_VCCDDRO_ALARM": {
+            "value": "false"
+          },
+          "ENABLE_VCCPAUX_ALARM": {
+            "value": "false"
+          },
+          "ENABLE_VCCPINT_ALARM": {
+            "value": "false"
+          },
+          "EXTERNAL_MUXADDR_ENABLE": {
+            "value": "true"
+          },
+          "EXTERNAL_MUX_CHANNEL": {
+            "value": "VP_VN"
+          },
+          "INTERFACE_SELECTION": {
+            "value": "None"
+          },
+          "OT_ALARM": {
+            "value": "false"
+          },
+          "SEQUENCER_MODE": {
+            "value": "Continuous"
+          },
+          "SINGLE_CHANNEL_SELECTION": {
+            "value": "TEMPERATURE"
+          },
+          "TIMING_MODE": {
+            "value": "Event"
+          },
+          "USER_TEMP_ALARM": {
+            "value": "false"
+          },
+          "VCCAUX_ALARM": {
+            "value": "false"
+          },
+          "VCCINT_ALARM": {
+            "value": "false"
+          },
+          "XADC_STARUP_SELECTION": {
+            "value": "channel_sequencer"
+          }
+        }
+      },
+      "trigger_module_0": {
+        "vlnv": "xilinx.com:user:trigger_module:1.0",
+        "xci_name": "ADC_BLOCK_trigger_module_0_0",
+        "xci_path": "ip\\ADC_BLOCK_trigger_module_0_0\\ADC_BLOCK_trigger_module_0_0.xci",
+        "inst_hier_path": "trigger_module_0"
+      },
+      "adc_demux_0": {
+        "vlnv": "xilinx.com:module_ref:adc_demux:1.0",
+        "xci_name": "ADC_BLOCK_adc_demux_0_0",
+        "xci_path": "ip\\ADC_BLOCK_adc_demux_0_0\\ADC_BLOCK_adc_demux_0_0.xci",
+        "inst_hier_path": "adc_demux_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "adc_demux",
+          "boundary_crc": "0x0"
+        },
+        "interface_ports": {
+          "interface_axis": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+            "parameters": {
+              "TDATA_NUM_BYTES": {
+                "value": "2",
+                "value_src": "constant"
+              },
+              "TDEST_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "TID_WIDTH": {
+                "value": "5",
+                "value_src": "constant"
+              },
+              "TUSER_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TREADY": {
+                "value": "1",
+                "value_src": "constant"
+              },
+              "HAS_TSTRB": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TKEEP": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TLAST": {
+                "value": "0",
+                "value_src": "constant"
+              }
+            },
+            "port_maps": {
+              "TID": {
+                "physical_name": "tid",
+                "direction": "I",
+                "left": "4",
+                "right": "0"
+              },
+              "TDATA": {
+                "physical_name": "tdata",
+                "direction": "I",
+                "left": "15",
+                "right": "0"
+              },
+              "TVALID": {
+                "physical_name": "tvalid",
+                "direction": "I"
+              },
+              "TREADY": {
+                "physical_name": "tready",
+                "direction": "O"
+              }
+            }
+          }
+        },
+        "ports": {
+          "phaseA": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "phaseB": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "vbus": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "ADC_BLOCK_xlconcat_0_0",
+        "xci_path": "ip\\ADC_BLOCK_xlconcat_0_0\\ADC_BLOCK_xlconcat_0_0.xci",
+        "inst_hier_path": "xlconcat_0"
+      },
+      "adc_rst_cfg_gpio": {
+        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
+        "xci_name": "ADC_BLOCK_axi_gpio_0_0",
+        "xci_path": "ip\\ADC_BLOCK_axi_gpio_0_0\\ADC_BLOCK_axi_gpio_0_0.xci",
+        "inst_hier_path": "adc_rst_cfg_gpio",
+        "parameters": {
+          "C_ALL_OUTPUTS": {
+            "value": "1"
+          },
+          "C_GPIO_WIDTH": {
+            "value": "1"
+          }
+        }
+      },
+      "adc_tim_cfg_gpio": {
+        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
+        "xci_name": "ADC_BLOCK_axi_gpio_0_1",
+        "xci_path": "ip\\ADC_BLOCK_axi_gpio_0_1\\ADC_BLOCK_axi_gpio_0_1.xci",
+        "inst_hier_path": "adc_tim_cfg_gpio",
+        "parameters": {
+          "C_ALL_OUTPUTS": {
+            "value": "1"
+          },
+          "C_ALL_OUTPUTS_2": {
+            "value": "1"
+          },
+          "C_IS_DUAL": {
+            "value": "1"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "S_AXI_0_1": {
+        "interface_ports": [
+          "s_axi_adc_cfg_gpio",
+          "adc_tim_cfg_gpio/S_AXI"
+        ]
+      },
+      "S_AXI_1_1": {
+        "interface_ports": [
+          "s_axi_adc_rst_cfg_gpio",
+          "adc_rst_cfg_gpio/S_AXI"
+        ]
+      },
+      "Vaux1_0_1": {
+        "interface_ports": [
+          "phasev_analog",
+          "xadc_wiz_0/Vaux1"
+        ]
+      },
+      "Vaux6_0_1": {
+        "interface_ports": [
+          "vbus_analog",
+          "xadc_wiz_0/Vaux6"
+        ]
+      },
+      "Vaux9_0_1": {
+        "interface_ports": [
+          "phaseu_analog",
+          "xadc_wiz_0/Vaux9"
+        ]
+      },
+      "xadc_wiz_0_M_AXIS": {
+        "interface_ports": [
+          "xadc_wiz_0/M_AXIS",
+          "adc_demux_0/interface_axis"
+        ]
+      }
+    },
+    "nets": {
+      "Net": {
+        "ports": [
+          "axi_aclk",
+          "xadc_wiz_0/m_axis_aclk",
+          "trigger_module_0/sys_clk",
+          "xadc_wiz_0/s_axis_aclk",
+          "adc_tim_cfg_gpio/s_axi_aclk",
+          "adc_rst_cfg_gpio/s_axi_aclk"
+        ]
+      },
+      "Net1": {
+        "ports": [
+          "adc_rst_cfg_gpio/gpio_io_o",
+          "xadc_wiz_0/m_axis_resetn",
+          "trigger_module_0/resetn"
+        ]
+      },
+      "U_LOWSIDE_1": {
+        "ports": [
+          "U_LOWSIDE",
+          "xlconcat_0/In0"
+        ]
+      },
+      "V_LOWSIDE_1": {
+        "ports": [
+          "V_LOWSIDE",
+          "xlconcat_0/In1"
+        ]
+      },
+      "adc_demux_0_phaseA": {
+        "ports": [
+          "adc_demux_0/phaseA",
+          "isns_phase_u"
+        ]
+      },
+      "adc_demux_0_phaseB": {
+        "ports": [
+          "adc_demux_0/phaseB",
+          "isns_phase_v"
+        ]
+      },
+      "adc_demux_0_vbus": {
+        "ports": [
+          "adc_demux_0/vbus",
+          "vsns_bus"
+        ]
+      },
+      "adc_tim_cfg_gpio_gpio2_io_o": {
+        "ports": [
+          "adc_tim_cfg_gpio/gpio2_io_o",
+          "trigger_module_0/tbl_pd"
+        ]
+      },
+      "adc_tim_cfg_gpio_gpio_io_o": {
+        "ports": [
+          "adc_tim_cfg_gpio/gpio_io_o",
+          "trigger_module_0/sample_pd"
+        ]
+      },
+      "axi_resetn_1": {
+        "ports": [
+          "axi_resetn",
+          "adc_tim_cfg_gpio/s_axi_aresetn",
+          "adc_rst_cfg_gpio/s_axi_aresetn"
+        ]
+      },
+      "trigger_module_0_trig_out": {
+        "ports": [
+          "trigger_module_0/trig_out",
+          "xadc_wiz_0/convst_in"
+        ]
+      },
+      "xadc_wiz_0_muxaddr_out": {
+        "ports": [
+          "xadc_wiz_0/muxaddr_out",
+          "trigger_module_0/c_channel"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "trigger_module_0/pwm_st"
+        ]
+      }
+    },
+    "addressing": {
+      "/": {
+        "address_spaces": {
+          "s_axi_adc_cfg_gpio": {
+            "range": "64K",
+            "width": "16"
+          },
+          "s_axi_adc_rst_cfg_gpio": {
+            "range": "64K",
+            "width": "16"
+          }
+        }
+      }
+    }
+  }
+}

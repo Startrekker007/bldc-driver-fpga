@@ -1,0 +1,104 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Mon Feb 21 21:49:04 2022
+| Host         : DESKTOP-J766HPL running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'inverter_test_ADC_BLOCK_wrapper_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of inverter_test_ADC_BLOCK_wrapper_0_0 (xilinx.com:user:ADC_BLOCK_wrapper:1.0 (Rev. 2)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'inverter_test_ADC_BLOCK_wrapper_0_0'.
+
+
+-Upgrade has added interface 's_axi_adc_cfg_gpio' (xilinx.com:interface:aximm:1.0)
+
+-Upgrade has added interface 's_axi_adc_rst_cfg_gpio' (xilinx.com:interface:aximm:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'inverter_test_ADC_BLOCK_wrapper_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 's_axi_adc_cfg_gpio_araddr'
+
+-Upgrade has added port 's_axi_adc_cfg_gpio_arready'
+
+-Upgrade has added port 's_axi_adc_cfg_gpio_arvalid'
+
+-Upgrade has added port 's_axi_adc_cfg_gpio_awaddr'
+
+-Upgrade has added port 's_axi_adc_cfg_gpio_awready'
+
+-Upgrade has added port 's_axi_adc_cfg_gpio_awvalid'
+
+-Upgrade has added port 's_axi_adc_cfg_gpio_bready'
+
+-Upgrade has added port 's_axi_adc_cfg_gpio_bresp'
+
+-Upgrade has added port 's_axi_adc_cfg_gpio_bvalid'
+
+-Upgrade has added port 's_axi_adc_cfg_gpio_rdata'
+
+-Upgrade has added port 's_axi_adc_cfg_gpio_rready'
+
+-Upgrade has added port 's_axi_adc_cfg_gpio_rresp'
+
+-Upgrade has added port 's_axi_adc_cfg_gpio_rvalid'
+
+-Upgrade has added port 's_axi_adc_cfg_gpio_wdata'
+
+-Upgrade has added port 's_axi_adc_cfg_gpio_wready'
+
+-Upgrade has added port 's_axi_adc_cfg_gpio_wstrb'
+
+-Upgrade has added port 's_axi_adc_cfg_gpio_wvalid'
+
+-Upgrade has added port 's_axi_adc_rst_cfg_gpio_araddr'
+
+-Upgrade has added port 's_axi_adc_rst_cfg_gpio_arready'
+
+-Upgrade has added port 's_axi_adc_rst_cfg_gpio_arvalid'
+
+-Upgrade has added port 's_axi_adc_rst_cfg_gpio_awaddr'
+
+-Upgrade has added port 's_axi_adc_rst_cfg_gpio_awready'
+
+-Upgrade has added port 's_axi_adc_rst_cfg_gpio_awvalid'
+
+-Upgrade has added port 's_axi_adc_rst_cfg_gpio_bready'
+
+-Upgrade has added port 's_axi_adc_rst_cfg_gpio_bresp'
+
+-Upgrade has added port 's_axi_adc_rst_cfg_gpio_bvalid'
+
+-Upgrade has added port 's_axi_adc_rst_cfg_gpio_rdata'
+
+-Upgrade has added port 's_axi_adc_rst_cfg_gpio_rready'
+
+-Upgrade has added port 's_axi_adc_rst_cfg_gpio_rresp'
+
+-Upgrade has added port 's_axi_adc_rst_cfg_gpio_rvalid'
+
+-Upgrade has added port 's_axi_adc_rst_cfg_gpio_wdata'
+
+-Upgrade has added port 's_axi_adc_rst_cfg_gpio_wready'
+
+-Upgrade has added port 's_axi_adc_rst_cfg_gpio_wstrb'
+
+-Upgrade has added port 's_axi_adc_rst_cfg_gpio_wvalid'
+
+

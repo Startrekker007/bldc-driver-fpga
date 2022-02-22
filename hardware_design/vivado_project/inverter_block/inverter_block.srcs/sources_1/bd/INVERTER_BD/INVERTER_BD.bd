@@ -1,0 +1,601 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xEBB1F3DD1C2F298D",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../inverter_block.gen/sources_1/bd/INVERTER_BD",
+      "name": "INVERTER_BD",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "None",
+      "tool_version": "2021.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "pwm_gen_u": "",
+      "pwm_gen_v": "",
+      "pwm_gen_w": "",
+      "pwm_cfg_gpio": "",
+      "xlslice_0": "",
+      "xlslice_1": ""
+    },
+    "interface_ports": {
+      "S_AXI_PWMCFG": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+        "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+        "parameters": {
+          "ADDR_WIDTH": {
+            "value": "9"
+          },
+          "ARUSER_WIDTH": {
+            "value": "0"
+          },
+          "AWUSER_WIDTH": {
+            "value": "0"
+          },
+          "BUSER_WIDTH": {
+            "value": "0"
+          },
+          "CLK_DOMAIN": {
+            "value": "INVERTER_BD_axi_aclk",
+            "value_src": "default"
+          },
+          "DATA_WIDTH": {
+            "value": "32"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "HAS_BRESP": {
+            "value": "1"
+          },
+          "HAS_BURST": {
+            "value": "0"
+          },
+          "HAS_CACHE": {
+            "value": "0"
+          },
+          "HAS_LOCK": {
+            "value": "0"
+          },
+          "HAS_PROT": {
+            "value": "0"
+          },
+          "HAS_QOS": {
+            "value": "0"
+          },
+          "HAS_REGION": {
+            "value": "0"
+          },
+          "HAS_RRESP": {
+            "value": "1"
+          },
+          "HAS_WSTRB": {
+            "value": "1"
+          },
+          "ID_WIDTH": {
+            "value": "0"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "MAX_BURST_LENGTH": {
+            "value": "1"
+          },
+          "NUM_READ_OUTSTANDING": {
+            "value": "1"
+          },
+          "NUM_READ_THREADS": {
+            "value": "1"
+          },
+          "NUM_WRITE_OUTSTANDING": {
+            "value": "1"
+          },
+          "NUM_WRITE_THREADS": {
+            "value": "1"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          },
+          "PROTOCOL": {
+            "value": "AXI4LITE"
+          },
+          "READ_WRITE_MODE": {
+            "value": "READ_WRITE"
+          },
+          "RUSER_BITS_PER_BYTE": {
+            "value": "0"
+          },
+          "RUSER_WIDTH": {
+            "value": "0"
+          },
+          "SUPPORTS_NARROW_BURST": {
+            "value": "0"
+          },
+          "WUSER_BITS_PER_BYTE": {
+            "value": "0"
+          },
+          "WUSER_WIDTH": {
+            "value": "0"
+          }
+        },
+        "address_space_ref": "S_AXI_PWMCFG",
+        "base_address": {
+          "minimum": "0x00000000",
+          "maximum": "0x000001FF",
+          "width": "9"
+        }
+      }
+    },
+    "ports": {
+      "UDC": {
+        "direction": "I",
+        "left": "15",
+        "right": "0"
+      },
+      "VDC": {
+        "direction": "I",
+        "left": "15",
+        "right": "0"
+      },
+      "WDC": {
+        "direction": "I",
+        "left": "15",
+        "right": "0"
+      },
+      "PWM_SYSCLK": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "INVERTER_BD_PWM_SYSCLK",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "axi_aclk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_BUSIF": {
+            "value": "S_AXI_PWMCFG"
+          },
+          "ASSOCIATED_RESET": {
+            "value": "axi_aresetn",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "INVERTER_BD_axi_aclk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "axi_aresetn": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "U_PWM_P": {
+        "direction": "O"
+      },
+      "U_PWM_N": {
+        "direction": "O"
+      },
+      "V_PWM_N": {
+        "direction": "O"
+      },
+      "V_PWM_P": {
+        "direction": "O"
+      },
+      "W_PWM_N": {
+        "direction": "O"
+      },
+      "W_PWM_P": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "pwm_gen_u": {
+        "vlnv": "xilinx.com:module_ref:pwm_generator:1.0",
+        "xci_name": "INVERTER_BD_pwm_generator_0_0",
+        "xci_path": "ip\\INVERTER_BD_pwm_generator_0_0\\INVERTER_BD_pwm_generator_0_0.xci",
+        "inst_hier_path": "pwm_gen_u",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "pwm_generator",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "PCLK": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "default_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "INVERTER_BD_PWM_SYSCLK",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "PRD": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "DC": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "DT": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "RSTN": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "OUTPUT_P": {
+            "direction": "O"
+          },
+          "OUTPUT_N": {
+            "direction": "O"
+          }
+        }
+      },
+      "pwm_gen_v": {
+        "vlnv": "xilinx.com:module_ref:pwm_generator:1.0",
+        "xci_name": "INVERTER_BD_pwm_generator_1_0",
+        "xci_path": "ip\\INVERTER_BD_pwm_generator_1_0\\INVERTER_BD_pwm_generator_1_0.xci",
+        "inst_hier_path": "pwm_gen_v",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "pwm_generator",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "PCLK": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "default_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "INVERTER_BD_PWM_SYSCLK",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "PRD": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "DC": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "DT": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "RSTN": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "OUTPUT_P": {
+            "direction": "O"
+          },
+          "OUTPUT_N": {
+            "direction": "O"
+          }
+        }
+      },
+      "pwm_gen_w": {
+        "vlnv": "xilinx.com:module_ref:pwm_generator:1.0",
+        "xci_name": "INVERTER_BD_pwm_generator_2_0",
+        "xci_path": "ip\\INVERTER_BD_pwm_generator_2_0\\INVERTER_BD_pwm_generator_2_0.xci",
+        "inst_hier_path": "pwm_gen_w",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "pwm_generator",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "PCLK": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "default_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "INVERTER_BD_PWM_SYSCLK",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "PRD": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "DC": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "DT": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "RSTN": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "OUTPUT_P": {
+            "direction": "O"
+          },
+          "OUTPUT_N": {
+            "direction": "O"
+          }
+        }
+      },
+      "pwm_cfg_gpio": {
+        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
+        "xci_name": "INVERTER_BD_axi_gpio_0_0",
+        "xci_path": "ip\\INVERTER_BD_axi_gpio_0_0\\INVERTER_BD_axi_gpio_0_0.xci",
+        "inst_hier_path": "pwm_cfg_gpio",
+        "parameters": {
+          "C_ALL_OUTPUTS": {
+            "value": "1"
+          },
+          "C_ALL_OUTPUTS_2": {
+            "value": "1"
+          },
+          "C_GPIO2_WIDTH": {
+            "value": "1"
+          },
+          "C_IS_DUAL": {
+            "value": "1"
+          }
+        }
+      },
+      "xlslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "INVERTER_BD_xlslice_0_0",
+        "xci_path": "ip\\INVERTER_BD_xlslice_0_0\\INVERTER_BD_xlslice_0_0.xci",
+        "inst_hier_path": "xlslice_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "15"
+          },
+          "DOUT_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "xlslice_1": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "INVERTER_BD_xlslice_1_0",
+        "xci_path": "ip\\INVERTER_BD_xlslice_1_0\\INVERTER_BD_xlslice_1_0.xci",
+        "inst_hier_path": "xlslice_1",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "31"
+          },
+          "DIN_TO": {
+            "value": "16"
+          },
+          "DOUT_WIDTH": {
+            "value": "16"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "S_AXI_0_1": {
+        "interface_ports": [
+          "S_AXI_PWMCFG",
+          "pwm_cfg_gpio/S_AXI"
+        ]
+      }
+    },
+    "nets": {
+      "DC_0_1": {
+        "ports": [
+          "UDC",
+          "pwm_gen_u/DC"
+        ]
+      },
+      "DC_0_2": {
+        "ports": [
+          "VDC",
+          "pwm_gen_v/DC"
+        ]
+      },
+      "DC_0_3": {
+        "ports": [
+          "WDC",
+          "pwm_gen_w/DC"
+        ]
+      },
+      "Net": {
+        "ports": [
+          "PWM_SYSCLK",
+          "pwm_gen_w/PCLK",
+          "pwm_gen_v/PCLK",
+          "pwm_gen_u/PCLK"
+        ]
+      },
+      "Net1": {
+        "ports": [
+          "pwm_cfg_gpio/gpio2_io_o",
+          "pwm_gen_v/RSTN",
+          "pwm_gen_u/RSTN",
+          "pwm_gen_w/RSTN"
+        ]
+      },
+      "axi_aclk_1": {
+        "ports": [
+          "axi_aclk",
+          "pwm_cfg_gpio/s_axi_aclk"
+        ]
+      },
+      "axi_aresetn_1": {
+        "ports": [
+          "axi_aresetn",
+          "pwm_cfg_gpio/s_axi_aresetn"
+        ]
+      },
+      "pwm_gen_u_OUTPUT_N": {
+        "ports": [
+          "pwm_gen_u/OUTPUT_N",
+          "U_PWM_N"
+        ]
+      },
+      "pwm_gen_u_OUTPUT_P": {
+        "ports": [
+          "pwm_gen_u/OUTPUT_P",
+          "U_PWM_P"
+        ]
+      },
+      "pwm_gen_v_OUTPUT_N": {
+        "ports": [
+          "pwm_gen_v/OUTPUT_N",
+          "V_PWM_N"
+        ]
+      },
+      "pwm_gen_v_OUTPUT_P": {
+        "ports": [
+          "pwm_gen_v/OUTPUT_P",
+          "V_PWM_P"
+        ]
+      },
+      "pwm_gen_w_OUTPUT_N": {
+        "ports": [
+          "pwm_gen_w/OUTPUT_N",
+          "W_PWM_N"
+        ]
+      },
+      "pwm_gen_w_OUTPUT_P": {
+        "ports": [
+          "pwm_gen_w/OUTPUT_P",
+          "W_PWM_P"
+        ]
+      },
+      "pwm_timing_cfg_gpio_gpio_io_o": {
+        "ports": [
+          "pwm_cfg_gpio/gpio_io_o",
+          "xlslice_0/Din",
+          "xlslice_1/Din"
+        ]
+      },
+      "xlslice_0_Dout": {
+        "ports": [
+          "xlslice_0/Dout",
+          "pwm_gen_v/PRD",
+          "pwm_gen_u/PRD",
+          "pwm_gen_w/PRD"
+        ]
+      },
+      "xlslice_1_Dout": {
+        "ports": [
+          "xlslice_1/Dout",
+          "pwm_gen_v/DT",
+          "pwm_gen_w/DT",
+          "pwm_gen_u/DT"
+        ]
+      }
+    },
+    "addressing": {
+      "/": {
+        "address_spaces": {
+          "S_AXI_PWMCFG": {
+            "range": "64K",
+            "width": "16"
+          }
+        }
+      }
+    }
+  }
+}
