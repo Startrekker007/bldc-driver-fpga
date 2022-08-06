@@ -1,8 +1,8 @@
-Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Sun Oct 17 00:05:00 2021
-| Host         : TheRig running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Wed Aug  3 21:58:14 2022
+| Host         : DESKTOP-J766HPL running 64-bit major release  (build 9200)
 | Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
 | Design       : design_1_wrapper
 | Device       : xc7z020clg400-1
@@ -23,7 +23,7 @@ Table of Contents
           Floorplan: checkpoint_design_1_wrapper
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 55
+             Violations found: 53
 +-----------+------------------+----------------------------------------------------+------------+
 | Rule      | Severity         | Description                                        | Violations |
 +-----------+------------------+----------------------------------------------------+------------+
@@ -31,7 +31,7 @@ Table of Contents
 | TIMING-6  | Critical Warning | No common primary clock between related clocks     | 1          |
 | TIMING-7  | Critical Warning | No common node between related clocks              | 1          |
 | TIMING-27 | Critical Warning | Invalid primary clock on hierarchical pin          | 1          |
-| TIMING-16 | Warning          | Large setup violation                              | 51         |
+| TIMING-16 | Warning          | Large setup violation                              | 49         |
 +-----------+------------------+----------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -58,257 +58,247 @@ Related violations: <none>
 
 TIMING-16#1 Warning
 Large setup violation  
-There is a large setup violation of -1.152 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/FSM_onehot_current_state_reg[1]/R (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.105 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_v_pwm/U0/FSM_onehot_current_state_reg[4]/R (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#2 Warning
 Large setup violation  
-There is a large setup violation of -1.172 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/FSM_onehot_current_state_reg[2]/R (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.113 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_v_pwm/U0/FSM_onehot_current_state_reg[1]/R (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#3 Warning
 Large setup violation  
-There is a large setup violation of -1.172 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/FSM_onehot_current_state_reg[5]/R (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.113 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_v_pwm/U0/FSM_onehot_current_state_reg[2]/R (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#4 Warning
 Large setup violation  
-There is a large setup violation of -1.198 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/FSM_onehot_current_state_reg[0]/S (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.113 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_v_pwm/U0/FSM_onehot_current_state_reg[5]/R (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#5 Warning
 Large setup violation  
-There is a large setup violation of -1.198 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/FSM_onehot_current_state_reg[2]/R (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.190 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/FSM_onehot_current_state_reg[0]/S (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#6 Warning
 Large setup violation  
-There is a large setup violation of -1.198 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/FSM_onehot_current_state_reg[5]/R (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.190 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/FSM_onehot_current_state_reg[1]/R (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#7 Warning
 Large setup violation  
-There is a large setup violation of -1.209 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/FSM_onehot_current_state_reg[1]/R (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.190 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/FSM_onehot_current_state_reg[3]/R (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#8 Warning
 Large setup violation  
-There is a large setup violation of -1.209 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/FSM_onehot_current_state_reg[3]/R (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.190 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/FSM_onehot_current_state_reg[5]/R (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#9 Warning
 Large setup violation  
-There is a large setup violation of -1.209 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/FSM_onehot_current_state_reg[4]/R (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.205 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/FSM_onehot_current_state_reg[0]/S (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#10 Warning
 Large setup violation  
-There is a large setup violation of -1.210 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/FSM_onehot_current_state_reg[4]/R (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.205 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/FSM_onehot_current_state_reg[1]/R (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#11 Warning
 Large setup violation  
-There is a large setup violation of -1.315 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_v_pwm/U0/FSM_onehot_current_state_reg[4]/R (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.205 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/FSM_onehot_current_state_reg[2]/R (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#12 Warning
 Large setup violation  
-There is a large setup violation of -1.362 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/FSM_onehot_current_state_reg[0]/S (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.205 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/FSM_onehot_current_state_reg[3]/R (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#13 Warning
 Large setup violation  
-There is a large setup violation of -1.362 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/FSM_onehot_current_state_reg[3]/R (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.205 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/FSM_onehot_current_state_reg[4]/R (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#14 Warning
 Large setup violation  
-There is a large setup violation of -1.390 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_v_pwm/U0/FSM_onehot_current_state_reg[1]/R (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.205 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/FSM_onehot_current_state_reg[5]/R (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#15 Warning
 Large setup violation  
-There is a large setup violation of -1.390 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_v_pwm/U0/FSM_onehot_current_state_reg[5]/R (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.232 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/FSM_onehot_current_state_reg[2]/R (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#16 Warning
 Large setup violation  
-There is a large setup violation of -1.607 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_v_pwm/U0/FSM_onehot_current_state_reg[0]/S (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.232 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/FSM_onehot_current_state_reg[4]/R (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#17 Warning
 Large setup violation  
-There is a large setup violation of -1.607 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_v_pwm/U0/FSM_onehot_current_state_reg[2]/R (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.299 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[14]_replica/C (clocked by clk_fpga_0) and design_1_i/phase_v_pwm/U0/FSM_onehot_next_state_reg[3]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#18 Warning
 Large setup violation  
-There is a large setup violation of -1.607 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio2_Data_Out_reg[0]/C (clocked by clk_fpga_0) and design_1_i/phase_v_pwm/U0/FSM_onehot_current_state_reg[3]/R (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.381 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[14]_replica/C (clocked by clk_fpga_0) and design_1_i/phase_v_pwm/U0/FSM_onehot_next_state_reg[4]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#19 Warning
 Large setup violation  
-There is a large setup violation of -2.414 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[31]/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/ctr_rst_reg/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.382 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[14]_replica/C (clocked by clk_fpga_0) and design_1_i/phase_v_pwm/U0/FSM_onehot_next_state_reg[5]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#20 Warning
 Large setup violation  
-There is a large setup violation of -2.510 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[28]/C (clocked by clk_fpga_0) and design_1_i/phase_v_pwm/U0/ctr_rst_reg/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.388 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[28]/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/ctr_rst_reg/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#21 Warning
 Large setup violation  
-There is a large setup violation of -2.531 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[30]/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/ctr_rst_reg/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.432 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[28]/C (clocked by clk_fpga_0) and design_1_i/phase_v_pwm/U0/ctr_rst_reg/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#22 Warning
 Large setup violation  
-There is a large setup violation of -2.541 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[13]_replica/C (clocked by clk_fpga_0) and design_1_i/phase_v_pwm/U0/FSM_onehot_next_state_reg[3]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.450 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[7]/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/FSM_onehot_next_state_reg[5]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#23 Warning
 Large setup violation  
-There is a large setup violation of -2.590 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[4]/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/FSM_onehot_next_state_reg[3]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.453 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[7]/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/FSM_onehot_next_state_reg[3]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#24 Warning
 Large setup violation  
-There is a large setup violation of -2.592 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[4]/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/FSM_onehot_next_state_reg[4]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.519 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[7]/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/FSM_onehot_next_state_reg[5]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#25 Warning
 Large setup violation  
-There is a large setup violation of -2.600 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[13]_replica/C (clocked by clk_fpga_0) and design_1_i/phase_v_pwm/U0/FSM_onehot_next_state_reg[2]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.593 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[14]_replica/C (clocked by clk_fpga_0) and design_1_i/phase_v_pwm/U0/FSM_onehot_next_state_reg[2]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#26 Warning
 Large setup violation  
-There is a large setup violation of -2.665 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[4]/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/FSM_onehot_next_state_reg[5]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.641 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[28]/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/ctr_rst_reg/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#27 Warning
 Large setup violation  
-There is a large setup violation of -2.949 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[2]/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/FSM_onehot_next_state_reg[5]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.722 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[7]/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/FSM_onehot_next_state_reg[2]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#28 Warning
 Large setup violation  
-There is a large setup violation of -3.038 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[2]/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/FSM_onehot_next_state_reg[3]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.927 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[7]/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/FSM_onehot_next_state_reg[3]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#29 Warning
 Large setup violation  
-There is a large setup violation of -3.064 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[13]_replica/C (clocked by clk_fpga_0) and design_1_i/phase_v_pwm/U0/FSM_onehot_next_state_reg[4]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.032 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[7]/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/FSM_onehot_next_state_reg[4]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#30 Warning
 Large setup violation  
-There is a large setup violation of -3.140 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[4]/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/FSM_onehot_next_state_reg[2]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.046 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[7]/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/FSM_onehot_next_state_reg[2]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#31 Warning
 Large setup violation  
-There is a large setup violation of -3.201 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[2]/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/FSM_onehot_next_state_reg[4]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.062 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[7]/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/FSM_onehot_next_state_reg[4]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#32 Warning
 Large setup violation  
-There is a large setup violation of -3.353 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[2]/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/FSM_onehot_next_state_reg[2]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.987 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[14]_replica/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/FSM_onehot_next_state_reg[0]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#33 Warning
 Large setup violation  
-There is a large setup violation of -3.386 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[13]_replica/C (clocked by clk_fpga_0) and design_1_i/phase_v_pwm/U0/FSM_onehot_next_state_reg[5]/D (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.987 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[14]_replica/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/FSM_onehot_next_state_reg[1]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#34 Warning
 Large setup violation  
-There is a large setup violation of -5.194 ns between design_1_i/pwm_ctl_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[15]/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/FSM_onehot_next_state_reg[0]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.987 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[14]_replica/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/FSM_onehot_next_state_reg[2]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#35 Warning
 Large setup violation  
-There is a large setup violation of -5.194 ns between design_1_i/pwm_ctl_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[15]/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/FSM_onehot_next_state_reg[1]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.987 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[14]_replica/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/FSM_onehot_next_state_reg[3]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#36 Warning
 Large setup violation  
-There is a large setup violation of -5.194 ns between design_1_i/pwm_ctl_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[15]/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/FSM_onehot_next_state_reg[2]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.987 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[14]_replica/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/FSM_onehot_next_state_reg[4]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#37 Warning
 Large setup violation  
-There is a large setup violation of -5.194 ns between design_1_i/pwm_ctl_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[15]/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/FSM_onehot_next_state_reg[3]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.987 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[14]_replica/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/FSM_onehot_next_state_reg[5]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#38 Warning
 Large setup violation  
-There is a large setup violation of -5.194 ns between design_1_i/pwm_ctl_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[15]/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/FSM_onehot_next_state_reg[4]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.018 ns between design_1_i/pwm_ctl_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[28]/C (clocked by clk_fpga_0) and design_1_i/phase_v_pwm/U0/FSM_onehot_next_state_reg[0]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#39 Warning
 Large setup violation  
-There is a large setup violation of -5.194 ns between design_1_i/pwm_ctl_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[15]/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/FSM_onehot_next_state_reg[5]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.018 ns between design_1_i/pwm_ctl_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[28]/C (clocked by clk_fpga_0) and design_1_i/phase_v_pwm/U0/FSM_onehot_next_state_reg[1]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#40 Warning
 Large setup violation  
-There is a large setup violation of -5.287 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[12]/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/FSM_onehot_next_state_reg[0]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.018 ns between design_1_i/pwm_ctl_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[28]/C (clocked by clk_fpga_0) and design_1_i/phase_v_pwm/U0/FSM_onehot_next_state_reg[2]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#41 Warning
 Large setup violation  
-There is a large setup violation of -5.287 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[12]/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/FSM_onehot_next_state_reg[2]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.018 ns between design_1_i/pwm_ctl_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[28]/C (clocked by clk_fpga_0) and design_1_i/phase_v_pwm/U0/FSM_onehot_next_state_reg[3]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#42 Warning
 Large setup violation  
-There is a large setup violation of -5.287 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[12]/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/FSM_onehot_next_state_reg[3]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.018 ns between design_1_i/pwm_ctl_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[28]/C (clocked by clk_fpga_0) and design_1_i/phase_v_pwm/U0/FSM_onehot_next_state_reg[4]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#43 Warning
 Large setup violation  
-There is a large setup violation of -5.287 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[12]/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/FSM_onehot_next_state_reg[4]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.019 ns between design_1_i/pwm_ctl_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[28]/C (clocked by clk_fpga_0) and design_1_i/phase_v_pwm/U0/FSM_onehot_next_state_reg[5]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#44 Warning
 Large setup violation  
-There is a large setup violation of -5.288 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[12]/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/FSM_onehot_next_state_reg[1]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.044 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[10]_replica_1/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/FSM_onehot_next_state_reg[0]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#45 Warning
 Large setup violation  
-There is a large setup violation of -5.288 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[12]/C (clocked by clk_fpga_0) and design_1_i/phase_w_pwm/U0/FSM_onehot_next_state_reg[5]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.044 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[10]_replica_1/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/FSM_onehot_next_state_reg[1]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#46 Warning
 Large setup violation  
-There is a large setup violation of -5.375 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[13]_replica/C (clocked by clk_fpga_0) and design_1_i/phase_v_pwm/U0/FSM_onehot_next_state_reg[0]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.044 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[10]_replica_1/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/FSM_onehot_next_state_reg[2]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#47 Warning
 Large setup violation  
-There is a large setup violation of -5.375 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[13]_replica/C (clocked by clk_fpga_0) and design_1_i/phase_v_pwm/U0/FSM_onehot_next_state_reg[1]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.044 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[10]_replica_1/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/FSM_onehot_next_state_reg[3]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#48 Warning
 Large setup violation  
-There is a large setup violation of -5.375 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[13]_replica/C (clocked by clk_fpga_0) and design_1_i/phase_v_pwm/U0/FSM_onehot_next_state_reg[4]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.044 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[10]_replica_1/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/FSM_onehot_next_state_reg[4]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#49 Warning
 Large setup violation  
-There is a large setup violation of -5.375 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[13]_replica/C (clocked by clk_fpga_0) and design_1_i/phase_v_pwm/U0/FSM_onehot_next_state_reg[5]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#50 Warning
-Large setup violation  
-There is a large setup violation of -5.382 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[13]_replica/C (clocked by clk_fpga_0) and design_1_i/phase_v_pwm/U0/FSM_onehot_next_state_reg[2]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#51 Warning
-Large setup violation  
-There is a large setup violation of -5.382 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[13]_replica/C (clocked by clk_fpga_0) and design_1_i/phase_v_pwm/U0/FSM_onehot_next_state_reg[3]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -5.044 ns between design_1_i/pwm_cfg_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[10]_replica_1/C (clocked by clk_fpga_0) and design_1_i/phase_u_pwm/U0/FSM_onehot_next_state_reg[5]/CE (clocked by clk_out1_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 

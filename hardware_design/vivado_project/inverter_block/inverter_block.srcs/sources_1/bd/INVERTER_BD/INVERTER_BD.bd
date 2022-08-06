@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xEBB1F3DD1C2F298D",
+      "boundary_crc": "0xCB9B18A9150EE2F5",
       "device": "xc7z020clg400-1",
       "gen_directory": "../../../../inverter_block.gen/sources_1/bd/INVERTER_BD",
       "name": "INVERTER_BD",
@@ -11,12 +11,25 @@
       "validated": "true"
     },
     "design_tree": {
+      "pwm_cfg_gpio": "",
+      "xlslice_0": "",
+      "xlslice_1": "",
+      "phase_cfg_gpio": "",
+      "xlslice_2": "",
+      "xlslice_3": "",
+      "dc_mux_0": "",
+      "pwm_dc_gpio": "",
+      "xlslice_4": "",
+      "xlslice_5": "",
+      "dds_compiler_0": "",
+      "dds_compiler_1": "",
+      "dds_compiler_2": "",
       "pwm_gen_u": "",
       "pwm_gen_v": "",
       "pwm_gen_w": "",
-      "pwm_cfg_gpio": "",
-      "xlslice_0": "",
-      "xlslice_1": ""
+      "dc_scaler_0": "",
+      "dc_scaler_1": "",
+      "dc_scaler_2": ""
     },
     "interface_ports": {
       "S_AXI_PWMCFG": {
@@ -25,7 +38,7 @@
         "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
         "parameters": {
           "ADDR_WIDTH": {
-            "value": "9"
+            "value": "16"
           },
           "ARUSER_WIDTH": {
             "value": "0"
@@ -125,27 +138,232 @@
         "address_space_ref": "S_AXI_PWMCFG",
         "base_address": {
           "minimum": "0x00000000",
-          "maximum": "0x000001FF",
-          "width": "9"
+          "maximum": "0x0000FFFF",
+          "width": "16"
+        }
+      },
+      "S_AXI_PHASECFG": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+        "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+        "parameters": {
+          "ADDR_WIDTH": {
+            "value": "16"
+          },
+          "ARUSER_WIDTH": {
+            "value": "0"
+          },
+          "AWUSER_WIDTH": {
+            "value": "0"
+          },
+          "BUSER_WIDTH": {
+            "value": "0"
+          },
+          "CLK_DOMAIN": {
+            "value": "INVERTER_BD_axi_aclk",
+            "value_src": "default"
+          },
+          "DATA_WIDTH": {
+            "value": "32"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "HAS_BRESP": {
+            "value": "1"
+          },
+          "HAS_BURST": {
+            "value": "0"
+          },
+          "HAS_CACHE": {
+            "value": "0"
+          },
+          "HAS_LOCK": {
+            "value": "0"
+          },
+          "HAS_PROT": {
+            "value": "0"
+          },
+          "HAS_QOS": {
+            "value": "0"
+          },
+          "HAS_REGION": {
+            "value": "0"
+          },
+          "HAS_RRESP": {
+            "value": "1"
+          },
+          "HAS_WSTRB": {
+            "value": "1"
+          },
+          "ID_WIDTH": {
+            "value": "0"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "MAX_BURST_LENGTH": {
+            "value": "1"
+          },
+          "NUM_READ_OUTSTANDING": {
+            "value": "1"
+          },
+          "NUM_READ_THREADS": {
+            "value": "1"
+          },
+          "NUM_WRITE_OUTSTANDING": {
+            "value": "1"
+          },
+          "NUM_WRITE_THREADS": {
+            "value": "1"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          },
+          "PROTOCOL": {
+            "value": "AXI4LITE"
+          },
+          "READ_WRITE_MODE": {
+            "value": "READ_WRITE"
+          },
+          "RUSER_BITS_PER_BYTE": {
+            "value": "0"
+          },
+          "RUSER_WIDTH": {
+            "value": "0"
+          },
+          "SUPPORTS_NARROW_BURST": {
+            "value": "0"
+          },
+          "WUSER_BITS_PER_BYTE": {
+            "value": "0"
+          },
+          "WUSER_WIDTH": {
+            "value": "0"
+          }
+        },
+        "address_space_ref": "S_AXI_PHASECFG",
+        "base_address": {
+          "minimum": "0x00000000",
+          "maximum": "0x0000FFFF",
+          "width": "16"
+        }
+      },
+      "S_AXI_PWMDC": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+        "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+        "parameters": {
+          "ADDR_WIDTH": {
+            "value": "16"
+          },
+          "ARUSER_WIDTH": {
+            "value": "0"
+          },
+          "AWUSER_WIDTH": {
+            "value": "0"
+          },
+          "BUSER_WIDTH": {
+            "value": "0"
+          },
+          "CLK_DOMAIN": {
+            "value": "INVERTER_BD_axi_aclk",
+            "value_src": "default"
+          },
+          "DATA_WIDTH": {
+            "value": "32"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "HAS_BRESP": {
+            "value": "1"
+          },
+          "HAS_BURST": {
+            "value": "0"
+          },
+          "HAS_CACHE": {
+            "value": "0"
+          },
+          "HAS_LOCK": {
+            "value": "0"
+          },
+          "HAS_PROT": {
+            "value": "0"
+          },
+          "HAS_QOS": {
+            "value": "0"
+          },
+          "HAS_REGION": {
+            "value": "0"
+          },
+          "HAS_RRESP": {
+            "value": "1"
+          },
+          "HAS_WSTRB": {
+            "value": "1"
+          },
+          "ID_WIDTH": {
+            "value": "0"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "MAX_BURST_LENGTH": {
+            "value": "1"
+          },
+          "NUM_READ_OUTSTANDING": {
+            "value": "1"
+          },
+          "NUM_READ_THREADS": {
+            "value": "1"
+          },
+          "NUM_WRITE_OUTSTANDING": {
+            "value": "1"
+          },
+          "NUM_WRITE_THREADS": {
+            "value": "1"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          },
+          "PROTOCOL": {
+            "value": "AXI4LITE"
+          },
+          "READ_WRITE_MODE": {
+            "value": "READ_WRITE"
+          },
+          "RUSER_BITS_PER_BYTE": {
+            "value": "0"
+          },
+          "RUSER_WIDTH": {
+            "value": "0"
+          },
+          "SUPPORTS_NARROW_BURST": {
+            "value": "0"
+          },
+          "WUSER_BITS_PER_BYTE": {
+            "value": "0"
+          },
+          "WUSER_WIDTH": {
+            "value": "0"
+          }
+        },
+        "address_space_ref": "S_AXI_PWMDC",
+        "base_address": {
+          "minimum": "0x00000000",
+          "maximum": "0x0000FFFF",
+          "width": "16"
         }
       }
     },
     "ports": {
-      "UDC": {
-        "direction": "I",
-        "left": "15",
-        "right": "0"
-      },
-      "VDC": {
-        "direction": "I",
-        "left": "15",
-        "right": "0"
-      },
-      "WDC": {
-        "direction": "I",
-        "left": "15",
-        "right": "0"
-      },
       "PWM_SYSCLK": {
         "type": "clk",
         "direction": "I",
@@ -176,7 +394,7 @@
         "direction": "I",
         "parameters": {
           "ASSOCIATED_BUSIF": {
-            "value": "S_AXI_PWMCFG"
+            "value": "S_AXI_PWMCFG:S_AXI_PHASECFG:S_AXI_PWMDC"
           },
           "ASSOCIATED_RESET": {
             "value": "axi_aresetn",
@@ -237,6 +455,418 @@
       }
     },
     "components": {
+      "pwm_cfg_gpio": {
+        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
+        "xci_name": "INVERTER_BD_axi_gpio_0_0",
+        "xci_path": "ip\\INVERTER_BD_axi_gpio_0_0\\INVERTER_BD_axi_gpio_0_0.xci",
+        "inst_hier_path": "pwm_cfg_gpio",
+        "parameters": {
+          "C_ALL_OUTPUTS": {
+            "value": "1"
+          },
+          "C_ALL_OUTPUTS_2": {
+            "value": "1"
+          },
+          "C_GPIO2_WIDTH": {
+            "value": "2"
+          },
+          "C_IS_DUAL": {
+            "value": "1"
+          }
+        }
+      },
+      "xlslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "INVERTER_BD_xlslice_0_0",
+        "xci_path": "ip\\INVERTER_BD_xlslice_0_0\\INVERTER_BD_xlslice_0_0.xci",
+        "inst_hier_path": "xlslice_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "15"
+          },
+          "DOUT_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "xlslice_1": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "INVERTER_BD_xlslice_1_0",
+        "xci_path": "ip\\INVERTER_BD_xlslice_1_0\\INVERTER_BD_xlslice_1_0.xci",
+        "inst_hier_path": "xlslice_1",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "31"
+          },
+          "DIN_TO": {
+            "value": "16"
+          },
+          "DOUT_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "phase_cfg_gpio": {
+        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
+        "xci_name": "INVERTER_BD_pwm_cfg_gpio_1",
+        "xci_path": "ip\\INVERTER_BD_pwm_cfg_gpio_1\\INVERTER_BD_pwm_cfg_gpio_1.xci",
+        "inst_hier_path": "phase_cfg_gpio",
+        "parameters": {
+          "C_ALL_OUTPUTS": {
+            "value": "1"
+          },
+          "C_ALL_OUTPUTS_2": {
+            "value": "1"
+          },
+          "C_GPIO2_WIDTH": {
+            "value": "16"
+          },
+          "C_IS_DUAL": {
+            "value": "1"
+          }
+        }
+      },
+      "xlslice_2": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "INVERTER_BD_xlslice_2_0",
+        "xci_path": "ip\\INVERTER_BD_xlslice_2_0\\INVERTER_BD_xlslice_2_0.xci",
+        "inst_hier_path": "xlslice_2",
+        "parameters": {
+          "DIN_WIDTH": {
+            "value": "2"
+          }
+        }
+      },
+      "xlslice_3": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "INVERTER_BD_xlslice_2_1",
+        "xci_path": "ip\\INVERTER_BD_xlslice_2_1\\INVERTER_BD_xlslice_2_1.xci",
+        "inst_hier_path": "xlslice_3",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "1"
+          },
+          "DIN_TO": {
+            "value": "1"
+          },
+          "DIN_WIDTH": {
+            "value": "2"
+          }
+        }
+      },
+      "dc_mux_0": {
+        "vlnv": "xilinx.com:module_ref:dc_mux:1.0",
+        "xci_name": "INVERTER_BD_dc_mux_0_0",
+        "xci_path": "ip\\INVERTER_BD_dc_mux_0_0\\INVERTER_BD_dc_mux_0_0.xci",
+        "inst_hier_path": "dc_mux_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "dc_mux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "UDC0": {
+            "direction": "I",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "VDC0": {
+            "direction": "I",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "WDC0": {
+            "direction": "I",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "UDC1": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "VDC1": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "WDC1": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "sel": {
+            "direction": "I"
+          },
+          "UDCOUT": {
+            "direction": "O",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "VDCOUT": {
+            "direction": "O",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "WDCOUT": {
+            "direction": "O",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          }
+        }
+      },
+      "pwm_dc_gpio": {
+        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
+        "xci_name": "INVERTER_BD_pwm_cfg_gpio_2",
+        "xci_path": "ip\\INVERTER_BD_pwm_cfg_gpio_2\\INVERTER_BD_pwm_cfg_gpio_2.xci",
+        "inst_hier_path": "pwm_dc_gpio",
+        "parameters": {
+          "C_ALL_OUTPUTS": {
+            "value": "1"
+          },
+          "C_ALL_OUTPUTS_2": {
+            "value": "1"
+          },
+          "C_GPIO2_WIDTH": {
+            "value": "16"
+          },
+          "C_IS_DUAL": {
+            "value": "1"
+          }
+        }
+      },
+      "xlslice_4": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "INVERTER_BD_xlslice_0_1",
+        "xci_path": "ip\\INVERTER_BD_xlslice_0_1\\INVERTER_BD_xlslice_0_1.xci",
+        "inst_hier_path": "xlslice_4",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "15"
+          },
+          "DOUT_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "xlslice_5": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "INVERTER_BD_xlslice_4_0",
+        "xci_path": "ip\\INVERTER_BD_xlslice_4_0\\INVERTER_BD_xlslice_4_0.xci",
+        "inst_hier_path": "xlslice_5",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "31"
+          },
+          "DIN_TO": {
+            "value": "16"
+          },
+          "DOUT_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "dds_compiler_0": {
+        "vlnv": "xilinx.com:ip:dds_compiler:6.0",
+        "xci_name": "INVERTER_BD_dds_compiler_0_1",
+        "xci_path": "ip\\INVERTER_BD_dds_compiler_0_1\\INVERTER_BD_dds_compiler_0_1.xci",
+        "inst_hier_path": "dds_compiler_0",
+        "parameters": {
+          "DATA_Has_TLAST": {
+            "value": "Not_Required"
+          },
+          "Has_ARESETn": {
+            "value": "true"
+          },
+          "Has_Phase_Out": {
+            "value": "false"
+          },
+          "Latency": {
+            "value": "8"
+          },
+          "M_DATA_Has_TUSER": {
+            "value": "Not_Required"
+          },
+          "Noise_Shaping": {
+            "value": "None"
+          },
+          "Output_Frequency1": {
+            "value": "0"
+          },
+          "Output_Selection": {
+            "value": "Sine"
+          },
+          "Output_Width": {
+            "value": "16"
+          },
+          "PINC1": {
+            "value": "0"
+          },
+          "Parameter_Entry": {
+            "value": "Hardware_Parameters"
+          },
+          "Phase_Increment": {
+            "value": "Streaming"
+          },
+          "Phase_Width": {
+            "value": "32"
+          },
+          "Phase_offset": {
+            "value": "Fixed"
+          },
+          "S_PHASE_Has_TUSER": {
+            "value": "Not_Required"
+          }
+        }
+      },
+      "dds_compiler_1": {
+        "vlnv": "xilinx.com:ip:dds_compiler:6.0",
+        "xci_name": "INVERTER_BD_dds_compiler_0_2",
+        "xci_path": "ip\\INVERTER_BD_dds_compiler_0_2\\INVERTER_BD_dds_compiler_0_2.xci",
+        "inst_hier_path": "dds_compiler_1",
+        "parameters": {
+          "DATA_Has_TLAST": {
+            "value": "Not_Required"
+          },
+          "Has_ARESETn": {
+            "value": "true"
+          },
+          "Has_Phase_Out": {
+            "value": "false"
+          },
+          "Latency": {
+            "value": "8"
+          },
+          "M_DATA_Has_TUSER": {
+            "value": "Not_Required"
+          },
+          "Noise_Shaping": {
+            "value": "None"
+          },
+          "Output_Frequency1": {
+            "value": "0"
+          },
+          "Output_Selection": {
+            "value": "Sine"
+          },
+          "Output_Width": {
+            "value": "16"
+          },
+          "PINC1": {
+            "value": "0"
+          },
+          "POFF1": {
+            "value": "10101010101010101010101010101010"
+          },
+          "Parameter_Entry": {
+            "value": "Hardware_Parameters"
+          },
+          "Phase_Increment": {
+            "value": "Streaming"
+          },
+          "Phase_Width": {
+            "value": "32"
+          },
+          "Phase_offset": {
+            "value": "Fixed"
+          },
+          "S_PHASE_Has_TUSER": {
+            "value": "Not_Required"
+          }
+        }
+      },
+      "dds_compiler_2": {
+        "vlnv": "xilinx.com:ip:dds_compiler:6.0",
+        "xci_name": "INVERTER_BD_dds_compiler_0_3",
+        "xci_path": "ip\\INVERTER_BD_dds_compiler_0_3\\INVERTER_BD_dds_compiler_0_3.xci",
+        "inst_hier_path": "dds_compiler_2",
+        "parameters": {
+          "DATA_Has_TLAST": {
+            "value": "Not_Required"
+          },
+          "Has_ARESETn": {
+            "value": "true"
+          },
+          "Has_Phase_Out": {
+            "value": "false"
+          },
+          "Latency": {
+            "value": "8"
+          },
+          "M_DATA_Has_TUSER": {
+            "value": "Not_Required"
+          },
+          "Noise_Shaping": {
+            "value": "None"
+          },
+          "Output_Frequency1": {
+            "value": "0"
+          },
+          "Output_Selection": {
+            "value": "Sine"
+          },
+          "Output_Width": {
+            "value": "16"
+          },
+          "PINC1": {
+            "value": "0"
+          },
+          "POFF1": {
+            "value": "01010101010101010101010101010101"
+          },
+          "Parameter_Entry": {
+            "value": "Hardware_Parameters"
+          },
+          "Phase_Increment": {
+            "value": "Streaming"
+          },
+          "Phase_Width": {
+            "value": "32"
+          },
+          "Phase_offset": {
+            "value": "Fixed"
+          },
+          "S_PHASE_Has_TUSER": {
+            "value": "Not_Required"
+          }
+        }
+      },
       "pwm_gen_u": {
         "vlnv": "xilinx.com:module_ref:pwm_generator:1.0",
         "xci_name": "INVERTER_BD_pwm_generator_0_0",
@@ -273,7 +903,13 @@
           "DC": {
             "direction": "I",
             "left": "15",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
           },
           "DT": {
             "direction": "I",
@@ -334,7 +970,13 @@
           "DC": {
             "direction": "I",
             "left": "15",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
           },
           "DT": {
             "direction": "I",
@@ -395,7 +1037,13 @@
           "DC": {
             "direction": "I",
             "left": "15",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
           },
           "DT": {
             "direction": "I",
@@ -420,54 +1068,105 @@
           }
         }
       },
-      "pwm_cfg_gpio": {
-        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
-        "xci_name": "INVERTER_BD_axi_gpio_0_0",
-        "xci_path": "ip\\INVERTER_BD_axi_gpio_0_0\\INVERTER_BD_axi_gpio_0_0.xci",
-        "inst_hier_path": "pwm_cfg_gpio",
-        "parameters": {
-          "C_ALL_OUTPUTS": {
-            "value": "1"
+      "dc_scaler_0": {
+        "vlnv": "xilinx.com:module_ref:dc_scaler:1.0",
+        "xci_name": "INVERTER_BD_dc_scaler_0_0",
+        "xci_path": "ip\\INVERTER_BD_dc_scaler_0_0\\INVERTER_BD_dc_scaler_0_0.xci",
+        "inst_hier_path": "dc_scaler_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "dc_scaler",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "DC": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
           },
-          "C_ALL_OUTPUTS_2": {
-            "value": "1"
+          "SCALE": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
           },
-          "C_GPIO2_WIDTH": {
-            "value": "1"
-          },
-          "C_IS_DUAL": {
-            "value": "1"
+          "DCOUT": {
+            "direction": "O",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
           }
         }
       },
-      "xlslice_0": {
-        "vlnv": "xilinx.com:ip:xlslice:1.0",
-        "xci_name": "INVERTER_BD_xlslice_0_0",
-        "xci_path": "ip\\INVERTER_BD_xlslice_0_0\\INVERTER_BD_xlslice_0_0.xci",
-        "inst_hier_path": "xlslice_0",
-        "parameters": {
-          "DIN_FROM": {
-            "value": "15"
+      "dc_scaler_1": {
+        "vlnv": "xilinx.com:module_ref:dc_scaler:1.0",
+        "xci_name": "INVERTER_BD_dc_scaler_0_1",
+        "xci_path": "ip\\INVERTER_BD_dc_scaler_0_1\\INVERTER_BD_dc_scaler_0_1.xci",
+        "inst_hier_path": "dc_scaler_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "dc_scaler",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "DC": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
           },
-          "DOUT_WIDTH": {
-            "value": "16"
+          "SCALE": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "DCOUT": {
+            "direction": "O",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
           }
         }
       },
-      "xlslice_1": {
-        "vlnv": "xilinx.com:ip:xlslice:1.0",
-        "xci_name": "INVERTER_BD_xlslice_1_0",
-        "xci_path": "ip\\INVERTER_BD_xlslice_1_0\\INVERTER_BD_xlslice_1_0.xci",
-        "inst_hier_path": "xlslice_1",
-        "parameters": {
-          "DIN_FROM": {
-            "value": "31"
+      "dc_scaler_2": {
+        "vlnv": "xilinx.com:module_ref:dc_scaler:1.0",
+        "xci_name": "INVERTER_BD_dc_scaler_0_2",
+        "xci_path": "ip\\INVERTER_BD_dc_scaler_0_2\\INVERTER_BD_dc_scaler_0_2.xci",
+        "inst_hier_path": "dc_scaler_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "dc_scaler",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "DC": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
           },
-          "DIN_TO": {
-            "value": "16"
+          "SCALE": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
           },
-          "DOUT_WIDTH": {
-            "value": "16"
+          "DCOUT": {
+            "direction": "O",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
           }
         }
       }
@@ -478,53 +1177,150 @@
           "S_AXI_PWMCFG",
           "pwm_cfg_gpio/S_AXI"
         ]
+      },
+      "S_AXI_0_2": {
+        "interface_ports": [
+          "S_AXI_PHASECFG",
+          "phase_cfg_gpio/S_AXI"
+        ]
+      },
+      "S_AXI_0_3": {
+        "interface_ports": [
+          "S_AXI_PWMDC",
+          "pwm_dc_gpio/S_AXI"
+        ]
       }
     },
     "nets": {
-      "DC_0_1": {
-        "ports": [
-          "UDC",
-          "pwm_gen_u/DC"
-        ]
-      },
-      "DC_0_2": {
-        "ports": [
-          "VDC",
-          "pwm_gen_v/DC"
-        ]
-      },
-      "DC_0_3": {
-        "ports": [
-          "WDC",
-          "pwm_gen_w/DC"
-        ]
-      },
       "Net": {
         "ports": [
           "PWM_SYSCLK",
-          "pwm_gen_w/PCLK",
+          "pwm_gen_u/PCLK",
           "pwm_gen_v/PCLK",
-          "pwm_gen_u/PCLK"
+          "pwm_gen_w/PCLK"
         ]
       },
       "Net1": {
         "ports": [
-          "pwm_cfg_gpio/gpio2_io_o",
-          "pwm_gen_v/RSTN",
+          "xlslice_2/Dout",
+          "dds_compiler_1/s_axis_phase_tvalid",
+          "dds_compiler_2/s_axis_phase_tvalid",
+          "dds_compiler_0/s_axis_phase_tvalid",
+          "dds_compiler_0/aresetn",
+          "dds_compiler_2/aresetn",
+          "dds_compiler_1/aresetn",
           "pwm_gen_u/RSTN",
+          "pwm_gen_v/RSTN",
           "pwm_gen_w/RSTN"
+        ]
+      },
+      "Net2": {
+        "ports": [
+          "phase_cfg_gpio/gpio2_io_o",
+          "dc_scaler_0/SCALE",
+          "dc_scaler_1/SCALE",
+          "dc_scaler_2/SCALE"
         ]
       },
       "axi_aclk_1": {
         "ports": [
           "axi_aclk",
-          "pwm_cfg_gpio/s_axi_aclk"
+          "pwm_cfg_gpio/s_axi_aclk",
+          "phase_cfg_gpio/s_axi_aclk",
+          "pwm_dc_gpio/s_axi_aclk",
+          "dds_compiler_2/aclk",
+          "dds_compiler_1/aclk",
+          "dds_compiler_0/aclk"
         ]
       },
       "axi_aresetn_1": {
         "ports": [
           "axi_aresetn",
-          "pwm_cfg_gpio/s_axi_aresetn"
+          "pwm_cfg_gpio/s_axi_aresetn",
+          "phase_cfg_gpio/s_axi_aresetn",
+          "pwm_dc_gpio/s_axi_aresetn"
+        ]
+      },
+      "dc_mux_0_UDCOUT": {
+        "ports": [
+          "dc_mux_0/UDCOUT",
+          "pwm_gen_u/DC"
+        ]
+      },
+      "dc_mux_0_VDCOUT": {
+        "ports": [
+          "dc_mux_0/VDCOUT",
+          "pwm_gen_v/DC"
+        ]
+      },
+      "dc_mux_0_WDCOUT": {
+        "ports": [
+          "dc_mux_0/WDCOUT",
+          "pwm_gen_w/DC"
+        ]
+      },
+      "dc_scaler_0_DCOUT": {
+        "ports": [
+          "dc_scaler_0/DCOUT",
+          "dc_mux_0/UDC0"
+        ]
+      },
+      "dc_scaler_1_DCOUT": {
+        "ports": [
+          "dc_scaler_1/DCOUT",
+          "dc_mux_0/VDC0"
+        ]
+      },
+      "dc_scaler_2_DCOUT": {
+        "ports": [
+          "dc_scaler_2/DCOUT",
+          "dc_mux_0/WDC0"
+        ]
+      },
+      "dds_compiler_0_m_axis_data_tdata": {
+        "ports": [
+          "dds_compiler_0/m_axis_data_tdata",
+          "dc_scaler_0/DC"
+        ]
+      },
+      "dds_compiler_1_m_axis_data_tdata": {
+        "ports": [
+          "dds_compiler_1/m_axis_data_tdata",
+          "dc_scaler_1/DC"
+        ]
+      },
+      "dds_compiler_2_m_axis_data_tdata": {
+        "ports": [
+          "dds_compiler_2/m_axis_data_tdata",
+          "dc_scaler_2/DC"
+        ]
+      },
+      "phase_cfg_gpio_gpio_io_o": {
+        "ports": [
+          "phase_cfg_gpio/gpio_io_o",
+          "dds_compiler_0/s_axis_phase_tdata",
+          "dds_compiler_2/s_axis_phase_tdata",
+          "dds_compiler_1/s_axis_phase_tdata"
+        ]
+      },
+      "pwm_cfg_gpio_gpio2_io_o": {
+        "ports": [
+          "pwm_cfg_gpio/gpio2_io_o",
+          "xlslice_2/Din",
+          "xlslice_3/Din"
+        ]
+      },
+      "pwm_dc_gpio_gpio2_io_o": {
+        "ports": [
+          "pwm_dc_gpio/gpio2_io_o",
+          "dc_mux_0/WDC1"
+        ]
+      },
+      "pwm_dc_gpio_gpio_io_o": {
+        "ports": [
+          "pwm_dc_gpio/gpio_io_o",
+          "xlslice_4/Din",
+          "xlslice_5/Din"
         ]
       },
       "pwm_gen_u_OUTPUT_N": {
@@ -573,17 +1369,35 @@
       "xlslice_0_Dout": {
         "ports": [
           "xlslice_0/Dout",
-          "pwm_gen_v/PRD",
           "pwm_gen_u/PRD",
+          "pwm_gen_v/PRD",
           "pwm_gen_w/PRD"
         ]
       },
       "xlslice_1_Dout": {
         "ports": [
           "xlslice_1/Dout",
+          "pwm_gen_u/DT",
           "pwm_gen_v/DT",
-          "pwm_gen_w/DT",
-          "pwm_gen_u/DT"
+          "pwm_gen_w/DT"
+        ]
+      },
+      "xlslice_3_Dout": {
+        "ports": [
+          "xlslice_3/Dout",
+          "dc_mux_0/sel"
+        ]
+      },
+      "xlslice_4_Dout": {
+        "ports": [
+          "xlslice_4/Dout",
+          "dc_mux_0/UDC1"
+        ]
+      },
+      "xlslice_5_Dout": {
+        "ports": [
+          "xlslice_5/Dout",
+          "dc_mux_0/VDC1"
         ]
       }
     },
@@ -592,7 +1406,36 @@
         "address_spaces": {
           "S_AXI_PWMCFG": {
             "range": "64K",
-            "width": "16"
+            "width": "16",
+            "segments": {
+              "SEG_pwm_cfg_gpio_Reg": {
+                "address_block": "/pwm_cfg_gpio/S_AXI/Reg",
+                "offset": "0x0000",
+                "range": "4K"
+              }
+            }
+          },
+          "S_AXI_PHASECFG": {
+            "range": "64K",
+            "width": "16",
+            "segments": {
+              "SEG_phase_cfg_gpio_Reg": {
+                "address_block": "/phase_cfg_gpio/S_AXI/Reg",
+                "offset": "0x0000",
+                "range": "64K"
+              }
+            }
+          },
+          "S_AXI_PWMDC": {
+            "range": "64K",
+            "width": "16",
+            "segments": {
+              "SEG_pwm_dc_gpio_Reg": {
+                "address_block": "/pwm_dc_gpio/S_AXI/Reg",
+                "offset": "0x0000",
+                "range": "64K"
+              }
+            }
           }
         }
       }

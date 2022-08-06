@@ -1,4 +1,4 @@
-verilog xil_defaultlib --include "X:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" --include "../../../../foc_driver.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../foc_driver.gen/sources_1/bd/design_1/ipshared/34f8/hdl" --include "../../../../foc_driver.gen/sources_1/bd/design_1/ipshared/d0f7" \
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2021.2/data/xilinx_vip/include" --include "../../../../foc_driver.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../foc_driver.gen/sources_1/bd/design_1/ipshared/3007/hdl" --include "../../../../foc_driver.gen/sources_1/bd/design_1/ipshared/62b6" \
 "../../../bd/design_1/ip/design_1_processing_system7_0_0/sim/design_1_processing_system7_0_0.v" \
 "../../../bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v" \
 "../../../bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v" \

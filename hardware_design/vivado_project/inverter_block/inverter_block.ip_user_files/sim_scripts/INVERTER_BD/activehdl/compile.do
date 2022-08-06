@@ -1,24 +1,37 @@
 vlib work
 vlib activehdl
 
-vlib activehdl/xil_defaultlib
 vlib activehdl/axi_lite_ipif_v3_0_4
 vlib activehdl/lib_cdc_v1_0_2
 vlib activehdl/interrupt_control_v3_1_4
 vlib activehdl/axi_gpio_v2_0_27
+vlib activehdl/xil_defaultlib
 vlib activehdl/xlslice_v1_0_2
+vlib activehdl/xbip_utils_v3_0_10
+vlib activehdl/axi_utils_v2_0_6
+vlib activehdl/xbip_pipe_v3_0_6
+vlib activehdl/xbip_bram18k_v3_0_6
+vlib activehdl/mult_gen_v12_0_17
+vlib activehdl/xbip_dsp48_wrapper_v3_0_4
+vlib activehdl/xbip_dsp48_addsub_v3_0_6
+vlib activehdl/xbip_dsp48_multadd_v3_0_6
+vlib activehdl/dds_compiler_v6_0_21
 
-vmap xil_defaultlib activehdl/xil_defaultlib
 vmap axi_lite_ipif_v3_0_4 activehdl/axi_lite_ipif_v3_0_4
 vmap lib_cdc_v1_0_2 activehdl/lib_cdc_v1_0_2
 vmap interrupt_control_v3_1_4 activehdl/interrupt_control_v3_1_4
 vmap axi_gpio_v2_0_27 activehdl/axi_gpio_v2_0_27
+vmap xil_defaultlib activehdl/xil_defaultlib
 vmap xlslice_v1_0_2 activehdl/xlslice_v1_0_2
-
-vcom -work xil_defaultlib -93 \
-"../../../bd/INVERTER_BD/ip/INVERTER_BD_pwm_generator_0_0/sim/INVERTER_BD_pwm_generator_0_0.vhd" \
-"../../../bd/INVERTER_BD/ip/INVERTER_BD_pwm_generator_1_0/sim/INVERTER_BD_pwm_generator_1_0.vhd" \
-"../../../bd/INVERTER_BD/ip/INVERTER_BD_pwm_generator_2_0/sim/INVERTER_BD_pwm_generator_2_0.vhd" \
+vmap xbip_utils_v3_0_10 activehdl/xbip_utils_v3_0_10
+vmap axi_utils_v2_0_6 activehdl/axi_utils_v2_0_6
+vmap xbip_pipe_v3_0_6 activehdl/xbip_pipe_v3_0_6
+vmap xbip_bram18k_v3_0_6 activehdl/xbip_bram18k_v3_0_6
+vmap mult_gen_v12_0_17 activehdl/mult_gen_v12_0_17
+vmap xbip_dsp48_wrapper_v3_0_4 activehdl/xbip_dsp48_wrapper_v3_0_4
+vmap xbip_dsp48_addsub_v3_0_6 activehdl/xbip_dsp48_addsub_v3_0_6
+vmap xbip_dsp48_multadd_v3_0_6 activehdl/xbip_dsp48_multadd_v3_0_6
+vmap dds_compiler_v6_0_21 activehdl/dds_compiler_v6_0_21
 
 vcom -work axi_lite_ipif_v3_0_4 -93 \
 "../../../../inverter_block.gen/sources_1/bd/INVERTER_BD/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" \
@@ -43,6 +56,57 @@ vlog -work xil_defaultlib  -v2k5 \
 "../../../bd/INVERTER_BD/ip/INVERTER_BD_xlslice_1_0/sim/INVERTER_BD_xlslice_1_0.v" \
 
 vcom -work xil_defaultlib -93 \
+"../../../bd/INVERTER_BD/ip/INVERTER_BD_pwm_cfg_gpio_1/sim/INVERTER_BD_pwm_cfg_gpio_1.vhd" \
+
+vlog -work xil_defaultlib  -v2k5 \
+"../../../bd/INVERTER_BD/ip/INVERTER_BD_xlslice_2_0/sim/INVERTER_BD_xlslice_2_0.v" \
+"../../../bd/INVERTER_BD/ip/INVERTER_BD_xlslice_2_1/sim/INVERTER_BD_xlslice_2_1.v" \
+
+vcom -work xil_defaultlib -93 \
+"../../../bd/INVERTER_BD/ip/INVERTER_BD_dc_mux_0_0/sim/INVERTER_BD_dc_mux_0_0.vhd" \
+"../../../bd/INVERTER_BD/ip/INVERTER_BD_pwm_cfg_gpio_2/sim/INVERTER_BD_pwm_cfg_gpio_2.vhd" \
+
+vlog -work xil_defaultlib  -v2k5 \
+"../../../bd/INVERTER_BD/ip/INVERTER_BD_xlslice_0_1/sim/INVERTER_BD_xlslice_0_1.v" \
+"../../../bd/INVERTER_BD/ip/INVERTER_BD_xlslice_4_0/sim/INVERTER_BD_xlslice_4_0.v" \
+
+vcom -work xbip_utils_v3_0_10 -93 \
+"../../../../inverter_block.gen/sources_1/bd/INVERTER_BD/ipshared/364f/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
+
+vcom -work axi_utils_v2_0_6 -93 \
+"../../../../inverter_block.gen/sources_1/bd/INVERTER_BD/ipshared/1971/hdl/axi_utils_v2_0_vh_rfs.vhd" \
+
+vcom -work xbip_pipe_v3_0_6 -93 \
+"../../../../inverter_block.gen/sources_1/bd/INVERTER_BD/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd" \
+
+vcom -work xbip_bram18k_v3_0_6 -93 \
+"../../../../inverter_block.gen/sources_1/bd/INVERTER_BD/ipshared/d367/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" \
+
+vcom -work mult_gen_v12_0_17 -93 \
+"../../../../inverter_block.gen/sources_1/bd/INVERTER_BD/ipshared/dd36/hdl/mult_gen_v12_0_vh_rfs.vhd" \
+
+vcom -work xbip_dsp48_wrapper_v3_0_4 -93 \
+"../../../../inverter_block.gen/sources_1/bd/INVERTER_BD/ipshared/cdbf/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" \
+
+vcom -work xbip_dsp48_addsub_v3_0_6 -93 \
+"../../../../inverter_block.gen/sources_1/bd/INVERTER_BD/ipshared/910d/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" \
+
+vcom -work xbip_dsp48_multadd_v3_0_6 -93 \
+"../../../../inverter_block.gen/sources_1/bd/INVERTER_BD/ipshared/b0ac/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" \
+
+vcom -work dds_compiler_v6_0_21 -93 \
+"../../../../inverter_block.gen/sources_1/bd/INVERTER_BD/ipshared/7e37/hdl/dds_compiler_v6_0_vh_rfs.vhd" \
+
+vcom -work xil_defaultlib -93 \
+"../../../bd/INVERTER_BD/ip/INVERTER_BD_dds_compiler_0_1/sim/INVERTER_BD_dds_compiler_0_1.vhd" \
+"../../../bd/INVERTER_BD/ip/INVERTER_BD_dds_compiler_0_2/sim/INVERTER_BD_dds_compiler_0_2.vhd" \
+"../../../bd/INVERTER_BD/ip/INVERTER_BD_dds_compiler_0_3/sim/INVERTER_BD_dds_compiler_0_3.vhd" \
+"../../../bd/INVERTER_BD/ip/INVERTER_BD_pwm_generator_0_0/sim/INVERTER_BD_pwm_generator_0_0.vhd" \
+"../../../bd/INVERTER_BD/ip/INVERTER_BD_pwm_generator_1_0/sim/INVERTER_BD_pwm_generator_1_0.vhd" \
+"../../../bd/INVERTER_BD/ip/INVERTER_BD_pwm_generator_2_0/sim/INVERTER_BD_pwm_generator_2_0.vhd" \
+"../../../bd/INVERTER_BD/ip/INVERTER_BD_dc_scaler_0_0/sim/INVERTER_BD_dc_scaler_0_0.vhd" \
+"../../../bd/INVERTER_BD/ip/INVERTER_BD_dc_scaler_0_1/sim/INVERTER_BD_dc_scaler_0_1.vhd" \
+"../../../bd/INVERTER_BD/ip/INVERTER_BD_dc_scaler_0_2/sim/INVERTER_BD_dc_scaler_0_2.vhd" \
 "../../../bd/INVERTER_BD/sim/INVERTER_BD.vhd" \
 
 vlog -work xil_defaultlib \

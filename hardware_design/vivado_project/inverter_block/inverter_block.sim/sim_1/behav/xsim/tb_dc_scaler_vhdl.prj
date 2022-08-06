@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../inverter_block.srcs/sources_1/new/dc_scaler.vhd" \
+"../../../../inverter_block.srcs/sim_1/new/tb_dc_scaler.vhd" \
+
+# Do not sort compile order
+nosort

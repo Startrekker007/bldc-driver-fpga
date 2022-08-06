@@ -1,0 +1,2 @@
+timbase_ctr.vhd,vhdl,xil_defaultlib,../../../../sineInverter.gen/sources_1/ip/timbase_ctr/sim/timbase_ctr.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

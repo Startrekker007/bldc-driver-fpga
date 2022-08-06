@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1659591875909">
+  <ports id="1" name="dds_V_data_V" type="PortType" originalName="dds" coreId="1852142702" bitwidth="16">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="dds_V_keep_V" type="PortType" originalName="dds" coreId="624315344" bitwidth="2">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="dds_V_strb_V" type="PortType" originalName="dds" coreId="1852142702" bitwidth="2">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="dds_V_user_V" type="PortType" originalName="dds" coreId="0" bitwidth="2">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="5" name="dds_V_last_V" type="PortType" originalName="dds" coreId="0" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="6" name="scale" type="PortType" originalName="scale" coreId="0" bitwidth="16">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="7" name="u" type="PortType" originalName="u" coreId="1184132865" bitwidth="16" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="8" name="v" type="PortType" originalName="v" coreId="0" bitwidth="16" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="9" name="w" type="PortType" originalName="w" coreId="0" bitwidth="16" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="49" source_obj="//@ports.5" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="52" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="53" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="54" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="55" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="56" source_obj="//@ports.4" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="57" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="58" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="59" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="60" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="61" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="62" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="65" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="70" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="73" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="74" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="77" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="80" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="83" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="86" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@ports.6"/>
+  <edges id="87" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="88" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="90" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@ports.7"/>
+  <edges id="91" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="92" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="94" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@ports.8"/>
+  <edges id="95" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="96" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="216" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.4"/>
+  <edges id="217" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.3"/>
+  <edges id="218" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.2"/>
+  <edges id="219" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="220" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.4"/>
+  <edges id="221" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.4"/>
+  <edges id="222" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4"/>
+  <blocks id="35" name="block_35" type="BlockType">
+    <controlOutputObjs>._crit_edge</controlOutputObjs>
+    <controlOutputObjs>block_44</controlOutputObjs>
+    <controlOutputObjs>block_41</controlOutputObjs>
+    <controlOutputObjs>block_38</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="scale_read" coreId="1733700992" bitwidth="16" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataInputObjs>scale</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="empty" lineNumber="283" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="no" opType="adapter" coreId="115" contextFuncName="read" bitwidth="23" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h" linenumber="283" fileDirectory="C:\git\bldc-driver-fpga\hardware_design\hls" functionName="read"/>
+      <dataInputObjs>dds_V_data_V</dataInputObjs>
+      <dataInputObjs>dds_V_keep_V</dataInputObjs>
+      <dataInputObjs>dds_V_strb_V</dataInputObjs>
+      <dataInputObjs>dds_V_user_V</dataInputObjs>
+      <dataInputObjs>dds_V_last_V</dataInputObjs>
+      <dataOutputObjs>extractvalue</dataOutputObjs>
+      <dataOutputObjs>extractvalue</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="tmp_data_V" lineNumber="283" originalName="tmp.data.V" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h" fileDirectory=".." coreId="1733707392" contextFuncName="read" bitwidth="16" opcode="extractvalue" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h" linenumber="283" fileDirectory="C:\git\bldc-driver-fpga\hardware_design\hls" functionName="read"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="tmp_user_V" lineNumber="283" originalName="tmp.user.V" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h" fileDirectory=".." coreId="1741937392" contextFuncName="read" bitwidth="2" opcode="extractvalue" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h" linenumber="283" fileDirectory="C:\git\bldc-driver-fpga\hardware_design\hls" functionName="read"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>switch</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="sext_ln14" lineNumber="14" fileName="dds_scaler/dds_scaler.cpp" fileDirectory=".." coreId="1741927824" contextFuncName="dds_scaler" bitwidth="32" opcode="sext" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dds_scaler/dds_scaler.cpp" linenumber="14" fileDirectory="C:\git\bldc-driver-fpga\hardware_design\hls" functionName="dds_scaler"/>
+      <dataInputObjs>extractvalue</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="zext_ln14" lineNumber="14" fileName="dds_scaler/dds_scaler.cpp" fileDirectory=".." rtlName="grp_fu_133_p10" coreId="538449992" contextFuncName="dds_scaler" bitwidth="32" opcode="zext" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dds_scaler/dds_scaler.cpp" linenumber="14" fileDirectory="C:\git\bldc-driver-fpga\hardware_design\hls" functionName="dds_scaler"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="mul_ln14" lineNumber="14" fileName="dds_scaler/dds_scaler.cpp" fileDirectory=".." rtlName="mul_mul_16s_16ns_32_4_1_U1" coreName="DSP48" implIndex="dsp" control="no" opType="mul" coreId="119" contextFuncName="dds_scaler" bitwidth="32" opcode="mul" nodeLatency="3" m_display="0" m_delay="2.15" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dds_scaler/dds_scaler.cpp" linenumber="14" fileDirectory="C:\git\bldc-driver-fpga\hardware_design\hls" functionName="dds_scaler"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="dds_dat" lineNumber="14" originalName="dds_dat" fileName="dds_scaler/dds_scaler.cpp" fileDirectory=".." rtlName="dds_dat_fu_115_p4" coreId="1741935920" contextFuncName="dds_scaler" bitwidth="16" opcode="partselect" nodeLabel="3.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dds_scaler/dds_scaler.cpp" linenumber="14" fileDirectory="C:\git\bldc-driver-fpga\hardware_design\hls" functionName="dds_scaler"/>
+      <dataInputObjs>mul</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="sdat" lineNumber="15" originalName="sdat" fileName="dds_scaler/dds_scaler.cpp" fileDirectory=".." rtlName="sdat_fu_124_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="dds_scaler" bitwidth="16" opcode="add" nodeLabel="3.0" m_display="0" m_delay="2.07" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dds_scaler/dds_scaler.cpp" linenumber="15" fileDirectory="C:\git\bldc-driver-fpga\hardware_design\hls" functionName="dds_scaler"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="_ln16" lineNumber="16" fileName="dds_scaler/dds_scaler.cpp" fileDirectory=".." coreId="1742596800" contextFuncName="dds_scaler" opcode="switch" nodeLabel="3.0" m_display="0" m_delay="1.3" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dds_scaler/dds_scaler.cpp" linenumber="16" fileDirectory="C:\git\bldc-driver-fpga\hardware_design\hls" functionName="dds_scaler"/>
+      <dataInputObjs>extractvalue</dataInputObjs>
+      <controlInputObjs>._crit_edge</controlInputObjs>
+      <controlInputObjs>block_44</controlInputObjs>
+      <controlInputObjs>block_41</controlInputObjs>
+      <controlInputObjs>block_38</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <fileValidLineNumbers fileName="dds_scaler/dds_scaler.cpp">
+      <validLinenumbers>14</validLinenumbers>
+      <validLinenumbers>15</validLinenumbers>
+      <validLinenumbers>16</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h">
+      <validLinenumbers>283</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="38" name="block_38" type="BlockType">
+    <controlInputObjs>block_35</controlInputObjs>
+    <controlOutputObjs>switch</controlOutputObjs>
+    <controlOutputObjs>._crit_edge</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="w_write_ln26" lineNumber="26" fileName="dds_scaler/dds_scaler.cpp" fileDirectory=".." coreId="563550592" contextFuncName="dds_scaler" opcode="write" nodeLabel="3.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dds_scaler/dds_scaler.cpp" linenumber="26" fileDirectory="C:\git\bldc-driver-fpga\hardware_design\hls" functionName="dds_scaler"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>w</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="br_ln27" lineNumber="27" fileName="dds_scaler/dds_scaler.cpp" fileDirectory=".." coreId="178538474" contextFuncName="dds_scaler" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dds_scaler/dds_scaler.cpp" linenumber="27" fileDirectory="C:\git\bldc-driver-fpga\hardware_design\hls" functionName="dds_scaler"/>
+      <controlInputObjs>._crit_edge</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="dds_scaler/dds_scaler.cpp">
+      <validLinenumbers>26</validLinenumbers>
+      <validLinenumbers>27</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="41" name="block_41" type="BlockType">
+    <controlInputObjs>block_35</controlInputObjs>
+    <controlOutputObjs>switch</controlOutputObjs>
+    <controlOutputObjs>._crit_edge</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="v_write_ln22" lineNumber="22" fileName="dds_scaler/dds_scaler.cpp" fileDirectory=".." coreId="1741918256" contextFuncName="dds_scaler" opcode="write" nodeLabel="3.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dds_scaler/dds_scaler.cpp" linenumber="22" fileDirectory="C:\git\bldc-driver-fpga\hardware_design\hls" functionName="dds_scaler"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>v</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="br_ln23" lineNumber="23" fileName="dds_scaler/dds_scaler.cpp" fileDirectory=".." coreId="1728678832" contextFuncName="dds_scaler" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dds_scaler/dds_scaler.cpp" linenumber="23" fileDirectory="C:\git\bldc-driver-fpga\hardware_design\hls" functionName="dds_scaler"/>
+      <controlInputObjs>._crit_edge</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="dds_scaler/dds_scaler.cpp">
+      <validLinenumbers>22</validLinenumbers>
+      <validLinenumbers>23</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="44" name="block_44" type="BlockType">
+    <controlInputObjs>block_35</controlInputObjs>
+    <controlOutputObjs>switch</controlOutputObjs>
+    <controlOutputObjs>._crit_edge</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="u_write_ln18" lineNumber="18" fileName="dds_scaler/dds_scaler.cpp" fileDirectory=".." coreId="1729595536" contextFuncName="dds_scaler" opcode="write" nodeLabel="3.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dds_scaler/dds_scaler.cpp" linenumber="18" fileDirectory="C:\git\bldc-driver-fpga\hardware_design\hls" functionName="dds_scaler"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>u</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="br_ln19" lineNumber="19" fileName="dds_scaler/dds_scaler.cpp" fileDirectory=".." coreId="1729555200" contextFuncName="dds_scaler" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dds_scaler/dds_scaler.cpp" linenumber="19" fileDirectory="C:\git\bldc-driver-fpga\hardware_design\hls" functionName="dds_scaler"/>
+      <controlInputObjs>._crit_edge</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="dds_scaler/dds_scaler.cpp">
+      <validLinenumbers>18</validLinenumbers>
+      <validLinenumbers>19</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="46" name="._crit_edge" type="BlockType">
+    <controlInputObjs>block_35</controlInputObjs>
+    <controlInputObjs>block_38</controlInputObjs>
+    <controlInputObjs>block_41</controlInputObjs>
+    <controlInputObjs>block_44</controlInputObjs>
+    <controlOutputObjs>switch</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="_ln30" lineNumber="30" fileName="dds_scaler/dds_scaler.cpp" fileDirectory=".." coreId="1729604752" contextFuncName="dds_scaler" opcode="ret" nodeLabel="3.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dds_scaler/dds_scaler.cpp" linenumber="30" fileDirectory="C:\git\bldc-driver-fpga\hardware_design\hls" functionName="dds_scaler"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="dds_scaler/dds_scaler.cpp">
+      <validLinenumbers>30</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <regnodes realName="zext_ln14_reg_149">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_user_V_reg_140">
+    <nodeIds>28</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln14_reg_144">
+    <nodeIds>29</nodeIds>
+  </regnodes>
+  <expressionNodes realName="zext_ln14_fu_111">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sdat_fu_124">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln14_fu_107">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="dds_dat_fu_115">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_user_V_fu_103">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_data_V_fu_99">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_133">
+    <nodeIds>31</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="write_ln26_write_fu_78">
+    <nodeIds>36</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln18_write_fu_92">
+    <nodeIds>42</nodeIds>
+  </ioNodes>
+  <ioNodes realName="empty_read_fu_64">
+    <nodeIds>26</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln22_write_fu_85">
+    <nodeIds>39</nodeIds>
+  </ioNodes>
+  <ioNodes realName="scale_read_read_fu_58">
+    <nodeIds>25</nodeIds>
+  </ioNodes>
+  <ioPorts name="dds_V_data_V">
+    <contents name="read">
+      <nodeIds>26</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="dds_V_keep_V">
+    <contents name="read">
+      <nodeIds>26</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="dds_V_last_V">
+    <contents name="read">
+      <nodeIds>26</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="dds_V_strb_V">
+    <contents name="read">
+      <nodeIds>26</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="dds_V_user_V">
+    <contents name="read">
+      <nodeIds>26</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="scale">
+    <contents name="read">
+      <nodeIds>25</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="u">
+    <contents name="write">
+      <nodeIds>42</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="v">
+    <contents name="write">
+      <nodeIds>39</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="w">
+    <contents name="write">
+      <nodeIds>36</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="4" latency="4"/>
+    </states>
+    <states id="2">
+      <operations id="31" stage="3" latency="4"/>
+    </states>
+    <states id="3">
+      <operations id="31" stage="2" latency="4"/>
+    </states>
+    <states id="4">
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="4"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="dds_scaler" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="3" mMaxLatency="3">
+      <basicBlocks>35</basicBlocks>
+      <basicBlocks>38</basicBlocks>
+      <basicBlocks>41</basicBlocks>
+      <basicBlocks>44</basicBlocks>
+      <basicBlocks>46</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

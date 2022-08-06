@@ -1,4 +1,5 @@
 (sym_lib_table
-  (lib (name driver_lib)(type Legacy)(uri ${KIPRJMOD}/driver_lib.lib)(options "")(descr ""))
-  (lib (name drv8300_-cache)(type Legacy)(uri ${KIPRJMOD}/drv8300_-cache.lib)(options "")(descr ""))
+  (lib (name "driver_lib")(type "Legacy")(uri "${KIPRJMOD}/driver_lib.lib")(options "")(descr ""))
+  (lib (name "drv8300_-cache")(type "Legacy")(uri "${KIPRJMOD}/drv8300_-cache.lib")(options "")(descr ""))
+  (lib (name "driver_lib_kicad6")(type "KiCad")(uri "${KIPRJMOD}/driver_lib_kicad6.kicad_sym")(options "")(descr ""))
 )

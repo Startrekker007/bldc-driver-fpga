@@ -1,5 +1,6 @@
-set_property SRC_FILE_INFO {cfile:x:/VivadoHighSpeed/foc_driver/foc_driver.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc rfile:../../../foc_driver.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:design_1_i/processing_system7_0/inst} [current_design]
-set_property SRC_FILE_INFO {cfile:x:/VivadoHighSpeed/foc_driver/foc_driver.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc rfile:../../../foc_driver.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc id:2 order:EARLY scoped_inst:design_1_i/clk_wiz_0/inst} [current_design]
+set_property SRC_FILE_INFO {cfile:c:/git/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc rfile:../../../foc_driver.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:design_1_i/processing_system7_0/inst} [current_design]
+set_property SRC_FILE_INFO {cfile:c:/git/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc rfile:../../../foc_driver.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc id:2 order:EARLY scoped_inst:design_1_i/clk_wiz_0/inst} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/git/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.srcs/constrs_1/new/pynq-z1-focshield.xdc rfile:../../../foc_driver.srcs/constrs_1/new/pynq-z1-focshield.xdc id:3} [current_design]
 current_instance design_1_i/processing_system7_0/inst
 set_property src_info {type:SCOPED_XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
 set_input_jitter clk_fpga_0 0.3
@@ -266,4 +267,17 @@ set_property PACKAGE_PIN "E7" [get_ports "PS_CLK"]
 current_instance
 current_instance design_1_i/clk_wiz_0/inst
 set_property src_info {type:SCOPED_XDC file:2 line:57 export:INPUT save:INPUT read:READ} [current_design]
-set_input_jitter [get_clocks -of_objects [get_ports clk_in1]] 0.1
+set_input_jitter [get_clocks -of_objects [get_ports clk_in1]] 0.100
+current_instance
+set_property src_info {type:XDC file:3 line:8 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN N17 [get_ports U_H]
+set_property src_info {type:XDC file:3 line:9 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN P18 [get_ports U_L]
+set_property src_info {type:XDC file:3 line:10 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN R17 [get_ports V_H]
+set_property src_info {type:XDC file:3 line:11 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN F16 [get_ports V_L]
+set_property src_info {type:XDC file:3 line:12 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN V18 [get_ports W_H]
+set_property src_info {type:XDC file:3 line:13 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN V17 [get_ports W_L]

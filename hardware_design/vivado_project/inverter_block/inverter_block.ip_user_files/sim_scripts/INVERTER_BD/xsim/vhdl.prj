@@ -1,8 +1,17 @@
 vhdl xil_defaultlib  \
+"../../../bd/INVERTER_BD/ip/INVERTER_BD_axi_gpio_0_0/sim/INVERTER_BD_axi_gpio_0_0.vhd" \
+"../../../bd/INVERTER_BD/ip/INVERTER_BD_pwm_cfg_gpio_1/sim/INVERTER_BD_pwm_cfg_gpio_1.vhd" \
+"../../../bd/INVERTER_BD/ip/INVERTER_BD_dc_mux_0_0/sim/INVERTER_BD_dc_mux_0_0.vhd" \
+"../../../bd/INVERTER_BD/ip/INVERTER_BD_pwm_cfg_gpio_2/sim/INVERTER_BD_pwm_cfg_gpio_2.vhd" \
+"../../../bd/INVERTER_BD/ip/INVERTER_BD_dds_compiler_0_1/sim/INVERTER_BD_dds_compiler_0_1.vhd" \
+"../../../bd/INVERTER_BD/ip/INVERTER_BD_dds_compiler_0_2/sim/INVERTER_BD_dds_compiler_0_2.vhd" \
+"../../../bd/INVERTER_BD/ip/INVERTER_BD_dds_compiler_0_3/sim/INVERTER_BD_dds_compiler_0_3.vhd" \
 "../../../bd/INVERTER_BD/ip/INVERTER_BD_pwm_generator_0_0/sim/INVERTER_BD_pwm_generator_0_0.vhd" \
 "../../../bd/INVERTER_BD/ip/INVERTER_BD_pwm_generator_1_0/sim/INVERTER_BD_pwm_generator_1_0.vhd" \
 "../../../bd/INVERTER_BD/ip/INVERTER_BD_pwm_generator_2_0/sim/INVERTER_BD_pwm_generator_2_0.vhd" \
-"../../../bd/INVERTER_BD/ip/INVERTER_BD_axi_gpio_0_0/sim/INVERTER_BD_axi_gpio_0_0.vhd" \
+"../../../bd/INVERTER_BD/ip/INVERTER_BD_dc_scaler_0_0/sim/INVERTER_BD_dc_scaler_0_0.vhd" \
+"../../../bd/INVERTER_BD/ip/INVERTER_BD_dc_scaler_0_1/sim/INVERTER_BD_dc_scaler_0_1.vhd" \
+"../../../bd/INVERTER_BD/ip/INVERTER_BD_dc_scaler_0_2/sim/INVERTER_BD_dc_scaler_0_2.vhd" \
 "../../../bd/INVERTER_BD/sim/INVERTER_BD.vhd" \
 
 nosort

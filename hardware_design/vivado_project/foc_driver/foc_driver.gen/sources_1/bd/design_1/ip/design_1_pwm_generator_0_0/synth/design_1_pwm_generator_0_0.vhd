@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2021 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2022 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -80,11 +80,11 @@ ARCHITECTURE design_1_pwm_generator_0_0_arch OF design_1_pwm_generator_0_0 IS
     );
   END COMPONENT pwm_generator;
   ATTRIBUTE X_CORE_INFO : STRING;
-  ATTRIBUTE X_CORE_INFO OF design_1_pwm_generator_0_0_arch: ARCHITECTURE IS "pwm_generator,Vivado 2020.2";
+  ATTRIBUTE X_CORE_INFO OF design_1_pwm_generator_0_0_arch: ARCHITECTURE IS "pwm_generator,Vivado 2021.2";
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_1_pwm_generator_0_0_arch : ARCHITECTURE IS "design_1_pwm_generator_0_0,pwm_generator,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_1_pwm_generator_0_0_arch: ARCHITECTURE IS "design_1_pwm_generator_0_0,pwm_generator,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=pwm_generator,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=VHDL}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_1_pwm_generator_0_0_arch: ARCHITECTURE IS "design_1_pwm_generator_0_0,pwm_generator,{x_ipProduct=Vivado 2021.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=pwm_generator,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=VHDL}";
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
   ATTRIBUTE IP_DEFINITION_SOURCE OF design_1_pwm_generator_0_0_arch: ARCHITECTURE IS "module_ref";
   ATTRIBUTE X_INTERFACE_INFO : STRING;

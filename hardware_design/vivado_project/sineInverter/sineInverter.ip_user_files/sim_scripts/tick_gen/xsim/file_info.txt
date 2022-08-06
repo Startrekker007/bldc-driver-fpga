@@ -1,0 +1,2 @@
+tick_gen.vhd,vhdl,xil_defaultlib,../../../../sineInverter.gen/sources_1/ip/tick_gen/sim/tick_gen.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

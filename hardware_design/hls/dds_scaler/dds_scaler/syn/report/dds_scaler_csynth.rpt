@@ -1,0 +1,145 @@
+
+
+================================================================
+== Vitis HLS Report for 'dds_scaler'
+================================================================
+* Date:           Thu Aug  4 17:44:35 2022
+
+* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
+* Project:        dds_scaler
+* Solution:       dds_scaler (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  2.150 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        3|        3|  30.000 ns|  30.000 ns|    4|    4|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    1|       -|      -|    -|
+|Expression       |        -|    -|       0|     25|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     34|    -|
+|Register         |        -|    -|       6|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    1|       6|     59|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|   ~0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    +----------------------------+-------------------------+-----------+
+    |          Instance          |          Module         | Expression|
+    +----------------------------+-------------------------+-----------+
+    |mul_mul_16s_16ns_32_4_1_U1  |mul_mul_16s_16ns_32_4_1  |    i0 * i1|
+    +----------------------------+-------------------------+-----------+
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+----+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |sdat_fu_124_p2   |         +|   0|  0|  23|          16|          15|
+    |ap_block_state1  |        or|   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |Total            |          |   0|  0|  25|          17|          16|
+    +-----------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------+----+-----------+-----+-----------+
+    |       Name      | LUT| Input Size| Bits| Total Bits|
+    +-----------------+----+-----------+-----+-----------+
+    |ap_NS_fsm        |  25|          5|    1|          5|
+    |dds_TDATA_blk_n  |   9|          2|    1|          2|
+    +-----------------+----+-----------+-----+-----------+
+    |Total            |  34|          7|    2|          7|
+    +-----------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------+---+----+-----+-----------+
+    |        Name        | FF| LUT| Bits| Const Bits|
+    +--------------------+---+----+-----+-----------+
+    |ap_CS_fsm           |  4|   0|    4|          0|
+    |tmp_user_V_reg_140  |  2|   0|    2|          0|
+    +--------------------+---+----+-----+-----------+
+    |Total               |  6|   0|    6|          0|
+    +--------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------+-----+-----+------------+--------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  | Source Object|    C Type    |
++-------------------+-----+-----+------------+--------------+--------------+
+|ap_local_block     |  out|    1|  ap_ctrl_hs|    dds_scaler|  return value|
+|ap_local_deadlock  |  out|    1|  ap_ctrl_hs|    dds_scaler|  return value|
+|ap_clk             |   in|    1|  ap_ctrl_hs|    dds_scaler|  return value|
+|ap_rst_n           |   in|    1|  ap_ctrl_hs|    dds_scaler|  return value|
+|ap_start           |   in|    1|  ap_ctrl_hs|    dds_scaler|  return value|
+|ap_done            |  out|    1|  ap_ctrl_hs|    dds_scaler|  return value|
+|ap_idle            |  out|    1|  ap_ctrl_hs|    dds_scaler|  return value|
+|ap_ready           |  out|    1|  ap_ctrl_hs|    dds_scaler|  return value|
+|dds_TDATA          |   in|   16|        axis|  dds_V_data_V|       pointer|
+|dds_TVALID         |   in|    1|        axis|  dds_V_last_V|       pointer|
+|dds_TREADY         |  out|    1|        axis|  dds_V_last_V|       pointer|
+|dds_TLAST          |   in|    1|        axis|  dds_V_last_V|       pointer|
+|dds_TKEEP          |   in|    2|        axis|  dds_V_keep_V|       pointer|
+|dds_TSTRB          |   in|    2|        axis|  dds_V_strb_V|       pointer|
+|dds_TUSER          |   in|    2|        axis|  dds_V_user_V|       pointer|
+|scale              |   in|   16|     ap_none|         scale|        scalar|
+|u                  |  out|   16|      ap_vld|             u|       pointer|
+|u_ap_vld           |  out|    1|      ap_vld|             u|       pointer|
+|v                  |  out|   16|      ap_vld|             v|       pointer|
+|v_ap_vld           |  out|    1|      ap_vld|             v|       pointer|
+|w                  |  out|   16|      ap_vld|             w|       pointer|
+|w_ap_vld           |  out|    1|      ap_vld|             w|       pointer|
++-------------------+-----+-----+------------+--------------+--------------+
+

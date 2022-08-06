@@ -1,0 +1,166 @@
+
+
+================================================================
+== Vitis HLS Report for 'dds_scaler'
+================================================================
+* Date:           Thu Aug  4 17:44:35 2022
+
+* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
+* Project:        dds_scaler
+* Solution:       dds_scaler (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  2.150 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        3|        3|  30.000 ns|  30.000 ns|    4|    4|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.15>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%scale_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %scale"   --->   Operation 5 'read' 'scale_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%empty = read i23 @_ssdm_op_Read.axis.volatile.i16P0A.i2P0A.i2P0A.i2P0A.i1P0A, i16 %dds_V_data_V, i2 %dds_V_keep_V, i2 %dds_V_strb_V, i2 %dds_V_user_V, i1 %dds_V_last_V"   --->   Operation 6 'read' 'empty' <Predicate = true> <Delay = 0.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%tmp_data_V = extractvalue i23 %empty"   --->   Operation 7 'extractvalue' 'tmp_data_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%tmp_user_V = extractvalue i23 %empty"   --->   Operation 8 'extractvalue' 'tmp_user_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%sext_ln14 = sext i16 %tmp_data_V" [dds_scaler/dds_scaler.cpp:14]   --->   Operation 9 'sext' 'sext_ln14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%zext_ln14 = zext i16 %scale_read" [dds_scaler/dds_scaler.cpp:14]   --->   Operation 10 'zext' 'zext_ln14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [4/4] (2.15ns) (root node of the DSP)   --->   "%mul_ln14 = mul i32 %sext_ln14, i32 %zext_ln14" [dds_scaler/dds_scaler.cpp:14]   --->   Operation 11 'mul' 'mul_ln14' <Predicate = true> <Delay = 2.15> <CoreInst = "DSP48">   --->   Core 119 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 2 <SV = 1> <Delay = 2.15>
+ST_2 : Operation 12 [3/4] (2.15ns) (root node of the DSP)   --->   "%mul_ln14 = mul i32 %sext_ln14, i32 %zext_ln14" [dds_scaler/dds_scaler.cpp:14]   --->   Operation 12 'mul' 'mul_ln14' <Predicate = true> <Delay = 2.15> <CoreInst = "DSP48">   --->   Core 119 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 3 <SV = 2> <Delay = 2.15>
+ST_3 : Operation 13 [2/4] (2.15ns) (root node of the DSP)   --->   "%mul_ln14 = mul i32 %sext_ln14, i32 %zext_ln14" [dds_scaler/dds_scaler.cpp:14]   --->   Operation 13 'mul' 'mul_ln14' <Predicate = true> <Delay = 2.15> <CoreInst = "DSP48">   --->   Core 119 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 4 <SV = 3> <Delay = 2.07>
+ST_4 : Operation 14 [1/1] (0.00ns)   --->   "%spectopmodule_ln0 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_3"   --->   Operation 14 'spectopmodule' 'spectopmodule_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %dds_V_data_V, i2 %dds_V_keep_V, i2 %dds_V_strb_V, i2 %dds_V_user_V, i1 %dds_V_last_V, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 16 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %dds_V_data_V"   --->   Operation 16 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 17 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i2 %dds_V_keep_V"   --->   Operation 17 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 18 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i2 %dds_V_strb_V"   --->   Operation 18 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 19 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i2 %dds_V_user_V"   --->   Operation 19 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 20 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %dds_V_last_V"   --->   Operation 20 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 21 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %scale"   --->   Operation 21 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 22 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %scale, void @empty_2, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1"   --->   Operation 22 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 23 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %u"   --->   Operation 23 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %u, void @empty_2, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 25 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %v"   --->   Operation 25 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 26 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %v, void @empty_2, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1"   --->   Operation 26 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 27 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %w"   --->   Operation 27 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 28 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %w, void @empty_2, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1"   --->   Operation 28 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 29 [1/4] (0.00ns) (root node of the DSP)   --->   "%mul_ln14 = mul i32 %sext_ln14, i32 %zext_ln14" [dds_scaler/dds_scaler.cpp:14]   --->   Operation 29 'mul' 'mul_ln14' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 119 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 30 [1/1] (0.00ns)   --->   "%dds_dat = partselect i16 @_ssdm_op_PartSelect.i16.i32.i32.i32, i32 %mul_ln14, i32 16, i32 31" [dds_scaler/dds_scaler.cpp:14]   --->   Operation 30 'partselect' 'dds_dat' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 31 [1/1] (2.07ns)   --->   "%sdat = add i16 %dds_dat, i16 32767" [dds_scaler/dds_scaler.cpp:15]   --->   Operation 31 'add' 'sdat' <Predicate = true> <Delay = 2.07> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 32 [1/1] (1.30ns)   --->   "%switch_ln16 = switch i2 %tmp_user_V, void %._crit_edge, i2 0, void, i2 1, void, i2 2, void" [dds_scaler/dds_scaler.cpp:16]   --->   Operation 32 'switch' 'switch_ln16' <Predicate = true> <Delay = 1.30>
+ST_4 : Operation 33 [1/1] (0.00ns)   --->   "%write_ln26 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %w, i16 %sdat" [dds_scaler/dds_scaler.cpp:26]   --->   Operation 33 'write' 'write_ln26' <Predicate = (tmp_user_V == 2)> <Delay = 0.00>
+ST_4 : Operation 34 [1/1] (0.00ns)   --->   "%br_ln27 = br void %._crit_edge" [dds_scaler/dds_scaler.cpp:27]   --->   Operation 34 'br' 'br_ln27' <Predicate = (tmp_user_V == 2)> <Delay = 0.00>
+ST_4 : Operation 35 [1/1] (0.00ns)   --->   "%write_ln22 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %v, i16 %sdat" [dds_scaler/dds_scaler.cpp:22]   --->   Operation 35 'write' 'write_ln22' <Predicate = (tmp_user_V == 1)> <Delay = 0.00>
+ST_4 : Operation 36 [1/1] (0.00ns)   --->   "%br_ln23 = br void %._crit_edge" [dds_scaler/dds_scaler.cpp:23]   --->   Operation 36 'br' 'br_ln23' <Predicate = (tmp_user_V == 1)> <Delay = 0.00>
+ST_4 : Operation 37 [1/1] (0.00ns)   --->   "%write_ln18 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %u, i16 %sdat" [dds_scaler/dds_scaler.cpp:18]   --->   Operation 37 'write' 'write_ln18' <Predicate = (tmp_user_V == 0)> <Delay = 0.00>
+ST_4 : Operation 38 [1/1] (0.00ns)   --->   "%br_ln19 = br void %._crit_edge" [dds_scaler/dds_scaler.cpp:19]   --->   Operation 38 'br' 'br_ln19' <Predicate = (tmp_user_V == 0)> <Delay = 0.00>
+ST_4 : Operation 39 [1/1] (0.00ns)   --->   "%ret_ln30 = ret" [dds_scaler/dds_scaler.cpp:30]   --->   Operation 39 'ret' 'ret_ln30' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 2.15ns
+The critical path consists of the following:
+	wire read operation ('scale_read') on port 'scale' [25]  (0 ns)
+	'mul' operation of DSP[31] ('mul_ln14', dds_scaler/dds_scaler.cpp:14) [31]  (2.15 ns)
+
+ <State 2>: 2.15ns
+The critical path consists of the following:
+	'mul' operation of DSP[31] ('mul_ln14', dds_scaler/dds_scaler.cpp:14) [31]  (2.15 ns)
+
+ <State 3>: 2.15ns
+The critical path consists of the following:
+	'mul' operation of DSP[31] ('mul_ln14', dds_scaler/dds_scaler.cpp:14) [31]  (2.15 ns)
+
+ <State 4>: 2.08ns
+The critical path consists of the following:
+	'mul' operation of DSP[31] ('mul_ln14', dds_scaler/dds_scaler.cpp:14) [31]  (0 ns)
+	'add' operation ('sdat', dds_scaler/dds_scaler.cpp:15) [33]  (2.08 ns)
+	wire write operation ('write_ln26', dds_scaler/dds_scaler.cpp:26) on port 'w' (dds_scaler/dds_scaler.cpp:26) [36]  (0 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

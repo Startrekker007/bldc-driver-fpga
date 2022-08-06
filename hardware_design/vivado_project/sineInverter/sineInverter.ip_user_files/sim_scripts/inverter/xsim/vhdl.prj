@@ -1,0 +1,27 @@
+vhdl xil_defaultlib  \
+"../../../bd/inverter/ip/inverter_rst_ps7_0_100M_0/sim/inverter_rst_ps7_0_100M_0.vhd" \
+"../../../bd/inverter/ip/inverter_INVERTER_BD_wrapper_0_2/src/c_ctr_16_bit/sim/c_ctr_16_bit.vhd" \
+"../../../bd/inverter/ip/inverter_INVERTER_BD_wrapper_0_2/src/INVERTER_BD_axi_gpio_0_0/sim/INVERTER_BD_axi_gpio_0_0.vhd" \
+"../../../bd/inverter/ip/inverter_INVERTER_BD_wrapper_0_2/src/INVERTER_BD_pwm_cfg_gpio_1/sim/INVERTER_BD_pwm_cfg_gpio_1.vhd" \
+"../../../bd/inverter/ip/inverter_INVERTER_BD_wrapper_0_2/src/INVERTER_BD_pwm_cfg_gpio_2/sim/INVERTER_BD_pwm_cfg_gpio_2.vhd" \
+"../../../bd/inverter/ip/inverter_INVERTER_BD_wrapper_0_2/src/INVERTER_BD_dds_compiler_0_1/sim/INVERTER_BD_dds_compiler_0_1.vhd" \
+"../../../bd/inverter/ip/inverter_INVERTER_BD_wrapper_0_2/src/INVERTER_BD_dds_compiler_0_2/sim/INVERTER_BD_dds_compiler_0_2.vhd" \
+"../../../bd/inverter/ip/inverter_INVERTER_BD_wrapper_0_2/src/INVERTER_BD_dds_compiler_0_3/sim/INVERTER_BD_dds_compiler_0_3.vhd" \
+"../../../bd/inverter/ipshared/55ca/sim/INVERTER_BD_dc_mux_0_0.vhd" \
+"../../../bd/inverter/ipshared/55ca/sim/INVERTER_BD_pwm_generator_0_0.vhd" \
+"../../../bd/inverter/ipshared/55ca/sim/INVERTER_BD_pwm_generator_1_0.vhd" \
+"../../../bd/inverter/ipshared/55ca/sim/INVERTER_BD_pwm_generator_2_0.vhd" \
+"../../../bd/inverter/ipshared/55ca/sim/INVERTER_BD_dc_scaler_0_0.vhd" \
+"../../../bd/inverter/ipshared/55ca/sim/INVERTER_BD_dc_scaler_0_1.vhd" \
+"../../../bd/inverter/ipshared/55ca/sim/INVERTER_BD_dc_scaler_0_2.vhd" \
+"../../../bd/inverter/ipshared/55ca/src/dc_mux.vhd" \
+"../../../bd/inverter/ipshared/55ca/src/pwm_generator.vhd" \
+"../../../bd/inverter/ipshared/55ca/src/dc_scaler.vhd" \
+"../../../bd/inverter/ipshared/55ca/sim/INVERTER_BD.vhd" \
+"../../../bd/inverter/ipshared/55ca/src/INVERTER_BD_wrapper.vhd" \
+"../../../bd/inverter/ip/inverter_INVERTER_BD_wrapper_0_2/sim/inverter_INVERTER_BD_wrapper_0_2.vhd" \
+"../../../bd/inverter/sim/inverter.vhd" \
+"../../../bd/inverter/ip/inverter_timebase_generator_0_0/sim/inverter_timebase_generator_0_0.vhd" \
+"../../../bd/inverter/ip/inverter_axi_gpio_0_0/sim/inverter_axi_gpio_0_0.vhd" \
+
+nosort

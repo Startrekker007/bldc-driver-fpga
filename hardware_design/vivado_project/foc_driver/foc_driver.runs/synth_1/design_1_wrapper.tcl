@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "X:/VivadoHighSpeed/foc_driver/foc_driver.runs/synth_1/design_1_wrapper.tcl"
+  variable script "C:/git/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.runs/synth_1/design_1_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -77,38 +77,38 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir X:/VivadoHighSpeed/foc_driver/foc_driver.cache/wt [current_project]
-set_property parent.project_path X:/VivadoHighSpeed/foc_driver/foc_driver.xpr [current_project]
+set_property webtalk.parent_dir C:/git/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.cache/wt [current_project]
+set_property parent.project_path C:/git/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property board_part_repo_paths {C:/Xilinx/Vivado/2019.1/data/boards} [current_project]
+set_property board_part_repo_paths {C:/Xilinx/Vivado/boards} [current_project]
 set_property board_part www.digilentinc.com:pynq-z1:part0:1.0 [current_project]
-set_property ip_output_repo x:/VivadoHighSpeed/foc_driver/foc_driver.cache/ip [current_project]
+set_property ip_output_repo c:/git/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  X:/VivadoHighSpeed/foc_driver/foc_driver.srcs/sources_1/new/pwm_generator.vhd
-  x:/VivadoHighSpeed/foc_driver/foc_driver.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+  C:/git/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.srcs/sources_1/new/pwm_generator.vhd
+  C:/git/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
 }
-read_ip -quiet x:/VivadoHighSpeed/foc_driver/foc_driver.srcs/sources_1/ip/c_ctr_16_bit/c_ctr_16_bit.xci
+read_ip -quiet C:/git/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.srcs/sources_1/ip/c_ctr_16_bit/c_ctr_16_bit.xci
 
-add_files X:/VivadoHighSpeed/foc_driver/foc_driver.srcs/sources_1/bd/design_1/design_1.bd
-set_property used_in_implementation false [get_files -all x:/VivadoHighSpeed/foc_driver/foc_driver.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all x:/VivadoHighSpeed/foc_driver/foc_driver.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all x:/VivadoHighSpeed/foc_driver/foc_driver.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]
-set_property used_in_implementation false [get_files -all x:/VivadoHighSpeed/foc_driver/foc_driver.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all x:/VivadoHighSpeed/foc_driver/foc_driver.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc]
-set_property used_in_implementation false [get_files -all x:/VivadoHighSpeed/foc_driver/foc_driver.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc]
-set_property used_in_implementation false [get_files -all x:/VivadoHighSpeed/foc_driver/foc_driver.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all x:/VivadoHighSpeed/foc_driver/foc_driver.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all x:/VivadoHighSpeed/foc_driver/foc_driver.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc]
-set_property used_in_implementation false [get_files -all x:/VivadoHighSpeed/foc_driver/foc_driver.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_board.xdc]
-set_property used_in_implementation false [get_files -all x:/VivadoHighSpeed/foc_driver/foc_driver.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all x:/VivadoHighSpeed/foc_driver/foc_driver.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xdc]
-set_property used_in_implementation false [get_files -all x:/VivadoHighSpeed/foc_driver/foc_driver.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all x:/VivadoHighSpeed/foc_driver/foc_driver.gen/sources_1/bd/design_1/design_1_ooc.xdc]
+add_files C:/git/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.srcs/sources_1/bd/design_1/design_1.bd
+set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc]
+set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_board.xdc]
+set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xdc]
+set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.gen/sources_1/bd/design_1/design_1_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -119,6 +119,9 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc C:/git/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.srcs/constrs_1/new/pynq-z1-focshield.xdc
+set_property used_in_implementation false [get_files C:/git/bldc-driver-fpga/hardware_design/vivado_project/foc_driver/foc_driver.srcs/constrs_1/new/pynq-z1-focshield.xdc]
+
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1

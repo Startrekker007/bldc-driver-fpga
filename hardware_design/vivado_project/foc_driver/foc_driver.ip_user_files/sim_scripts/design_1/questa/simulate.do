@@ -3,6 +3,9 @@ onerror {quit -f}
 
 vsim -lib xil_defaultlib design_1_opt
 
+set NumericStdNoWarnings 1
+set StdArithNoWarnings 1
+
 do {wave.do}
 
 view wave

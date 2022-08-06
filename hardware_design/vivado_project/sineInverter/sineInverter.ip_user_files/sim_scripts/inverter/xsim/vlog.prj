@@ -1,0 +1,16 @@
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2021.2/data/xilinx_vip/include" --include "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/ec67/hdl" --include "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/3007/hdl" --include "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/62b6" \
+"../../../bd/inverter/ip/inverter_processing_system7_0_0/sim/inverter_processing_system7_0_0.v" \
+"../../../bd/inverter/ip/inverter_xbar_0/sim/inverter_xbar_0.v" \
+"../../../bd/inverter/ip/inverter_clk_wiz_0_0/inverter_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/inverter/ip/inverter_clk_wiz_0_0/inverter_clk_wiz_0_0.v" \
+"../../../bd/inverter/ip/inverter_INVERTER_BD_wrapper_0_2/src/INVERTER_BD_xlslice_0_0/sim/INVERTER_BD_xlslice_0_0.v" \
+"../../../bd/inverter/ip/inverter_INVERTER_BD_wrapper_0_2/src/INVERTER_BD_xlslice_1_0/sim/INVERTER_BD_xlslice_1_0.v" \
+"../../../bd/inverter/ip/inverter_INVERTER_BD_wrapper_0_2/src/INVERTER_BD_xlslice_2_0/sim/INVERTER_BD_xlslice_2_0.v" \
+"../../../bd/inverter/ip/inverter_INVERTER_BD_wrapper_0_2/src/INVERTER_BD_xlslice_2_1/sim/INVERTER_BD_xlslice_2_1.v" \
+"../../../bd/inverter/ip/inverter_INVERTER_BD_wrapper_0_2/src/INVERTER_BD_xlslice_0_1/sim/INVERTER_BD_xlslice_0_1.v" \
+"../../../bd/inverter/ip/inverter_INVERTER_BD_wrapper_0_2/src/INVERTER_BD_xlslice_4_0/sim/INVERTER_BD_xlslice_4_0.v" \
+"../../../bd/inverter/ip/inverter_auto_pc_0/sim/inverter_auto_pc_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_dc_scaler_behav/xsimk.exe -simmode gui -wdb tb_dc_scaler_behav.wdb -simrunnum 0 -socket 59198
+Design successfully loaded
+Design Loading Memory Usage: 7084 KB (Peak: 7084 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 7588 KB (Peak: 7588 KB)
+Simulation CPU Usage: 0 ms

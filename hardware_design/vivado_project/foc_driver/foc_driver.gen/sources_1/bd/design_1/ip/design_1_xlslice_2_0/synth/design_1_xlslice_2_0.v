@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2021 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2022 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -50,9 +50,9 @@
 // IP VLNV: xilinx.com:ip:xlslice:1.0
 // IP Revision: 2
 
-(* X_CORE_INFO = "xlslice_v1_0_2_xlslice,Vivado 2020.2" *)
+(* X_CORE_INFO = "xlslice_v1_0_2_xlslice,Vivado 2021.2" *)
 (* CHECK_LICENSE_TYPE = "design_1_xlslice_2_0,xlslice_v1_0_2_xlslice,{}" *)
-(* CORE_GENERATION_INFO = "design_1_xlslice_2_0,xlslice_v1_0_2_xlslice,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=xlslice,x_ipVersion=1.0,x_ipCoreRevision=2,x_ipLanguage=VHDL,x_ipSimLanguage=VHDL,DIN_WIDTH=32,DIN_FROM=15,DIN_TO=0}" *)
+(* CORE_GENERATION_INFO = "design_1_xlslice_2_0,xlslice_v1_0_2_xlslice,{x_ipProduct=Vivado 2021.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=xlslice,x_ipVersion=1.0,x_ipCoreRevision=2,x_ipLanguage=VHDL,x_ipSimLanguage=VHDL,DIN_WIDTH=32,DIN_FROM=15,DIN_TO=0}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_xlslice_2_0 (
   Din,

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mul" ID="" IMPL="dsp" LATENCY="3" OPTYPE="mul" PRAGMA="" RTLNAME="mul_mul_16s_16ns_32_4_1_U1" SOURCE="dds_scaler/dds_scaler.cpp:14" VARIABLE="mul_ln14" MODULE="dds_scaler" LOOP="" BUNDLEDNAME="" DSP="1" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="sdat_fu_124_p2" SOURCE="dds_scaler/dds_scaler.cpp:15" VARIABLE="sdat" MODULE="dds_scaler" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>

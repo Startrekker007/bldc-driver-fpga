@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="ERROR: [IMPL 213-28] Failed to generate IP." projectName="dds_scaler" solutionName="dds_scaler" date="2022-08-04T17:45:58.595+1200"/>
+        <logs message="ERROR: '2208041745' is an invalid argument. Please specify an integer value.&#xD;&#xD;&#xA;    while executing&#xD;&#xD;&#xA;&quot;rdi::set_property core_revision 2208041745 {component component_1}&quot;&#xD;&#xD;&#xA;    invoked from within&#xD;&#xD;&#xA;&quot;set_property core_revision $Revision $core&quot;&#xD;&#xD;&#xA;    (file &quot;run_ippack.tcl&quot; line 860)&#xD;" projectName="dds_scaler" solutionName="dds_scaler" date="2022-08-04T17:45:58.586+1200"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="dds_scaler" solutionName="dds_scaler" date="2022-08-04T17:44:35.794+1200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

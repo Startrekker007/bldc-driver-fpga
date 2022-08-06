@@ -1,0 +1,4 @@
+<VitisHLS:BurstInfo>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="NonByteSizeMemoryAccessMissed" src_info="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_axi_sdata.h:287:10" msg_id="214-226" msg_severity="INFO" msg_body="Non byte size access is unsupported" resolution="214-226" ID="bb0.load.25" VarName="tmp.i" ParentFunc="dds_scaler(hls::stream&lt;hls::axis&lt;ap_int&lt;16&gt;, 2ul, 0ul, 0ul&gt;, 0&gt;&amp;, unsigned short, unsigned short*, unsigned short*, unsigned short*)"/>
+</VitisHLS:BurstInfo>
+

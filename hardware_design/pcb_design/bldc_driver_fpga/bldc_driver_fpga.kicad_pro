@@ -48,7 +48,13 @@
           "min_clearance": 0.15239999999999998
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
@@ -58,7 +64,7 @@
         "annular_width": "error",
         "clearance": "error",
         "copper_edge_clearance": "error",
-        "courtyards_overlap": "error",
+        "courtyards_overlap": "warning",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
@@ -116,9 +122,15 @@
       "track_widths": [
         0.0,
         0.254,
-        0.508
+        0.508,
+        1.016
       ],
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
@@ -425,16 +437,8 @@
       "Inverter"
     ],
     [
-      "00000000-0000-0000-0000-0000613db8cf",
-      "Phase A Current Sense"
-    ],
-    [
       "00000000-0000-0000-0000-0000615205e0",
       "Zerocrossing Detect"
-    ],
-    [
-      "00000000-0000-0000-0000-0000613e4e5a",
-      "sheet613E4E23"
     ]
   ],
   "text_variables": {}
