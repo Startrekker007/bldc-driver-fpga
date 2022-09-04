@@ -2,8 +2,8 @@
 # Vivado v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Sat Aug  6 20:57:25 2022
-# Process ID: 64672
+# Start of session at: Sun Sep  4 21:06:30 2022
+# Process ID: 28652
 # Current directory: C:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.runs/impl_1
 # Command line: vivado.exe -log inverter_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source inverter_wrapper.tcl -notrace
 # Log file: C:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.runs/impl_1/inverter_wrapper.vdi
@@ -12,39 +12,81 @@
 #-----------------------------------------------------------
 Sourcing tcl script 'C:/Users/Keshav/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
 source inverter_wrapper.tcl -notrace
-Command: open_checkpoint C:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.runs/impl_1/inverter_wrapper.dcp
-
-Starting open_checkpoint Task
-
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1248.793 ; gain = 2.906
-INFO: [Device 21-403] Loading part xc7z020clg400-1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.122 . Memory (MB): peak = 1252.215 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 224 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2021.2
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.150 . Memory (MB): peak = 1367.801 ; gain = 0.000
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.151 . Memory (MB): peak = 1367.801 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1367.801 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-INFO: [Project 1-604] Checkpoint was created with Vivado v2021.2 (64-bit) build 3367213
-open_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1367.801 ; gain = 132.043
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/git/bldc-driver-fpga/hardware_design/ip_blocks/dds_scaler'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/git/bldc-driver-fpga/hardware_design/ip_blocks/sine_inverter'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
 Current IP cache path is C:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.cache/ip 
+Command: link_design -top inverter_wrapper -part xc7z020clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.343 . Memory (MB): peak = 1250.512 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 335 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_processing_system7_0_0/inverter_processing_system7_0_0.xdc] for cell 'inverter_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_processing_system7_0_0/inverter_processing_system7_0_0.xdc] for cell 'inverter_i/processing_system7_0/inst'
+Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_rst_ps7_0_100M_0/inverter_rst_ps7_0_100M_0_board.xdc] for cell 'inverter_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_rst_ps7_0_100M_0/inverter_rst_ps7_0_100M_0_board.xdc] for cell 'inverter_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_rst_ps7_0_100M_0/inverter_rst_ps7_0_100M_0.xdc] for cell 'inverter_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_rst_ps7_0_100M_0/inverter_rst_ps7_0_100M_0.xdc] for cell 'inverter_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_clk_wiz_0_0/inverter_clk_wiz_0_0_board.xdc] for cell 'inverter_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_clk_wiz_0_0/inverter_clk_wiz_0_0_board.xdc] for cell 'inverter_i/clk_wiz_0/inst'
+Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_clk_wiz_0_0/inverter_clk_wiz_0_0.xdc] for cell 'inverter_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_clk_wiz_0_0/inverter_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_clk_wiz_0_0/inverter_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1523.324 ; gain = 272.812
+Finished Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_clk_wiz_0_0/inverter_clk_wiz_0_0.xdc] for cell 'inverter_i/clk_wiz_0/inst'
+Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_INVERTER_BD_wrapper_0_2/src/INVERTER_BD_pwm_cfg_gpio_2/INVERTER_BD_pwm_cfg_gpio_2_board.xdc] for cell 'inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/pwm_dc_gpio/U0'
+Finished Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_INVERTER_BD_wrapper_0_2/src/INVERTER_BD_pwm_cfg_gpio_2/INVERTER_BD_pwm_cfg_gpio_2_board.xdc] for cell 'inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/pwm_dc_gpio/U0'
+Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_INVERTER_BD_wrapper_0_2/src/INVERTER_BD_pwm_cfg_gpio_2/INVERTER_BD_pwm_cfg_gpio_2.xdc] for cell 'inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/pwm_dc_gpio/U0'
+Finished Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_INVERTER_BD_wrapper_0_2/src/INVERTER_BD_pwm_cfg_gpio_2/INVERTER_BD_pwm_cfg_gpio_2.xdc] for cell 'inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/pwm_dc_gpio/U0'
+Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_INVERTER_BD_wrapper_0_2/src/INVERTER_BD_pwm_cfg_gpio_1/INVERTER_BD_pwm_cfg_gpio_1_board.xdc] for cell 'inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/phase_cfg_gpio/U0'
+Finished Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_INVERTER_BD_wrapper_0_2/src/INVERTER_BD_pwm_cfg_gpio_1/INVERTER_BD_pwm_cfg_gpio_1_board.xdc] for cell 'inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/phase_cfg_gpio/U0'
+Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_INVERTER_BD_wrapper_0_2/src/INVERTER_BD_pwm_cfg_gpio_1/INVERTER_BD_pwm_cfg_gpio_1.xdc] for cell 'inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/phase_cfg_gpio/U0'
+Finished Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_INVERTER_BD_wrapper_0_2/src/INVERTER_BD_pwm_cfg_gpio_1/INVERTER_BD_pwm_cfg_gpio_1.xdc] for cell 'inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/phase_cfg_gpio/U0'
+Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_INVERTER_BD_wrapper_0_2/src/INVERTER_BD_axi_gpio_0_0/INVERTER_BD_axi_gpio_0_0_board.xdc] for cell 'inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/pwm_cfg_gpio/U0'
+Finished Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_INVERTER_BD_wrapper_0_2/src/INVERTER_BD_axi_gpio_0_0/INVERTER_BD_axi_gpio_0_0_board.xdc] for cell 'inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/pwm_cfg_gpio/U0'
+Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_INVERTER_BD_wrapper_0_2/src/INVERTER_BD_axi_gpio_0_0/INVERTER_BD_axi_gpio_0_0.xdc] for cell 'inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/pwm_cfg_gpio/U0'
+Finished Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_INVERTER_BD_wrapper_0_2/src/INVERTER_BD_axi_gpio_0_0/INVERTER_BD_axi_gpio_0_0.xdc] for cell 'inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/pwm_cfg_gpio/U0'
+Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_axi_gpio_0_0/inverter_axi_gpio_0_0_board.xdc] for cell 'inverter_i/axi_gpio_timbase/U0'
+Finished Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_axi_gpio_0_0/inverter_axi_gpio_0_0_board.xdc] for cell 'inverter_i/axi_gpio_timbase/U0'
+Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_axi_gpio_0_0/inverter_axi_gpio_0_0.xdc] for cell 'inverter_i/axi_gpio_timbase/U0'
+Finished Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_axi_gpio_0_0/inverter_axi_gpio_0_0.xdc] for cell 'inverter_i/axi_gpio_timbase/U0'
+Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_xadc_wiz_0_0/inverter_xadc_wiz_0_0.xdc] for cell 'inverter_i/xadc_wiz_0/U0'
+Finished Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_xadc_wiz_0_0/inverter_xadc_wiz_0_0.xdc] for cell 'inverter_i/xadc_wiz_0/U0'
+Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_axi_dma_0_0/inverter_axi_dma_0_0.xdc] for cell 'inverter_i/axi_dma_0/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_axi_dma_0_0/inverter_axi_dma_0_0.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_axi_dma_0_0/inverter_axi_dma_0_0.xdc:56]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_axi_dma_0_0/inverter_axi_dma_0_0.xdc:61]
+Finished Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_axi_dma_0_0/inverter_axi_dma_0_0.xdc] for cell 'inverter_i/axi_dma_0/U0'
+Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_1/bd_401b_psr_aclk_0_board.xdc] for cell 'inverter_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_1/bd_401b_psr_aclk_0_board.xdc] for cell 'inverter_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_1/bd_401b_psr_aclk_0.xdc] for cell 'inverter_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_1/bd_401b_psr_aclk_0.xdc] for cell 'inverter_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_axi_gpio_0_1/inverter_axi_gpio_0_1_board.xdc] for cell 'inverter_i/axi_gpio_fifo_stat/U0'
+Finished Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_axi_gpio_0_1/inverter_axi_gpio_0_1_board.xdc] for cell 'inverter_i/axi_gpio_fifo_stat/U0'
+Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_axi_gpio_0_1/inverter_axi_gpio_0_1.xdc] for cell 'inverter_i/axi_gpio_fifo_stat/U0'
+Finished Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_axi_gpio_0_1/inverter_axi_gpio_0_1.xdc] for cell 'inverter_i/axi_gpio_fifo_stat/U0'
+Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_fifo_generator_0_0/inverter_fifo_generator_0_0.xdc] for cell 'inverter_i/fifo_generator_0/U0'
+Finished Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_fifo_generator_0_0/inverter_fifo_generator_0_0.xdc] for cell 'inverter_i/fifo_generator_0/U0'
+Parsing XDC File [C:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.srcs/constrs_1/new/pynq-z1-focshield1_1.xdc]
+Finished Parsing XDC File [C:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.srcs/constrs_1/new/pynq-z1-focshield1_1.xdc]
+Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_axi_dma_0_0/inverter_axi_dma_0_0_clocks.xdc] for cell 'inverter_i/axi_dma_0/U0'
+Finished Parsing XDC File [c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_axi_dma_0_0/inverter_axi_dma_0_0_clocks.xdc] for cell 'inverter_i/axi_dma_0/U0'
+INFO: [Project 1-1714] 16 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1523.324 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 28 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 28 instances
+
+14 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1523.324 ; gain = 272.812
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -55,57 +97,60 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.939 . Memory (MB): peak = 1392.773 ; gain = 24.973
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.979 . Memory (MB): peak = 1523.324 ; gain = 0.000
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: 9e560ce4
+Ending Cache Timing Information Task | Checksum: 1539bae06
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.206 . Memory (MB): peak = 1433.250 ; gain = 40.477
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.429 . Memory (MB): peak = 1539.770 ; gain = 16.445
 
 Starting Logic Optimization Task
 
 Phase 1 Retarget
-INFO: [Opt 31-138] Pushed 2 inverter(s) to 3 load pin(s).
+INFO: [Opt 31-1287] Pulled Inverter inverter_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_realign_cmd_cmplt_reg_i_1 into driver instance inverter_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC/sig_realigner_btt2[25]_i_2, which resulted in an inversion of 19 pins
+INFO: [Opt 31-138] Pushed 10 inverter(s) to 53 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 1362671ce
+Phase 1 Retarget | Checksum: 112a4201f
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.185 . Memory (MB): peak = 1722.871 ; gain = 0.000
-INFO: [Opt 31-389] Phase Retarget created 4 cells and removed 45 cells
-INFO: [Opt 31-1021] In phase Retarget, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.340 . Memory (MB): peak = 1833.469 ; gain = 0.035
+INFO: [Opt 31-389] Phase Retarget created 4 cells and removed 98 cells
+INFO: [Opt 31-1021] In phase Retarget, 19 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 2 Constant propagation | Checksum: 14cb4a97f
+Phase 2 Constant propagation | Checksum: 20317dfad
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.223 . Memory (MB): peak = 1722.871 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.412 . Memory (MB): peak = 1833.469 ; gain = 0.035
 INFO: [Opt 31-389] Phase Constant propagation created 45 cells and removed 100 cells
-INFO: [Opt 31-1021] In phase Constant propagation, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+INFO: [Opt 31-1021] In phase Constant propagation, 22 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 3 Sweep
-Phase 3 Sweep | Checksum: d86aa1fd
+Phase 3 Sweep | Checksum: 1c8a70099
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.392 . Memory (MB): peak = 1722.871 ; gain = 0.000
-INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 312 cells
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.904 . Memory (MB): peak = 1833.469 ; gain = 0.035
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 338 cells
+INFO: [Opt 31-1021] In phase Sweep, 48 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 4 BUFG optimization
-Phase 4 BUFG optimization | Checksum: d86aa1fd
+Phase 4 BUFG optimization | Checksum: 1c8a70099
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.446 . Memory (MB): peak = 1722.871 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1833.469 ; gain = 0.035
 INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
 
 Phase 5 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 5 Shift Register Optimization | Checksum: d86aa1fd
+Phase 5 Shift Register Optimization | Checksum: 1c8a70099
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.454 . Memory (MB): peak = 1722.871 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1833.469 ; gain = 0.035
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 6 Post Processing Netlist
-Phase 6 Post Processing Netlist | Checksum: d86aa1fd
+Phase 6 Post Processing Netlist | Checksum: 1c8a70099
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.467 . Memory (MB): peak = 1722.871 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1833.469 ; gain = 0.035
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 20 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 Opt_design Change Summary
 =========================
 
@@ -113,65 +158,66 @@ Opt_design Change Summary
 -------------------------------------------------------------------------------------------------------------------------
 |  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
 -------------------------------------------------------------------------------------------------------------------------
-|  Retarget                     |               4  |              45  |                                              1  |
-|  Constant propagation         |              45  |             100  |                                              1  |
-|  Sweep                        |               0  |             312  |                                              0  |
+|  Retarget                     |               4  |              98  |                                             19  |
+|  Constant propagation         |              45  |             100  |                                             22  |
+|  Sweep                        |               0  |             338  |                                             48  |
 |  BUFG optimization            |               0  |               0  |                                              0  |
 |  Shift Register Optimization  |               0  |               0  |                                              0  |
-|  Post Processing Netlist      |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             20  |
 -------------------------------------------------------------------------------------------------------------------------
 
 
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1722.871 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: 18c19e59b
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1833.469 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1d32d1ea5
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.584 . Memory (MB): peak = 1722.871 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1833.469 ; gain = 0.035
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 Running Vector-less Activity Propagation...
-
-Finished Running Vector-less Activity Propagation
 INFO: [Pwropt 34-9] Applying IDT optimizations ...
 INFO: [Pwropt 34-10] Applying ODC optimizations ...
 
+Finished Running Vector-less Activity Propagation
+
 
 Starting PowerOpt Patch Enables Task
-INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 24 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
-INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
-Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 48
-Ending PowerOpt Patch Enables Task | Checksum: 18c19e59b
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 2 BRAM(s) out of a total of 28 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-201] Structural ODC has moved 3 WE to EN ports
+Number of BRAM Ports augmented: 4 newly gated: 3 Total Ports: 56
+Ending PowerOpt Patch Enables Task | Checksum: 1e14d755b
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 1842.066 ; gain = 0.000
-Ending Power Optimization Task | Checksum: 18c19e59b
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.467 . Memory (MB): peak = 1990.758 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1e14d755b
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1842.066 ; gain = 119.195
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 1990.758 ; gain = 157.289
 
 Starting Final Cleanup Task
-Ending Final Cleanup Task | Checksum: 18c19e59b
+Ending Final Cleanup Task | Checksum: 1e14d755b
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1990.758 ; gain = 0.000
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1842.066 ; gain = 0.000
-Ending Netlist Obfuscation Task | Checksum: 18c19e59b
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1990.758 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 240593f2b
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1990.758 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-39 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+42 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1842.066 ; gain = 474.266
+opt_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1990.758 ; gain = 467.434
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1990.758 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.runs/impl_1/inverter_wrapper_opt.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file inverter_wrapper_drc_opted.rpt -pb inverter_wrapper_drc_opted.pb -rpx inverter_wrapper_drc_opted.rpx
 Command: report_drc -file inverter_wrapper_drc_opted.rpt -pb inverter_wrapper_drc_opted.pb -rpx inverter_wrapper_drc_opted.rpx
@@ -196,53 +242,53 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1842.066 ; gain = 0.000
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 9a7fcafc
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1990.758 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 14573a04e
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1842.066 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1990.758 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1990.758 ; gain = 0.000
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: ee21f4d3
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 302eaf39
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.420 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.698 . Memory (MB): peak = 1990.758 ; gain = 0.000
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: 192713db8
+Phase 1.3 Build Placer Netlist Model | Checksum: 18efc5c56
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.968 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1990.758 ; gain = 0.000
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: 192713db8
+Phase 1.4 Constrain Clocks/Macros | Checksum: 18efc5c56
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.974 . Memory (MB): peak = 1842.066 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: 192713db8
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1990.758 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 18efc5c56
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.989 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1990.758 ; gain = 0.000
 
 Phase 2 Global Placement
 
 Phase 2.1 Floorplanning
-Phase 2.1 Floorplanning | Checksum: 1cdc142f1
+Phase 2.1 Floorplanning | Checksum: 1f20f659c
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1990.758 ; gain = 0.000
 
 Phase 2.2 Update Timing before SLR Path Opt
-Phase 2.2 Update Timing before SLR Path Opt | Checksum: 20ac4299c
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1311a6830
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1990.758 ; gain = 0.000
 
 Phase 2.3 Post-Processing in Floorplanning
-Phase 2.3 Post-Processing in Floorplanning | Checksum: 203a87ed9
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 1b5570fd2
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1990.758 ; gain = 0.000
 
 Phase 2.4 Global Placement Core
 
 Phase 2.4.1 Physical Synthesis In Placer
-INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 32 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 241 LUT instances to create LUTNM shape
 INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
-INFO: [Physopt 32-1138] End 1 Pass. Optimized 12 nets or LUTs. Breaked 0 LUT, combined 12 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 78 nets or LUTs. Breaked 0 LUT, combined 78 existing LUTs and moved 0 existing LUT
 INFO: [Physopt 32-65] No nets found for high-fanout optimization.
 INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
@@ -258,7 +304,7 @@ INFO: [Physopt 32-846] No candidate cells for URAM register optimization found i
 INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
 INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1990.758 ; gain = 0.000
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -267,7 +313,7 @@ Summary of Physical Synthesis Optimizations
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 |  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-|  LUT Combining                                    |            0  |             12  |                    12  |           0  |           1  |  00:00:00  |
+|  LUT Combining                                    |            0  |             78  |                    78  |           0  |           1  |  00:00:00  |
 |  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
@@ -276,69 +322,69 @@ Summary of Physical Synthesis Optimizations
 |  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Total                                            |            0  |             12  |                    12  |           0  |           9  |  00:00:00  |
+|  Total                                            |            0  |             78  |                    78  |           0  |           9  |  00:00:00  |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Phase 2.4.1 Physical Synthesis In Placer | Checksum: d5299e18
+Phase 2.4.1 Physical Synthesis In Placer | Checksum: 1a43ed2ed
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 1842.066 ; gain = 0.000
-Phase 2.4 Global Placement Core | Checksum: ff9f517b
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 1990.758 ; gain = 0.000
+Phase 2.4 Global Placement Core | Checksum: 12151df5a
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1842.066 ; gain = 0.000
-Phase 2 Global Placement | Checksum: ff9f517b
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 1990.758 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 12151df5a
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 1990.758 ; gain = 0.000
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 12cdaa4e1
+Phase 3.1 Commit Multi Column Macros | Checksum: f6ec0f3d
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1990.758 ; gain = 0.000
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 15c560791
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1477e8df6
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 1990.758 ; gain = 0.000
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: d4eac962
+Phase 3.3 Area Swap Optimization | Checksum: 163f64ad3
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 1990.758 ; gain = 0.000
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 175007bf3
+Phase 3.4 Pipeline Register Optimization | Checksum: 1e632ccd2
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 1990.758 ; gain = 0.000
 
 Phase 3.5 Fast Optimization
-Phase 3.5 Fast Optimization | Checksum: 16e8a910e
+Phase 3.5 Fast Optimization | Checksum: 177e94500
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1990.758 ; gain = 0.000
 
 Phase 3.6 Small Shape Detail Placement
-Phase 3.6 Small Shape Detail Placement | Checksum: 12ad10d71
+Phase 3.6 Small Shape Detail Placement | Checksum: 1f549b945
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 1990.758 ; gain = 0.000
 
 Phase 3.7 Re-assign LUT pins
-Phase 3.7 Re-assign LUT pins | Checksum: 120f9613f
+Phase 3.7 Re-assign LUT pins | Checksum: 1ee68f752
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 1990.758 ; gain = 0.000
 
 Phase 3.8 Pipeline Register Optimization
-Phase 3.8 Pipeline Register Optimization | Checksum: a2f39fe3
+Phase 3.8 Pipeline Register Optimization | Checksum: 113c1d1c7
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 1990.758 ; gain = 0.000
 
 Phase 3.9 Fast Optimization
-Phase 3.9 Fast Optimization | Checksum: 101d50f31
+Phase 3.9 Fast Optimization | Checksum: 1efd13862
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1842.066 ; gain = 0.000
-Phase 3 Detail Placement | Checksum: 101d50f31
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 1990.758 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1efd13862
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 1990.758 ; gain = 0.000
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -346,7 +392,7 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: 1f38442e1
+Post Placement Optimization Initialization | Checksum: 17a12131d
 
 Phase 4.1.1.1 BUFG Insertion
 
@@ -354,33 +400,33 @@ Starting Physical Synthesis Task
 
 Phase 1 Physical Synthesis Initialization
 INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.474 | TNS=-270.793 |
-Phase 1 Physical Synthesis Initialization | Checksum: 23a386223
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.595 | TNS=-260.010 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1b2142ed0
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.112 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.294 . Memory (MB): peak = 1990.758 ; gain = 0.000
 INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
-Ending Physical Synthesis Task | Checksum: 231de1dd2
+Ending Physical Synthesis Task | Checksum: 20eba878e
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.120 . Memory (MB): peak = 1842.066 ; gain = 0.000
-Phase 4.1.1.1 BUFG Insertion | Checksum: 1f38442e1
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.310 . Memory (MB): peak = 1990.758 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 17a12131d
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:15 . Memory (MB): peak = 1990.758 ; gain = 0.000
 
 Phase 4.1.1.2 Post Placement Timing Optimization
-INFO: [Place 30-746] Post Placement Timing Summary WNS=-6.028. For the most accurate timing information please run report_timing.
-Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 11387d900
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-6.072. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 1b0cfb990
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:24 . Memory (MB): peak = 1990.758 ; gain = 0.000
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1842.066 ; gain = 0.000
-Phase 4.1 Post Commit Optimization | Checksum: 11387d900
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:24 . Memory (MB): peak = 1990.758 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 1b0cfb990
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:24 . Memory (MB): peak = 1990.758 ; gain = 0.000
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 11387d900
+Phase 4.2 Post Placement Cleanup | Checksum: 1b0cfb990
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:24 . Memory (MB): peak = 1990.758 ; gain = 0.000
 
 Phase 4.3 Placer Reporting
 
@@ -399,76 +445,110 @@ INFO: [Place 30-612] Post-Placement Estimated Congestion
 |       West|                1x1|                1x1|
 |___________|___________________|___________________|
 
-Phase 4.3.1 Print Estimated Congestion | Checksum: 11387d900
+Phase 4.3.1 Print Estimated Congestion | Checksum: 1b0cfb990
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1842.066 ; gain = 0.000
-Phase 4.3 Placer Reporting | Checksum: 11387d900
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:24 . Memory (MB): peak = 1990.758 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 1b0cfb990
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:24 . Memory (MB): peak = 1990.758 ; gain = 0.000
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1990.758 ; gain = 0.000
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1842.066 ; gain = 0.000
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 89be8495
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:24 . Memory (MB): peak = 1990.758 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 22058a4a9
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1842.066 ; gain = 0.000
-Ending Placer Task | Checksum: 848462e5
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:24 . Memory (MB): peak = 1990.758 ; gain = 0.000
+Ending Placer Task | Checksum: 19c3f75e9
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:24 . Memory (MB): peak = 1990.758 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-79 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+82 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1842.066 ; gain = 0.000
+place_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:25 . Memory (MB): peak = 1990.758 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.230 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.577 . Memory (MB): peak = 1990.758 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.runs/impl_1/inverter_wrapper_placed.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_io -file inverter_wrapper_io_placed.rpt
-report_io: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1842.066 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1990.758 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file inverter_wrapper_utilization_placed.rpt -pb inverter_wrapper_utilization_placed.pb
 INFO: [runtcl-4] Executing : report_control_sets -verbose -file inverter_wrapper_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1842.066 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1990.758 ; gain = 0.000
 Command: phys_opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
-INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 0.00s |  WALL: 0.46s
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1842.066 ; gain = 0.000
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 2.00s |  WALL: 1.16s
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1990.758 ; gain = 0.000
 
 Starting Physical Synthesis Task
 
 Phase 1 Physical Synthesis Initialization
 INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.028 | TNS=-254.862 |
-Phase 1 Physical Synthesis Initialization | Checksum: 21a28429d
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.072 | TNS=-255.163 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1f479067d
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.386 . Memory (MB): peak = 1842.066 ; gain = 0.000
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.028 | TNS=-254.862 |
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.863 . Memory (MB): peak = 1990.758 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.072 | TNS=-255.163 |
 
 Phase 2 DSP Register Optimization
 INFO: [Physopt 32-457] Pass 1. Identified 3 candidate cells for DSP register optimization.
 INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1842.066 ; gain = 0.000
-Phase 2 DSP Register Optimization | Checksum: 21a28429d
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1990.758 ; gain = 0.000
+Phase 2 DSP Register Optimization | Checksum: 1f479067d
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.500 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1990.758 ; gain = 0.000
 
 Phase 3 Critical Path Optimization
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.028 | TNS=-254.862 |
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/pwm_gen_w/U0/u_dc[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.072 | TNS=-255.163 |
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/pwm_gen_v/U0/u_dc[0]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net inverter_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/dc_scaler_1_DCOUT[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/u_dc_offset_carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 16 pins.
+INFO: [Physopt 32-735] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/u_dc_offset_carry_i_4__0_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.888 | TNS=-252.093 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 16 pins.
+INFO: [Physopt 32-735] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/u_dc_offset_carry_i_3__0_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.874 | TNS=-251.416 |
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/dc_scaler_1_DCOUT[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/u_dc_offset_carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/u_dc_offset_carry__1_i_3__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/scale_shifted0[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/u_dc_offset_carry__0_i_5__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/u_dc_offset_carry_i_6__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 16 pins.
+INFO: [Physopt 32-735] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/p_1_out[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.864 | TNS=-251.326 |
+INFO: [Physopt 32-663] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/p_1_out[0].  Re-placed instance inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/u_dc_offset_carry_i_7
+INFO: [Physopt 32-735] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/p_1_out[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.857 | TNS=-251.221 |
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/p_1_out[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/scale_result_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/dc_scaled_0_i_18__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/dc_scaled_0_i_23__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/dc_scaled_0_i_28__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/dc_scaled_0_i_33_n_0.  Re-placed instance inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/dc_scaled_0_i_33
+INFO: [Physopt 32-735] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/dc_scaled_0_i_33_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.847 | TNS=-251.061 |
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/dc_scaled_0_i_33_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_mux_0/U0/Dual.gpio_Data_Out_reg[0][13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/scale_result[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-601] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dds_compiler_1/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardinal_sin_ms/first_q[7]. Net driver inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dds_compiler_1/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardinal_sin_ms/opt_has_pipe.first_q_reg[7] was replaced.
+INFO: [Physopt 32-735] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dds_compiler_1/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardinal_sin_ms/first_q[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.737 | TNS=-248.917 |
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/pwm_gen_w/U0/u_dc[0]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/dc_scaler_2_DCOUT[14]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/u_dc_offset_carry__1_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/u_dc_offset_carry__1_i_3__1_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/scale_shifted0[10]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/u_dc_offset_carry__0_i_5__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/u_dc_offset_carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/u_dc_offset_carry__0_i_3__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/scale_shifted0[6]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/u_dc_offset_carry_i_6__1_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/p_1_out[2]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/scale_shifted2[18]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/dc_scaled_0_i_17__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/p_1_out[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/scale_result_0[0]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/dc_scaled_0_i_18__1_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/dc_scaled_0_i_23__1_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/dc_scaled_0_i_28__1_n_0. Optimizations did not improve timing on the net.
@@ -477,87 +557,76 @@ INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTE
 INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/scale_result[0]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-601] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dds_compiler_2/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardinal_sin_ms/first_q[7]. Net driver inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dds_compiler_2/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardinal_sin_ms/opt_has_pipe.first_q_reg[7] was replaced.
 INFO: [Physopt 32-735] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dds_compiler_2/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardinal_sin_ms/first_q[7]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.964 | TNS=-253.838 |
-INFO: [Physopt 32-663] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dds_compiler_2/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardinal_sin_ms/first_q[6].  Re-placed instance inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dds_compiler_2/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardinal_sin_ms/opt_has_pipe.first_q_reg[6]
-INFO: [Physopt 32-735] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dds_compiler_2/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardinal_sin_ms/first_q[6]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.886 | TNS=-252.590 |
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dds_compiler_2/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardinal_sin_ms/first_q[7]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/pwm_gen_w/U0/u_dc[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/dc_scaler_2_DCOUT[14]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/u_dc_offset_carry__1_i_3__1_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/scale_shifted0[10]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/p_1_out[2]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/scale_shifted2[18]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/dc_scaled_0_i_33_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-663] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_mux_0/U0/Dual.gpio2_Data_Out_reg[0][15].  Re-placed instance inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_mux_0/U0/dc_scaled_0_i_1__1
-INFO: [Physopt 32-735] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_mux_0/U0/Dual.gpio2_Data_Out_reg[0][15]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.877 | TNS=-252.461 |
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/dc_scaler_2_DCOUT[13]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-663] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_mux_0/U0/Dual.gpio2_Data_Out_reg[0][14].  Re-placed instance inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_mux_0/U0/dc_scaled_0_i_2__1
-INFO: [Physopt 32-735] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_mux_0/U0/Dual.gpio2_Data_Out_reg[0][14]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.826 | TNS=-252.410 |
-INFO: [Physopt 32-608] Optimized 1 net.  Swapped 3 pins.
-INFO: [Physopt 32-735] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_mux_0/U0/Dual.gpio2_Data_Out_reg[0][14]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.757 | TNS=-252.319 |
-INFO: [Physopt 32-663] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_mux_0/U0/Dual.gpio2_Data_Out_reg[0][15].  Re-placed instance inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_mux_0/U0/dc_scaled_0_i_1__1
-INFO: [Physopt 32-735] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_mux_0/U0/Dual.gpio2_Data_Out_reg[0][15]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.756 | TNS=-252.287 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.724 | TNS=-247.589 |
 INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/pwm_gen_u/U0/u_dc[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_0/U0/dc_scaler_0_DCOUT[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_0/U0/dc_scaler_0_DCOUT[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_0/U0/u_dc_offset_carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_0/U0/u_dc_offset_carry__0_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_0/U0/u_dc_offset_carry__0_i_3_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_0/U0/scale_shifted0[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_0/U0/u_dc_offset_carry_i_6_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_0/U0/p_1_out[0]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_0/U0/O[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-663] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_0/U0/dc_scaled_0_i_33_n_0.  Re-placed instance inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_0/U0/dc_scaled_0_i_33
-INFO: [Physopt 32-735] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_0/U0/dc_scaled_0_i_33_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.750 | TNS=-251.999 |
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/dc_scaler_2_DCOUT[12]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_mux_0/U0/Dual.gpio2_Data_Out_reg[0][13]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/scale_result[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dds_compiler_2/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardinal_sin_ms/first_q[7]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.750 | TNS=-251.999 |
-Phase 3 Critical Path Optimization | Checksum: 21a28429d
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_0/U0/dc_scaled_0_i_18_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_0/U0/dc_scaled_0_i_23_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_0/U0/dc_scaled_0_i_28_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_0/U0/dc_scaled_0_i_33_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_mux_0/U0/B[14].  Re-placed instance inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_mux_0/U0/dc_scaled_0_i_2
+INFO: [Physopt 32-735] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_mux_0/U0/B[14]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.713 | TNS=-247.565 |
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dds_compiler_1/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardinal_sin_ms/first_q[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/pwm_gen_v/U0/u_dc[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/dc_scaler_1_DCOUT[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/u_dc_offset_carry__1_i_3__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/scale_shifted0[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/p_1_out[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/scale_result_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/dc_scaled_0_i_33_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_mux_0/U0/Dual.gpio_Data_Out_reg[0][13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/scale_result[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dds_compiler_1/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardinal_sin_ms/first_q[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.713 | TNS=-247.565 |
+Phase 3 Critical Path Optimization | Checksum: 1f479067d
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.960 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1990.758 ; gain = 0.000
 
 Phase 4 Critical Path Optimization
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.750 | TNS=-251.999 |
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/pwm_gen_w/U0/u_dc[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.713 | TNS=-247.565 |
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/pwm_gen_v/U0/u_dc[0]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net inverter_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/dc_scaler_2_DCOUT[12]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/u_dc_offset_carry__1_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/u_dc_offset_carry__1_i_3__1_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/scale_shifted0[10]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/u_dc_offset_carry__0_i_5__1_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/u_dc_offset_carry_i_6__1_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/p_1_out[2]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/scale_shifted2[18]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/dc_scaled_0_i_17__1_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/dc_scaled_0_i_18__1_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/dc_scaled_0_i_23__1_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/dc_scaled_0_i_28__1_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/dc_scaled_0_i_33_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_mux_0/U0/Dual.gpio2_Data_Out_reg[0][13]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/scale_result[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dds_compiler_2/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardinal_sin_ms/first_q[7]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/pwm_gen_w/U0/u_dc[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/dc_scaler_1_DCOUT[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/u_dc_offset_carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/u_dc_offset_carry__1_i_3__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/scale_shifted0[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/u_dc_offset_carry__0_i_5__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/u_dc_offset_carry_i_6__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/p_1_out[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/scale_result_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/dc_scaled_0_i_18__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/dc_scaled_0_i_23__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/dc_scaled_0_i_28__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/dc_scaled_0_i_33_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_mux_0/U0/Dual.gpio_Data_Out_reg[0][13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/scale_result[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dds_compiler_1/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardinal_sin_ms/first_q[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/pwm_gen_v/U0/u_dc[0]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net inverter_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/dc_scaler_2_DCOUT[12]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/u_dc_offset_carry__1_i_3__1_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/scale_shifted0[10]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/p_1_out[2]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/scale_shifted2[18]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/dc_scaled_0_i_33_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_mux_0/U0/Dual.gpio2_Data_Out_reg[0][13]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_2/U0/scale_result[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dds_compiler_2/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardinal_sin_ms/first_q[7]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.750 | TNS=-251.999 |
-Phase 4 Critical Path Optimization | Checksum: 21a28429d
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/dc_scaler_1_DCOUT[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/u_dc_offset_carry__1_i_3__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/scale_shifted0[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/p_1_out[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/scale_result_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/dc_scaled_0_i_33_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_mux_0/U0/Dual.gpio_Data_Out_reg[0][13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dc_scaler_1/U0/scale_result[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/dds_compiler_1/U0/i_synth/i_dds/I_SINCOS.i_std_rom.i_rom/i_rtl.i_quarter_table.i_piped_map.i_cardinal_sin_ms/first_q[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.713 | TNS=-247.565 |
+Phase 4 Critical Path Optimization | Checksum: 1f479067d
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1842.066 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1842.066 ; gain = 0.000
-INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-5.750 | TNS=-251.999 |
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1990.758 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1990.758 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-5.713 | TNS=-247.565 |
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -567,24 +636,24 @@ Summary of Physical Synthesis Optimizations
 |  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 |  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Critical Path  |          0.278  |          2.863  |            0  |              0  |                     7  |           0  |           2  |  00:00:01  |
-|  Total          |          0.278  |          2.863  |            0  |              0  |                     7  |           0  |           3  |  00:00:01  |
+|  Critical Path  |          0.359  |          7.598  |            0  |              0  |                     8  |           0  |           2  |  00:00:01  |
+|  Total          |          0.359  |          7.598  |            0  |              0  |                     8  |           0  |           3  |  00:00:01  |
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1842.066 ; gain = 0.000
-Ending Physical Synthesis Task | Checksum: 2a8e02a23
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1990.758 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 24a90d061
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1990.758 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-184 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+210 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
 phys_opt_design completed successfully
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.239 . Memory (MB): peak = 1842.066 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.555 . Memory (MB): peak = 1990.758 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.runs/impl_1/inverter_wrapper_physopt.dcp' has been generated.
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
@@ -599,132 +668,133 @@ Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
 
 Phase 1 Build RT Design
-Checksum: PlaceDB: d973469e ConstDB: 0 ShapeSum: ddd2c8e6 RouteDB: 0
-Post Restoration Checksum: NetGraph: fc5db01f NumContArr: 81596176 Constraints: 0 Timing: 0
-Phase 1 Build RT Design | Checksum: 17db71195
+Checksum: PlaceDB: 9fd5b2ef ConstDB: 0 ShapeSum: afd57e95 RouteDB: 0
+Post Restoration Checksum: NetGraph: 39866fc6 NumContArr: 8eb2873b Constraints: 0 Timing: 0
+Phase 1 Build RT Design | Checksum: c838f701
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 1881.578 ; gain = 39.512
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:18 . Memory (MB): peak = 2007.102 ; gain = 16.344
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: 17db71195
+Phase 2.1 Create Timer | Checksum: c838f701
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 1881.578 ; gain = 39.512
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:18 . Memory (MB): peak = 2007.102 ; gain = 16.344
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: 17db71195
+Phase 2.2 Fix Topology Constraints | Checksum: c838f701
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 1888.508 ; gain = 46.441
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:18 . Memory (MB): peak = 2013.938 ; gain = 23.180
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: 17db71195
+Phase 2.3 Pre Route Cleanup | Checksum: c838f701
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 1888.508 ; gain = 46.441
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:18 . Memory (MB): peak = 2013.938 ; gain = 23.180
  Number of Nodes with overlaps = 0
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: dcadd0e4
+Phase 2.4 Update Timing | Checksum: 2a47c0633
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 1915.859 ; gain = 73.793
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-5.858 | TNS=-255.949| WHS=-0.189 | THS=-34.312|
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 2042.676 ; gain = 51.918
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-5.804 | TNS=-252.117| WHS=-0.282 | THS=-128.939|
 
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 0.000103552 %
-  Global Horizontal Routing Utilization  = 0.000422583 %
+  Global Vertical Routing Utilization    = 0.00227814 %
+  Global Horizontal Routing Utilization  = 0.000760649 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
-  Number of Failed Nets               = 3393
+  Number of Failed Nets               = 7155
     (Failed Nets is the sum of unrouted and partially routed nets)
-  Number of Unrouted Nets             = 3393
+  Number of Unrouted Nets             = 7155
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 2 Router Initialization | Checksum: 14043e4d7
+Phase 2 Router Initialization | Checksum: 1e05d3231
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 1920.395 ; gain = 78.328
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 2073.172 ; gain = 82.414
 
 Phase 3 Initial Routing
 
 Phase 3.1 Global Routing
-Phase 3.1 Global Routing | Checksum: 14043e4d7
+Phase 3.1 Global Routing | Checksum: 1e05d3231
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 1920.395 ; gain = 78.328
-Phase 3 Initial Routing | Checksum: 1c2e71e65
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 2073.172 ; gain = 82.414
+Phase 3 Initial Routing | Checksum: 1a426b47a
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:18 . Memory (MB): peak = 1920.395 ; gain = 78.328
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:22 . Memory (MB): peak = 2086.664 ; gain = 95.906
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 151
- Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 369
+ Number of Nodes with overlaps = 9
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-6.068 | TNS=-261.320| WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-5.952 | TNS=-269.269| WHS=N/A    | THS=N/A    |
 
-Phase 4.1 Global Iteration 0 | Checksum: 170787038
+Phase 4.1 Global Iteration 0 | Checksum: fce9ee72
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 1920.395 ; gain = 78.328
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:24 . Memory (MB): peak = 2086.664 ; gain = 95.906
 
 Phase 4.2 Global Iteration 1
- Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 2
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-6.063 | TNS=-260.441| WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-5.952 | TNS=-269.507| WHS=N/A    | THS=N/A    |
 
-Phase 4.2 Global Iteration 1 | Checksum: 24b562b04
+Phase 4.2 Global Iteration 1 | Checksum: 144b4c0e9
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 1920.395 ; gain = 78.328
-Phase 4 Rip-up And Reroute | Checksum: 24b562b04
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:25 . Memory (MB): peak = 2086.664 ; gain = 95.906
+Phase 4 Rip-up And Reroute | Checksum: 144b4c0e9
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 1920.395 ; gain = 78.328
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:25 . Memory (MB): peak = 2086.664 ; gain = 95.906
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
 
 Phase 5.1.1 Update Timing
-Phase 5.1.1 Update Timing | Checksum: 15f8d7214
+Phase 5.1.1 Update Timing | Checksum: de90acdc
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 1920.395 ; gain = 78.328
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-5.915 | TNS=-253.785| WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:25 . Memory (MB): peak = 2086.664 ; gain = 95.906
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-5.800 | TNS=-260.439| WHS=N/A    | THS=N/A    |
 
  Number of Nodes with overlaps = 0
-Phase 5.1 Delay CleanUp | Checksum: 24e71068e
+Phase 5.1 Delay CleanUp | Checksum: 1b96666c3
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 1920.395 ; gain = 78.328
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:25 . Memory (MB): peak = 2086.664 ; gain = 95.906
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 24e71068e
+Phase 5.2 Clock Skew Optimization | Checksum: 1b96666c3
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 1920.395 ; gain = 78.328
-Phase 5 Delay and Skew Optimization | Checksum: 24e71068e
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:25 . Memory (MB): peak = 2086.664 ; gain = 95.906
+Phase 5 Delay and Skew Optimization | Checksum: 1b96666c3
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 1920.395 ; gain = 78.328
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:25 . Memory (MB): peak = 2086.664 ; gain = 95.906
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 1f80cf0d7
+Phase 6.1.1 Update Timing | Checksum: 14bbdc166
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 1920.395 ; gain = 78.328
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-5.915 | TNS=-253.774| WHS=0.027  | THS=0.000  |
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:26 . Memory (MB): peak = 2086.664 ; gain = 95.906
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-5.800 | TNS=-260.438| WHS=0.014  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: 199bce15c
+Phase 6.1 Hold Fix Iter | Checksum: 1d749fe48
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 1920.395 ; gain = 78.328
-Phase 6 Post Hold Fix | Checksum: 199bce15c
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:26 . Memory (MB): peak = 2086.664 ; gain = 95.906
+Phase 6 Post Hold Fix | Checksum: 1d749fe48
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 1920.395 ; gain = 78.328
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:26 . Memory (MB): peak = 2086.664 ; gain = 95.906
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 0.625712 %
-  Global Horizontal Routing Utilization  = 0.678076 %
+  Global Vertical Routing Utilization    = 1.29952 %
+  Global Horizontal Routing Utilization  = 1.72836 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -735,10 +805,10 @@ Router Utilization Summary
   Number of Node Overlaps             = 0
 
 Congestion Report
-North Dir 1x1 Area, Max Cong = 48.6486%, No Congested Regions.
-South Dir 1x1 Area, Max Cong = 58.5586%, No Congested Regions.
-East Dir 1x1 Area, Max Cong = 50%, No Congested Regions.
-West Dir 1x1 Area, Max Cong = 47.0588%, No Congested Regions.
+North Dir 1x1 Area, Max Cong = 52.2523%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 53.1532%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 67.6471%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 48.5294%, No Congested Regions.
 
 ------------------------------
 Reporting congestion hotspots
@@ -760,45 +830,45 @@ Direction: West
 Congested clusters found at Level 0
 Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
 
-Phase 7 Route finalize | Checksum: 27c43fb8e
+Phase 7 Route finalize | Checksum: 1b934a199
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 1920.395 ; gain = 78.328
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:26 . Memory (MB): peak = 2086.664 ; gain = 95.906
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 27c43fb8e
+Phase 8 Verifying routed nets | Checksum: 1b934a199
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 1920.395 ; gain = 78.328
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:26 . Memory (MB): peak = 2086.664 ; gain = 95.906
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 1eb94876d
+Phase 9 Depositing Routes | Checksum: 258be9ba9
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:20 . Memory (MB): peak = 1920.395 ; gain = 78.328
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:26 . Memory (MB): peak = 2086.664 ; gain = 95.906
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=-5.915 | TNS=-253.774| WHS=0.027  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-5.800 | TNS=-260.438| WHS=0.014  | THS=0.000  |
 
 WARNING: [Route 35-328] Router estimated timing not met.
 Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
-Phase 10 Post Router Timing | Checksum: 1eb94876d
+Phase 10 Post Router Timing | Checksum: 258be9ba9
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:20 . Memory (MB): peak = 1920.395 ; gain = 78.328
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:26 . Memory (MB): peak = 2086.664 ; gain = 95.906
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:20 . Memory (MB): peak = 1920.395 ; gain = 78.328
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:26 . Memory (MB): peak = 2086.664 ; gain = 95.906
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-199 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+225 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:22 . Memory (MB): peak = 1920.395 ; gain = 78.328
+route_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:29 . Memory (MB): peak = 2086.664 ; gain = 95.906
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.318 . Memory (MB): peak = 1937.816 ; gain = 17.422
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.654 . Memory (MB): peak = 2086.664 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.runs/impl_1/inverter_wrapper_routed.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file inverter_wrapper_drc_routed.rpt -pb inverter_wrapper_drc_routed.pb -rpx inverter_wrapper_drc_routed.rpx
 Command: report_drc -file inverter_wrapper_drc_routed.rpt -pb inverter_wrapper_drc_routed.pb -rpx inverter_wrapper_drc_routed.rpx
@@ -818,7 +888,9 @@ INFO: [Timing 38-35] Done setting XDC timing constraints.
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
-211 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+237 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
 INFO: [runtcl-4] Executing : report_route_status -file inverter_wrapper_route_status.rpt -pb inverter_wrapper_route_status.pb
 INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file inverter_wrapper_timing_summary_routed.rpt -pb inverter_wrapper_timing_summary_routed.pb -rpx inverter_wrapper_timing_summary_routed.rpx -warn_on_violation 
@@ -831,6 +903,11 @@ INFO: [runtcl-4] Executing : report_clock_utilization -file inverter_wrapper_clo
 INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file inverter_wrapper_bus_skew_routed.rpt -pb inverter_wrapper_bus_skew_routed.pb -rpx inverter_wrapper_bus_skew_routed.rpx
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Memdata 28-167] Found XPM memory block inverter_i/smartconnect_0/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the inverter_i/smartconnect_0/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block inverter_i/smartconnect_0/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the inverter_i/smartconnect_0/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block inverter_i/smartconnect_0/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the inverter_i/smartconnect_0/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block inverter_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the inverter_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-208] The XPM instance: <inverter_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <inverter_i/axi_dma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
 Command: write_bitstream -force inverter_wrapper.bit
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -858,7 +935,11 @@ WARNING: [DRC DPOP-2] MREG Output pipelining: DSP inverter_i/INVERTER_BD_wrapper
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/pwm_gen_u/U0/dc_scaled_0 multiplier stage inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/pwm_gen_u/U0/dc_scaled_0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/pwm_gen_v/U0/dc_scaled_0 multiplier stage inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/pwm_gen_v/U0/dc_scaled_0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/pwm_gen_w/U0/dc_scaled_0 multiplier stage inverter_i/INVERTER_BD_wrapper_0/U0/INVERTER_BD_i/pwm_gen_w/U0/dc_scaled_0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-INFO: [Vivado 12-3199] DRC finished with 0 Errors, 21 Warnings
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A4' of cell inverter_i/fifo_generator_0/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin inverter_i/fifo_generator_0/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A1)+((~A1)*(~A5)*A2)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC RTSTAT-10] No routable loads: 11 net(s) have no routable loads. The problem bus(es) and/or net(s) are inverter_i/fifo_generator_0/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, inverter_i/fifo_generator_0/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, inverter_i/fifo_generator_0/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, inverter_i/fifo_generator_0/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, inverter_i/fifo_generator_0/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/rd_rst_reg[2:0], inverter_i/fifo_generator_0/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/user_valid, and inverter_i/fifo_generator_0/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/wr_rst_reg[2:0].
+INFO: [DRC REQP-165] writefirst: Synchronous clocking is detected for BRAM (inverter_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [DRC REQP-181] writefirst: Synchronous clocking is detected for BRAM (inverter_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 23 Warnings, 2 Advisories
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
 INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
 Loading data files...
@@ -871,7 +952,7 @@ Writing bitstream ./inverter_wrapper.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
 INFO: [Common 17-83] Releasing license: Implementation
-12 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+19 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 2409.461 ; gain = 466.367
-INFO: [Common 17-206] Exiting Vivado at Sat Aug  6 20:58:46 2022...
+write_bitstream: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 2546.953 ; gain = 456.113
+INFO: [Common 17-206] Exiting Vivado at Sun Sep  4 21:08:35 2022...

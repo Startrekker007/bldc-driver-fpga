@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1659776238">
-  <File Type="OPT-HWDEF" Name="inverter_wrapper.hwdef"/>
-  <File Type="ROUTE-BUS-SKEW" Name="inverter_wrapper_bus_skew_routed.rpt"/>
-  <File Type="PA-DCP" Name="inverter_wrapper.dcp"/>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1662282236">
   <File Type="ROUTE-PWR" Name="inverter_wrapper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="inverter_wrapper.tcl"/>
   <File Type="BITSTR-MMI" Name="inverter_wrapper.mmi"/>
@@ -13,6 +10,7 @@
   <File Type="OPT-TIMING" Name="inverter_wrapper_timing_summary_opted.rpt"/>
   <File Type="OPT-DCP" Name="inverter_wrapper_opt.dcp"/>
   <File Type="OPT-DRC" Name="inverter_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="inverter_wrapper.hwdef"/>
   <File Type="PWROPT-DCP" Name="inverter_wrapper_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="inverter_wrapper_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="inverter_wrapper_timing_summary_pwropted.rpt"/>
@@ -50,6 +48,7 @@
   <File Type="ROUTE-TIMING-RPX" Name="inverter_wrapper_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="inverter_wrapper_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="inverter_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="inverter_wrapper_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="inverter_wrapper_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="inverter_wrapper_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="inverter_wrapper_postroute_physopt.dcp"/>
@@ -107,6 +106,13 @@
     </File>
     <File Path="$PGENDIR/sources_1/bd/inverter/hdl/inverter_wrapper.vhd">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/tlast_gen.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>

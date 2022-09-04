@@ -8,6 +8,7 @@ axi_vip_if.sv,systemverilog,xilinx_vip,../../../../../../../../../Xilinx/Vivado/
 clk_vip_if.sv,systemverilog,xilinx_vip,../../../../../../../../../Xilinx/Vivado/2021.2/data/xilinx_vip/hdl/clk_vip_if.sv,
 rst_vip_if.sv,systemverilog,xilinx_vip,../../../../../../../../../Xilinx/Vivado/2021.2/data/xilinx_vip/hdl/rst_vip_if.sv,
 xpm_cdc.sv,systemverilog,xpm,../../../../../../../../../Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,
+xpm_fifo.sv,systemverilog,xpm,../../../../../../../../../Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv,
 xpm_memory.sv,systemverilog,xpm,../../../../../../../../../Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,
 xpm_VCOMP.vhd,vhdl,xpm,../../../../../../../../../Xilinx/Vivado/2021.2/data/ip/xpm/xpm_VCOMP.vhd,
 xbip_utils_v3_0_vh_rfs.vhd,vhdl,xbip_utils_v3_0_10,../../../ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd,

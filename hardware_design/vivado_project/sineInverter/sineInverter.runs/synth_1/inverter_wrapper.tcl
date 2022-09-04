@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 3
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
@@ -79,7 +80,7 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir C:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.cache/wt [current_project]
 set_property parent.project_path C:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.xpr [current_project]
-set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part_repo_paths {C:/Xilinx/Vivado/boards} [current_project]
@@ -97,9 +98,9 @@ read_vhdl -library xil_defaultlib {
   C:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.srcs/sources_1/new/timebase_generator.vhd
   C:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/hdl/inverter_wrapper.vhd
 }
-read_ip -quiet c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.srcs/sources_1/ip/tick_gen/tick_gen.xci
+read_ip -quiet C:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.srcs/sources_1/ip/tick_gen/tick_gen.xci
 
-read_ip -quiet c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.srcs/sources_1/ip/timbase_ctr/timbase_ctr.xci
+read_ip -quiet C:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.srcs/sources_1/ip/timbase_ctr/timbase_ctr.xci
 
 add_files C:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.srcs/sources_1/bd/inverter/inverter.bd
 set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_processing_system7_0_0/inverter_processing_system7_0_0.xdc]
@@ -121,6 +122,22 @@ set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpg
 set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_axi_gpio_0_0/inverter_axi_gpio_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_axi_gpio_0_0/inverter_axi_gpio_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_axi_gpio_0_0/inverter_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_xadc_wiz_0_0/inverter_xadc_wiz_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_xadc_wiz_0_0/inverter_xadc_wiz_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_axi_dma_0_0/inverter_axi_dma_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_axi_dma_0_0/inverter_axi_dma_0_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_1/bd_401b_psr_aclk_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_1/bd_401b_psr_aclk_0.xdc]
+set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_5/bd_401b_s00a2s_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_6/bd_401b_sawn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_7/bd_401b_swn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_8/bd_401b_sbn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_9/bd_401b_m00s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_smartconnect_0_0/ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_axi_gpio_0_1/inverter_axi_gpio_0_1_board.xdc]
+set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_axi_gpio_0_1/inverter_axi_gpio_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_axi_gpio_0_1/inverter_axi_gpio_0_1.xdc]
+set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_fifo_generator_0_0/inverter_fifo_generator_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_auto_pc_0/inverter_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/inverter_ooc.xdc]
 

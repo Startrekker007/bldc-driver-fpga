@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sun Sep  4 12:37:12 2022
+# Process ID: 15168
+# Current directory: C:/git/bldc-driver-fpga/hardware_design/vivado_project/dma_driver_test/dma_driver_test.runs/synth_1
+# Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: C:/git/bldc-driver-fpga/hardware_design/vivado_project/dma_driver_test/dma_driver_test.runs/synth_1/design_1_wrapper.vds
+# Journal file: C:/git/bldc-driver-fpga/hardware_design/vivado_project/dma_driver_test/dma_driver_test.runs/synth_1\vivado.jou
+# Running On: DESKTOP-J766HPL, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17055 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace

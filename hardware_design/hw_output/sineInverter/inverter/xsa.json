@@ -50,13 +50,7 @@
             "core": {
                 "name": "OCL_REGION_0",
                 "type": "clc_region",
-                "numComputeUnits": "60",
-                "availableResources": {
-                    "bramCount": "118",
-                    "dspCount": "214",
-                    "lutCount": "51477",
-                    "registerCount": "104318"
-                }
+                "numComputeUnits": "60"
             }
         }
     ],
@@ -83,16 +77,7 @@
     "generatedVersion": "2021.2",
     "generatedChangeList": "3367213",
     "generatedIpChangeList": "3369179",
-    "generatedTimestamp": "Sat Aug  6 21:00:52 2022",
-    "idCode": "03727093",
-    "designIDs": {
-        "designID": "2058273490"
-    },
-    "resources": [
-        {
-            "type": "REG",
-            "count": "104318"
-        }
-    ]
+    "generatedTimestamp": "Sun Sep  4 21:09:14 2022",
+    "idCode": "03727093"
 }
 

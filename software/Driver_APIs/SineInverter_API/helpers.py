@@ -1,7 +1,7 @@
 from pynq import MMIO
 import time
 import logging
-from pynq import Xlnk
+#from pynq import Xlnk
 #from pynq.lib.dma import _DMAChannel
 import numpy
 log = logging.getLogger()

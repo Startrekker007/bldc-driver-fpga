@@ -13,3 +13,13 @@ set_property PACKAGE_PIN N17 [get_ports INLC]
 
 set_property IOSTANDARD LVCMOS33 [get_ports indicator_0]
 set_property PACKAGE_PIN N15 [get_ports indicator_0]
+
+set_property PACKAGE_PIN D18 [get_ports Vaux1_0_v_n]
+set_property IOSTANDARD LVCMOS33 [get_ports Vaux1_0_v_n]
+set_property IOSTANDARD LVCMOS33 [get_ports Vaux1_0_v_p]
+set_property IOSTANDARD LVCMOS33 [get_ports Vaux6_0_v_n]
+set_property IOSTANDARD LVCMOS33 [get_ports Vaux6_0_v_p]
+set_property IOSTANDARD LVCMOS33 [get_ports Vaux9_0_v_n]
+set_property IOSTANDARD LVCMOS33 [get_ports Vaux9_0_v_p]
+set_property IOSTANDARD LVCMOS33 [get_ports full]
+set_property PACKAGE_PIN G14 [get_ports full]

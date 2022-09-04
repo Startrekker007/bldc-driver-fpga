@@ -69,6 +69,60 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==INVERTER_BD
 # IP: c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_INVERTER_BD_wrapper_0_2/src/c_ctr_16_bit/c_ctr_16_bit.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==c_ctr_16_bit || ORIG_REF_NAME==c_ctr_16_bit} -quiet] -quiet
 
+# IP: bd/inverter/ip/inverter_axi_gpio_0_0/inverter_axi_gpio_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==inverter_axi_gpio_0_0 || ORIG_REF_NAME==inverter_axi_gpio_0_0} -quiet] -quiet
+
+# IP: bd/inverter/ip/inverter_xadc_wiz_0_0/inverter_xadc_wiz_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==inverter_xadc_wiz_0_0 || ORIG_REF_NAME==inverter_xadc_wiz_0_0} -quiet] -quiet
+
+# IP: bd/inverter/ip/inverter_axi_dma_0_0/inverter_axi_dma_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==inverter_axi_dma_0_0 || ORIG_REF_NAME==inverter_axi_dma_0_0} -quiet] -quiet
+
+# IP: bd/inverter/ip/inverter_xlconcat_0_0/inverter_xlconcat_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==inverter_xlconcat_0_0 || ORIG_REF_NAME==inverter_xlconcat_0_0} -quiet] -quiet
+
+# IP: bd/inverter/ip/inverter_smartconnect_0_0/inverter_smartconnect_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==inverter_smartconnect_0_0 || ORIG_REF_NAME==inverter_smartconnect_0_0} -quiet] -quiet
+
+# Block Designs: c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_smartconnect_0_0/bd_0/bd_401b.bd
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_0/bd_401b_one_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_1/bd_401b_psr_aclk_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_2/bd_401b_s00mmu_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_3/bd_401b_s00tr_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_4/bd_401b_s00sic_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_5/bd_401b_s00a2s_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_6/bd_401b_sawn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_7/bd_401b_swn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_8/bd_401b_sbn_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_9/bd_401b_m00s2a_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_10/bd_401b_m00e_0.xci
+# DONT_TOUCH constraint suppressed by (parent) sub-design file.
+
+# IP: bd/inverter/ip/inverter_axi_gpio_0_1/inverter_axi_gpio_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==inverter_axi_gpio_0_1 || ORIG_REF_NAME==inverter_axi_gpio_0_1} -quiet] -quiet
+
 # IP: bd/inverter/ip/inverter_timebase_generator_0_0/inverter_timebase_generator_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==inverter_timebase_generator_0_0 || ORIG_REF_NAME==inverter_timebase_generator_0_0} -quiet] -quiet
 
@@ -78,8 +132,8 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==inverter_ti
 # IP: ip/timbase_ctr/timbase_ctr.xci
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==timbase_ctr || ORIG_REF_NAME==timbase_ctr} -quiet] -quiet
 
-# IP: bd/inverter/ip/inverter_axi_gpio_0_0/inverter_axi_gpio_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==inverter_axi_gpio_0_0 || ORIG_REF_NAME==inverter_axi_gpio_0_0} -quiet] -quiet
+# IP: bd/inverter/ip/inverter_fifo_generator_0_0/inverter_fifo_generator_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==inverter_fifo_generator_0_0 || ORIG_REF_NAME==inverter_fifo_generator_0_0} -quiet] -quiet
 
 # IP: bd/inverter/ip/inverter_auto_pc_0/inverter_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==inverter_auto_pc_0 || ORIG_REF_NAME==inverter_auto_pc_0} -quiet] -quiet
@@ -134,6 +188,46 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 
 # XDC: c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_axi_gpio_0_0/inverter_axi_gpio_0_0.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==inverter_axi_gpio_0_0 || ORIG_REF_NAME==inverter_axi_gpio_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_xadc_wiz_0_0/inverter_xadc_wiz_0_0_ooc.xdc
+
+# XDC: c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_xadc_wiz_0_0/inverter_xadc_wiz_0_0.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==inverter_xadc_wiz_0_0 || ORIG_REF_NAME==inverter_xadc_wiz_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_axi_dma_0_0/inverter_axi_dma_0_0.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==inverter_axi_dma_0_0 || ORIG_REF_NAME==inverter_axi_dma_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_axi_dma_0_0/inverter_axi_dma_0_0_clocks.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==inverter_axi_dma_0_0 || ORIG_REF_NAME==inverter_axi_dma_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_1/bd_401b_psr_aclk_0_board.xdc
+# DONT_TOUCH constraint suppressed by parent sub-design file.
+
+# XDC: c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_1/bd_401b_psr_aclk_0.xdc
+# DONT_TOUCH constraint suppressed by parent sub-design file.
+
+# XDC: c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_5/bd_401b_s00a2s_0_ooc.xdc
+
+# XDC: c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_6/bd_401b_sawn_0_ooc.xdc
+
+# XDC: c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_7/bd_401b_swn_0_ooc.xdc
+
+# XDC: c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_8/bd_401b_sbn_0_ooc.xdc
+
+# XDC: c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_9/bd_401b_m00s2a_0_ooc.xdc
+
+# XDC: c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_smartconnect_0_0/ooc.xdc
+
+# XDC: c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_axi_gpio_0_1/inverter_axi_gpio_0_1_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==inverter_axi_gpio_0_1 || ORIG_REF_NAME==inverter_axi_gpio_0_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_axi_gpio_0_1/inverter_axi_gpio_0_1_ooc.xdc
+
+# XDC: c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_axi_gpio_0_1/inverter_axi_gpio_0_1.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==inverter_axi_gpio_0_1 || ORIG_REF_NAME==inverter_axi_gpio_0_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_fifo_generator_0_0/inverter_fifo_generator_0_0.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==inverter_fifo_generator_0_0 || ORIG_REF_NAME==inverter_fifo_generator_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: c:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.gen/sources_1/bd/inverter/ip/inverter_auto_pc_0/inverter_auto_pc_0_ooc.xdc
 

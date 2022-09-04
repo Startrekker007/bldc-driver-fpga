@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="39">
   <CompositeFile CompositeFileTopName="inverter" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1659775661"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1659775661"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1659775661"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1659775661"/>
+    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1662283047"/>
+    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1662283047"/>
+    <Generation Name="SIMULATION" State="STALE" Timestamp="1662283047"/>
+    <Generation Name="HW_HANDOFF" State="STALE" Timestamp="1662283047"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="synth\inverter.vhd" Type="VHDL">
         <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>

@@ -1,7 +1,7 @@
 --Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
---Date        : Sat Aug  6 20:47:40 2022
+--Date        : Sun Sep  4 21:11:00 2022
 --Host        : DESKTOP-J766HPL running 64-bit major release  (build 9200)
 --Command     : generate_target inverter_wrapper.bd
 --Design      : inverter_wrapper
@@ -40,6 +40,13 @@ entity inverter_wrapper is
     INLA : out STD_LOGIC;
     INLB : out STD_LOGIC;
     INLC : out STD_LOGIC;
+    Vaux1_0_v_n : in STD_LOGIC;
+    Vaux1_0_v_p : in STD_LOGIC;
+    Vaux6_0_v_n : in STD_LOGIC;
+    Vaux6_0_v_p : in STD_LOGIC;
+    Vaux9_0_v_n : in STD_LOGIC;
+    Vaux9_0_v_p : in STD_LOGIC;
+    full : out STD_LOGIC;
     indicator_0 : out STD_LOGIC
   );
 end inverter_wrapper;
@@ -53,6 +60,14 @@ architecture STRUCTURE of inverter_wrapper is
     INLB : out STD_LOGIC;
     INHC : out STD_LOGIC;
     INLC : out STD_LOGIC;
+    indicator_0 : out STD_LOGIC;
+    full : out STD_LOGIC;
+    Vaux1_0_v_n : in STD_LOGIC;
+    Vaux1_0_v_p : in STD_LOGIC;
+    Vaux6_0_v_n : in STD_LOGIC;
+    Vaux6_0_v_p : in STD_LOGIC;
+    Vaux9_0_v_n : in STD_LOGIC;
+    Vaux9_0_v_p : in STD_LOGIC;
     DDR_cas_n : inout STD_LOGIC;
     DDR_cke : inout STD_LOGIC;
     DDR_ck_n : inout STD_LOGIC;
@@ -73,8 +88,7 @@ architecture STRUCTURE of inverter_wrapper is
     FIXED_IO_ddr_vrp : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     FIXED_IO_ps_clk : inout STD_LOGIC;
-    FIXED_IO_ps_porb : inout STD_LOGIC;
-    indicator_0 : out STD_LOGIC
+    FIXED_IO_ps_porb : inout STD_LOGIC
   );
   end component inverter;
 begin
@@ -107,6 +121,13 @@ inverter_i: component inverter
       INLA => INLA,
       INLB => INLB,
       INLC => INLC,
+      Vaux1_0_v_n => Vaux1_0_v_n,
+      Vaux1_0_v_p => Vaux1_0_v_p,
+      Vaux6_0_v_n => Vaux6_0_v_n,
+      Vaux6_0_v_p => Vaux6_0_v_p,
+      Vaux9_0_v_n => Vaux9_0_v_n,
+      Vaux9_0_v_p => Vaux9_0_v_p,
+      full => full,
       indicator_0 => indicator_0
     );
 end STRUCTURE;

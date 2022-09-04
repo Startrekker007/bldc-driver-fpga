@@ -123,8 +123,14 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 3
-  reset_param project.defaultXPMLibraries 
-  open_checkpoint C:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.runs/impl_1/inverter_wrapper.dcp
+OPTRACE "create in-memory project" START { }
+  create_project -in_memory -part xc7z020clg400-1
+  set_property board_part_repo_paths {C:/Xilinx/Vivado/boards} [current_project]
+  set_property board_part www.digilentinc.com:pynq-z1:part0:1.0 [current_project]
+  set_property design_mode GateLvl [current_fileset]
+  set_param project.singleFileAddWarning.threshold 0
+OPTRACE "create in-memory project" END { }
+OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir C:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.cache/wt [current_project]
   set_property parent.project_path C:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.xpr [current_project]
   set_property ip_repo_paths {
@@ -134,7 +140,27 @@ set rc [catch {
   update_ip_catalog
   set_property ip_output_repo C:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
+OPTRACE "set parameters" END { }
+OPTRACE "add files" START { }
+  add_files -quiet C:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.runs/synth_1/inverter_wrapper.dcp
+  set_msg_config -source 4 -id {BD 41-1661} -limit 0
+  set_param project.isImplRun true
+  read_ip -quiet C:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.srcs/sources_1/ip/tick_gen/tick_gen.xci
+  read_ip -quiet C:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.srcs/sources_1/ip/timbase_ctr/timbase_ctr.xci
+  add_files C:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.srcs/sources_1/bd/inverter/inverter.bd
+  set_param project.isImplRun false
+OPTRACE "read constraints: implementation" START { }
+  read_xdc C:/git/bldc-driver-fpga/hardware_design/vivado_project/sineInverter/sineInverter.srcs/constrs_1/new/pynq-z1-focshield1_1.xdc
+OPTRACE "read constraints: implementation" END { }
+OPTRACE "add files" END { }
+OPTRACE "link_design" START { }
+  set_param project.isImplRun true
+  link_design -top inverter_wrapper -part xc7z020clg400-1 
+OPTRACE "link_design" END { }
+  set_param project.isImplRun false
+OPTRACE "gray box cells" START { }
+OPTRACE "gray box cells" END { }
 OPTRACE "init_design_reports" START { REPORT }
 OPTRACE "init_design_reports" END { }
 OPTRACE "init_design_write_hwdef" START { }
@@ -292,7 +318,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
-  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
   catch { write_mem_info -force -no_partial_mmi inverter_wrapper.mmi }
 OPTRACE "write_bitstream setup" END { }
 OPTRACE "write_bitstream" START { }

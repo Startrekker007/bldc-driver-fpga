@@ -1,4 +1,4 @@
-verilog xil_defaultlib --include "C:/Xilinx/Vivado/2021.2/data/xilinx_vip/include" --include "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/ec67/hdl" --include "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/3007/hdl" --include "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/62b6" \
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2021.2/data/xilinx_vip/include" --include "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/ec67/hdl" --include "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/3007/hdl" --include "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/62b6" --include "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/f0b6/hdl/verilog" --include "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/66be/hdl/verilog" \
 "../../../bd/inverter/ip/inverter_processing_system7_0_0/sim/inverter_processing_system7_0_0.v" \
 "../../../bd/inverter/ip/inverter_xbar_0/sim/inverter_xbar_0.v" \
 "../../../bd/inverter/ip/inverter_clk_wiz_0_0/inverter_clk_wiz_0_0_clk_wiz.v" \
@@ -9,6 +9,25 @@ verilog xil_defaultlib --include "C:/Xilinx/Vivado/2021.2/data/xilinx_vip/includ
 "../../../bd/inverter/ip/inverter_INVERTER_BD_wrapper_0_2/src/INVERTER_BD_xlslice_2_1/sim/INVERTER_BD_xlslice_2_1.v" \
 "../../../bd/inverter/ip/inverter_INVERTER_BD_wrapper_0_2/src/INVERTER_BD_xlslice_0_1/sim/INVERTER_BD_xlslice_0_1.v" \
 "../../../bd/inverter/ip/inverter_INVERTER_BD_wrapper_0_2/src/INVERTER_BD_xlslice_4_0/sim/INVERTER_BD_xlslice_4_0.v" \
+"../../../bd/inverter/ip/inverter_xlconcat_0_0/sim/inverter_xlconcat_0_0.v" \
+"../../../bd/inverter/ip/inverter_smartconnect_0_0/bd_0/sim/bd_401b.v" \
+"../../../bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_0/sim/bd_401b_one_0.v" \
+
+sv xil_defaultlib --include "C:/Xilinx/Vivado/2021.2/data/xilinx_vip/include" --include "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/ec67/hdl" --include "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/3007/hdl" --include "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/62b6" --include "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/f0b6/hdl/verilog" --include "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/66be/hdl/verilog" \
+"../../../bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_2/sim/bd_401b_s00mmu_0.sv" \
+"../../../bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_3/sim/bd_401b_s00tr_0.sv" \
+"../../../bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_4/sim/bd_401b_s00sic_0.sv" \
+"../../../bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_5/sim/bd_401b_s00a2s_0.sv" \
+"../../../bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_6/sim/bd_401b_sawn_0.sv" \
+"../../../bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_7/sim/bd_401b_swn_0.sv" \
+"../../../bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_8/sim/bd_401b_sbn_0.sv" \
+"../../../bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_9/sim/bd_401b_m00s2a_0.sv" \
+"../../../bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_10/sim/bd_401b_m00e_0.sv" \
+
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2021.2/data/xilinx_vip/include" --include "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/ec67/hdl" --include "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/3007/hdl" --include "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/62b6" --include "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/f0b6/hdl/verilog" --include "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/66be/hdl/verilog" \
+"../../../bd/inverter/ip/inverter_smartconnect_0_0/sim/inverter_smartconnect_0_0.v" \
+"../../../bd/inverter/ip/inverter_fifo_generator_0_0/sim/inverter_fifo_generator_0_0.v" \
+"../../../bd/inverter/ip/inverter_util_vector_logic_0_0/sim/inverter_util_vector_logic_0_0.v" \
 "../../../bd/inverter/ip/inverter_auto_pc_0/sim/inverter_auto_pc_0.v" \
 
 verilog xil_defaultlib "glbl.v"

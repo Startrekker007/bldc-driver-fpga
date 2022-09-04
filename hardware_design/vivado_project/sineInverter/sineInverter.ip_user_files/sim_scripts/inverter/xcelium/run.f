@@ -11,6 +11,7 @@
 -endlib
 -makelib xcelium_lib/xpm -sv \
   "C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+  "C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv" \
   "C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 -endlib
 -makelib xcelium_lib/xpm \
@@ -163,9 +164,113 @@
   "../../../bd/inverter/ipshared/55ca/sim/INVERTER_BD.vhd" \
   "../../../bd/inverter/ipshared/55ca/src/INVERTER_BD_wrapper.vhd" \
   "../../../bd/inverter/ip/inverter_INVERTER_BD_wrapper_0_2/sim/inverter_INVERTER_BD_wrapper_0_2.vhd" \
-  "../../../bd/inverter/sim/inverter.vhd" \
-  "../../../bd/inverter/ip/inverter_timebase_generator_0_0/sim/inverter_timebase_generator_0_0.vhd" \
   "../../../bd/inverter/ip/inverter_axi_gpio_0_0/sim/inverter_axi_gpio_0_0.vhd" \
+  "../../../bd/inverter/ip/inverter_xadc_wiz_0_0/inverter_xadc_wiz_0_0_drp_to_axi_stream.vhd" \
+  "../../../bd/inverter/ip/inverter_xadc_wiz_0_0/inverter_xadc_wiz_0_0_xadc_core_drp.vhd" \
+  "../../../bd/inverter/ip/inverter_xadc_wiz_0_0/inverter_xadc_wiz_0_0_axi_xadc.vhd" \
+  "../../../bd/inverter/ip/inverter_xadc_wiz_0_0/inverter_xadc_wiz_0_0.vhd" \
+-endlib
+-makelib xcelium_lib/lib_pkg_v1_0_2 \
+  "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/0513/hdl/lib_pkg_v1_0_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/lib_fifo_v1_0_15 \
+  "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/a4ed/hdl/lib_fifo_v1_0_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/lib_srl_fifo_v1_0_2 \
+  "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/axi_datamover_v5_1_27 \
+  "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/9b19/hdl/axi_datamover_v5_1_vh_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/axi_sg_v4_1_14 \
+  "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/bcf6/hdl/axi_sg_v4_1_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/axi_dma_v7_1_26 \
+  "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/69a4/hdl/axi_dma_v7_1_vh_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/inverter/ip/inverter_axi_dma_0_0/sim/inverter_axi_dma_0_0.vhd" \
+-endlib
+-makelib xcelium_lib/xlconcat_v2_1_4 \
+  "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/inverter/ip/inverter_xlconcat_0_0/sim/inverter_xlconcat_0_0.v" \
+  "../../../bd/inverter/ip/inverter_smartconnect_0_0/bd_0/sim/bd_401b.v" \
+-endlib
+-makelib xcelium_lib/xlconstant_v1_1_7 \
+  "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_0/sim/bd_401b_one_0.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_1/sim/bd_401b_psr_aclk_0.vhd" \
+-endlib
+-makelib xcelium_lib/smartconnect_v1_0 -sv \
+  "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv" \
+  "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/ea34/hdl/sc_mmu_v1_0_vl_rfs.sv" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib -sv \
+  "../../../bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_2/sim/bd_401b_s00mmu_0.sv" \
+-endlib
+-makelib xcelium_lib/smartconnect_v1_0 -sv \
+  "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/4fd2/hdl/sc_transaction_regulator_v1_0_vl_rfs.sv" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib -sv \
+  "../../../bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_3/sim/bd_401b_s00tr_0.sv" \
+-endlib
+-makelib xcelium_lib/smartconnect_v1_0 -sv \
+  "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/8047/hdl/sc_si_converter_v1_0_vl_rfs.sv" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib -sv \
+  "../../../bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_4/sim/bd_401b_s00sic_0.sv" \
+-endlib
+-makelib xcelium_lib/smartconnect_v1_0 -sv \
+  "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/b89e/hdl/sc_axi2sc_v1_0_vl_rfs.sv" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib -sv \
+  "../../../bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_5/sim/bd_401b_s00a2s_0.sv" \
+-endlib
+-makelib xcelium_lib/smartconnect_v1_0 -sv \
+  "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/66be/hdl/sc_node_v1_0_vl_rfs.sv" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib -sv \
+  "../../../bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_6/sim/bd_401b_sawn_0.sv" \
+  "../../../bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_7/sim/bd_401b_swn_0.sv" \
+  "../../../bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_8/sim/bd_401b_sbn_0.sv" \
+-endlib
+-makelib xcelium_lib/smartconnect_v1_0 -sv \
+  "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/7005/hdl/sc_sc2axi_v1_0_vl_rfs.sv" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib -sv \
+  "../../../bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_9/sim/bd_401b_m00s2a_0.sv" \
+-endlib
+-makelib xcelium_lib/smartconnect_v1_0 -sv \
+  "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/93a6/hdl/sc_exit_v1_0_vl_rfs.sv" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib -sv \
+  "../../../bd/inverter/ip/inverter_smartconnect_0_0/bd_0/ip/ip_10/sim/bd_401b_m00e_0.sv" \
+-endlib
+-makelib xcelium_lib/smartconnect_v1_0 -sv \
+  "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/c012/hdl/sc_switchboard_v1_0_vl_rfs.sv" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/inverter/ip/inverter_smartconnect_0_0/sim/inverter_smartconnect_0_0.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/inverter/ip/inverter_axi_gpio_0_1/sim/inverter_axi_gpio_0_1.vhd" \
+  "../../../bd/inverter/ip/inverter_timebase_generator_0_0/sim/inverter_timebase_generator_0_0.vhd" \
+  "../../../bd/inverter/sim/inverter.vhd" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/inverter/ip/inverter_fifo_generator_0_0/sim/inverter_fifo_generator_0_0.v" \
+-endlib
+-makelib xcelium_lib/util_vector_logic_v2_0_1 \
+  "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/3f90/hdl/util_vector_logic_v2_0_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/inverter/ip/inverter_util_vector_logic_0_0/sim/inverter_util_vector_logic_0_0.v" \
 -endlib
 -makelib xcelium_lib/axi_protocol_converter_v2_1_25 \
   "../../../../sineInverter.gen/sources_1/bd/inverter/ipshared/8fe4/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
